@@ -1,5 +1,5 @@
 PROPAGATE_EXCEPTIONS = True
-LOGGER_FILE = "../logs/hackerbabel.log"
+LOGGER_FILE = "/logs/hackerbabel.log"
 LOGGER_LOGLEVEL = "DEBUG"
 CONSOLE_LOGGING = True
 DEBUG = True
