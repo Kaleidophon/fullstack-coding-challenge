@@ -12,6 +12,7 @@ from flask import Flask
 
 # PROJECT
 from misc.config import config_selector
+from misc.error_handlers import register_error_handlers
 from misc.logger import setup_logger
 
 # CONST
@@ -30,7 +31,7 @@ def start_app():
 
     # 2 Update the apps configuration
     app = config_selector(app)
-    # register_error_handlers(app)  # TODO: Implement this
+    register_error_handlers(app)
 
     # 3 Configure access to database
     # DBAccess.prepare(**config.py)  # TODO: Implement this
