@@ -58,33 +58,30 @@ class ArticleSchema(Schema):
     schema = {
         "type": "object",
         "properties": {
-            "id": {
-                "type": "number"
-            },
+            "id": {"type": "number"},
             "titles": {
                 "type": "object",
                 "additionalProperties": {
                     "type": "string"
                 }
             },
-            "time": {
-                "type": "number"
-            },
-            "article_type": {
-                "type": "number"
-            },
-            "author": {
-                "type": "string"
-            },
+            "date": {"type": "string"},
+            "article_type": {"type": "string"},
+            "author": {"type": "string"},
             "comments": {
                 "type": "array",
                 "items": {
                     "type": "string"
                 }
-            }
+            },
+            "translation_status": {"type": "string"}
         },
         "required": [
-            "id", "titles", "time", "comments", "article_type", "author"
+            "id", "titles", "comments", "article_type", "author",
+            "date", "translation_status"
         ],
         "additionalProperties": False
     }
+
+    def __init__(self):
+        super(ArticleSchema, self).__init__(self.schema)

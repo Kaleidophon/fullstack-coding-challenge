@@ -20,7 +20,8 @@ RENAMING = {
 	u"kids": u"comments",
 	u"by": u"author",
 	u"type": u"article_type",
-	u"time": u"date"
+	u"time": u"date",
+	u"title": u"titles"
 }
 DROPS = {u"descendants", u"url", u"score"}
 
@@ -29,11 +30,12 @@ class HackerNewsClient(Client):
 	formatting_functions = None
 
 	@classmethod
-	def initialize(cls, *init_args, **init_kwargs):
+	def initialize(cls, **init_kwargs):
 		cls.client = HackerNews()
 		cls.formatting_functions = {
 			u"comments": cls._resolve_comments,
-			u"date": cls._seconds_to_datestring
+			u"date": cls._seconds_to_datestring,
+			u"titles": cls._expand_title
 		}
 		cls.initialized = True
 
@@ -77,25 +79,46 @@ class HackerNewsClient(Client):
 				formatting_function = formatting[field]
 				document[field] = formatting_function(document[field])
 
+		document["translation_status"] = "not_requested"
+
 		return document
 
 	@staticmethod
 	def _seconds_to_datestring(seconds):
 		date = datetime.datetime.utcfromtimestamp(seconds)
-		return date.strftime("%%d-%m-%Y, %H:%M")
+		return date.strftime("%d-%m-%Y, %H:%M")
+
+	@staticmethod
+	def _expand_title(title):
+		return {"EN": title}
 
 	@classmethod
 	def _resolve_comments(cls, comment_ids):
-		return [cls._resolve_id(comment_id).text for comment_id in comment_ids]
+		def is_not_none(comment):
+			if comment is not None:
+				return True
+			return False
+
+		return filter(
+			is_not_none,
+			[cls._resolve_id(comment_id).text for comment_id in comment_ids]
+		)
 
 	@classmethod
 	def _resolve_id(cls, item_id):
 		return cls.client.get_item(item_id)
 
 if __name__ == "__main__":
-	client = HackerNewsClient()
-	client.initialize()
-	for document in client.get_top_stories():
+	from hackerbabel.clients.mongodb_client import MongoDBClient
+
+	hn_client = HackerNewsClient()
+	hn_client.initialize()
+
+	mdb_client = MongoDBClient()
+	mdb_client.initialize(host="127.0.0.1", database="hackerbabel_db")
+
+	for document in hn_client.get_top_stories():
 		print document
+		mdb_client.add_document(document, "articles")
 
 

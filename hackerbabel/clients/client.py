@@ -10,5 +10,5 @@ class Client(object):
 	initialized = None
 
 	@classmethod
-	def initialize(cls, *init_args, **init_kwargs):
+	def initialize(cls, **init_kwargs):
 		cls.initialized = True

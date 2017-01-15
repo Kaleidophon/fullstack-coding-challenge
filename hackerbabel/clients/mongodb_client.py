@@ -18,27 +18,25 @@ class MongoDBClient(Client):
     schema = None
 
     @classmethod
-    def initialize(cls, *init_args, **init_kwargs):
+    def initialize(cls, **init_kwargs):
         username = init_kwargs.get("username", "")
         password = init_kwargs.get("password", "")
         host = init_kwargs.get("host", "localhost")
-        port = init_kwargs.get("port", 27107)
+        port = init_kwargs.get("port", 27017)
         database = init_kwargs.get("database", "")
         options = init_kwargs.get("options", "")
 
         credentials = ""
         if username and password:
             credentials = "{user}:{pw}@".format(user=username, pw=password)
-        if database:
-            database = "/" + database
         if options:
             if type(options) == list:
-                options = "?" + "&".join(options)
+                options = "/?" + "&".join(options)
             else:
-                options = "?" + options
+                options = "/?" + options
 
-        uri = "mongodb://{}{}:{}{}{}".format(
-            credentials, host, port, database, options
+        uri = "mongodb://{}{}:{}{}".format(
+            credentials, host, port, options
         )
         cls.client = MongoClient(uri)
         cls.db = getattr(cls.client, database)
