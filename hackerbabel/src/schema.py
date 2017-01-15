@@ -79,7 +79,7 @@ class ArticleSchema(Schema):
             "translation_status": {"type": "string"}
         },
         "required": [
-            "id", "titles", "comments", "article_type", "author",
+            "id", "titles", "article_type", "author",
             "date", "translation_status", "url", "score"
         ],
         "additionalProperties": False

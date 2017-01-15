@@ -65,7 +65,7 @@ class HackerNewsClient(Client):
 
 		LOGGER.info(
 			"Received {} Hacker News stories in {} minute(s) {} second(s) with "
-			"ids:\n{}".format(
+			"ids:\n{}\n".format(
 				len(top_stories), minutes, seconds,
 				", ".join([str(top_story["id"]) for top_story in top_stories])
 			)
@@ -76,6 +76,9 @@ class HackerNewsClient(Client):
 	@staticmethod
 	def _jsonify_story(story, formatting={}, rename={}, drop=set()):
 		document = story  # Semantic change from HN story to future MongoDB doc
+
+		if not hasattr(document, "kids"):
+			document["kids"] = []
 
 		# Remove unwanted field
 		for field in drop:

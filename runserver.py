@@ -14,10 +14,15 @@ from flask import Flask
 from hackerbabel.clients.mongodb_client import MongoDBClient
 from hackerbabel.clients.hackernews_client import HackerNewsClient
 from hackerbabel.clients.unbabel_client import UnbabelClient
+
 from hackerbabel.src.config import config_selector
 from hackerbabel.src.daemon import HackerNewsDaemon
 from hackerbabel.src.error_handlers import register_error_handlers
 from hackerbabel.src.logger import setup_logger
+
+from hackerbabel.views.index import INDEX
+from hackerbabel.views.dashboard import DASHBOARD
+from hackerbabel.views.comment_section import COMMENT_SECTION
 
 # CONST
 LOGGER = logging.getLogger(__name__)
@@ -47,7 +52,10 @@ def start_app():
     # 5 Init Daemon
     start_daemon(app.config)
 
-    # 6 Run app
+    # 6 Register blueprints
+    register_blueprints(app)
+
+    # 7 Run app
     LOGGER.info("App is running!")
     app.run(use_reloader=False)
 
@@ -66,6 +74,13 @@ def init_clients(config):
             ", ".join([type(client).__name__ for client in clients])
         )
     )
+
+
+def register_blueprints(app):
+    blueprints = {INDEX, DASHBOARD, COMMENT_SECTION}
+
+    for blueprint in blueprints:
+        app.register_blueprint(blueprint)
 
 
 def start_daemon(config):
