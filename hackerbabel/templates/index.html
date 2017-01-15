@@ -1,14 +1,36 @@
-{# Macro to render a story #}
+{# Macros to render a story #}
+
+{% macro display_story_titles(story) %}
+	{% set titles = story["titles"] %}
+	{% for lang, title in titles.iteritems() %}
+		<h2>{{ lang }}: {{ title }}</h2>
+	{% endfor %}
+{% endmacro %}
+
 
 {% extends "base.html" %}
 
-{% block additional_stylesheets %}
-    <link rel="stylesheet"
-          href="{{ url_for('static', filename='css/index.css') }}" />
-{%  endblock %}
+<html>
+	<header>
+		{% block navbar %}
+			{{ super() }}
+		{% endblock %}
+	</header>
+	<body>
 
-{% block title %} Current Stories {% endblock %}
+		{% block additional_stylesheets %}
+		    <link rel="stylesheet"
+		          href="{{ url_for('static', filename='css/index.css') }}" />
+		{%  endblock %}
 
-{% block content %}
-<p>This is the story page.</p>
-{% endblock %}
+		{% block title %} Current Stories {% endblock %}
+
+		{% block content %}
+			<p>This is the story page.</p>
+
+			{% for story in stories %}
+				{{ display_story_titles(story) }} <br>
+			{% endfor %}
+		{% endblock %}
+	</body>
+</html>

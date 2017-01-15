@@ -2427,3 +2427,517 @@ TypeError: send_static_file() got an unexpected keyword argument 'story_id'
 (15.01.2017, 18:51:48)     root hackernews_client get_top_stories    INFO: Received 10 Hacker News stories in 0.0 minute(s) 9.1 second(s) with ids:
 13399095, 13404840, 13404292, 13405491, 13404912, 13405121, 13404496, 13404811, 13402472, 13404372
 
+(15.01.2017, 18:55:01) hackerbabel.src.error_handlers  error_handlers handle_any_exception   ERROR: INTERNAL SERVER ERROR
+Time: 2017-01-15T18:55:01.652292
+Error type: <class 'jinja2.exceptions.TemplateNotFound'>
+Error message: bootstrap/base.html
+Traceback: 
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/dennisulmer/Documents/Projekte/unbabel_challenge/fullstack-coding-challenge/hackerbabel/views/dashboard.py", line 20, in dashboard
+    return render_template("dashboard.html")
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/flask/templating.py", line 128, in render_template
+    context, ctx.app)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/flask/templating.py", line 110, in _render
+    rv = template.render(context)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/jinja2/environment.py", line 989, in render
+    return self.environment.handle_exception(exc_info, True)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/jinja2/environment.py", line 754, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/dennisulmer/Documents/Projekte/unbabel_challenge/fullstack-coding-challenge/hackerbabel/templates/dashboard.html", line 1, in top-level template code
+    {% extends "bootstrap/base.html" %}
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/flask/templating.py", line 64, in get_source
+    raise TemplateNotFound(template)
+TemplateNotFound: bootstrap/base.html
+
+(15.01.2017, 18:56:08) __main__       runserver    start_app    INFO: Set up app & logger.
+(15.01.2017, 18:56:08) __main__       runserver init_clients    INFO: Initiated 3 clients: UnbabelClient, MongoDBClient, HackerNewsClient.
+(15.01.2017, 18:56:08) __main__       runserver start_daemon    INFO: Started daemon with time interval 600.
+(15.01.2017, 18:56:23) __main__       runserver    start_app    INFO: Set up app & logger.
+(15.01.2017, 18:56:23) __main__       runserver init_clients    INFO: Initiated 3 clients: UnbabelClient, MongoDBClient, HackerNewsClient.
+(15.01.2017, 18:56:23) __main__       runserver start_daemon    INFO: Started daemon with time interval 600.
+(15.01.2017, 18:56:23) __main__       runserver    start_app    INFO: App is running!
+(15.01.2017, 18:56:30) __main__       runserver    start_app    INFO: Set up app & logger.
+(15.01.2017, 18:56:30) __main__       runserver init_clients    INFO: Initiated 3 clients: UnbabelClient, MongoDBClient, HackerNewsClient.
+(15.01.2017, 18:56:30) __main__       runserver start_daemon    INFO: Started daemon with time interval 600.
+(15.01.2017, 18:56:30) __main__       runserver    start_app    INFO: App is running!
+(15.01.2017, 18:56:39)     root hackernews_client get_top_stories    INFO: Received 10 Hacker News stories in 0.0 minute(s) 8.4 second(s) with ids:
+13399095, 13404840, 13404292, 13405491, 13404912, 13405121, 13404811, 13404496, 13402472, 13404372
+
+(15.01.2017, 18:59:30) __main__       runserver    start_app    INFO: Set up app & logger.
+(15.01.2017, 18:59:30) __main__       runserver init_clients    INFO: Initiated 3 clients: UnbabelClient, MongoDBClient, HackerNewsClient.
+(15.01.2017, 18:59:30) __main__       runserver start_daemon    INFO: Started daemon with time interval 600.
+(15.01.2017, 18:59:30) __main__       runserver    start_app    INFO: App is running!
+(15.01.2017, 18:59:35) hackerbabel.src.error_handlers  error_handlers handle_any_exception   ERROR: INTERNAL SERVER ERROR
+Time: 2017-01-15T18:59:35.638125
+Error type: <class 'jinja2.exceptions.TemplateSyntaxError'>
+Error message: Unexpected end of template. Jinja was looking for the following tags: 'endblock'. The innermost block that needs to be closed is 'block'.
+Traceback: 
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/dennisulmer/Documents/Projekte/unbabel_challenge/fullstack-coding-challenge/hackerbabel/views/index.py", line 21, in index
+    return render_template("index.html")
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/flask/templating.py", line 127, in render_template
+    return _render(ctx.app.jinja_env.get_or_select_template(template_name_or_list),
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/jinja2/environment.py", line 851, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/jinja2/environment.py", line 812, in get_template
+    return self._load_template(name, self.make_globals(globals))
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/jinja2/environment.py", line 786, in _load_template
+    template = self.loader.load(self, name, globals)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/jinja2/loaders.py", line 125, in load
+    code = environment.compile(source, name, filename)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/jinja2/environment.py", line 565, in compile
+    self.handle_exception(exc_info, source_hint=source_hint)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/jinja2/environment.py", line 754, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/dennisulmer/Documents/Projekte/unbabel_challenge/fullstack-coding-challenge/hackerbabel/templates/index.html", line 18, in template
+    {% endblock %}
+TemplateSyntaxError: Unexpected end of template. Jinja was looking for the following tags: 'endblock'. The innermost block that needs to be closed is 'block'.
+
+(15.01.2017, 18:59:38)     root hackernews_client get_top_stories    INFO: Received 10 Hacker News stories in 0.0 minute(s) 7.8 second(s) with ids:
+13399095, 13404840, 13404292, 13405491, 13404912, 13405121, 13404811, 13404496, 13402472, 13404978
+
+(15.01.2017, 18:59:50) __main__       runserver    start_app    INFO: Set up app & logger.
+(15.01.2017, 18:59:50) __main__       runserver init_clients    INFO: Initiated 3 clients: UnbabelClient, MongoDBClient, HackerNewsClient.
+(15.01.2017, 18:59:50) __main__       runserver start_daemon    INFO: Started daemon with time interval 600.
+(15.01.2017, 18:59:50) __main__       runserver    start_app    INFO: App is running!
+(15.01.2017, 18:59:58)     root hackernews_client get_top_stories    INFO: Received 10 Hacker News stories in 0.0 minute(s) 7.7 second(s) with ids:
+13399095, 13404840, 13404292, 13405491, 13404912, 13405121, 13404811, 13404496, 13402472, 13404978
+
+(15.01.2017, 19:00:13) __main__       runserver    start_app    INFO: Set up app & logger.
+(15.01.2017, 19:00:13) __main__       runserver init_clients    INFO: Initiated 3 clients: UnbabelClient, MongoDBClient, HackerNewsClient.
+(15.01.2017, 19:00:13) __main__       runserver start_daemon    INFO: Started daemon with time interval 600.
+(15.01.2017, 19:00:13) __main__       runserver    start_app    INFO: App is running!
+(15.01.2017, 19:00:21)     root hackernews_client get_top_stories    INFO: Received 10 Hacker News stories in 0.0 minute(s) 7.7 second(s) with ids:
+13399095, 13404840, 13404292, 13405491, 13404912, 13405121, 13404811, 13404496, 13402472, 13404978
+
+(15.01.2017, 19:02:16) __main__       runserver    start_app    INFO: Set up app & logger.
+(15.01.2017, 19:02:16) __main__       runserver init_clients    INFO: Initiated 3 clients: UnbabelClient, MongoDBClient, HackerNewsClient.
+(15.01.2017, 19:02:16) __main__       runserver start_daemon    INFO: Started daemon with time interval 600.
+(15.01.2017, 19:02:16) __main__       runserver    start_app    INFO: App is running!
+(15.01.2017, 19:02:25)     root hackernews_client get_top_stories    INFO: Received 10 Hacker News stories in 0.0 minute(s) 8.5 second(s) with ids:
+13399095, 13404840, 13404292, 13405491, 13404912, 13405121, 13404811, 13405522, 13404496, 13402472
+
+(15.01.2017, 19:12:35)     root hackernews_client get_top_stories    INFO: Received 10 Hacker News stories in 0.0 minute(s) 10.4 second(s) with ids:
+13399095, 13404840, 13404292, 13405522, 13405491, 13404912, 13404811, 13405121, 13402472, 13404496
+
+(15.01.2017, 19:22:46)     root hackernews_client get_top_stories    INFO: Received 10 Hacker News stories in 0.0 minute(s) 10.7 second(s) with ids:
+13399095, 13404840, 13405522, 13404292, 13405380, 13405491, 13404912, 13405121, 13402472, 13404496
+
+(15.01.2017, 19:32:59)     root hackernews_client get_top_stories    INFO: Received 10 Hacker News stories in 0.0 minute(s) 13.1 second(s) with ids:
+13399095, 13404840, 13404292, 13405522, 13405380, 13405491, 13404912, 13405121, 13402472, 13404978
+
+(15.01.2017, 19:43:07)     root hackernews_client get_top_stories    INFO: Received 10 Hacker News stories in 0.0 minute(s) 8.3 second(s) with ids:
+13399095, 13404840, 13405522, 13404292, 13405380, 13405491, 13404912, 13405121, 13402472, 13402866
+
+(15.01.2017, 20:06:47) __main__       runserver    start_app    INFO: Set up app & logger.
+(15.01.2017, 20:06:47) __main__       runserver init_clients    INFO: Initiated 3 clients: MongoDBClient, UnbabelClient, HackerNewsClient.
+(15.01.2017, 20:06:47) __main__       runserver start_daemon    INFO: Started daemon with time interval 600.
+(15.01.2017, 20:06:47) __main__       runserver    start_app    INFO: App is running!
+(15.01.2017, 20:06:51) hackerbabel.src.error_handlers  error_handlers handle_any_exception   ERROR: INTERNAL SERVER ERROR
+Time: 2017-01-15T20:06:51.669653
+Error type: <class 'jinja2.exceptions.TemplateNotFound'>
+Error message: /start
+Traceback: 
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/dennisulmer/Documents/Projekte/unbabel_challenge/fullstack-coding-challenge/hackerbabel/views/index.py", line 21, in index
+    return render_template(url_for("index.index"))
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/flask/templating.py", line 127, in render_template
+    return _render(ctx.app.jinja_env.get_or_select_template(template_name_or_list),
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/jinja2/environment.py", line 851, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/jinja2/environment.py", line 812, in get_template
+    return self._load_template(name, self.make_globals(globals))
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/jinja2/environment.py", line 774, in _load_template
+    cache_key = self.loader.get_source(self, name)[1]
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/flask/templating.py", line 64, in get_source
+    raise TemplateNotFound(template)
+TemplateNotFound: /start
+
+(15.01.2017, 20:06:55)     root hackernews_client get_top_stories    INFO: Received 10 Hacker News stories in 0.0 minute(s) 8.2 second(s) with ids:
+13399095, 13404840, 13404292, 13405380, 13405772, 13405491, 13405522, 13404912, 13405121, 13402472
+
+(15.01.2017, 20:07:32) __main__       runserver    start_app    INFO: Set up app & logger.
+(15.01.2017, 20:07:32) __main__       runserver init_clients    INFO: Initiated 3 clients: MongoDBClient, UnbabelClient, HackerNewsClient.
+(15.01.2017, 20:07:32) __main__       runserver start_daemon    INFO: Started daemon with time interval 600.
+(15.01.2017, 20:07:32) __main__       runserver    start_app    INFO: App is running!
+(15.01.2017, 20:07:39)     root hackernews_client get_top_stories    INFO: Received 10 Hacker News stories in 0.0 minute(s) 7.7 second(s) with ids:
+13399095, 13404840, 13404292, 13405380, 13405772, 13405491, 13405522, 13404912, 13405121, 13402472
+
+(15.01.2017, 20:08:00) __main__       runserver    start_app    INFO: Set up app & logger.
+(15.01.2017, 20:08:00) __main__       runserver init_clients    INFO: Initiated 3 clients: UnbabelClient, MongoDBClient, HackerNewsClient.
+(15.01.2017, 20:08:00) __main__       runserver start_daemon    INFO: Started daemon with time interval 600.
+(15.01.2017, 20:08:00) __main__       runserver    start_app    INFO: App is running!
+(15.01.2017, 20:08:09)     root hackernews_client get_top_stories    INFO: Received 10 Hacker News stories in 0.0 minute(s) 8.6 second(s) with ids:
+13399095, 13404840, 13404292, 13405380, 13405772, 13405522, 13405491, 13404912, 13405121, 13402472
+
+(15.01.2017, 20:08:37) __main__       runserver    start_app    INFO: Set up app & logger.
+(15.01.2017, 20:08:37) __main__       runserver init_clients    INFO: Initiated 3 clients: MongoDBClient, UnbabelClient, HackerNewsClient.
+(15.01.2017, 20:08:37) __main__       runserver start_daemon    INFO: Started daemon with time interval 600.
+(15.01.2017, 20:08:37) __main__       runserver    start_app    INFO: App is running!
+(15.01.2017, 20:08:41) hackerbabel.src.error_handlers  error_handlers handle_any_exception   ERROR: INTERNAL SERVER ERROR
+Time: 2017-01-15T20:08:41.593750
+Error type: <class 'jinja2.exceptions.TemplateNotFound'>
+Error message: /dashboard
+Traceback: 
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/dennisulmer/Documents/Projekte/unbabel_challenge/fullstack-coding-challenge/hackerbabel/views/dashboard.py", line 20, in dashboard
+    return render_template(url_for("dashboard.dashboard"))
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/flask/templating.py", line 127, in render_template
+    return _render(ctx.app.jinja_env.get_or_select_template(template_name_or_list),
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/jinja2/environment.py", line 851, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/jinja2/environment.py", line 812, in get_template
+    return self._load_template(name, self.make_globals(globals))
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/jinja2/environment.py", line 774, in _load_template
+    cache_key = self.loader.get_source(self, name)[1]
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/flask/templating.py", line 64, in get_source
+    raise TemplateNotFound(template)
+TemplateNotFound: /dashboard
+
+(15.01.2017, 20:08:45)     root hackernews_client get_top_stories    INFO: Received 10 Hacker News stories in 0.0 minute(s) 8.5 second(s) with ids:
+13399095, 13404840, 13404292, 13405380, 13405772, 13405522, 13405491, 13404912, 13405121, 13402472
+
+(15.01.2017, 20:09:14) __main__       runserver    start_app    INFO: Set up app & logger.
+(15.01.2017, 20:09:14) __main__       runserver init_clients    INFO: Initiated 3 clients: MongoDBClient, UnbabelClient, HackerNewsClient.
+(15.01.2017, 20:09:14) __main__       runserver start_daemon    INFO: Started daemon with time interval 600.
+(15.01.2017, 20:09:14) __main__       runserver    start_app    INFO: App is running!
+(15.01.2017, 20:09:26)     root hackernews_client get_top_stories    INFO: Received 10 Hacker News stories in 0.0 minute(s) 12.0 second(s) with ids:
+13399095, 13404840, 13404292, 13405380, 13405772, 13405522, 13405491, 13404912, 13405121, 13402472
+
+(15.01.2017, 20:09:30) hackerbabel.src.error_handlers  error_handlers handle_any_exception   ERROR: INTERNAL SERVER ERROR
+Time: 2017-01-15T20:09:30.389578
+Error type: <class 'werkzeug.routing.BuildError'>
+Error message: 
+Traceback: 
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/dennisulmer/Documents/Projekte/unbabel_challenge/fullstack-coding-challenge/hackerbabel/views/comment_section.py", line 23, in comment_section
+    url_for("comment_section.comment_section"),
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/flask/helpers.py", line 312, in url_for
+    return appctx.app.handle_url_build_error(error, endpoint, values)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/flask/app.py", line 1641, in handle_url_build_error
+    reraise(exc_type, exc_value, tb)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/flask/helpers.py", line 305, in url_for
+    force_external=external)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/werkzeug/routing.py", line 1758, in build
+    raise BuildError(endpoint, values, method, self)
+BuildError: Could not build url for endpoint 'comment_section.comment_section'. Did you forget to specify values ['story_id']?
+
+(15.01.2017, 20:10:50) __main__       runserver    start_app    INFO: Set up app & logger.
+(15.01.2017, 20:10:50) __main__       runserver init_clients    INFO: Initiated 3 clients: UnbabelClient, MongoDBClient, HackerNewsClient.
+(15.01.2017, 20:10:50) __main__       runserver start_daemon    INFO: Started daemon with time interval 600.
+(15.01.2017, 20:10:50) __main__       runserver    start_app    INFO: App is running!
+(15.01.2017, 20:10:59)     root hackernews_client get_top_stories    INFO: Received 10 Hacker News stories in 0.0 minute(s) 8.9 second(s) with ids:
+13399095, 13404840, 13404292, 13405380, 13405772, 13405522, 13405491, 13404912, 13405121, 13402472
+
+(15.01.2017, 20:12:25) __main__       runserver    start_app    INFO: Set up app & logger.
+(15.01.2017, 20:12:25) __main__       runserver init_clients    INFO: Initiated 3 clients: UnbabelClient, MongoDBClient, HackerNewsClient.
+(15.01.2017, 20:12:25) __main__       runserver start_daemon    INFO: Started daemon with time interval 600.
+(15.01.2017, 20:12:26) __main__       runserver    start_app    INFO: App is running!
+(15.01.2017, 20:12:33)     root hackernews_client get_top_stories    INFO: Received 10 Hacker News stories in 0.0 minute(s) 7.8 second(s) with ids:
+13399095, 13404840, 13404292, 13405380, 13405772, 13405491, 13405522, 13404912, 13405121, 13402472
+
+(15.01.2017, 20:31:11) __main__       runserver    start_app    INFO: Set up app & logger.
+(15.01.2017, 20:31:11) __main__       runserver init_clients    INFO: Initiated 3 clients: MongoDBClient, UnbabelClient, HackerNewsClient.
+(15.01.2017, 20:31:11) __main__       runserver start_daemon    INFO: Started daemon with time interval 600.
+(15.01.2017, 20:31:12) __main__       runserver    start_app    INFO: App is running!
+(15.01.2017, 20:31:20)     root hackernews_client get_top_stories    INFO: Received 10 Hacker News stories in 0.0 minute(s) 8.5 second(s) with ids:
+13399095, 13404840, 13406119, 13404292, 13405772, 13405380, 13405491, 13404912, 13405121, 13402866
+
+(15.01.2017, 20:31:43) __main__       runserver    start_app    INFO: Set up app & logger.
+(15.01.2017, 20:31:43) __main__       runserver init_clients    INFO: Initiated 3 clients: MongoDBClient, UnbabelClient, HackerNewsClient.
+(15.01.2017, 20:31:43) __main__       runserver start_daemon    INFO: Started daemon with time interval 600.
+(15.01.2017, 20:31:43) __main__       runserver    start_app    INFO: App is running!
+(15.01.2017, 20:31:58)     root hackernews_client get_top_stories    INFO: Received 10 Hacker News stories in 0.0 minute(s) 15.5 second(s) with ids:
+13399095, 13406119, 13404840, 13404292, 13405772, 13405380, 13405491, 13404912, 13405121, 13402866
+
+(15.01.2017, 20:32:03) hackerbabel.src.error_handlers  error_handlers handle_any_exception   ERROR: INTERNAL SERVER ERROR
+Time: 2017-01-15T20:32:03.797455
+Error type: <class 'jinja2.exceptions.TemplateSyntaxError'>
+Error message: Encountered unknown tag 'story'. Jinja was looking for the following tags: 'endfor' or 'else'. The innermost block that needs to be closed is 'for'.
+Traceback: 
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/dennisulmer/Documents/Projekte/unbabel_challenge/fullstack-coding-challenge/hackerbabel/views/index.py", line 26, in index
+    return render_template("index.html", stories=stories)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/flask/templating.py", line 127, in render_template
+    return _render(ctx.app.jinja_env.get_or_select_template(template_name_or_list),
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/jinja2/environment.py", line 851, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/jinja2/environment.py", line 812, in get_template
+    return self._load_template(name, self.make_globals(globals))
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/jinja2/environment.py", line 786, in _load_template
+    template = self.loader.load(self, name, globals)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/jinja2/loaders.py", line 125, in load
+    code = environment.compile(source, name, filename)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/jinja2/environment.py", line 565, in compile
+    self.handle_exception(exc_info, source_hint=source_hint)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/jinja2/environment.py", line 754, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/dennisulmer/Documents/Projekte/unbabel_challenge/fullstack-coding-challenge/hackerbabel/templates/index.html", line 23, in template
+    {% story.title %} <br>
+TemplateSyntaxError: Encountered unknown tag 'story'. Jinja was looking for the following tags: 'endfor' or 'else'. The innermost block that needs to be closed is 'for'.
+
+(15.01.2017, 20:32:34) __main__       runserver    start_app    INFO: Set up app & logger.
+(15.01.2017, 20:32:34) __main__       runserver init_clients    INFO: Initiated 3 clients: MongoDBClient, UnbabelClient, HackerNewsClient.
+(15.01.2017, 20:32:34) __main__       runserver start_daemon    INFO: Started daemon with time interval 600.
+(15.01.2017, 20:32:34) __main__       runserver    start_app    INFO: App is running!
+(15.01.2017, 20:32:43)     root hackernews_client get_top_stories    INFO: Received 10 Hacker News stories in 0.0 minute(s) 8.3 second(s) with ids:
+13399095, 13406119, 13404840, 13404292, 13405772, 13405380, 13405491, 13404912, 13405121, 13402866
+
+(15.01.2017, 20:33:30) __main__       runserver    start_app    INFO: Set up app & logger.
+(15.01.2017, 20:33:30) __main__       runserver init_clients    INFO: Initiated 3 clients: MongoDBClient, UnbabelClient, HackerNewsClient.
+(15.01.2017, 20:33:30) __main__       runserver start_daemon    INFO: Started daemon with time interval 600.
+(15.01.2017, 20:33:34) __main__       runserver    start_app    INFO: App is running!
+(15.01.2017, 20:33:40)     root hackernews_client get_top_stories    INFO: Received 10 Hacker News stories in 0.0 minute(s) 10.3 second(s) with ids:
+13399095, 13406119, 13404840, 13404292, 13405772, 13405380, 13405491, 13404912, 13405121, 13402866
+
+(15.01.2017, 20:35:04) __main__       runserver    start_app    INFO: Set up app & logger.
+(15.01.2017, 20:35:04) __main__       runserver init_clients    INFO: Initiated 3 clients: UnbabelClient, MongoDBClient, HackerNewsClient.
+(15.01.2017, 20:35:04) __main__       runserver start_daemon    INFO: Started daemon with time interval 600.
+(15.01.2017, 20:35:04) __main__       runserver    start_app    INFO: App is running!
+(15.01.2017, 20:35:17)     root hackernews_client get_top_stories    INFO: Received 10 Hacker News stories in 0.0 minute(s) 13.1 second(s) with ids:
+13399095, 13406119, 13404840, 13404292, 13405772, 13405380, 13405491, 13404912, 13405121, 13402866
+
+(15.01.2017, 20:41:17) __main__       runserver    start_app    INFO: Set up app & logger.
+(15.01.2017, 20:41:17) __main__       runserver init_clients    INFO: Initiated 3 clients: UnbabelClient, MongoDBClient, HackerNewsClient.
+(15.01.2017, 20:41:17) __main__       runserver start_daemon    INFO: Started daemon with time interval 600.
+(15.01.2017, 20:41:17) __main__       runserver    start_app    INFO: App is running!
+(15.01.2017, 20:41:22) hackerbabel.src.error_handlers  error_handlers handle_any_exception   ERROR: INTERNAL SERVER ERROR
+Time: 2017-01-15T20:41:22.894350
+Error type: <type 'exceptions.TypeError'>
+Error message: if no direction is specified, key_or_list must be an instance of list
+Traceback: 
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/dennisulmer/Documents/Projekte/unbabel_challenge/fullstack-coding-challenge/hackerbabel/views/index.py", line 25, in index
+    stories = mdb_client.get_newest_documents("articles", 10)
+  File "/Users/dennisulmer/Documents/Projekte/unbabel_challenge/fullstack-coding-challenge/hackerbabel/src/helpers.py", line 25, in wrapping_func
+    return func(*args, **kwargs)
+  File "/Users/dennisulmer/Documents/Projekte/unbabel_challenge/fullstack-coding-challenge/hackerbabel/clients/mongodb_client.py", line 70, in get_newest_documents
+    newest_elements = collection.find().sort({"_id", -1})
+  File "/Library/Python/2.7/site-packages/pymongo/cursor.py", line 660, in sort
+    keys = helpers._index_list(key_or_list, direction)
+  File "/Library/Python/2.7/site-packages/pymongo/helpers.py", line 63, in _index_list
+    raise TypeError("if no direction is specified, "
+TypeError: if no direction is specified, key_or_list must be an instance of list
+
+(15.01.2017, 20:41:29)     root hackernews_client get_top_stories    INFO: Received 10 Hacker News stories in 0.0 minute(s) 12.1 second(s) with ids:
+13399095, 13406119, 13404840, 13404292, 13405772, 13405491, 13405380, 13404912, 13402866, 13405121
+
+(15.01.2017, 20:42:22) __main__       runserver    start_app    INFO: Set up app & logger.
+(15.01.2017, 20:42:22) __main__       runserver init_clients    INFO: Initiated 3 clients: UnbabelClient, MongoDBClient, HackerNewsClient.
+(15.01.2017, 20:42:22) __main__       runserver start_daemon    INFO: Started daemon with time interval 600.
+(15.01.2017, 20:42:22) __main__       runserver    start_app    INFO: App is running!
+(15.01.2017, 20:42:30)     root hackernews_client get_top_stories    INFO: Received 10 Hacker News stories in 0.0 minute(s) 8.3 second(s) with ids:
+13399095, 13406119, 13404840, 13404292, 13405772, 13405491, 13405380, 13404912, 13402866, 13405121
+
+(15.01.2017, 20:42:49) __main__       runserver    start_app    INFO: Set up app & logger.
+(15.01.2017, 20:42:49) __main__       runserver init_clients    INFO: Initiated 3 clients: UnbabelClient, MongoDBClient, HackerNewsClient.
+(15.01.2017, 20:42:49) __main__       runserver start_daemon    INFO: Started daemon with time interval 600.
+(15.01.2017, 20:42:49) __main__       runserver    start_app    INFO: App is running!
+(15.01.2017, 20:42:57)     root hackernews_client get_top_stories    INFO: Received 10 Hacker News stories in 0.0 minute(s) 8.2 second(s) with ids:
+13406119, 13399095, 13404840, 13404292, 13405772, 13405491, 13405380, 13404912, 13402866, 13405121
+
+(15.01.2017, 20:43:37) __main__       runserver    start_app    INFO: Set up app & logger.
+(15.01.2017, 20:43:37) __main__       runserver init_clients    INFO: Initiated 3 clients: UnbabelClient, MongoDBClient, HackerNewsClient.
+(15.01.2017, 20:43:37) __main__       runserver start_daemon    INFO: Started daemon with time interval 600.
+(15.01.2017, 20:43:37) __main__       runserver    start_app    INFO: App is running!
+(15.01.2017, 20:43:48)     root hackernews_client get_top_stories    INFO: Received 10 Hacker News stories in 0.0 minute(s) 11.1 second(s) with ids:
+13406119, 13399095, 13404840, 13404292, 13405772, 13405491, 13405380, 13404912, 13402866, 13405121
+
+(15.01.2017, 20:45:10) __main__       runserver    start_app    INFO: Set up app & logger.
+(15.01.2017, 20:45:10) __main__       runserver init_clients    INFO: Initiated 3 clients: UnbabelClient, MongoDBClient, HackerNewsClient.
+(15.01.2017, 20:45:10) __main__       runserver start_daemon    INFO: Started daemon with time interval 600.
+(15.01.2017, 20:45:10) __main__       runserver    start_app    INFO: App is running!
+(15.01.2017, 20:45:18) hackerbabel.src.error_handlers  error_handlers handle_any_exception   ERROR: INTERNAL SERVER ERROR
+Time: 2017-01-15T20:45:18.408923
+Error type: <type 'exceptions.NameError'>
+Error message: global name 'imit' is not defined
+Traceback: 
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/dennisulmer/Documents/Projekte/unbabel_challenge/fullstack-coding-challenge/hackerbabel/views/index.py", line 25, in index
+    stories = mdb_client.get_newest_documents("articles", 10)
+  File "/Users/dennisulmer/Documents/Projekte/unbabel_challenge/fullstack-coding-challenge/hackerbabel/src/helpers.py", line 25, in wrapping_func
+    return func(*args, **kwargs)
+  File "/Users/dennisulmer/Documents/Projekte/unbabel_challenge/fullstack-coding-challenge/hackerbabel/clients/mongodb_client.py", line 70, in get_newest_documents
+    newest_elements = collection.find().sort([('_id', -1)]).limit(imit)
+NameError: global name 'imit' is not defined
+
+(15.01.2017, 20:45:24)     root hackernews_client get_top_stories    INFO: Received 10 Hacker News stories in 0.0 minute(s) 14.0 second(s) with ids:
+13406119, 13399095, 13404840, 13404292, 13405772, 13405491, 13405380, 13404912, 13402866, 13405121
+
+(15.01.2017, 20:45:34) __main__       runserver    start_app    INFO: Set up app & logger.
+(15.01.2017, 20:45:34) __main__       runserver init_clients    INFO: Initiated 3 clients: UnbabelClient, MongoDBClient, HackerNewsClient.
+(15.01.2017, 20:45:34) __main__       runserver start_daemon    INFO: Started daemon with time interval 600.
+(15.01.2017, 20:45:34) __main__       runserver    start_app    INFO: App is running!
+(15.01.2017, 20:45:44)     root hackernews_client get_top_stories    INFO: Received 10 Hacker News stories in 0.0 minute(s) 10.0 second(s) with ids:
+13406119, 13399095, 13404840, 13404292, 13405772, 13405491, 13405380, 13404912, 13402866, 13405121
+
+(15.01.2017, 20:55:53)     root hackernews_client get_top_stories    INFO: Received 10 Hacker News stories in 0.0 minute(s) 9.2 second(s) with ids:
+13406119, 13399095, 13404840, 13404292, 13405772, 13405380, 13405491, 13404912, 13402866, 13405121
+
+(15.01.2017, 20:56:47) __main__       runserver    start_app    INFO: Set up app & logger.
+(15.01.2017, 20:56:47) __main__       runserver init_clients    INFO: Initiated 3 clients: MongoDBClient, UnbabelClient, HackerNewsClient.
+(15.01.2017, 20:56:47) __main__       runserver start_daemon    INFO: Started daemon with time interval 600.
+(15.01.2017, 20:56:47) __main__       runserver    start_app    INFO: App is running!
+(15.01.2017, 20:56:54)     root hackernews_client get_top_stories    INFO: Received 10 Hacker News stories in 0.0 minute(s) 7.8 second(s) with ids:
+13406119, 13399095, 13404840, 13404292, 13405772, 13405380, 13405491, 13404912, 13402866, 13405121
+
+(15.01.2017, 20:57:18) __main__       runserver    start_app    INFO: Set up app & logger.
+(15.01.2017, 20:57:18) __main__       runserver init_clients    INFO: Initiated 3 clients: UnbabelClient, MongoDBClient, HackerNewsClient.
+(15.01.2017, 20:57:18) __main__       runserver start_daemon    INFO: Started daemon with time interval 600.
+(15.01.2017, 20:57:18) __main__       runserver    start_app    INFO: App is running!
+(15.01.2017, 20:57:28)     root hackernews_client get_top_stories    INFO: Received 10 Hacker News stories in 0.0 minute(s) 10.2 second(s) with ids:
+13406119, 13399095, 13404840, 13404292, 13405772, 13405380, 13405491, 13404912, 13402866, 13405121
+
+(15.01.2017, 20:59:10) __main__       runserver    start_app    INFO: Set up app & logger.
+(15.01.2017, 20:59:10) __main__       runserver init_clients    INFO: Initiated 3 clients: UnbabelClient, MongoDBClient, HackerNewsClient.
+(15.01.2017, 20:59:10) __main__       runserver start_daemon    INFO: Started daemon with time interval 600.
+(15.01.2017, 20:59:10) __main__       runserver    start_app    INFO: App is running!
+(15.01.2017, 20:59:20)     root hackernews_client get_top_stories    INFO: Received 10 Hacker News stories in 0.0 minute(s) 10.1 second(s) with ids:
+13406119, 13399095, 13404840, 13404292, 13405772, 13405380, 13405491, 13402866, 13404912, 13405121
+
+(15.01.2017, 21:03:51) hackerbabel.src.error_handlers  error_handlers handle_any_exception   ERROR: INTERNAL SERVER ERROR
+Time: 2017-01-15T21:03:51.141183
+Error type: <class 'jinja2.exceptions.TemplateSyntaxError'>
+Error message: expected token 'end of print statement', got 'titles'
+Traceback: 
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/dennisulmer/Documents/Projekte/unbabel_challenge/fullstack-coding-challenge/hackerbabel/views/index.py", line 26, in index
+    return render_template("index.html", stories=stories)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/flask/templating.py", line 127, in render_template
+    return _render(ctx.app.jinja_env.get_or_select_template(template_name_or_list),
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/jinja2/environment.py", line 851, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/jinja2/environment.py", line 812, in get_template
+    return self._load_template(name, self.make_globals(globals))
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/jinja2/environment.py", line 786, in _load_template
+    template = self.loader.load(self, name, globals)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/jinja2/loaders.py", line 125, in load
+    code = environment.compile(source, name, filename)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/jinja2/environment.py", line 565, in compile
+    self.handle_exception(exc_info, source_hint=source_hint)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/jinja2/environment.py", line 754, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/dennisulmer/Documents/Projekte/unbabel_challenge/fullstack-coding-challenge/hackerbabel/templates/index.html", line 3, in template
+    {{ set titles = story["titles"] }}
+TemplateSyntaxError: expected token 'end of print statement', got 'titles'
+
+(15.01.2017, 21:03:58) __main__       runserver    start_app    INFO: Set up app & logger.
+(15.01.2017, 21:03:58) __main__       runserver init_clients    INFO: Initiated 3 clients: MongoDBClient, UnbabelClient, HackerNewsClient.
+(15.01.2017, 21:03:58) __main__       runserver start_daemon    INFO: Started daemon with time interval 600.
+(15.01.2017, 21:04:31) __main__       runserver    start_app    INFO: Set up app & logger.
+(15.01.2017, 21:04:31) __main__       runserver init_clients    INFO: Initiated 3 clients: MongoDBClient, UnbabelClient, HackerNewsClient.
+(15.01.2017, 21:04:31) __main__       runserver start_daemon    INFO: Started daemon with time interval 600.
+(15.01.2017, 21:04:31) __main__       runserver    start_app    INFO: App is running!
+(15.01.2017, 21:04:35) hackerbabel.src.error_handlers  error_handlers handle_any_exception   ERROR: INTERNAL SERVER ERROR
+Time: 2017-01-15T21:04:35.168588
+Error type: <class 'jinja2.exceptions.TemplateSyntaxError'>
+Error message: expected token 'end of print statement', got 'titles'
+Traceback: 
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/dennisulmer/Documents/Projekte/unbabel_challenge/fullstack-coding-challenge/hackerbabel/views/index.py", line 26, in index
+    return render_template("index.html", stories=stories)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/flask/templating.py", line 127, in render_template
+    return _render(ctx.app.jinja_env.get_or_select_template(template_name_or_list),
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/jinja2/environment.py", line 851, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/jinja2/environment.py", line 812, in get_template
+    return self._load_template(name, self.make_globals(globals))
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/jinja2/environment.py", line 786, in _load_template
+    template = self.loader.load(self, name, globals)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/jinja2/loaders.py", line 125, in load
+    code = environment.compile(source, name, filename)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/jinja2/environment.py", line 565, in compile
+    self.handle_exception(exc_info, source_hint=source_hint)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/jinja2/environment.py", line 754, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/dennisulmer/Documents/Projekte/unbabel_challenge/fullstack-coding-challenge/hackerbabel/templates/index.html", line 3, in template
+    {{ set titles = story["titles"] }}
+TemplateSyntaxError: expected token 'end of print statement', got 'titles'
+
+(15.01.2017, 21:04:41)     root hackernews_client get_top_stories    INFO: Received 10 Hacker News stories in 0.0 minute(s) 10.1 second(s) with ids:
+13406119, 13399095, 13404840, 13405772, 13404292, 13405380, 13405491, 13402866, 13404912, 13405121
+
+(15.01.2017, 21:05:35) __main__       runserver    start_app    INFO: Set up app & logger.
+(15.01.2017, 21:05:35) __main__       runserver init_clients    INFO: Initiated 3 clients: MongoDBClient, UnbabelClient, HackerNewsClient.
+(15.01.2017, 21:05:35) __main__       runserver start_daemon    INFO: Started daemon with time interval 600.
+(15.01.2017, 21:05:35) __main__       runserver    start_app    INFO: App is running!
+(15.01.2017, 21:05:39) hackerbabel.src.error_handlers  error_handlers handle_any_exception   ERROR: INTERNAL SERVER ERROR
+Time: 2017-01-15T21:05:39.786046
+Error type: <class 'jinja2.exceptions.TemplateSyntaxError'>
+Error message: Encountered unknown tag 'endmakro'. Jinja was looking for the following tags: 'endmacro'. The innermost block that needs to be closed is 'macro'.
+Traceback: 
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/dennisulmer/Documents/Projekte/unbabel_challenge/fullstack-coding-challenge/hackerbabel/views/index.py", line 26, in index
+    return render_template("index.html", stories=stories)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/flask/templating.py", line 127, in render_template
+    return _render(ctx.app.jinja_env.get_or_select_template(template_name_or_list),
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/jinja2/environment.py", line 851, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/jinja2/environment.py", line 812, in get_template
+    return self._load_template(name, self.make_globals(globals))
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/jinja2/environment.py", line 786, in _load_template
+    template = self.loader.load(self, name, globals)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/jinja2/loaders.py", line 125, in load
+    code = environment.compile(source, name, filename)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/jinja2/environment.py", line 565, in compile
+    self.handle_exception(exc_info, source_hint=source_hint)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/jinja2/environment.py", line 754, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/dennisulmer/Documents/Projekte/unbabel_challenge/fullstack-coding-challenge/hackerbabel/templates/index.html", line 10, in template
+    {% endmakro %}
+TemplateSyntaxError: Encountered unknown tag 'endmakro'. Jinja was looking for the following tags: 'endmacro'. The innermost block that needs to be closed is 'macro'.
+
+(15.01.2017, 21:05:44)     root hackernews_client get_top_stories    INFO: Received 10 Hacker News stories in 0.0 minute(s) 8.3 second(s) with ids:
+13406119, 13399095, 13404840, 13405772, 13404292, 13405380, 13405491, 13402866, 13404912, 13405121
+
+(15.01.2017, 21:05:48) __main__       runserver    start_app    INFO: Set up app & logger.
+(15.01.2017, 21:05:49) __main__       runserver init_clients    INFO: Initiated 3 clients: MongoDBClient, UnbabelClient, HackerNewsClient.
+(15.01.2017, 21:05:49) __main__       runserver start_daemon    INFO: Started daemon with time interval 600.
+(15.01.2017, 21:05:49) __main__       runserver    start_app    INFO: App is running!
+(15.01.2017, 21:05:57)     root hackernews_client get_top_stories    INFO: Received 10 Hacker News stories in 0.0 minute(s) 8.5 second(s) with ids:
+13406119, 13399095, 13404840, 13405772, 13404292, 13405380, 13405491, 13402866, 13404912, 13405121
+

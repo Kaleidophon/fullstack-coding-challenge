@@ -9,6 +9,7 @@ import logging
 
 # EXT
 from flask import Flask
+from flask_bootstrap import Bootstrap
 
 # PROJECT
 from hackerbabel.clients.mongodb_client import MongoDBClient
@@ -58,6 +59,7 @@ def start_app():
 
     # 6 Register blueprints
     register_blueprints(app)
+    Bootstrap(app)
 
     # 7 Run app
     LOGGER.info("App is running!")

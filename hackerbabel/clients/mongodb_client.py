@@ -5,7 +5,7 @@ Client used to access MongoDB
 """
 
 # EXT
-from pymongo import MongoClient
+from pymongo import MongoClient, DESCENDING
 
 # PROJECT
 from hackerbabel.clients.client import Client
@@ -25,6 +25,7 @@ class MongoDBClient(Client):
         port = init_kwargs.get("MONGODB_PORT", 27017)
         database = init_kwargs.get("MONGODB_NAME", "")
         options = init_kwargs.get("MONGODB_OPTIONS", "")
+        cls.number_of_stories = init_kwargs.get("NUMBER_OF_STORIES", 10)
 
         credentials = ""
         if username and password:
@@ -61,6 +62,18 @@ class MongoDBClient(Client):
 
         result = collection.insert_many(documents)
         return result
+
+    @classmethod
+    @require_init
+    def get_newest_documents(cls, collection_name, limit):
+        collection = getattr(cls.db, collection_name)
+        newest_elements = [
+            document for document in
+            collection.find().sort("_id", -1).limit(limit)
+        ]
+        return newest_elements
+
+
 
 
 
