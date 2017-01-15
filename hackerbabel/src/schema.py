@@ -69,6 +69,7 @@ class ArticleSchema(Schema):
             "article_type": {"type": "string"},
             "author": {"type": "string"},
             "url": {"type": "string"},
+            "text": {"type": "string"},
             "score": {"type": "number"},
             "comments": {
                 "type": "array",
@@ -80,9 +81,8 @@ class ArticleSchema(Schema):
         },
         "required": [
             "id", "titles", "article_type", "author",
-            "date", "translation_status", "url", "score"
-        ],
-        "additionalProperties": False
+            "date", "translation_status", "score"
+        ]
     }
 
     def __init__(self):

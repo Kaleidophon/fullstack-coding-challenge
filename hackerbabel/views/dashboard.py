@@ -9,11 +9,7 @@ translation status of the news stories' headlines.
 from flask import render_template, Blueprint
 
 # CONST
-DASHBOARD = Blueprint(
-    'dashboard', __name__,
-    template_folder='../templates',
-    static_folder='../static'
-)
+DASHBOARD = Blueprint('dashboard', __name__)
 
 
 @DASHBOARD.route('/dashboard')

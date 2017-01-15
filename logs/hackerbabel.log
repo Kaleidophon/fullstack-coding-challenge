@@ -409,3 +409,2021 @@ TypeError: comment_section() takes no arguments (1 given)
 13403991, 13402422, 13402472, 13403216, 13404002, 13402528, 13403562, 13403886, 13402409, 13401762
 
 (15.01.2017, 15:58:54) werkzeug       _internal         _log    INFO: 127.0.0.1 - - [15/Jan/2017 15:58:54] "GET /2/comments HTTP/1.1" 200 -
+(15.01.2017, 16:08:59)     root hackernews_client get_top_stories    INFO: Received 10 Hacker News stories in 0.0 minute(s) 7.9 second(s) with ids:
+13403991, 13402422, 13404292, 13402472, 13403216, 13404002, 13402528, 13403562, 13403886, 13402409
+
+(15.01.2017, 16:09:06) __main__       runserver    start_app    INFO: Set up app & logger.
+(15.01.2017, 16:09:06) __main__       runserver init_clients    INFO: Initiated 3 clients: MongoDBClient, UnbabelClient, HackerNewsClient.
+(15.01.2017, 16:09:07) __main__       runserver start_daemon    INFO: Started daemon with time interval 600.
+(15.01.2017, 16:09:07) __main__       runserver    start_app    INFO: App is running!
+(15.01.2017, 16:09:07) werkzeug       _internal         _log    INFO:  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+(15.01.2017, 16:09:08) werkzeug       _internal         _log    INFO: 127.0.0.1 - - [15/Jan/2017 16:09:08] "GET / HTTP/1.1" 200 -
+(15.01.2017, 16:09:08) werkzeug       _internal         _log    INFO: 127.0.0.1 - - [15/Jan/2017 16:09:08] "GET /y18.gif HTTP/1.1" 404 -
+(15.01.2017, 16:09:16)     root hackernews_client get_top_stories    INFO: Received 10 Hacker News stories in 0.0 minute(s) 10.0 second(s) with ids:
+13403991, 13402422, 13404292, 13402472, 13403216, 13404002, 13402528, 13403562, 13403886, 13402409
+
+(15.01.2017, 16:10:39) __main__       runserver    start_app    INFO: Set up app & logger.
+(15.01.2017, 16:10:39) __main__       runserver init_clients    INFO: Initiated 3 clients: MongoDBClient, UnbabelClient, HackerNewsClient.
+(15.01.2017, 16:10:39) __main__       runserver start_daemon    INFO: Started daemon with time interval 600.
+(15.01.2017, 16:10:39) __main__       runserver    start_app    INFO: App is running!
+(15.01.2017, 16:10:39) werkzeug       _internal         _log    INFO:  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+(15.01.2017, 16:10:47)     root hackernews_client get_top_stories    INFO: Received 10 Hacker News stories in 0.0 minute(s) 8.0 second(s) with ids:
+13403991, 13402422, 13404292, 13402472, 13403216, 13404002, 13402528, 13403562, 13403886, 13402409
+
+(15.01.2017, 16:10:49) werkzeug       _internal         _log    INFO: 127.0.0.1 - - [15/Jan/2017 16:10:49] "GET / HTTP/1.1" 200 -
+(15.01.2017, 16:10:49) werkzeug       _internal         _log    INFO: 127.0.0.1 - - [15/Jan/2017 16:10:49] "GET /y18.gif HTTP/1.1" 404 -
+(15.01.2017, 16:11:10) __main__       runserver    start_app    INFO: Set up app & logger.
+(15.01.2017, 16:11:10) __main__       runserver init_clients    INFO: Initiated 3 clients: MongoDBClient, UnbabelClient, HackerNewsClient.
+(15.01.2017, 16:11:10) __main__       runserver start_daemon    INFO: Started daemon with time interval 600.
+(15.01.2017, 16:11:10) __main__       runserver    start_app    INFO: App is running!
+(15.01.2017, 16:11:10) werkzeug       _internal         _log    INFO:  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+(15.01.2017, 16:11:16) werkzeug       _internal         _log    INFO: 127.0.0.1 - - [15/Jan/2017 16:11:16] "GET / HTTP/1.1" 200 -
+(15.01.2017, 16:11:16) werkzeug       _internal         _log    INFO: 127.0.0.1 - - [15/Jan/2017 16:11:16] "GET /y18.gif HTTP/1.1" 404 -
+(15.01.2017, 16:11:17) werkzeug       _internal         _log    INFO: 127.0.0.1 - - [15/Jan/2017 16:11:17] "GET / HTTP/1.1" 200 -
+(15.01.2017, 16:11:17) werkzeug       _internal         _log    INFO: 127.0.0.1 - - [15/Jan/2017 16:11:17] "GET /y18.gif HTTP/1.1" 404 -
+(15.01.2017, 16:11:19)     root hackernews_client get_top_stories    INFO: Received 10 Hacker News stories in 0.0 minute(s) 8.6 second(s) with ids:
+13403991, 13404496, 13402422, 13404292, 13402472, 13403216, 13404002, 13402528, 13403562, 13403886
+
+(15.01.2017, 16:11:27) werkzeug       _internal         _log    INFO: 127.0.0.1 - - [15/Jan/2017 16:11:27] "GET / HTTP/1.1" 200 -
+(15.01.2017, 16:11:27) werkzeug       _internal         _log    INFO: 127.0.0.1 - - [15/Jan/2017 16:11:27] "GET /y18.gif HTTP/1.1" 404 -
+(15.01.2017, 16:14:09) __main__       runserver    start_app    INFO: Set up app & logger.
+(15.01.2017, 16:14:09) __main__       runserver init_clients    INFO: Initiated 3 clients: MongoDBClient, UnbabelClient, HackerNewsClient.
+(15.01.2017, 16:14:09) __main__       runserver start_daemon    INFO: Started daemon with time interval 600.
+(15.01.2017, 16:14:09) __main__       runserver    start_app    INFO: App is running!
+(15.01.2017, 16:14:09) werkzeug       _internal         _log    INFO:  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+(15.01.2017, 16:14:12) werkzeug       _internal         _log    INFO: 127.0.0.1 - - [15/Jan/2017 16:14:12] "GET / HTTP/1.1" 200 -
+(15.01.2017, 16:14:19)     root hackernews_client get_top_stories    INFO: Received 10 Hacker News stories in 0.0 minute(s) 10.4 second(s) with ids:
+13403991, 13404496, 13402422, 13402472, 13404292, 13403216, 13404002, 13402528, 13403562, 13403886
+
+(15.01.2017, 16:15:15) __main__       runserver    start_app    INFO: Set up app & logger.
+(15.01.2017, 16:15:15) __main__       runserver init_clients    INFO: Initiated 3 clients: MongoDBClient, UnbabelClient, HackerNewsClient.
+(15.01.2017, 16:15:15) __main__       runserver start_daemon    INFO: Started daemon with time interval 600.
+(15.01.2017, 16:15:15) __main__       runserver    start_app    INFO: App is running!
+(15.01.2017, 16:15:15) werkzeug       _internal         _log    INFO:  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+(15.01.2017, 16:15:17) werkzeug       _internal         _log    INFO: 127.0.0.1 - - [15/Jan/2017 16:15:17] "GET / HTTP/1.1" 200 -
+(15.01.2017, 16:15:23)     root hackernews_client get_top_stories    INFO: Received 10 Hacker News stories in 0.0 minute(s) 8.0 second(s) with ids:
+13403991, 13404496, 13402422, 13402472, 13404292, 13403216, 13404002, 13402528, 13403562, 13403886
+
+(15.01.2017, 16:24:07) __main__       runserver    start_app    INFO: Set up app & logger.
+(15.01.2017, 16:24:07) __main__       runserver init_clients    INFO: Initiated 3 clients: MongoDBClient, UnbabelClient, HackerNewsClient.
+(15.01.2017, 16:24:07) __main__       runserver start_daemon    INFO: Started daemon with time interval 600.
+(15.01.2017, 16:24:07) __main__       runserver    start_app    INFO: App is running!
+(15.01.2017, 16:24:07) werkzeug       _internal         _log    INFO:  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+(15.01.2017, 16:24:08) werkzeug       _internal         _log    INFO: 127.0.0.1 - - [15/Jan/2017 16:24:08] "GET / HTTP/1.1" 200 -
+(15.01.2017, 16:24:09) werkzeug       _internal         _log    INFO: 127.0.0.1 - - [15/Jan/2017 16:24:09] "GET / HTTP/1.1" 200 -
+(15.01.2017, 16:24:16)     root hackernews_client get_top_stories    INFO: Received 10 Hacker News stories in 0.0 minute(s) 9.7 second(s) with ids:
+13404292, 13403991, 13404496, 13402422, 13402472, 13404002, 13403216, 13402528, 13403562, 13404372
+
+(15.01.2017, 16:25:28) __main__       runserver    start_app    INFO: Set up app & logger.
+(15.01.2017, 16:25:28) __main__       runserver init_clients    INFO: Initiated 3 clients: MongoDBClient, UnbabelClient, HackerNewsClient.
+(15.01.2017, 16:25:28) __main__       runserver start_daemon    INFO: Started daemon with time interval 600.
+(15.01.2017, 16:25:28) __main__       runserver    start_app    INFO: App is running!
+(15.01.2017, 16:25:28) werkzeug       _internal         _log    INFO:  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+(15.01.2017, 16:25:29) werkzeug       _internal         _log    INFO: 127.0.0.1 - - [15/Jan/2017 16:25:29] "GET / HTTP/1.1" 200 -
+(15.01.2017, 16:25:37)     root hackernews_client get_top_stories    INFO: Received 10 Hacker News stories in 0.0 minute(s) 9.1 second(s) with ids:
+13404496, 13403991, 13404292, 13402422, 13402472, 13404002, 13403216, 13402528, 13403562, 13404372
+
+(15.01.2017, 16:25:48) werkzeug       _internal         _log    INFO: 127.0.0.1 - - [15/Jan/2017 16:25:48] "GET /start HTTP/1.1" 200 -
+(15.01.2017, 16:26:03) werkzeug       _internal         _log    INFO: 127.0.0.1 - - [15/Jan/2017 16:26:03] "GET /start HTTP/1.1" 200 -
+(15.01.2017, 16:26:11) werkzeug       _internal         _log    INFO: 127.0.0.1 - - [15/Jan/2017 16:26:11] "GET /dashboard HTTP/1.1" 200 -
+(15.01.2017, 16:28:01) __main__       runserver    start_app    INFO: Set up app & logger.
+(15.01.2017, 16:28:01) __main__       runserver init_clients    INFO: Initiated 3 clients: MongoDBClient, UnbabelClient, HackerNewsClient.
+(15.01.2017, 16:28:01) __main__       runserver start_daemon    INFO: Started daemon with time interval 600.
+(15.01.2017, 16:28:01) __main__       runserver    start_app    INFO: App is running!
+(15.01.2017, 16:28:01) werkzeug       _internal         _log    INFO:  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+(15.01.2017, 16:28:04) hackerbabel.src.error_handlers  error_handlers handle_any_exception   ERROR: INTERNAL SERVER ERROR
+Time: 2017-01-15T16:28:04.537507
+Error type: <class 'werkzeug.routing.BuildError'>
+Error message: 
+Traceback: 
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/dennisulmer/Documents/Projekte/unbabel_challenge/fullstack-coding-challenge/hackerbabel/views/dashboard.py", line 24, in dashboard
+    return render_template("dashboard.html")
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/flask/templating.py", line 128, in render_template
+    context, ctx.app)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/flask/templating.py", line 110, in _render
+    rv = template.render(context)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/jinja2/environment.py", line 989, in render
+    return self.environment.handle_exception(exc_info, True)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/jinja2/environment.py", line 754, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/dennisulmer/Documents/Projekte/unbabel_challenge/fullstack-coding-challenge/hackerbabel/views/../templates/dashboard.html", line 2, in top-level template code
+    {% extends "base.html" %}
+  File "/Users/dennisulmer/Documents/Projekte/unbabel_challenge/fullstack-coding-challenge/hackerbabel/views/../templates/base.html", line 10, in top-level template code
+    <a href="{{ url_for('index') }}"
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/flask/helpers.py", line 312, in url_for
+    return appctx.app.handle_url_build_error(error, endpoint, values)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/flask/app.py", line 1641, in handle_url_build_error
+    reraise(exc_type, exc_value, tb)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/flask/helpers.py", line 305, in url_for
+    force_external=external)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/werkzeug/routing.py", line 1758, in build
+    raise BuildError(endpoint, values, method, self)
+BuildError: Could not build url for endpoint 'index'. Did you mean 'index.index' instead?
+
+(15.01.2017, 16:28:04) werkzeug       _internal         _log    INFO: 127.0.0.1 - - [15/Jan/2017 16:28:04] "GET /dashboard HTTP/1.1" 500 -
+(15.01.2017, 16:28:04) werkzeug       _internal         _log    INFO: 127.0.0.1 - - [15/Jan/2017 16:28:04] "GET /dashboard?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+(15.01.2017, 16:28:04) werkzeug       _internal         _log    INFO: 127.0.0.1 - - [15/Jan/2017 16:28:04] "GET /dashboard?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+(15.01.2017, 16:28:04) werkzeug       _internal         _log    INFO: 127.0.0.1 - - [15/Jan/2017 16:28:04] "GET /dashboard?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+(15.01.2017, 16:28:04) werkzeug       _internal         _log    INFO: 127.0.0.1 - - [15/Jan/2017 16:28:04] "GET /dashboard?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+(15.01.2017, 16:28:04) werkzeug       _internal         _log    INFO: 127.0.0.1 - - [15/Jan/2017 16:28:04] "GET /dashboard?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1" 200 -
+(15.01.2017, 16:28:04) werkzeug       _internal         _log    INFO: 127.0.0.1 - - [15/Jan/2017 16:28:04] "GET /dashboard?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+(15.01.2017, 16:28:06) hackerbabel.src.error_handlers  error_handlers handle_any_exception   ERROR: INTERNAL SERVER ERROR
+Time: 2017-01-15T16:28:06.776966
+Error type: <class 'werkzeug.routing.BuildError'>
+Error message: 
+Traceback: 
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/dennisulmer/Documents/Projekte/unbabel_challenge/fullstack-coding-challenge/hackerbabel/views/dashboard.py", line 24, in dashboard
+    return render_template("dashboard.html")
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/flask/templating.py", line 128, in render_template
+    context, ctx.app)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/flask/templating.py", line 110, in _render
+    rv = template.render(context)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/jinja2/environment.py", line 989, in render
+    return self.environment.handle_exception(exc_info, True)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/jinja2/environment.py", line 754, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/dennisulmer/Documents/Projekte/unbabel_challenge/fullstack-coding-challenge/hackerbabel/views/../templates/dashboard.html", line 2, in top-level template code
+    {% extends "base.html" %}
+  File "/Users/dennisulmer/Documents/Projekte/unbabel_challenge/fullstack-coding-challenge/hackerbabel/views/../templates/base.html", line 10, in top-level template code
+    <a href="{{ url_for('index') }}"
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/flask/helpers.py", line 312, in url_for
+    return appctx.app.handle_url_build_error(error, endpoint, values)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/flask/app.py", line 1641, in handle_url_build_error
+    reraise(exc_type, exc_value, tb)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/flask/helpers.py", line 305, in url_for
+    force_external=external)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/werkzeug/routing.py", line 1758, in build
+    raise BuildError(endpoint, values, method, self)
+BuildError: Could not build url for endpoint 'index'. Did you mean 'index.index' instead?
+
+(15.01.2017, 16:28:06) werkzeug       _internal         _log    INFO: 127.0.0.1 - - [15/Jan/2017 16:28:06] "GET /dashboard HTTP/1.1" 500 -
+(15.01.2017, 16:28:06) werkzeug       _internal         _log    INFO: 127.0.0.1 - - [15/Jan/2017 16:28:06] "GET /dashboard?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+(15.01.2017, 16:28:06) werkzeug       _internal         _log    INFO: 127.0.0.1 - - [15/Jan/2017 16:28:06] "GET /dashboard?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+(15.01.2017, 16:28:06) werkzeug       _internal         _log    INFO: 127.0.0.1 - - [15/Jan/2017 16:28:06] "GET /dashboard?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+(15.01.2017, 16:28:06) werkzeug       _internal         _log    INFO: 127.0.0.1 - - [15/Jan/2017 16:28:06] "GET /dashboard?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+(15.01.2017, 16:28:07) werkzeug       _internal         _log    INFO: 127.0.0.1 - - [15/Jan/2017 16:28:07] "GET /dashboard?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+(15.01.2017, 16:28:08) hackerbabel.src.error_handlers  error_handlers handle_any_exception   ERROR: INTERNAL SERVER ERROR
+Time: 2017-01-15T16:28:08.190917
+Error type: <class 'werkzeug.routing.BuildError'>
+Error message: 
+Traceback: 
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/dennisulmer/Documents/Projekte/unbabel_challenge/fullstack-coding-challenge/hackerbabel/views/dashboard.py", line 24, in dashboard
+    return render_template("dashboard.html")
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/flask/templating.py", line 128, in render_template
+    context, ctx.app)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/flask/templating.py", line 110, in _render
+    rv = template.render(context)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/jinja2/environment.py", line 989, in render
+    return self.environment.handle_exception(exc_info, True)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/jinja2/environment.py", line 754, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/dennisulmer/Documents/Projekte/unbabel_challenge/fullstack-coding-challenge/hackerbabel/views/../templates/dashboard.html", line 2, in top-level template code
+    {% extends "base.html" %}
+  File "/Users/dennisulmer/Documents/Projekte/unbabel_challenge/fullstack-coding-challenge/hackerbabel/views/../templates/base.html", line 10, in top-level template code
+    <a href="{{ url_for('index') }}"
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/flask/helpers.py", line 312, in url_for
+    return appctx.app.handle_url_build_error(error, endpoint, values)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/flask/app.py", line 1641, in handle_url_build_error
+    reraise(exc_type, exc_value, tb)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/flask/helpers.py", line 305, in url_for
+    force_external=external)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/werkzeug/routing.py", line 1758, in build
+    raise BuildError(endpoint, values, method, self)
+BuildError: Could not build url for endpoint 'index'. Did you mean 'index.index' instead?
+
+(15.01.2017, 16:28:08) werkzeug       _internal         _log    INFO: 127.0.0.1 - - [15/Jan/2017 16:28:08] "GET /dashboard HTTP/1.1" 500 -
+(15.01.2017, 16:28:08) werkzeug       _internal         _log    INFO: 127.0.0.1 - - [15/Jan/2017 16:28:08] "GET /dashboard?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+(15.01.2017, 16:28:08) werkzeug       _internal         _log    INFO: 127.0.0.1 - - [15/Jan/2017 16:28:08] "GET /dashboard?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+(15.01.2017, 16:28:08) werkzeug       _internal         _log    INFO: 127.0.0.1 - - [15/Jan/2017 16:28:08] "GET /dashboard?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+(15.01.2017, 16:28:08) werkzeug       _internal         _log    INFO: 127.0.0.1 - - [15/Jan/2017 16:28:08] "GET /dashboard?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+(15.01.2017, 16:28:08) werkzeug       _internal         _log    INFO: 127.0.0.1 - - [15/Jan/2017 16:28:08] "GET /dashboard?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+(15.01.2017, 16:28:09)     root hackernews_client get_top_stories    INFO: Received 10 Hacker News stories in 0.0 minute(s) 8.6 second(s) with ids:
+13404496, 13403991, 13404292, 13402422, 13402472, 13404002, 13403216, 13402528, 13404372, 13403562
+
+(15.01.2017, 16:28:12) hackerbabel.src.error_handlers  error_handlers handle_any_exception   ERROR: INTERNAL SERVER ERROR
+Time: 2017-01-15T16:28:12.921651
+Error type: <class 'werkzeug.routing.BuildError'>
+Error message: 
+Traceback: 
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/dennisulmer/Documents/Projekte/unbabel_challenge/fullstack-coding-challenge/hackerbabel/views/index.py", line 25, in index
+    return render_template("index.html")
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/flask/templating.py", line 128, in render_template
+    context, ctx.app)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/flask/templating.py", line 110, in _render
+    rv = template.render(context)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/jinja2/environment.py", line 989, in render
+    return self.environment.handle_exception(exc_info, True)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/jinja2/environment.py", line 754, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/dennisulmer/Documents/Projekte/unbabel_challenge/fullstack-coding-challenge/hackerbabel/views/../templates/index.html", line 3, in top-level template code
+    {% extends "base.html" %}
+  File "/Users/dennisulmer/Documents/Projekte/unbabel_challenge/fullstack-coding-challenge/hackerbabel/views/../templates/base.html", line 10, in top-level template code
+    <a href="{{ url_for('index') }}"
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/flask/helpers.py", line 312, in url_for
+    return appctx.app.handle_url_build_error(error, endpoint, values)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/flask/app.py", line 1641, in handle_url_build_error
+    reraise(exc_type, exc_value, tb)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/flask/helpers.py", line 305, in url_for
+    force_external=external)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/werkzeug/routing.py", line 1758, in build
+    raise BuildError(endpoint, values, method, self)
+BuildError: Could not build url for endpoint 'index'. Did you mean 'index.index' instead?
+
+(15.01.2017, 16:28:12) werkzeug       _internal         _log    INFO: 127.0.0.1 - - [15/Jan/2017 16:28:12] "GET /start HTTP/1.1" 500 -
+(15.01.2017, 16:28:12) werkzeug       _internal         _log    INFO: 127.0.0.1 - - [15/Jan/2017 16:28:12] "GET /start?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+(15.01.2017, 16:28:12) werkzeug       _internal         _log    INFO: 127.0.0.1 - - [15/Jan/2017 16:28:12] "GET /start?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+(15.01.2017, 16:28:12) werkzeug       _internal         _log    INFO: 127.0.0.1 - - [15/Jan/2017 16:28:12] "GET /start?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+(15.01.2017, 16:28:13) werkzeug       _internal         _log    INFO: 127.0.0.1 - - [15/Jan/2017 16:28:13] "GET /start?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+(15.01.2017, 16:28:13) werkzeug       _internal         _log    INFO: 127.0.0.1 - - [15/Jan/2017 16:28:13] "GET /start?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1" 200 -
+(15.01.2017, 16:28:13) werkzeug       _internal         _log    INFO: 127.0.0.1 - - [15/Jan/2017 16:28:13] "GET /start?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+(15.01.2017, 16:28:31) __main__       runserver    start_app    INFO: Set up app & logger.
+(15.01.2017, 16:28:31) __main__       runserver init_clients    INFO: Initiated 3 clients: MongoDBClient, UnbabelClient, HackerNewsClient.
+(15.01.2017, 16:28:31) __main__       runserver start_daemon    INFO: Started daemon with time interval 600.
+(15.01.2017, 16:28:31) __main__       runserver    start_app    INFO: App is running!
+(15.01.2017, 16:28:31) werkzeug       _internal         _log    INFO:  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+(15.01.2017, 16:28:35) hackerbabel.src.error_handlers  error_handlers handle_any_exception   ERROR: INTERNAL SERVER ERROR
+Time: 2017-01-15T16:28:35.717497
+Error type: <class 'werkzeug.routing.BuildError'>
+Error message: 
+Traceback: 
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/dennisulmer/Documents/Projekte/unbabel_challenge/fullstack-coding-challenge/hackerbabel/views/index.py", line 25, in index
+    return render_template("index.html")
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/flask/templating.py", line 128, in render_template
+    context, ctx.app)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/flask/templating.py", line 110, in _render
+    rv = template.render(context)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/jinja2/environment.py", line 989, in render
+    return self.environment.handle_exception(exc_info, True)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/jinja2/environment.py", line 754, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/dennisulmer/Documents/Projekte/unbabel_challenge/fullstack-coding-challenge/hackerbabel/views/../templates/index.html", line 3, in top-level template code
+    {% extends "base.html" %}
+  File "/Users/dennisulmer/Documents/Projekte/unbabel_challenge/fullstack-coding-challenge/hackerbabel/views/../templates/base.html", line 10, in top-level template code
+    <a href="{{ url_for('start') }}"
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/flask/helpers.py", line 312, in url_for
+    return appctx.app.handle_url_build_error(error, endpoint, values)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/flask/app.py", line 1641, in handle_url_build_error
+    reraise(exc_type, exc_value, tb)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/flask/helpers.py", line 305, in url_for
+    force_external=external)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/werkzeug/routing.py", line 1758, in build
+    raise BuildError(endpoint, values, method, self)
+BuildError: Could not build url for endpoint 'start'. Did you mean 'static' instead?
+
+(15.01.2017, 16:28:35) werkzeug       _internal         _log    INFO: 127.0.0.1 - - [15/Jan/2017 16:28:35] "GET /start HTTP/1.1" 500 -
+(15.01.2017, 16:28:35) werkzeug       _internal         _log    INFO: 127.0.0.1 - - [15/Jan/2017 16:28:35] "GET /start?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+(15.01.2017, 16:28:35) werkzeug       _internal         _log    INFO: 127.0.0.1 - - [15/Jan/2017 16:28:35] "GET /start?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+(15.01.2017, 16:28:35) werkzeug       _internal         _log    INFO: 127.0.0.1 - - [15/Jan/2017 16:28:35] "GET /start?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+(15.01.2017, 16:28:35) werkzeug       _internal         _log    INFO: 127.0.0.1 - - [15/Jan/2017 16:28:35] "GET /start?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+(15.01.2017, 16:28:35) werkzeug       _internal         _log    INFO: 127.0.0.1 - - [15/Jan/2017 16:28:35] "GET /start?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+(15.01.2017, 16:28:36) hackerbabel.src.error_handlers  error_handlers handle_any_exception   ERROR: INTERNAL SERVER ERROR
+Time: 2017-01-15T16:28:36.785444
+Error type: <class 'werkzeug.routing.BuildError'>
+Error message: 
+Traceback: 
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/dennisulmer/Documents/Projekte/unbabel_challenge/fullstack-coding-challenge/hackerbabel/views/index.py", line 25, in index
+    return render_template("index.html")
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/flask/templating.py", line 128, in render_template
+    context, ctx.app)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/flask/templating.py", line 110, in _render
+    rv = template.render(context)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/jinja2/environment.py", line 989, in render
+    return self.environment.handle_exception(exc_info, True)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/jinja2/environment.py", line 754, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/dennisulmer/Documents/Projekte/unbabel_challenge/fullstack-coding-challenge/hackerbabel/views/../templates/index.html", line 3, in top-level template code
+    {% extends "base.html" %}
+  File "/Users/dennisulmer/Documents/Projekte/unbabel_challenge/fullstack-coding-challenge/hackerbabel/views/../templates/base.html", line 10, in top-level template code
+    <a href="{{ url_for('start') }}"
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/flask/helpers.py", line 312, in url_for
+    return appctx.app.handle_url_build_error(error, endpoint, values)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/flask/app.py", line 1641, in handle_url_build_error
+    reraise(exc_type, exc_value, tb)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/flask/helpers.py", line 305, in url_for
+    force_external=external)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/werkzeug/routing.py", line 1758, in build
+    raise BuildError(endpoint, values, method, self)
+BuildError: Could not build url for endpoint 'start'. Did you mean 'static' instead?
+
+(15.01.2017, 16:28:36) werkzeug       _internal         _log    INFO: 127.0.0.1 - - [15/Jan/2017 16:28:36] "GET /start HTTP/1.1" 500 -
+(15.01.2017, 16:28:36) werkzeug       _internal         _log    INFO: 127.0.0.1 - - [15/Jan/2017 16:28:36] "GET /start?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+(15.01.2017, 16:28:36) werkzeug       _internal         _log    INFO: 127.0.0.1 - - [15/Jan/2017 16:28:36] "GET /start?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+(15.01.2017, 16:28:36) werkzeug       _internal         _log    INFO: 127.0.0.1 - - [15/Jan/2017 16:28:36] "GET /start?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+(15.01.2017, 16:28:36) werkzeug       _internal         _log    INFO: 127.0.0.1 - - [15/Jan/2017 16:28:36] "GET /start?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+(15.01.2017, 16:28:36) werkzeug       _internal         _log    INFO: 127.0.0.1 - - [15/Jan/2017 16:28:36] "GET /start?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+(15.01.2017, 16:28:39)     root hackernews_client get_top_stories    INFO: Received 10 Hacker News stories in 0.0 minute(s) 7.7 second(s) with ids:
+13404496, 13404292, 13403991, 13402422, 13402472, 13404002, 13403216, 13402528, 13404372, 13403562
+
+(15.01.2017, 16:29:44) __main__       runserver    start_app    INFO: Set up app & logger.
+(15.01.2017, 16:29:44) __main__       runserver init_clients    INFO: Initiated 3 clients: MongoDBClient, UnbabelClient, HackerNewsClient.
+(15.01.2017, 16:29:44) __main__       runserver start_daemon    INFO: Started daemon with time interval 600.
+(15.01.2017, 16:29:44) __main__       runserver    start_app    INFO: App is running!
+(15.01.2017, 16:29:44) werkzeug       _internal         _log    INFO:  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+(15.01.2017, 16:29:50) hackerbabel.src.error_handlers  error_handlers handle_any_exception   ERROR: INTERNAL SERVER ERROR
+Time: 2017-01-15T16:29:50.721419
+Error type: <class 'werkzeug.routing.BuildError'>
+Error message: 
+Traceback: 
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/dennisulmer/Documents/Projekte/unbabel_challenge/fullstack-coding-challenge/hackerbabel/views/index.py", line 25, in index
+    return render_template("index.html")
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/flask/templating.py", line 128, in render_template
+    context, ctx.app)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/flask/templating.py", line 110, in _render
+    rv = template.render(context)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/jinja2/environment.py", line 989, in render
+    return self.environment.handle_exception(exc_info, True)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/jinja2/environment.py", line 754, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/dennisulmer/Documents/Projekte/unbabel_challenge/fullstack-coding-challenge/hackerbabel/views/../templates/index.html", line 3, in top-level template code
+    {% extends "base.html" %}
+  File "/Users/dennisulmer/Documents/Projekte/unbabel_challenge/fullstack-coding-challenge/hackerbabel/views/../templates/base.html", line 10, in top-level template code
+    <a href="{{ url_for('.INDEX') }}"
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/flask/helpers.py", line 312, in url_for
+    return appctx.app.handle_url_build_error(error, endpoint, values)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/flask/app.py", line 1641, in handle_url_build_error
+    reraise(exc_type, exc_value, tb)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/flask/helpers.py", line 305, in url_for
+    force_external=external)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/werkzeug/routing.py", line 1758, in build
+    raise BuildError(endpoint, values, method, self)
+BuildError: Could not build url for endpoint 'index.INDEX'. Did you mean 'index.index' instead?
+
+(15.01.2017, 16:29:50) werkzeug       _internal         _log    INFO: 127.0.0.1 - - [15/Jan/2017 16:29:50] "GET /start HTTP/1.1" 500 -
+(15.01.2017, 16:29:50) werkzeug       _internal         _log    INFO: 127.0.0.1 - - [15/Jan/2017 16:29:50] "GET /start?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+(15.01.2017, 16:29:50) werkzeug       _internal         _log    INFO: 127.0.0.1 - - [15/Jan/2017 16:29:50] "GET /start?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+(15.01.2017, 16:29:50) werkzeug       _internal         _log    INFO: 127.0.0.1 - - [15/Jan/2017 16:29:50] "GET /start?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+(15.01.2017, 16:29:50) werkzeug       _internal         _log    INFO: 127.0.0.1 - - [15/Jan/2017 16:29:50] "GET /start?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+(15.01.2017, 16:29:51) werkzeug       _internal         _log    INFO: 127.0.0.1 - - [15/Jan/2017 16:29:51] "GET /start?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+(15.01.2017, 16:29:52) hackerbabel.src.error_handlers  error_handlers handle_any_exception   ERROR: INTERNAL SERVER ERROR
+Time: 2017-01-15T16:29:52.213705
+Error type: <class 'werkzeug.routing.BuildError'>
+Error message: 
+Traceback: 
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/dennisulmer/Documents/Projekte/unbabel_challenge/fullstack-coding-challenge/hackerbabel/views/index.py", line 25, in index
+    return render_template("index.html")
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/flask/templating.py", line 128, in render_template
+    context, ctx.app)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/flask/templating.py", line 110, in _render
+    rv = template.render(context)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/jinja2/environment.py", line 989, in render
+    return self.environment.handle_exception(exc_info, True)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/jinja2/environment.py", line 754, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/dennisulmer/Documents/Projekte/unbabel_challenge/fullstack-coding-challenge/hackerbabel/views/../templates/index.html", line 3, in top-level template code
+    {% extends "base.html" %}
+  File "/Users/dennisulmer/Documents/Projekte/unbabel_challenge/fullstack-coding-challenge/hackerbabel/views/../templates/base.html", line 10, in top-level template code
+    <a href="{{ url_for('.INDEX') }}"
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/flask/helpers.py", line 312, in url_for
+    return appctx.app.handle_url_build_error(error, endpoint, values)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/flask/app.py", line 1641, in handle_url_build_error
+    reraise(exc_type, exc_value, tb)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/flask/helpers.py", line 305, in url_for
+    force_external=external)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/werkzeug/routing.py", line 1758, in build
+    raise BuildError(endpoint, values, method, self)
+BuildError: Could not build url for endpoint 'index.INDEX'. Did you mean 'index.index' instead?
+
+(15.01.2017, 16:29:52) werkzeug       _internal         _log    INFO: 127.0.0.1 - - [15/Jan/2017 16:29:52] "GET /start HTTP/1.1" 500 -
+(15.01.2017, 16:29:52) werkzeug       _internal         _log    INFO: 127.0.0.1 - - [15/Jan/2017 16:29:52] "GET /start?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+(15.01.2017, 16:29:52) werkzeug       _internal         _log    INFO: 127.0.0.1 - - [15/Jan/2017 16:29:52] "GET /start?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+(15.01.2017, 16:29:52) werkzeug       _internal         _log    INFO: 127.0.0.1 - - [15/Jan/2017 16:29:52] "GET /start?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+(15.01.2017, 16:29:52) werkzeug       _internal         _log    INFO: 127.0.0.1 - - [15/Jan/2017 16:29:52] "GET /start?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+(15.01.2017, 16:29:52) werkzeug       _internal         _log    INFO: 127.0.0.1 - - [15/Jan/2017 16:29:52] "GET /start?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+(15.01.2017, 16:29:52)     root hackernews_client get_top_stories    INFO: Received 10 Hacker News stories in 0.0 minute(s) 8.8 second(s) with ids:
+13404496, 13404292, 13403991, 13402422, 13402472, 13404002, 13403216, 13402528, 13404372, 13403562
+
+(15.01.2017, 16:31:16) __main__       runserver    start_app    INFO: Set up app & logger.
+(15.01.2017, 16:31:16) __main__       runserver init_clients    INFO: Initiated 3 clients: MongoDBClient, UnbabelClient, HackerNewsClient.
+(15.01.2017, 16:31:16) __main__       runserver start_daemon    INFO: Started daemon with time interval 600.
+(15.01.2017, 16:31:16) __main__       runserver    start_app    INFO: App is running!
+(15.01.2017, 16:31:17) werkzeug       _internal         _log    INFO:  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+(15.01.2017, 16:31:17) hackerbabel.src.error_handlers  error_handlers handle_any_exception   ERROR: INTERNAL SERVER ERROR
+Time: 2017-01-15T16:31:17.588514
+Error type: <class 'werkzeug.routing.BuildError'>
+Error message: 
+Traceback: 
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/dennisulmer/Documents/Projekte/unbabel_challenge/fullstack-coding-challenge/hackerbabel/views/index.py", line 25, in index
+    return render_template("index.html")
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/flask/templating.py", line 128, in render_template
+    context, ctx.app)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/flask/templating.py", line 110, in _render
+    rv = template.render(context)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/jinja2/environment.py", line 989, in render
+    return self.environment.handle_exception(exc_info, True)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/jinja2/environment.py", line 754, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/dennisulmer/Documents/Projekte/unbabel_challenge/fullstack-coding-challenge/hackerbabel/views/../templates/index.html", line 3, in top-level template code
+    {% extends "base.html" %}
+  File "/Users/dennisulmer/Documents/Projekte/unbabel_challenge/fullstack-coding-challenge/hackerbabel/views/../templates/base.html", line 12, in top-level template code
+    <a href="{{ url_for('.dashboard') }}"
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/flask/helpers.py", line 312, in url_for
+    return appctx.app.handle_url_build_error(error, endpoint, values)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/flask/app.py", line 1641, in handle_url_build_error
+    reraise(exc_type, exc_value, tb)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/flask/helpers.py", line 305, in url_for
+    force_external=external)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/werkzeug/routing.py", line 1758, in build
+    raise BuildError(endpoint, values, method, self)
+BuildError: Could not build url for endpoint 'index.dashboard'. Did you mean 'dashboard.dashboard' instead?
+
+(15.01.2017, 16:31:17) werkzeug       _internal         _log    INFO: 127.0.0.1 - - [15/Jan/2017 16:31:17] "GET /start HTTP/1.1" 500 -
+(15.01.2017, 16:31:17) werkzeug       _internal         _log    INFO: 127.0.0.1 - - [15/Jan/2017 16:31:17] "GET /start?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+(15.01.2017, 16:31:17) werkzeug       _internal         _log    INFO: 127.0.0.1 - - [15/Jan/2017 16:31:17] "GET /start?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+(15.01.2017, 16:31:17) werkzeug       _internal         _log    INFO: 127.0.0.1 - - [15/Jan/2017 16:31:17] "GET /start?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+(15.01.2017, 16:31:17) werkzeug       _internal         _log    INFO: 127.0.0.1 - - [15/Jan/2017 16:31:17] "GET /start?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+(15.01.2017, 16:31:17) werkzeug       _internal         _log    INFO: 127.0.0.1 - - [15/Jan/2017 16:31:17] "GET /start?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+(15.01.2017, 16:31:19) hackerbabel.src.error_handlers  error_handlers handle_any_exception   ERROR: INTERNAL SERVER ERROR
+Time: 2017-01-15T16:31:19.412560
+Error type: <class 'werkzeug.routing.BuildError'>
+Error message: 
+Traceback: 
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/dennisulmer/Documents/Projekte/unbabel_challenge/fullstack-coding-challenge/hackerbabel/views/index.py", line 25, in index
+    return render_template("index.html")
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/flask/templating.py", line 128, in render_template
+    context, ctx.app)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/flask/templating.py", line 110, in _render
+    rv = template.render(context)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/jinja2/environment.py", line 989, in render
+    return self.environment.handle_exception(exc_info, True)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/jinja2/environment.py", line 754, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/dennisulmer/Documents/Projekte/unbabel_challenge/fullstack-coding-challenge/hackerbabel/views/../templates/index.html", line 3, in top-level template code
+    {% extends "base.html" %}
+  File "/Users/dennisulmer/Documents/Projekte/unbabel_challenge/fullstack-coding-challenge/hackerbabel/views/../templates/base.html", line 12, in top-level template code
+    <a href="{{ url_for('.dashboard') }}"
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/flask/helpers.py", line 312, in url_for
+    return appctx.app.handle_url_build_error(error, endpoint, values)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/flask/app.py", line 1641, in handle_url_build_error
+    reraise(exc_type, exc_value, tb)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/flask/helpers.py", line 305, in url_for
+    force_external=external)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/werkzeug/routing.py", line 1758, in build
+    raise BuildError(endpoint, values, method, self)
+BuildError: Could not build url for endpoint 'index.dashboard'. Did you mean 'dashboard.dashboard' instead?
+
+(15.01.2017, 16:31:19) werkzeug       _internal         _log    INFO: 127.0.0.1 - - [15/Jan/2017 16:31:19] "GET /start HTTP/1.1" 500 -
+(15.01.2017, 16:31:19) werkzeug       _internal         _log    INFO: 127.0.0.1 - - [15/Jan/2017 16:31:19] "GET /start?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+(15.01.2017, 16:31:19) werkzeug       _internal         _log    INFO: 127.0.0.1 - - [15/Jan/2017 16:31:19] "GET /start?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+(15.01.2017, 16:31:19) werkzeug       _internal         _log    INFO: 127.0.0.1 - - [15/Jan/2017 16:31:19] "GET /start?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+(15.01.2017, 16:31:19) werkzeug       _internal         _log    INFO: 127.0.0.1 - - [15/Jan/2017 16:31:19] "GET /start?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+(15.01.2017, 16:31:19) werkzeug       _internal         _log    INFO: 127.0.0.1 - - [15/Jan/2017 16:31:19] "GET /start?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+(15.01.2017, 16:31:29)     root hackernews_client get_top_stories    INFO: Received 10 Hacker News stories in 0.0 minute(s) 13.3 second(s) with ids:
+13404496, 13404292, 13403991, 13402422, 13402472, 13404002, 13403216, 13402528, 13404372, 13403562
+
+(15.01.2017, 16:34:01) __main__       runserver    start_app    INFO: Set up app & logger.
+(15.01.2017, 16:34:01) __main__       runserver init_clients    INFO: Initiated 3 clients: MongoDBClient, UnbabelClient, HackerNewsClient.
+(15.01.2017, 16:34:01) __main__       runserver start_daemon    INFO: Started daemon with time interval 600.
+(15.01.2017, 16:34:01) __main__       runserver    start_app    INFO: App is running!
+(15.01.2017, 16:34:01) werkzeug       _internal         _log    INFO:  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+(15.01.2017, 16:34:03) hackerbabel.src.error_handlers  error_handlers handle_any_exception   ERROR: INTERNAL SERVER ERROR
+Time: 2017-01-15T16:34:03.814689
+Error type: <class 'werkzeug.routing.BuildError'>
+Error message: 
+Traceback: 
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/dennisulmer/Documents/Projekte/unbabel_challenge/fullstack-coding-challenge/hackerbabel/views/index.py", line 25, in index
+    return render_template("index.html")
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/flask/templating.py", line 128, in render_template
+    context, ctx.app)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/flask/templating.py", line 110, in _render
+    rv = template.render(context)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/jinja2/environment.py", line 989, in render
+    return self.environment.handle_exception(exc_info, True)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/jinja2/environment.py", line 754, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/dennisulmer/Documents/Projekte/unbabel_challenge/fullstack-coding-challenge/hackerbabel/views/../templates/index.html", line 3, in top-level template code
+    {% extends "base.html" %}
+  File "/Users/dennisulmer/Documents/Projekte/unbabel_challenge/fullstack-coding-challenge/hackerbabel/views/../templates/base.html", line 10, in top-level template code
+    <a href="{{ url_for('INDEX.index') }}"
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/flask/helpers.py", line 312, in url_for
+    return appctx.app.handle_url_build_error(error, endpoint, values)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/flask/app.py", line 1641, in handle_url_build_error
+    reraise(exc_type, exc_value, tb)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/flask/helpers.py", line 305, in url_for
+    force_external=external)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/werkzeug/routing.py", line 1758, in build
+    raise BuildError(endpoint, values, method, self)
+BuildError: Could not build url for endpoint 'INDEX.index'. Did you mean 'index.index' instead?
+
+(15.01.2017, 16:34:03) werkzeug       _internal         _log    INFO: 127.0.0.1 - - [15/Jan/2017 16:34:03] "GET /start HTTP/1.1" 500 -
+(15.01.2017, 16:34:03) werkzeug       _internal         _log    INFO: 127.0.0.1 - - [15/Jan/2017 16:34:03] "GET /start?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+(15.01.2017, 16:34:03) werkzeug       _internal         _log    INFO: 127.0.0.1 - - [15/Jan/2017 16:34:03] "GET /start?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+(15.01.2017, 16:34:03) werkzeug       _internal         _log    INFO: 127.0.0.1 - - [15/Jan/2017 16:34:03] "GET /start?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+(15.01.2017, 16:34:03) werkzeug       _internal         _log    INFO: 127.0.0.1 - - [15/Jan/2017 16:34:03] "GET /start?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+(15.01.2017, 16:34:04) werkzeug       _internal         _log    INFO: 127.0.0.1 - - [15/Jan/2017 16:34:04] "GET /start?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+(15.01.2017, 16:34:06) hackerbabel.src.error_handlers  error_handlers handle_any_exception   ERROR: INTERNAL SERVER ERROR
+Time: 2017-01-15T16:34:06.020175
+Error type: <class 'werkzeug.routing.BuildError'>
+Error message: 
+Traceback: 
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/dennisulmer/Documents/Projekte/unbabel_challenge/fullstack-coding-challenge/hackerbabel/views/index.py", line 25, in index
+    return render_template("index.html")
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/flask/templating.py", line 128, in render_template
+    context, ctx.app)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/flask/templating.py", line 110, in _render
+    rv = template.render(context)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/jinja2/environment.py", line 989, in render
+    return self.environment.handle_exception(exc_info, True)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/jinja2/environment.py", line 754, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/dennisulmer/Documents/Projekte/unbabel_challenge/fullstack-coding-challenge/hackerbabel/views/../templates/index.html", line 3, in top-level template code
+    {% extends "base.html" %}
+  File "/Users/dennisulmer/Documents/Projekte/unbabel_challenge/fullstack-coding-challenge/hackerbabel/views/../templates/base.html", line 10, in top-level template code
+    <a href="{{ url_for('INDEX.index') }}"
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/flask/helpers.py", line 312, in url_for
+    return appctx.app.handle_url_build_error(error, endpoint, values)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/flask/app.py", line 1641, in handle_url_build_error
+    reraise(exc_type, exc_value, tb)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/flask/helpers.py", line 305, in url_for
+    force_external=external)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/werkzeug/routing.py", line 1758, in build
+    raise BuildError(endpoint, values, method, self)
+BuildError: Could not build url for endpoint 'INDEX.index'. Did you mean 'index.index' instead?
+
+(15.01.2017, 16:34:06) werkzeug       _internal         _log    INFO: 127.0.0.1 - - [15/Jan/2017 16:34:06] "GET /start HTTP/1.1" 500 -
+(15.01.2017, 16:34:06) werkzeug       _internal         _log    INFO: 127.0.0.1 - - [15/Jan/2017 16:34:06] "GET /start?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+(15.01.2017, 16:34:06) werkzeug       _internal         _log    INFO: 127.0.0.1 - - [15/Jan/2017 16:34:06] "GET /start?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+(15.01.2017, 16:34:06) werkzeug       _internal         _log    INFO: 127.0.0.1 - - [15/Jan/2017 16:34:06] "GET /start?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+(15.01.2017, 16:34:06) werkzeug       _internal         _log    INFO: 127.0.0.1 - - [15/Jan/2017 16:34:06] "GET /start?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+(15.01.2017, 16:34:06) werkzeug       _internal         _log    INFO: 127.0.0.1 - - [15/Jan/2017 16:34:06] "GET /start?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+(15.01.2017, 16:34:07) hackerbabel.src.error_handlers  error_handlers handle_any_exception   ERROR: INTERNAL SERVER ERROR
+Time: 2017-01-15T16:34:07.373080
+Error type: <class 'werkzeug.routing.BuildError'>
+Error message: 
+Traceback: 
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/dennisulmer/Documents/Projekte/unbabel_challenge/fullstack-coding-challenge/hackerbabel/views/index.py", line 25, in index
+    return render_template("index.html")
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/flask/templating.py", line 128, in render_template
+    context, ctx.app)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/flask/templating.py", line 110, in _render
+    rv = template.render(context)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/jinja2/environment.py", line 989, in render
+    return self.environment.handle_exception(exc_info, True)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/jinja2/environment.py", line 754, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/dennisulmer/Documents/Projekte/unbabel_challenge/fullstack-coding-challenge/hackerbabel/views/../templates/index.html", line 3, in top-level template code
+    {% extends "base.html" %}
+  File "/Users/dennisulmer/Documents/Projekte/unbabel_challenge/fullstack-coding-challenge/hackerbabel/views/../templates/base.html", line 10, in top-level template code
+    <a href="{{ url_for('INDEX.index') }}"
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/flask/helpers.py", line 312, in url_for
+    return appctx.app.handle_url_build_error(error, endpoint, values)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/flask/app.py", line 1641, in handle_url_build_error
+    reraise(exc_type, exc_value, tb)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/flask/helpers.py", line 305, in url_for
+    force_external=external)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/werkzeug/routing.py", line 1758, in build
+    raise BuildError(endpoint, values, method, self)
+BuildError: Could not build url for endpoint 'INDEX.index'. Did you mean 'index.index' instead?
+
+(15.01.2017, 16:34:07) werkzeug       _internal         _log    INFO: 127.0.0.1 - - [15/Jan/2017 16:34:07] "GET /start HTTP/1.1" 500 -
+(15.01.2017, 16:34:07) werkzeug       _internal         _log    INFO: 127.0.0.1 - - [15/Jan/2017 16:34:07] "GET /start?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+(15.01.2017, 16:34:07) werkzeug       _internal         _log    INFO: 127.0.0.1 - - [15/Jan/2017 16:34:07] "GET /start?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+(15.01.2017, 16:34:07) werkzeug       _internal         _log    INFO: 127.0.0.1 - - [15/Jan/2017 16:34:07] "GET /start?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+(15.01.2017, 16:34:07) werkzeug       _internal         _log    INFO: 127.0.0.1 - - [15/Jan/2017 16:34:07] "GET /start?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+(15.01.2017, 16:34:07) werkzeug       _internal         _log    INFO: 127.0.0.1 - - [15/Jan/2017 16:34:07] "GET /start?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+(15.01.2017, 16:34:10)     root hackernews_client get_top_stories    INFO: Received 10 Hacker News stories in 0.0 minute(s) 9.0 second(s) with ids:
+13404496, 13404292, 13403991, 13402422, 13402472, 13404002, 13403216, 13404372, 13402528, 13403562
+
+(15.01.2017, 16:34:25) __main__       runserver    start_app    INFO: Set up app & logger.
+(15.01.2017, 16:34:25) __main__       runserver init_clients    INFO: Initiated 3 clients: MongoDBClient, UnbabelClient, HackerNewsClient.
+(15.01.2017, 16:34:25) __main__       runserver start_daemon    INFO: Started daemon with time interval 600.
+(15.01.2017, 16:34:25) __main__       runserver    start_app    INFO: App is running!
+(15.01.2017, 16:34:25) werkzeug       _internal         _log    INFO:  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+(15.01.2017, 16:34:27) werkzeug       _internal         _log    INFO: 127.0.0.1 - - [15/Jan/2017 16:34:27] "GET /start HTTP/1.1" 200 -
+(15.01.2017, 16:34:30) werkzeug       _internal         _log    INFO: 127.0.0.1 - - [15/Jan/2017 16:34:30] "GET /start HTTP/1.1" 200 -
+(15.01.2017, 16:34:31) werkzeug       _internal         _log    INFO: 127.0.0.1 - - [15/Jan/2017 16:34:31] "GET /dashboard HTTP/1.1" 200 -
+(15.01.2017, 16:34:32) werkzeug       _internal         _log    INFO: 127.0.0.1 - - [15/Jan/2017 16:34:32] "GET /start HTTP/1.1" 200 -
+(15.01.2017, 16:34:33)     root hackernews_client get_top_stories    INFO: Received 10 Hacker News stories in 0.0 minute(s) 7.8 second(s) with ids:
+13404496, 13404292, 13403991, 13402422, 13402472, 13404002, 13403216, 13404372, 13402528, 13403562
+
+(15.01.2017, 16:34:33) werkzeug       _internal         _log    INFO: 127.0.0.1 - - [15/Jan/2017 16:34:33] "GET /dashboard HTTP/1.1" 200 -
+(15.01.2017, 16:34:34) werkzeug       _internal         _log    INFO: 127.0.0.1 - - [15/Jan/2017 16:34:34] "GET /start HTTP/1.1" 200 -
+(15.01.2017, 16:36:17) __main__       runserver    start_app    INFO: Set up app & logger.
+(15.01.2017, 16:36:17) __main__       runserver init_clients    INFO: Initiated 3 clients: MongoDBClient, UnbabelClient, HackerNewsClient.
+(15.01.2017, 16:36:17) __main__       runserver start_daemon    INFO: Started daemon with time interval 600.
+(15.01.2017, 16:36:17) __main__       runserver    start_app    INFO: App is running!
+(15.01.2017, 16:36:18) werkzeug       _internal         _log    INFO:  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+(15.01.2017, 16:36:25)     root hackernews_client get_top_stories    INFO: Received 10 Hacker News stories in 0.0 minute(s) 8.0 second(s) with ids:
+13404496, 13404292, 13403991, 13402422, 13402472, 13403216, 13404002, 13402528, 13404372, 13403562
+
+(15.01.2017, 16:36:25) werkzeug       _internal         _log    INFO: 127.0.0.1 - - [15/Jan/2017 16:36:25] "GET /start HTTP/1.1" 200 -
+(15.01.2017, 16:36:29) werkzeug       _internal         _log    INFO: 127.0.0.1 - - [15/Jan/2017 16:36:29] "GET /start HTTP/1.1" 200 -
+(15.01.2017, 16:36:52) __main__       runserver    start_app    INFO: Set up app & logger.
+(15.01.2017, 16:36:52) __main__       runserver init_clients    INFO: Initiated 3 clients: MongoDBClient, UnbabelClient, HackerNewsClient.
+(15.01.2017, 16:36:52) __main__       runserver start_daemon    INFO: Started daemon with time interval 600.
+(15.01.2017, 16:36:52) __main__       runserver    start_app    INFO: App is running!
+(15.01.2017, 16:36:52) werkzeug       _internal         _log    INFO:  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+(15.01.2017, 16:36:55) werkzeug       _internal         _log    INFO: 127.0.0.1 - - [15/Jan/2017 16:36:55] "GET /start HTTP/1.1" 200 -
+(15.01.2017, 16:36:56) werkzeug       _internal         _log    INFO: 127.0.0.1 - - [15/Jan/2017 16:36:56] "GET /start HTTP/1.1" 200 -
+(15.01.2017, 16:36:58) werkzeug       _internal         _log    INFO: 127.0.0.1 - - [15/Jan/2017 16:36:58] "GET /start HTTP/1.1" 200 -
+(15.01.2017, 16:36:59) werkzeug       _internal         _log    INFO: 127.0.0.1 - - [15/Jan/2017 16:36:59] "GET /start HTTP/1.1" 200 -
+(15.01.2017, 16:36:59)     root hackernews_client get_top_stories    INFO: Received 10 Hacker News stories in 0.0 minute(s) 7.7 second(s) with ids:
+13404496, 13404292, 13403991, 13402472, 13402422, 13403216, 13404002, 13402528, 13404372, 13403562
+
+(15.01.2017, 16:37:44) __main__       runserver    start_app    INFO: Set up app & logger.
+(15.01.2017, 16:37:44) __main__       runserver init_clients    INFO: Initiated 3 clients: MongoDBClient, UnbabelClient, HackerNewsClient.
+(15.01.2017, 16:37:44) __main__       runserver start_daemon    INFO: Started daemon with time interval 600.
+(15.01.2017, 16:37:44) __main__       runserver    start_app    INFO: App is running!
+(15.01.2017, 16:37:44) werkzeug       _internal         _log    INFO:  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+(15.01.2017, 16:37:53)     root hackernews_client get_top_stories    INFO: Received 10 Hacker News stories in 0.0 minute(s) 8.8 second(s) with ids:
+13404496, 13404292, 13403991, 13402422, 13402472, 13403216, 13404002, 13402528, 13404372, 13403562
+
+(15.01.2017, 16:38:05) werkzeug       _internal         _log    INFO: 127.0.0.1 - - [15/Jan/2017 16:38:05] "GET /start HTTP/1.1" 200 -
+(15.01.2017, 16:38:06) werkzeug       _internal         _log    INFO: 127.0.0.1 - - [15/Jan/2017 16:38:06] "GET /start HTTP/1.1" 200 -
+(15.01.2017, 16:41:05) __main__       runserver    start_app    INFO: Set up app & logger.
+(15.01.2017, 16:41:05) __main__       runserver init_clients    INFO: Initiated 3 clients: MongoDBClient, UnbabelClient, HackerNewsClient.
+(15.01.2017, 16:41:05) __main__       runserver start_daemon    INFO: Started daemon with time interval 600.
+(15.01.2017, 16:41:05) __main__       runserver    start_app    INFO: App is running!
+(15.01.2017, 16:41:08) werkzeug       _internal         _log    INFO:  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+(15.01.2017, 16:41:09) werkzeug       _internal         _log    INFO: 127.0.0.1 - - [15/Jan/2017 16:41:09] "GET /start HTTP/1.1" 200 -
+(15.01.2017, 16:41:11) werkzeug       _internal         _log    INFO: 127.0.0.1 - - [15/Jan/2017 16:41:11] "GET /dashboard HTTP/1.1" 200 -
+(15.01.2017, 16:41:12) werkzeug       _internal         _log    INFO: 127.0.0.1 - - [15/Jan/2017 16:41:12] "GET /start HTTP/1.1" 200 -
+(15.01.2017, 16:41:13) werkzeug       _internal         _log    INFO: 127.0.0.1 - - [15/Jan/2017 16:41:13] "GET /dashboard HTTP/1.1" 200 -
+(15.01.2017, 16:41:17)     root hackernews_client get_top_stories    INFO: Received 10 Hacker News stories in 0.0 minute(s) 12.4 second(s) with ids:
+13404496, 13404292, 13403991, 13402472, 13402422, 13404002, 13403216, 13402528, 13404372, 13403562
+
+(15.01.2017, 16:47:52) __main__       runserver    start_app    INFO: Set up app & logger.
+(15.01.2017, 16:47:52) __main__       runserver init_clients    INFO: Initiated 3 clients: UnbabelClient, MongoDBClient, HackerNewsClient.
+(15.01.2017, 16:47:52) __main__       runserver start_daemon    INFO: Started daemon with time interval 600.
+(15.01.2017, 16:47:52) __main__       runserver    start_app    INFO: App is running!
+(15.01.2017, 16:47:52) werkzeug       _internal         _log    INFO:  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+(15.01.2017, 16:48:03)     root hackernews_client get_top_stories    INFO: Received 10 Hacker News stories in 0.0 minute(s) 11.4 second(s) with ids:
+13404496, 13404292, 13403991, 13402472, 13402422, 13403216, 13404002, 13402528, 13403562, 13403886
+
+(15.01.2017, 16:48:39) werkzeug       _internal         _log    INFO: 127.0.0.1 - - [15/Jan/2017 16:48:39] "GET /dashboard HTTP/1.1" 200 -
+(15.01.2017, 16:49:04) werkzeug       _internal         _log    INFO: 127.0.0.1 - - [15/Jan/2017 16:49:04] "GET /2/comments HTTP/1.1" 200 -
+(15.01.2017, 16:49:11) __main__       runserver    start_app    INFO: Set up app & logger.
+(15.01.2017, 16:49:11) __main__       runserver init_clients    INFO: Initiated 3 clients: MongoDBClient, UnbabelClient, HackerNewsClient.
+(15.01.2017, 16:49:11) __main__       runserver start_daemon    INFO: Started daemon with time interval 600.
+(15.01.2017, 16:49:11) __main__       runserver    start_app    INFO: App is running!
+(15.01.2017, 16:49:11) werkzeug       _internal         _log    INFO:  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+(15.01.2017, 16:49:15) werkzeug       _internal         _log    INFO: 127.0.0.1 - - [15/Jan/2017 16:49:15] "GET /2/comments HTTP/1.1" 200 -
+(15.01.2017, 16:49:16) werkzeug       _internal         _log    INFO: 127.0.0.1 - - [15/Jan/2017 16:49:16] "GET /2/comments HTTP/1.1" 200 -
+(15.01.2017, 16:49:21)     root hackernews_client get_top_stories    INFO: Received 10 Hacker News stories in 0.0 minute(s) 10.2 second(s) with ids:
+13404496, 13404292, 13403991, 13402472, 13402422, 13403216, 13404002, 13402528, 13403562, 13403886
+
+(15.01.2017, 16:52:16) __main__       runserver    start_app    INFO: Set up app & logger.
+(15.01.2017, 16:52:16) __main__       runserver init_clients    INFO: Initiated 3 clients: MongoDBClient, UnbabelClient, HackerNewsClient.
+(15.01.2017, 16:52:16) __main__       runserver start_daemon    INFO: Started daemon with time interval 600.
+(15.01.2017, 16:52:16) __main__       runserver    start_app    INFO: App is running!
+(15.01.2017, 16:52:16) werkzeug       _internal         _log    INFO:  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+(15.01.2017, 16:52:18) werkzeug       _internal         _log    INFO: 127.0.0.1 - - [15/Jan/2017 16:52:18] "GET /dashboard HTTP/1.1" 200 -
+(15.01.2017, 16:52:20) werkzeug       _internal         _log    INFO: 127.0.0.1 - - [15/Jan/2017 16:52:20] "GET /dashboard HTTP/1.1" 200 -
+(15.01.2017, 16:52:21) werkzeug       _internal         _log    INFO: 127.0.0.1 - - [15/Jan/2017 16:52:21] "GET /dashboard HTTP/1.1" 200 -
+(15.01.2017, 16:52:26)     root hackernews_client get_top_stories    INFO: Received 10 Hacker News stories in 0.0 minute(s) 9.8 second(s) with ids:
+13404496, 13404292, 13403991, 13402472, 13402422, 13404002, 13403216, 13404372, 13402528, 13403562
+
+(15.01.2017, 16:53:58) __main__       runserver    start_app    INFO: Set up app & logger.
+(15.01.2017, 16:53:58) __main__       runserver init_clients    INFO: Initiated 3 clients: MongoDBClient, UnbabelClient, HackerNewsClient.
+(15.01.2017, 16:53:58) __main__       runserver start_daemon    INFO: Started daemon with time interval 600.
+(15.01.2017, 16:53:58) __main__       runserver    start_app    INFO: App is running!
+(15.01.2017, 16:53:58) werkzeug       _internal         _log    INFO:  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+(15.01.2017, 16:53:59) werkzeug       _internal         _log    INFO: 127.0.0.1 - - [15/Jan/2017 16:53:59] "GET /dashboard HTTP/1.1" 200 -
+(15.01.2017, 16:54:00) werkzeug       _internal         _log    INFO: 127.0.0.1 - - [15/Jan/2017 16:54:00] "GET /dashboard HTTP/1.1" 200 -
+(15.01.2017, 16:54:06)     root hackernews_client get_top_stories    INFO: Received 10 Hacker News stories in 0.0 minute(s) 8.2 second(s) with ids:
+13404496, 13404292, 13403991, 13402472, 13402422, 13404002, 13403216, 13404372, 13402528, 13403562
+
+(15.01.2017, 16:54:17) __main__       runserver    start_app    INFO: Set up app & logger.
+(15.01.2017, 16:54:17) __main__       runserver init_clients    INFO: Initiated 3 clients: MongoDBClient, UnbabelClient, HackerNewsClient.
+(15.01.2017, 16:54:17) __main__       runserver start_daemon    INFO: Started daemon with time interval 600.
+(15.01.2017, 16:54:17) __main__       runserver    start_app    INFO: App is running!
+(15.01.2017, 16:54:17) werkzeug       _internal         _log    INFO:  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+(15.01.2017, 16:54:19) werkzeug       _internal         _log    INFO: 127.0.0.1 - - [15/Jan/2017 16:54:19] "GET /dashboard HTTP/1.1" 200 -
+(15.01.2017, 16:54:20) werkzeug       _internal         _log    INFO: 127.0.0.1 - - [15/Jan/2017 16:54:20] "GET /dashboard HTTP/1.1" 200 -
+(15.01.2017, 16:54:21) werkzeug       _internal         _log    INFO: 127.0.0.1 - - [15/Jan/2017 16:54:21] "GET /dashboard HTTP/1.1" 200 -
+(15.01.2017, 16:54:22) werkzeug       _internal         _log    INFO: 127.0.0.1 - - [15/Jan/2017 16:54:22] "GET /dashboard HTTP/1.1" 200 -
+(15.01.2017, 16:54:27)     root hackernews_client get_top_stories    INFO: Received 10 Hacker News stories in 0.0 minute(s) 10.8 second(s) with ids:
+13404496, 13404292, 13403991, 13402472, 13402422, 13404002, 13403216, 13404372, 13402528, 13403562
+
+(15.01.2017, 16:55:49) __main__       runserver    start_app    INFO: Set up app & logger.
+(15.01.2017, 16:55:49) __main__       runserver init_clients    INFO: Initiated 3 clients: MongoDBClient, UnbabelClient, HackerNewsClient.
+(15.01.2017, 16:55:49) __main__       runserver start_daemon    INFO: Started daemon with time interval 600.
+(15.01.2017, 16:56:00) __main__       runserver    start_app    INFO: Set up app & logger.
+(15.01.2017, 16:56:00) __main__       runserver init_clients    INFO: Initiated 3 clients: MongoDBClient, UnbabelClient, HackerNewsClient.
+(15.01.2017, 16:56:00) __main__       runserver start_daemon    INFO: Started daemon with time interval 600.
+(15.01.2017, 16:56:00) __main__       runserver    start_app    INFO: App is running!
+(15.01.2017, 16:56:00) werkzeug       _internal         _log    INFO:  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+(15.01.2017, 16:56:02) werkzeug       _internal         _log    INFO: 127.0.0.1 - - [15/Jan/2017 16:56:02] "GET /dashboard HTTP/1.1" 200 -
+(15.01.2017, 16:56:04) werkzeug       _internal         _log    INFO: 127.0.0.1 - - [15/Jan/2017 16:56:04] "GET /dashboard HTTP/1.1" 200 -
+(15.01.2017, 16:56:05) werkzeug       _internal         _log    INFO: 127.0.0.1 - - [15/Jan/2017 16:56:05] "GET /dashboard HTTP/1.1" 200 -
+(15.01.2017, 16:56:06) werkzeug       _internal         _log    INFO: 127.0.0.1 - - [15/Jan/2017 16:56:06] "GET /start HTTP/1.1" 200 -
+(15.01.2017, 16:56:07) werkzeug       _internal         _log    INFO: 127.0.0.1 - - [15/Jan/2017 16:56:07] "GET /dashboard HTTP/1.1" 200 -
+(15.01.2017, 16:56:09)     root hackernews_client get_top_stories    INFO: Received 10 Hacker News stories in 0.0 minute(s) 9.4 second(s) with ids:
+13404496, 13404292, 13403991, 13402472, 13402422, 13404002, 13403216, 13404372, 13402528, 13403562
+
+(15.01.2017, 16:56:12) werkzeug       _internal         _log    INFO: 127.0.0.1 - - [15/Jan/2017 16:56:12] "GET /2/comments HTTP/1.1" 200 -
+(15.01.2017, 16:57:49) __main__       runserver    start_app    INFO: Set up app & logger.
+(15.01.2017, 16:57:49) __main__       runserver init_clients    INFO: Initiated 3 clients: MongoDBClient, UnbabelClient, HackerNewsClient.
+(15.01.2017, 16:57:49) __main__       runserver start_daemon    INFO: Started daemon with time interval 600.
+(15.01.2017, 16:57:49) __main__       runserver    start_app    INFO: App is running!
+(15.01.2017, 16:57:50) werkzeug       _internal         _log    INFO:  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+(15.01.2017, 16:57:54) werkzeug       _internal         _log    INFO: 127.0.0.1 - - [15/Jan/2017 16:57:54] "GET /2/comments HTTP/1.1" 200 -
+(15.01.2017, 16:57:57) werkzeug       _internal         _log    INFO: 127.0.0.1 - - [15/Jan/2017 16:57:57] "GET /dashboard HTTP/1.1" 200 -
+(15.01.2017, 16:57:57)     root hackernews_client get_top_stories    INFO: Received 10 Hacker News stories in 0.0 minute(s) 8.0 second(s) with ids:
+13404496, 13404292, 13403991, 13402472, 13402422, 13404002, 13403216, 13404372, 13402528, 13403562
+
+(15.01.2017, 16:57:58) werkzeug       _internal         _log    INFO: 127.0.0.1 - - [15/Jan/2017 16:57:58] "GET /start HTTP/1.1" 200 -
+(15.01.2017, 17:08:09)     root hackernews_client get_top_stories    INFO: Received 10 Hacker News stories in 0.0 minute(s) 11.4 second(s) with ids:
+13404292, 13404496, 13402422, 13404372, 13402472, 13403216, 13404002, 13402528, 13403562, 13403886
+
+(15.01.2017, 17:10:14) __main__       runserver    start_app    INFO: Set up app & logger.
+(15.01.2017, 17:10:14) __main__       runserver init_clients    INFO: Initiated 3 clients: MongoDBClient, UnbabelClient, HackerNewsClient.
+(15.01.2017, 17:10:14) __main__       runserver start_daemon    INFO: Started daemon with time interval 600.
+(15.01.2017, 17:10:14) __main__       runserver    start_app    INFO: App is running!
+(15.01.2017, 17:10:14) werkzeug       _internal         _log    INFO:  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+(15.01.2017, 17:10:19) werkzeug       _internal         _log    INFO: 127.0.0.1 - - [15/Jan/2017 17:10:19] "GET /start HTTP/1.1" 200 -
+(15.01.2017, 17:10:19) werkzeug       _internal         _log    INFO: 127.0.0.1 - - [15/Jan/2017 17:10:19] "GET /static/css/base.css HTTP/1.1" 404 -
+(15.01.2017, 17:10:20) werkzeug       _internal         _log    INFO: 127.0.0.1 - - [15/Jan/2017 17:10:20] "GET /start HTTP/1.1" 200 -
+(15.01.2017, 17:10:20) werkzeug       _internal         _log    INFO: 127.0.0.1 - - [15/Jan/2017 17:10:20] "GET /static/css/base.css HTTP/1.1" 404 -
+(15.01.2017, 17:10:22)     root hackernews_client get_top_stories    INFO: Received 10 Hacker News stories in 0.0 minute(s) 8.0 second(s) with ids:
+13404292, 13404496, 13404372, 13402472, 13404002, 13403216, 13402528, 13403562, 13403886, 13402512
+
+(15.01.2017, 17:11:03) __main__       runserver    start_app    INFO: Set up app & logger.
+(15.01.2017, 17:11:03) __main__       runserver init_clients    INFO: Initiated 3 clients: MongoDBClient, UnbabelClient, HackerNewsClient.
+(15.01.2017, 17:11:03) __main__       runserver start_daemon    INFO: Started daemon with time interval 600.
+(15.01.2017, 17:11:03) __main__       runserver    start_app    INFO: App is running!
+(15.01.2017, 17:11:03) werkzeug       _internal         _log    INFO:  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+(15.01.2017, 17:11:05) werkzeug       _internal         _log    INFO: 127.0.0.1 - - [15/Jan/2017 17:11:05] "GET /start HTTP/1.1" 200 -
+(15.01.2017, 17:11:05) hackerbabel.src.error_handlers  error_handlers handle_any_exception   ERROR: INTERNAL SERVER ERROR
+Time: 2017-01-15T17:11:05.350041
+Error type: <type 'exceptions.TypeError'>
+Error message: send_static_file() got an unexpected keyword argument 'story_id'
+Traceback: 
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+TypeError: send_static_file() got an unexpected keyword argument 'story_id'
+
+(15.01.2017, 17:11:05) werkzeug       _internal         _log    INFO: 127.0.0.1 - - [15/Jan/2017 17:11:05] "GET /static/static/css/base.css HTTP/1.1" 500 -
+(15.01.2017, 17:11:06) werkzeug       _internal         _log    INFO: 127.0.0.1 - - [15/Jan/2017 17:11:06] "GET /start HTTP/1.1" 200 -
+(15.01.2017, 17:11:06) hackerbabel.src.error_handlers  error_handlers handle_any_exception   ERROR: INTERNAL SERVER ERROR
+Time: 2017-01-15T17:11:06.477656
+Error type: <type 'exceptions.TypeError'>
+Error message: send_static_file() got an unexpected keyword argument 'story_id'
+Traceback: 
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+TypeError: send_static_file() got an unexpected keyword argument 'story_id'
+
+(15.01.2017, 17:11:06) werkzeug       _internal         _log    INFO: 127.0.0.1 - - [15/Jan/2017 17:11:06] "GET /static/static/css/base.css HTTP/1.1" 500 -
+(15.01.2017, 17:11:07) werkzeug       _internal         _log    INFO: 127.0.0.1 - - [15/Jan/2017 17:11:07] "GET /start HTTP/1.1" 200 -
+(15.01.2017, 17:11:07) hackerbabel.src.error_handlers  error_handlers handle_any_exception   ERROR: INTERNAL SERVER ERROR
+Time: 2017-01-15T17:11:07.377599
+Error type: <type 'exceptions.TypeError'>
+Error message: send_static_file() got an unexpected keyword argument 'story_id'
+Traceback: 
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+TypeError: send_static_file() got an unexpected keyword argument 'story_id'
+
+(15.01.2017, 17:11:07) werkzeug       _internal         _log    INFO: 127.0.0.1 - - [15/Jan/2017 17:11:07] "GET /static/static/css/base.css HTTP/1.1" 500 -
+(15.01.2017, 17:11:08) werkzeug       _internal         _log    INFO: 127.0.0.1 - - [15/Jan/2017 17:11:08] "GET /dashboard HTTP/1.1" 200 -
+(15.01.2017, 17:11:08) hackerbabel.src.error_handlers  error_handlers handle_any_exception   ERROR: INTERNAL SERVER ERROR
+Time: 2017-01-15T17:11:08.070694
+Error type: <type 'exceptions.TypeError'>
+Error message: send_static_file() got an unexpected keyword argument 'story_id'
+Traceback: 
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+TypeError: send_static_file() got an unexpected keyword argument 'story_id'
+
+(15.01.2017, 17:11:08) werkzeug       _internal         _log    INFO: 127.0.0.1 - - [15/Jan/2017 17:11:08] "GET /static/static/css/base.css HTTP/1.1" 500 -
+(15.01.2017, 17:11:08) werkzeug       _internal         _log    INFO: 127.0.0.1 - - [15/Jan/2017 17:11:08] "GET /start HTTP/1.1" 200 -
+(15.01.2017, 17:11:08) hackerbabel.src.error_handlers  error_handlers handle_any_exception   ERROR: INTERNAL SERVER ERROR
+Time: 2017-01-15T17:11:08.638913
+Error type: <type 'exceptions.TypeError'>
+Error message: send_static_file() got an unexpected keyword argument 'story_id'
+Traceback: 
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+TypeError: send_static_file() got an unexpected keyword argument 'story_id'
+
+(15.01.2017, 17:11:08) werkzeug       _internal         _log    INFO: 127.0.0.1 - - [15/Jan/2017 17:11:08] "GET /static/static/css/base.css HTTP/1.1" 500 -
+(15.01.2017, 17:11:11)     root hackernews_client get_top_stories    INFO: Received 10 Hacker News stories in 0.0 minute(s) 8.3 second(s) with ids:
+13404292, 13404496, 13404372, 13402472, 13404002, 13403216, 13402528, 13403562, 13403886, 13402512
+
+(15.01.2017, 17:11:29) __main__       runserver    start_app    INFO: Set up app & logger.
+(15.01.2017, 17:11:29) __main__       runserver init_clients    INFO: Initiated 3 clients: MongoDBClient, UnbabelClient, HackerNewsClient.
+(15.01.2017, 17:11:29) __main__       runserver start_daemon    INFO: Started daemon with time interval 600.
+(15.01.2017, 17:11:29) __main__       runserver    start_app    INFO: App is running!
+(15.01.2017, 17:11:29) werkzeug       _internal         _log    INFO:  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+(15.01.2017, 17:11:32) werkzeug       _internal         _log    INFO: 127.0.0.1 - - [15/Jan/2017 17:11:32] "GET /start HTTP/1.1" 200 -
+(15.01.2017, 17:11:32) werkzeug       _internal         _log    INFO: 127.0.0.1 - - [15/Jan/2017 17:11:32] "GET /static/hackerbabel/static/css/base.css HTTP/1.1" 404 -
+(15.01.2017, 17:11:34) werkzeug       _internal         _log    INFO: 127.0.0.1 - - [15/Jan/2017 17:11:34] "GET /start HTTP/1.1" 200 -
+(15.01.2017, 17:11:34) werkzeug       _internal         _log    INFO: 127.0.0.1 - - [15/Jan/2017 17:11:34] "GET /static/hackerbabel/static/css/base.css HTTP/1.1" 404 -
+(15.01.2017, 17:11:35) werkzeug       _internal         _log    INFO: 127.0.0.1 - - [15/Jan/2017 17:11:35] "GET /start HTTP/1.1" 200 -
+(15.01.2017, 17:11:35) werkzeug       _internal         _log    INFO: 127.0.0.1 - - [15/Jan/2017 17:11:35] "GET /static/hackerbabel/static/css/base.css HTTP/1.1" 404 -
+(15.01.2017, 17:11:35) werkzeug       _internal         _log    INFO: 127.0.0.1 - - [15/Jan/2017 17:11:35] "GET /dashboard HTTP/1.1" 200 -
+(15.01.2017, 17:11:35) werkzeug       _internal         _log    INFO: 127.0.0.1 - - [15/Jan/2017 17:11:35] "GET /static/hackerbabel/static/css/base.css HTTP/1.1" 404 -
+(15.01.2017, 17:11:39)     root hackernews_client get_top_stories    INFO: Received 10 Hacker News stories in 0.0 minute(s) 10.1 second(s) with ids:
+13404292, 13404496, 13404372, 13402472, 13404002, 13403216, 13402528, 13403562, 13403886, 13402512
+
+(15.01.2017, 17:14:28) __main__       runserver    start_app    INFO: Set up app & logger.
+(15.01.2017, 17:14:28) __main__       runserver init_clients    INFO: Initiated 3 clients: MongoDBClient, UnbabelClient, HackerNewsClient.
+(15.01.2017, 17:14:28) __main__       runserver start_daemon    INFO: Started daemon with time interval 600.
+(15.01.2017, 17:14:28) __main__       runserver    start_app    INFO: App is running!
+(15.01.2017, 17:14:29) werkzeug       _internal         _log    INFO:  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+(15.01.2017, 17:14:30) hackerbabel.src.error_handlers  error_handlers handle_any_exception   ERROR: INTERNAL SERVER ERROR
+Time: 2017-01-15T17:14:30.807458
+Error type: <class 'jinja2.exceptions.TemplateSyntaxError'>
+Error message: expected token ',', got 'string'
+Traceback: 
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/dennisulmer/Documents/Projekte/unbabel_challenge/fullstack-coding-challenge/hackerbabel/views/dashboard.py", line 22, in dashboard
+    return render_template("dashboard.html")
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/flask/templating.py", line 128, in render_template
+    context, ctx.app)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/flask/templating.py", line 110, in _render
+    rv = template.render(context)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/jinja2/environment.py", line 989, in render
+    return self.environment.handle_exception(exc_info, True)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/jinja2/environment.py", line 754, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/dennisulmer/Documents/Projekte/unbabel_challenge/fullstack-coding-challenge/hackerbabel/views/../templates/base.html", line 3, in template
+    href="{{ url_for('static', css/base.css') }}"/>
+TemplateSyntaxError: expected token ',', got 'string'
+
+(15.01.2017, 17:14:30) werkzeug       _internal         _log    INFO: 127.0.0.1 - - [15/Jan/2017 17:14:30] "GET /dashboard HTTP/1.1" 500 -
+(15.01.2017, 17:14:30) werkzeug       _internal         _log    INFO: 127.0.0.1 - - [15/Jan/2017 17:14:30] "GET /dashboard?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+(15.01.2017, 17:14:30) werkzeug       _internal         _log    INFO: 127.0.0.1 - - [15/Jan/2017 17:14:30] "GET /dashboard?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+(15.01.2017, 17:14:30) werkzeug       _internal         _log    INFO: 127.0.0.1 - - [15/Jan/2017 17:14:30] "GET /dashboard?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+(15.01.2017, 17:14:30) werkzeug       _internal         _log    INFO: 127.0.0.1 - - [15/Jan/2017 17:14:30] "GET /dashboard?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+(15.01.2017, 17:14:31) werkzeug       _internal         _log    INFO: 127.0.0.1 - - [15/Jan/2017 17:14:31] "GET /dashboard?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1" 200 -
+(15.01.2017, 17:14:31) werkzeug       _internal         _log    INFO: 127.0.0.1 - - [15/Jan/2017 17:14:31] "GET /dashboard?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+(15.01.2017, 17:14:37)     root hackernews_client get_top_stories    INFO: Received 10 Hacker News stories in 0.0 minute(s) 8.4 second(s) with ids:
+13404292, 13404496, 13404372, 13402472, 13404002, 13403216, 13403562, 13402528, 13403886, 13402512
+
+(15.01.2017, 17:15:09) __main__       runserver    start_app    INFO: Set up app & logger.
+(15.01.2017, 17:15:09) __main__       runserver init_clients    INFO: Initiated 3 clients: MongoDBClient, UnbabelClient, HackerNewsClient.
+(15.01.2017, 17:15:09) __main__       runserver start_daemon    INFO: Started daemon with time interval 600.
+(15.01.2017, 17:15:09) __main__       runserver    start_app    INFO: App is running!
+(15.01.2017, 17:15:09) werkzeug       _internal         _log    INFO:  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+(15.01.2017, 17:15:11) hackerbabel.src.error_handlers  error_handlers handle_any_exception   ERROR: INTERNAL SERVER ERROR
+Time: 2017-01-15T17:15:11.382233
+Error type: <type 'exceptions.TypeError'>
+Error message: url_for() takes exactly 1 argument (2 given)
+Traceback: 
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/dennisulmer/Documents/Projekte/unbabel_challenge/fullstack-coding-challenge/hackerbabel/views/dashboard.py", line 22, in dashboard
+    return render_template("dashboard.html")
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/flask/templating.py", line 128, in render_template
+    context, ctx.app)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/flask/templating.py", line 110, in _render
+    rv = template.render(context)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/jinja2/environment.py", line 989, in render
+    return self.environment.handle_exception(exc_info, True)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/jinja2/environment.py", line 754, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/dennisulmer/Documents/Projekte/unbabel_challenge/fullstack-coding-challenge/hackerbabel/views/../templates/dashboard.html", line 2, in top-level template code
+    {% extends "base.html" %}
+  File "/Users/dennisulmer/Documents/Projekte/unbabel_challenge/fullstack-coding-challenge/hackerbabel/views/../templates/base.html", line 1, in top-level template code
+    {% block additional_stylesheets %}
+  File "/Users/dennisulmer/Documents/Projekte/unbabel_challenge/fullstack-coding-challenge/hackerbabel/views/../templates/base.html", line 3, in block "additional_stylesheets"
+    href="{{ url_for('static', 'css/base.css') }}"/>
+TypeError: url_for() takes exactly 1 argument (2 given)
+
+(15.01.2017, 17:15:11) werkzeug       _internal         _log    INFO: 127.0.0.1 - - [15/Jan/2017 17:15:11] "GET /dashboard HTTP/1.1" 500 -
+(15.01.2017, 17:15:11) werkzeug       _internal         _log    INFO: 127.0.0.1 - - [15/Jan/2017 17:15:11] "GET /dashboard?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+(15.01.2017, 17:15:11) werkzeug       _internal         _log    INFO: 127.0.0.1 - - [15/Jan/2017 17:15:11] "GET /dashboard?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+(15.01.2017, 17:15:11) werkzeug       _internal         _log    INFO: 127.0.0.1 - - [15/Jan/2017 17:15:11] "GET /dashboard?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+(15.01.2017, 17:15:11) werkzeug       _internal         _log    INFO: 127.0.0.1 - - [15/Jan/2017 17:15:11] "GET /dashboard?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+(15.01.2017, 17:15:11) werkzeug       _internal         _log    INFO: 127.0.0.1 - - [15/Jan/2017 17:15:11] "GET /dashboard?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+(15.01.2017, 17:15:12) hackerbabel.src.error_handlers  error_handlers handle_any_exception   ERROR: INTERNAL SERVER ERROR
+Time: 2017-01-15T17:15:12.616420
+Error type: <type 'exceptions.TypeError'>
+Error message: url_for() takes exactly 1 argument (2 given)
+Traceback: 
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/dennisulmer/Documents/Projekte/unbabel_challenge/fullstack-coding-challenge/hackerbabel/views/dashboard.py", line 22, in dashboard
+    return render_template("dashboard.html")
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/flask/templating.py", line 128, in render_template
+    context, ctx.app)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/flask/templating.py", line 110, in _render
+    rv = template.render(context)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/jinja2/environment.py", line 989, in render
+    return self.environment.handle_exception(exc_info, True)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/jinja2/environment.py", line 754, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/dennisulmer/Documents/Projekte/unbabel_challenge/fullstack-coding-challenge/hackerbabel/views/../templates/dashboard.html", line 2, in top-level template code
+    {% extends "base.html" %}
+  File "/Users/dennisulmer/Documents/Projekte/unbabel_challenge/fullstack-coding-challenge/hackerbabel/views/../templates/base.html", line 1, in top-level template code
+    {% block additional_stylesheets %}
+  File "/Users/dennisulmer/Documents/Projekte/unbabel_challenge/fullstack-coding-challenge/hackerbabel/views/../templates/base.html", line 3, in block "additional_stylesheets"
+    href="{{ url_for('static', 'css/base.css') }}"/>
+TypeError: url_for() takes exactly 1 argument (2 given)
+
+(15.01.2017, 17:15:12) werkzeug       _internal         _log    INFO: 127.0.0.1 - - [15/Jan/2017 17:15:12] "GET /dashboard HTTP/1.1" 500 -
+(15.01.2017, 17:15:12) werkzeug       _internal         _log    INFO: 127.0.0.1 - - [15/Jan/2017 17:15:12] "GET /dashboard?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+(15.01.2017, 17:15:12) werkzeug       _internal         _log    INFO: 127.0.0.1 - - [15/Jan/2017 17:15:12] "GET /dashboard?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+(15.01.2017, 17:15:12) werkzeug       _internal         _log    INFO: 127.0.0.1 - - [15/Jan/2017 17:15:12] "GET /dashboard?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+(15.01.2017, 17:15:12) werkzeug       _internal         _log    INFO: 127.0.0.1 - - [15/Jan/2017 17:15:12] "GET /dashboard?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+(15.01.2017, 17:15:12) werkzeug       _internal         _log    INFO: 127.0.0.1 - - [15/Jan/2017 17:15:12] "GET /dashboard?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+(15.01.2017, 17:15:21)     root hackernews_client get_top_stories    INFO: Received 10 Hacker News stories in 0.0 minute(s) 11.6 second(s) with ids:
+13404292, 13404496, 13404372, 13402472, 13404002, 13403216, 13403562, 13402528, 13403886, 13402512
+
+(15.01.2017, 17:15:47) __main__       runserver    start_app    INFO: Set up app & logger.
+(15.01.2017, 17:15:47) __main__       runserver init_clients    INFO: Initiated 3 clients: MongoDBClient, UnbabelClient, HackerNewsClient.
+(15.01.2017, 17:15:47) __main__       runserver start_daemon    INFO: Started daemon with time interval 600.
+(15.01.2017, 17:15:47) __main__       runserver    start_app    INFO: App is running!
+(15.01.2017, 17:15:47) werkzeug       _internal         _log    INFO:  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+(15.01.2017, 17:15:49) werkzeug       _internal         _log    INFO: 127.0.0.1 - - [15/Jan/2017 17:15:49] "GET /dashboard HTTP/1.1" 200 -
+(15.01.2017, 17:15:49) werkzeug       _internal         _log    INFO: 127.0.0.1 - - [15/Jan/2017 17:15:49] "GET /static/css/base.css HTTP/1.1" 404 -
+(15.01.2017, 17:15:51) werkzeug       _internal         _log    INFO: 127.0.0.1 - - [15/Jan/2017 17:15:51] "GET /dashboard HTTP/1.1" 200 -
+(15.01.2017, 17:15:51) werkzeug       _internal         _log    INFO: 127.0.0.1 - - [15/Jan/2017 17:15:51] "GET /static/css/base.css HTTP/1.1" 404 -
+(15.01.2017, 17:15:52) werkzeug       _internal         _log    INFO: 127.0.0.1 - - [15/Jan/2017 17:15:52] "GET /dashboard HTTP/1.1" 200 -
+(15.01.2017, 17:15:52) werkzeug       _internal         _log    INFO: 127.0.0.1 - - [15/Jan/2017 17:15:52] "GET /static/css/base.css HTTP/1.1" 404 -
+(15.01.2017, 17:15:54) werkzeug       _internal         _log    INFO: 127.0.0.1 - - [15/Jan/2017 17:15:54] "GET /start HTTP/1.1" 200 -
+(15.01.2017, 17:15:54) werkzeug       _internal         _log    INFO: 127.0.0.1 - - [15/Jan/2017 17:15:54] "GET /static/css/base.css HTTP/1.1" 404 -
+(15.01.2017, 17:15:55)     root hackernews_client get_top_stories    INFO: Received 10 Hacker News stories in 0.0 minute(s) 8.0 second(s) with ids:
+13404292, 13404496, 13404372, 13402472, 13404002, 13403216, 13403562, 13402528, 13402981, 13403886
+
+(15.01.2017, 17:16:51) werkzeug       _internal         _log    INFO: 127.0.0.1 - - [15/Jan/2017 17:16:51] "GET /start HTTP/1.1" 200 -
+(15.01.2017, 17:16:51) werkzeug       _internal         _log    INFO: 127.0.0.1 - - [15/Jan/2017 17:16:51] "GET /static/css/base.css HTTP/1.1" 404 -
+(15.01.2017, 17:16:52) werkzeug       _internal         _log    INFO: 127.0.0.1 - - [15/Jan/2017 17:16:52] "GET /favicon.ico HTTP/1.1" 404 -
+(15.01.2017, 17:16:58) werkzeug       _internal         _log    INFO: 127.0.0.1 - - [15/Jan/2017 17:16:58] "GET /dashboard HTTP/1.1" 200 -
+(15.01.2017, 17:16:58) werkzeug       _internal         _log    INFO: 127.0.0.1 - - [15/Jan/2017 17:16:58] "GET /static/css/base.css HTTP/1.1" 404 -
+(15.01.2017, 17:21:48) __main__       runserver    start_app    INFO: Set up app & logger.
+(15.01.2017, 17:21:48) __main__       runserver init_clients    INFO: Initiated 3 clients: MongoDBClient, UnbabelClient, HackerNewsClient.
+(15.01.2017, 17:21:48) __main__       runserver start_daemon    INFO: Started daemon with time interval 600.
+(15.01.2017, 17:21:48) __main__       runserver    start_app    INFO: App is running!
+(15.01.2017, 17:21:48) werkzeug       _internal         _log    INFO:  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+(15.01.2017, 17:21:48) werkzeug       _internal         _log    INFO: 127.0.0.1 - - [15/Jan/2017 17:21:48] "GET /start HTTP/1.1" 200 -
+(15.01.2017, 17:21:48) werkzeug       _internal         _log    INFO: 127.0.0.1 - - [15/Jan/2017 17:21:48] "GET /static/css/base.css HTTP/1.1" 404 -
+(15.01.2017, 17:21:49) werkzeug       _internal         _log    INFO: 127.0.0.1 - - [15/Jan/2017 17:21:49] "GET /start HTTP/1.1" 200 -
+(15.01.2017, 17:21:49) werkzeug       _internal         _log    INFO: 127.0.0.1 - - [15/Jan/2017 17:21:49] "GET /static/css/base.css HTTP/1.1" 404 -
+(15.01.2017, 17:21:51) werkzeug       _internal         _log    INFO: 127.0.0.1 - - [15/Jan/2017 17:21:51] "GET /start HTTP/1.1" 200 -
+(15.01.2017, 17:21:51) werkzeug       _internal         _log    INFO: 127.0.0.1 - - [15/Jan/2017 17:21:51] "GET /static/css/base.css HTTP/1.1" 404 -
+(15.01.2017, 17:21:53) werkzeug       _internal         _log    INFO: 127.0.0.1 - - [15/Jan/2017 17:21:53] "GET /dashboard HTTP/1.1" 200 -
+(15.01.2017, 17:21:53) werkzeug       _internal         _log    INFO: 127.0.0.1 - - [15/Jan/2017 17:21:53] "GET /static/css/base.css HTTP/1.1" 404 -
+(15.01.2017, 17:21:54) werkzeug       _internal         _log    INFO: 127.0.0.1 - - [15/Jan/2017 17:21:54] "GET /start HTTP/1.1" 200 -
+(15.01.2017, 17:21:54) werkzeug       _internal         _log    INFO: 127.0.0.1 - - [15/Jan/2017 17:21:54] "GET /static/css/base.css HTTP/1.1" 404 -
+(15.01.2017, 17:21:56)     root hackernews_client get_top_stories    INFO: Received 10 Hacker News stories in 0.0 minute(s) 8.1 second(s) with ids:
+13404292, 13404496, 13402472, 13404002, 13403216, 13404372, 13403562, 13402528, 13402981, 13402512
+
+(15.01.2017, 17:24:35) __main__       runserver    start_app    INFO: Set up app & logger.
+(15.01.2017, 17:24:35) __main__       runserver init_clients    INFO: Initiated 3 clients: MongoDBClient, UnbabelClient, HackerNewsClient.
+(15.01.2017, 17:24:35) __main__       runserver start_daemon    INFO: Started daemon with time interval 600.
+(15.01.2017, 17:24:35) __main__       runserver    start_app    INFO: App is running!
+(15.01.2017, 17:24:35) werkzeug       _internal         _log    INFO:  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+(15.01.2017, 17:24:38) werkzeug       _internal         _log    INFO: 127.0.0.1 - - [15/Jan/2017 17:24:38] "GET /start HTTP/1.1" 200 -
+(15.01.2017, 17:24:38) werkzeug       _internal         _log    INFO: 127.0.0.1 - - [15/Jan/2017 17:24:38] "GET /static/css/base.css HTTP/1.1" 404 -
+(15.01.2017, 17:24:39) werkzeug       _internal         _log    INFO: 127.0.0.1 - - [15/Jan/2017 17:24:39] "GET /start HTTP/1.1" 200 -
+(15.01.2017, 17:24:39) werkzeug       _internal         _log    INFO: 127.0.0.1 - - [15/Jan/2017 17:24:39] "GET /static/css/base.css HTTP/1.1" 404 -
+(15.01.2017, 17:24:47)     root hackernews_client get_top_stories    INFO: Received 10 Hacker News stories in 0.0 minute(s) 12.2 second(s) with ids:
+13404292, 13404496, 13402472, 13404002, 13404912, 13403216, 13404372, 13403562, 13402528, 13402981
+
+(15.01.2017, 17:24:47) hackerbabel.src.schema          schema     validate   ERROR: Encountered error during validation: Additional properties are not allowed (u'text' was unexpected)
+(15.01.2017, 17:25:53) __main__       runserver    start_app    INFO: Set up app & logger.
+(15.01.2017, 17:25:53) __main__       runserver init_clients    INFO: Initiated 3 clients: MongoDBClient, UnbabelClient, HackerNewsClient.
+(15.01.2017, 17:25:53) __main__       runserver start_daemon    INFO: Started daemon with time interval 600.
+(15.01.2017, 17:25:53) __main__       runserver    start_app    INFO: App is running!
+(15.01.2017, 17:25:53) werkzeug       _internal         _log    INFO:  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+(15.01.2017, 17:25:56) hackerbabel.src.error_handlers  error_handlers handle_any_exception   ERROR: INTERNAL SERVER ERROR
+Time: 2017-01-15T17:25:56.629505
+Error type: <class 'jinja2.exceptions.UndefinedError'>
+Error message: 'static' is undefined
+Traceback: 
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/dennisulmer/Documents/Projekte/unbabel_challenge/fullstack-coding-challenge/hackerbabel/views/index.py", line 25, in index
+    return render_template("index.html")
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/flask/templating.py", line 128, in render_template
+    context, ctx.app)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/flask/templating.py", line 110, in _render
+    rv = template.render(context)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/jinja2/environment.py", line 989, in render
+    return self.environment.handle_exception(exc_info, True)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/jinja2/environment.py", line 754, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/dennisulmer/Documents/Projekte/unbabel_challenge/fullstack-coding-challenge/hackerbabel/views/../templates/index.html", line 3, in top-level template code
+    {% extends "base.html" %}
+  File "/Users/dennisulmer/Documents/Projekte/unbabel_challenge/fullstack-coding-challenge/hackerbabel/views/../templates/base.html", line 1, in top-level template code
+    {% block additional_stylesheets %}
+  File "/Users/dennisulmer/Documents/Projekte/unbabel_challenge/fullstack-coding-challenge/hackerbabel/views/../templates/base.html", line 3, in block "additional_stylesheets"
+    href="{{ static/css/base.css }}"/>
+UndefinedError: 'static' is undefined
+
+(15.01.2017, 17:25:56) werkzeug       _internal         _log    INFO: 127.0.0.1 - - [15/Jan/2017 17:25:56] "GET /start HTTP/1.1" 500 -
+(15.01.2017, 17:25:56) werkzeug       _internal         _log    INFO: 127.0.0.1 - - [15/Jan/2017 17:25:56] "GET /start?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+(15.01.2017, 17:25:56) werkzeug       _internal         _log    INFO: 127.0.0.1 - - [15/Jan/2017 17:25:56] "GET /start?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+(15.01.2017, 17:25:56) werkzeug       _internal         _log    INFO: 127.0.0.1 - - [15/Jan/2017 17:25:56] "GET /start?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+(15.01.2017, 17:25:56) werkzeug       _internal         _log    INFO: 127.0.0.1 - - [15/Jan/2017 17:25:56] "GET /start?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+(15.01.2017, 17:25:56) werkzeug       _internal         _log    INFO: 127.0.0.1 - - [15/Jan/2017 17:25:56] "GET /start?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1" 200 -
+(15.01.2017, 17:25:56) werkzeug       _internal         _log    INFO: 127.0.0.1 - - [15/Jan/2017 17:25:56] "GET /start?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+(15.01.2017, 17:25:58) hackerbabel.src.error_handlers  error_handlers handle_any_exception   ERROR: INTERNAL SERVER ERROR
+Time: 2017-01-15T17:25:58.008243
+Error type: <class 'jinja2.exceptions.UndefinedError'>
+Error message: 'static' is undefined
+Traceback: 
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/dennisulmer/Documents/Projekte/unbabel_challenge/fullstack-coding-challenge/hackerbabel/views/index.py", line 25, in index
+    return render_template("index.html")
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/flask/templating.py", line 128, in render_template
+    context, ctx.app)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/flask/templating.py", line 110, in _render
+    rv = template.render(context)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/jinja2/environment.py", line 989, in render
+    return self.environment.handle_exception(exc_info, True)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/jinja2/environment.py", line 754, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/dennisulmer/Documents/Projekte/unbabel_challenge/fullstack-coding-challenge/hackerbabel/views/../templates/index.html", line 3, in top-level template code
+    {% extends "base.html" %}
+  File "/Users/dennisulmer/Documents/Projekte/unbabel_challenge/fullstack-coding-challenge/hackerbabel/views/../templates/base.html", line 1, in top-level template code
+    {% block additional_stylesheets %}
+  File "/Users/dennisulmer/Documents/Projekte/unbabel_challenge/fullstack-coding-challenge/hackerbabel/views/../templates/base.html", line 3, in block "additional_stylesheets"
+    href="{{ static/css/base.css }}"/>
+UndefinedError: 'static' is undefined
+
+(15.01.2017, 17:25:58) werkzeug       _internal         _log    INFO: 127.0.0.1 - - [15/Jan/2017 17:25:58] "GET /start HTTP/1.1" 500 -
+(15.01.2017, 17:25:58) werkzeug       _internal         _log    INFO: 127.0.0.1 - - [15/Jan/2017 17:25:58] "GET /start?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+(15.01.2017, 17:25:58) werkzeug       _internal         _log    INFO: 127.0.0.1 - - [15/Jan/2017 17:25:58] "GET /start?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+(15.01.2017, 17:25:58) werkzeug       _internal         _log    INFO: 127.0.0.1 - - [15/Jan/2017 17:25:58] "GET /start?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+(15.01.2017, 17:25:58) werkzeug       _internal         _log    INFO: 127.0.0.1 - - [15/Jan/2017 17:25:58] "GET /start?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+(15.01.2017, 17:25:58) werkzeug       _internal         _log    INFO: 127.0.0.1 - - [15/Jan/2017 17:25:58] "GET /start?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+(15.01.2017, 17:26:03)     root hackernews_client get_top_stories    INFO: Received 10 Hacker News stories in 0.0 minute(s) 10.0 second(s) with ids:
+13404292, 13404496, 13404912, 13402472, 13404002, 13403216, 13404372, 13402528, 13403562, 13402981
+
+(15.01.2017, 17:26:03) hackerbabel.src.schema          schema     validate   ERROR: Encountered error during validation: Additional properties are not allowed (u'text' was unexpected)
+(15.01.2017, 17:26:12) __main__       runserver    start_app    INFO: Set up app & logger.
+(15.01.2017, 17:26:12) __main__       runserver init_clients    INFO: Initiated 3 clients: MongoDBClient, UnbabelClient, HackerNewsClient.
+(15.01.2017, 17:26:12) __main__       runserver start_daemon    INFO: Started daemon with time interval 600.
+(15.01.2017, 17:26:12) __main__       runserver    start_app    INFO: App is running!
+(15.01.2017, 17:26:12) werkzeug       _internal         _log    INFO:  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+(15.01.2017, 17:26:14) werkzeug       _internal         _log    INFO: 127.0.0.1 - - [15/Jan/2017 17:26:14] "GET /start HTTP/1.1" 200 -
+(15.01.2017, 17:26:14) werkzeug       _internal         _log    INFO: 127.0.0.1 - - [15/Jan/2017 17:26:14] "GET /static/css/base.css HTTP/1.1" 404 -
+(15.01.2017, 17:26:16) werkzeug       _internal         _log    INFO: 127.0.0.1 - - [15/Jan/2017 17:26:16] "GET /start HTTP/1.1" 200 -
+(15.01.2017, 17:26:16) werkzeug       _internal         _log    INFO: 127.0.0.1 - - [15/Jan/2017 17:26:16] "GET /static/css/base.css HTTP/1.1" 404 -
+(15.01.2017, 17:26:20) werkzeug       _internal         _log    INFO: 127.0.0.1 - - [15/Jan/2017 17:26:20] "GET /dashboard HTTP/1.1" 200 -
+(15.01.2017, 17:26:20) werkzeug       _internal         _log    INFO: 127.0.0.1 - - [15/Jan/2017 17:26:20] "GET /static/css/base.css HTTP/1.1" 404 -
+(15.01.2017, 17:26:21)     root hackernews_client get_top_stories    INFO: Received 10 Hacker News stories in 0.0 minute(s) 9.6 second(s) with ids:
+13404292, 13404496, 13404912, 13402472, 13404002, 13403216, 13404372, 13402528, 13403562, 13402981
+
+(15.01.2017, 17:26:21) hackerbabel.src.schema          schema     validate   ERROR: Encountered error during validation: Additional properties are not allowed (u'text' was unexpected)
+(15.01.2017, 17:26:22) werkzeug       _internal         _log    INFO: 127.0.0.1 - - [15/Jan/2017 17:26:22] "GET /dashboard HTTP/1.1" 200 -
+(15.01.2017, 17:26:22) werkzeug       _internal         _log    INFO: 127.0.0.1 - - [15/Jan/2017 17:26:22] "GET /static/css/base.css HTTP/1.1" 404 -
+(15.01.2017, 17:27:16) __main__       runserver    start_app    INFO: Set up app & logger.
+(15.01.2017, 17:27:16) __main__       runserver init_clients    INFO: Initiated 3 clients: MongoDBClient, UnbabelClient, HackerNewsClient.
+(15.01.2017, 17:27:16) __main__       runserver start_daemon    INFO: Started daemon with time interval 600.
+(15.01.2017, 17:27:16) __main__       runserver    start_app    INFO: App is running!
+(15.01.2017, 17:27:16) werkzeug       _internal         _log    INFO:  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+(15.01.2017, 17:27:25)     root hackernews_client get_top_stories    INFO: Received 10 Hacker News stories in 0.0 minute(s) 8.5 second(s) with ids:
+13404292, 13404496, 13404912, 13402472, 13404002, 13403216, 13404372, 13399004, 13402528, 13403562
+
+(15.01.2017, 17:27:25) hackerbabel.src.schema          schema     validate   ERROR: Encountered error during validation: 'url' is a required property
+(15.01.2017, 17:28:02) __main__       runserver    start_app    INFO: Set up app & logger.
+(15.01.2017, 17:28:02) __main__       runserver init_clients    INFO: Initiated 3 clients: MongoDBClient, UnbabelClient, HackerNewsClient.
+(15.01.2017, 17:28:02) __main__       runserver start_daemon    INFO: Started daemon with time interval 600.
+(15.01.2017, 17:28:02) __main__       runserver    start_app    INFO: App is running!
+(15.01.2017, 17:28:03) werkzeug       _internal         _log    INFO:  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+(15.01.2017, 17:28:11)     root hackernews_client get_top_stories    INFO: Received 10 Hacker News stories in 0.0 minute(s) 8.4 second(s) with ids:
+13404292, 13404496, 13404912, 13402472, 13404002, 13403216, 13404372, 13402528, 13399004, 13403562
+
+(15.01.2017, 17:28:14) werkzeug       _internal         _log    INFO: 127.0.0.1 - - [15/Jan/2017 17:28:14] "GET /start HTTP/1.1" 200 -
+(15.01.2017, 17:28:14) werkzeug       _internal         _log    INFO: 127.0.0.1 - - [15/Jan/2017 17:28:14] "GET /static/css/base.css HTTP/1.1" 404 -
+(15.01.2017, 17:28:14) werkzeug       _internal         _log    INFO: 127.0.0.1 - - [15/Jan/2017 17:28:14] "GET /start HTTP/1.1" 200 -
+(15.01.2017, 17:28:14) werkzeug       _internal         _log    INFO: 127.0.0.1 - - [15/Jan/2017 17:28:14] "GET /static/css/base.css HTTP/1.1" 404 -
+(15.01.2017, 17:28:34) __main__       runserver    start_app    INFO: Set up app & logger.
+(15.01.2017, 17:28:34) __main__       runserver init_clients    INFO: Initiated 3 clients: MongoDBClient, UnbabelClient, HackerNewsClient.
+(15.01.2017, 17:28:34) __main__       runserver start_daemon    INFO: Started daemon with time interval 600.
+(15.01.2017, 17:28:34) __main__       runserver    start_app    INFO: App is running!
+(15.01.2017, 17:28:34) werkzeug       _internal         _log    INFO:  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+(15.01.2017, 17:28:44) werkzeug       _internal         _log    INFO: 127.0.0.1 - - [15/Jan/2017 17:28:44] "GET /start HTTP/1.1" 200 -
+(15.01.2017, 17:28:44) hackerbabel.src.error_handlers  error_handlers handle_any_exception   ERROR: INTERNAL SERVER ERROR
+Time: 2017-01-15T17:28:44.652140
+Error type: <type 'exceptions.TypeError'>
+Error message: send_static_file() got an unexpected keyword argument 'story_id'
+Traceback: 
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+TypeError: send_static_file() got an unexpected keyword argument 'story_id'
+
+(15.01.2017, 17:28:44) werkzeug       _internal         _log    INFO: 127.0.0.1 - - [15/Jan/2017 17:28:44] "GET /hackerbabel/static/css/base.css HTTP/1.1" 500 -
+(15.01.2017, 17:28:45)     root hackernews_client get_top_stories    INFO: Received 10 Hacker News stories in 0.0 minute(s) 11.0 second(s) with ids:
+13404292, 13404496, 13404912, 13402472, 13404002, 13403216, 13404372, 13402528, 13399004, 13403562
+
+(15.01.2017, 17:29:24) __main__       runserver    start_app    INFO: Set up app & logger.
+(15.01.2017, 17:29:24) __main__       runserver init_clients    INFO: Initiated 3 clients: MongoDBClient, UnbabelClient, HackerNewsClient.
+(15.01.2017, 17:29:24) __main__       runserver start_daemon    INFO: Started daemon with time interval 600.
+(15.01.2017, 17:29:24) __main__       runserver    start_app    INFO: App is running!
+(15.01.2017, 17:29:24) werkzeug       _internal         _log    INFO:  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+(15.01.2017, 17:29:30) hackerbabel.src.error_handlers  error_handlers handle_any_exception   ERROR: INTERNAL SERVER ERROR
+Time: 2017-01-15T17:29:30.547525
+Error type: <class 'jinja2.exceptions.TemplateSyntaxError'>
+Error message: unexpected '}', expected ')'
+Traceback: 
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/dennisulmer/Documents/Projekte/unbabel_challenge/fullstack-coding-challenge/hackerbabel/views/index.py", line 25, in index
+    return render_template("index.html")
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/flask/templating.py", line 128, in render_template
+    context, ctx.app)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/flask/templating.py", line 110, in _render
+    rv = template.render(context)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/jinja2/environment.py", line 989, in render
+    return self.environment.handle_exception(exc_info, True)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/jinja2/environment.py", line 754, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/dennisulmer/Documents/Projekte/unbabel_challenge/fullstack-coding-challenge/hackerbabel/views/../templates/base.html", line 3, in template
+    href="{{ url_for('.static', filename='base.css'}}"/>
+TemplateSyntaxError: unexpected '}', expected ')'
+
+(15.01.2017, 17:29:30) werkzeug       _internal         _log    INFO: 127.0.0.1 - - [15/Jan/2017 17:29:30] "GET /start HTTP/1.1" 500 -
+(15.01.2017, 17:29:30) werkzeug       _internal         _log    INFO: 127.0.0.1 - - [15/Jan/2017 17:29:30] "GET /start?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+(15.01.2017, 17:29:30) werkzeug       _internal         _log    INFO: 127.0.0.1 - - [15/Jan/2017 17:29:30] "GET /start?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+(15.01.2017, 17:29:30) werkzeug       _internal         _log    INFO: 127.0.0.1 - - [15/Jan/2017 17:29:30] "GET /start?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+(15.01.2017, 17:29:30) werkzeug       _internal         _log    INFO: 127.0.0.1 - - [15/Jan/2017 17:29:30] "GET /start?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+(15.01.2017, 17:29:30) werkzeug       _internal         _log    INFO: 127.0.0.1 - - [15/Jan/2017 17:29:30] "GET /start?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1" 200 -
+(15.01.2017, 17:29:30) werkzeug       _internal         _log    INFO: 127.0.0.1 - - [15/Jan/2017 17:29:30] "GET /start?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+(15.01.2017, 17:29:34)     root hackernews_client get_top_stories    INFO: Received 10 Hacker News stories in 0.0 minute(s) 10.4 second(s) with ids:
+13404292, 13404496, 13404912, 13402472, 13404002, 13403216, 13404372, 13402528, 13399004, 13403562
+
+(15.01.2017, 17:29:49) __main__       runserver    start_app    INFO: Set up app & logger.
+(15.01.2017, 17:29:49) __main__       runserver init_clients    INFO: Initiated 3 clients: MongoDBClient, UnbabelClient, HackerNewsClient.
+(15.01.2017, 17:29:49) __main__       runserver start_daemon    INFO: Started daemon with time interval 600.
+(15.01.2017, 17:29:49) __main__       runserver    start_app    INFO: App is running!
+(15.01.2017, 17:29:49) werkzeug       _internal         _log    INFO:  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+(15.01.2017, 17:29:51) werkzeug       _internal         _log    INFO: 127.0.0.1 - - [15/Jan/2017 17:29:51] "GET /start HTTP/1.1" 200 -
+(15.01.2017, 17:29:51) werkzeug       _internal         _log    INFO: 127.0.0.1 - - [15/Jan/2017 17:29:51] "GET /static/base.css HTTP/1.1" 404 -
+(15.01.2017, 17:29:52) werkzeug       _internal         _log    INFO: 127.0.0.1 - - [15/Jan/2017 17:29:52] "GET /start HTTP/1.1" 200 -
+(15.01.2017, 17:29:52) werkzeug       _internal         _log    INFO: 127.0.0.1 - - [15/Jan/2017 17:29:52] "GET /static/base.css HTTP/1.1" 404 -
+(15.01.2017, 17:29:53) werkzeug       _internal         _log    INFO: 127.0.0.1 - - [15/Jan/2017 17:29:53] "GET /dashboard HTTP/1.1" 200 -
+(15.01.2017, 17:29:53) werkzeug       _internal         _log    INFO: 127.0.0.1 - - [15/Jan/2017 17:29:53] "GET /static/base.css HTTP/1.1" 404 -
+(15.01.2017, 17:29:58)     root hackernews_client get_top_stories    INFO: Received 10 Hacker News stories in 0.0 minute(s) 9.3 second(s) with ids:
+13404292, 13404496, 13404912, 13402472, 13404002, 13403216, 13404372, 13402528, 13399004, 13403562
+
+(15.01.2017, 17:40:06)     root hackernews_client get_top_stories    INFO: Received 10 Hacker News stories in 0.0 minute(s) 8.3 second(s) with ids:
+13404292, 13404978, 13404912, 13404496, 13402472, 13404002, 13403216, 13399004, 13403660, 13404372
+
+(15.01.2017, 17:50:16)     root hackernews_client get_top_stories    INFO: Received 10 Hacker News stories in 0.0 minute(s) 9.3 second(s) with ids:
+13404978, 13404292, 13404912, 13404840, 13404496, 13402472, 13404372, 13404002, 13403216, 13403660
+
+(15.01.2017, 18:00:26)     root hackernews_client get_top_stories    INFO: Received 10 Hacker News stories in 0.0 minute(s) 10.6 second(s) with ids:
+13404978, 13404292, 13404840, 13399095, 13404912, 13404496, 13402472, 13404372, 13403660, 13404002
+
+(15.01.2017, 18:01:42) __main__       runserver    start_app    INFO: Set up app & logger.
+(15.01.2017, 18:01:42) __main__       runserver init_clients    INFO: Initiated 3 clients: MongoDBClient, UnbabelClient, HackerNewsClient.
+(15.01.2017, 18:01:42) __main__       runserver start_daemon    INFO: Started daemon with time interval 600.
+(15.01.2017, 18:01:42) __main__       runserver    start_app    INFO: App is running!
+(15.01.2017, 18:01:42) werkzeug       _internal         _log    INFO:  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+(15.01.2017, 18:01:44) werkzeug       _internal         _log    INFO: 127.0.0.1 - - [15/Jan/2017 18:01:44] "GET /dashboard HTTP/1.1" 200 -
+(15.01.2017, 18:01:44) werkzeug       _internal         _log    INFO: 127.0.0.1 - - [15/Jan/2017 18:01:44] "GET /static/base.css HTTP/1.1" 404 -
+(15.01.2017, 18:01:45) werkzeug       _internal         _log    INFO: 127.0.0.1 - - [15/Jan/2017 18:01:45] "GET /dashboard HTTP/1.1" 200 -
+(15.01.2017, 18:01:46) werkzeug       _internal         _log    INFO: 127.0.0.1 - - [15/Jan/2017 18:01:46] "GET /static/base.css HTTP/1.1" 404 -
+(15.01.2017, 18:01:46) werkzeug       _internal         _log    INFO: 127.0.0.1 - - [15/Jan/2017 18:01:46] "GET /dashboard HTTP/1.1" 200 -
+(15.01.2017, 18:01:46) werkzeug       _internal         _log    INFO: 127.0.0.1 - - [15/Jan/2017 18:01:46] "GET /static/base.css HTTP/1.1" 404 -
+(15.01.2017, 18:01:48) werkzeug       _internal         _log    INFO: 127.0.0.1 - - [15/Jan/2017 18:01:48] "GET /dashboard HTTP/1.1" 200 -
+(15.01.2017, 18:01:49) werkzeug       _internal         _log    INFO: 127.0.0.1 - - [15/Jan/2017 18:01:49] "GET /static/base.css HTTP/1.1" 404 -
+(15.01.2017, 18:01:49) werkzeug       _internal         _log    INFO: 127.0.0.1 - - [15/Jan/2017 18:01:49] "GET /dashboard HTTP/1.1" 200 -
+(15.01.2017, 18:01:50) werkzeug       _internal         _log    INFO: 127.0.0.1 - - [15/Jan/2017 18:01:50] "GET /static/base.css HTTP/1.1" 404 -
+(15.01.2017, 18:01:50)     root hackernews_client get_top_stories    INFO: Received 10 Hacker News stories in 0.0 minute(s) 8.2 second(s) with ids:
+13404978, 13404292, 13404840, 13399095, 13404912, 13404496, 13402472, 13404372, 13403660, 13404002
+
+(15.01.2017, 18:01:50) werkzeug       _internal         _log    INFO: 127.0.0.1 - - [15/Jan/2017 18:01:50] "GET /dashboard HTTP/1.1" 200 -
+(15.01.2017, 18:01:50) werkzeug       _internal         _log    INFO: 127.0.0.1 - - [15/Jan/2017 18:01:50] "GET /static/base.css HTTP/1.1" 404 -
+(15.01.2017, 18:01:51) werkzeug       _internal         _log    INFO: 127.0.0.1 - - [15/Jan/2017 18:01:51] "GET /dashboard HTTP/1.1" 200 -
+(15.01.2017, 18:01:52) werkzeug       _internal         _log    INFO: 127.0.0.1 - - [15/Jan/2017 18:01:52] "GET /static/base.css HTTP/1.1" 404 -
+(15.01.2017, 18:02:38) werkzeug       _internal         _log    INFO: 127.0.0.1 - - [15/Jan/2017 18:02:38] "GET /dashboard HTTP/1.1" 200 -
+(15.01.2017, 18:02:39) werkzeug       _internal         _log    INFO: 127.0.0.1 - - [15/Jan/2017 18:02:39] "GET /static/base.css HTTP/1.1" 404 -
+(15.01.2017, 18:02:39) werkzeug       _internal         _log    INFO: 127.0.0.1 - - [15/Jan/2017 18:02:39] "GET /dashboard HTTP/1.1" 200 -
+(15.01.2017, 18:02:39) werkzeug       _internal         _log    INFO: 127.0.0.1 - - [15/Jan/2017 18:02:39] "GET /static/base.css HTTP/1.1" 404 -
+(15.01.2017, 18:06:44) __main__       runserver    start_app    INFO: Set up app & logger.
+(15.01.2017, 18:06:44) __main__       runserver init_clients    INFO: Initiated 3 clients: MongoDBClient, UnbabelClient, HackerNewsClient.
+(15.01.2017, 18:06:44) __main__       runserver start_daemon    INFO: Started daemon with time interval 600.
+(15.01.2017, 18:06:44) __main__       runserver    start_app    INFO: App is running!
+(15.01.2017, 18:06:45) werkzeug       _internal         _log    INFO:  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+(15.01.2017, 18:06:51) werkzeug       _internal         _log    INFO: 127.0.0.1 - - [15/Jan/2017 18:06:51] "GET /dashboard HTTP/1.1" 200 -
+(15.01.2017, 18:06:51) werkzeug       _internal         _log    INFO: 127.0.0.1 - - [15/Jan/2017 18:06:51] "GET /static/base.css HTTP/1.1" 404 -
+(15.01.2017, 18:06:52)     root hackernews_client get_top_stories    INFO: Received 10 Hacker News stories in 0.0 minute(s) 8.1 second(s) with ids:
+13404292, 13404840, 13399095, 13404978, 13404912, 13404496, 13402472, 13404372, 13403660, 13404002
+
+(15.01.2017, 18:06:54) werkzeug       _internal         _log    INFO: 127.0.0.1 - - [15/Jan/2017 18:06:54] "GET /dashboard HTTP/1.1" 200 -
+(15.01.2017, 18:06:54) werkzeug       _internal         _log    INFO: 127.0.0.1 - - [15/Jan/2017 18:06:54] "GET /static/base.css HTTP/1.1" 404 -
+(15.01.2017, 18:06:55) werkzeug       _internal         _log    INFO: 127.0.0.1 - - [15/Jan/2017 18:06:55] "GET /dashboard HTTP/1.1" 200 -
+(15.01.2017, 18:06:55) werkzeug       _internal         _log    INFO: 127.0.0.1 - - [15/Jan/2017 18:06:55] "GET /static/base.css HTTP/1.1" 404 -
+(15.01.2017, 18:07:15) werkzeug       _internal         _log    INFO: 127.0.0.1 - - [15/Jan/2017 18:07:15] "GET /start HTTP/1.1" 200 -
+(15.01.2017, 18:07:15) werkzeug       _internal         _log    INFO: 127.0.0.1 - - [15/Jan/2017 18:07:15] "GET /static/base.css HTTP/1.1" 404 -
+(15.01.2017, 18:13:17) __main__       runserver    start_app    INFO: Set up app & logger.
+(15.01.2017, 18:13:17) __main__       runserver init_clients    INFO: Initiated 3 clients: UnbabelClient, MongoDBClient, HackerNewsClient.
+(15.01.2017, 18:13:17) __main__       runserver start_daemon    INFO: Started daemon with time interval 600.
+(15.01.2017, 18:13:28)     root hackernews_client get_top_stories    INFO: Received 10 Hacker News stories in 0.0 minute(s) 11.4 second(s) with ids:
+13404292, 13404840, 13399095, 13404912, 13404496, 13402472, 13404372, 13403660, 13402512, 13404978
+
+(15.01.2017, 18:17:52) __main__       runserver    start_app    INFO: Set up app & logger.
+(15.01.2017, 18:17:52) __main__       runserver init_clients    INFO: Initiated 3 clients: MongoDBClient, UnbabelClient, HackerNewsClient.
+(15.01.2017, 18:17:52) __main__       runserver start_daemon    INFO: Started daemon with time interval 600.
+(15.01.2017, 18:17:52) __main__       runserver    start_app    INFO: App is running!
+(15.01.2017, 18:17:52) werkzeug       _internal         _log    INFO:  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+(15.01.2017, 18:17:55) werkzeug       _internal         _log    INFO: 127.0.0.1 - - [15/Jan/2017 18:17:55] "GET /start HTTP/1.1" 200 -
+(15.01.2017, 18:17:55) werkzeug       _internal         _log    INFO: 127.0.0.1 - - [15/Jan/2017 18:17:55] "GET /static/base.css HTTP/1.1" 404 -
+(15.01.2017, 18:17:56) werkzeug       _internal         _log    INFO: 127.0.0.1 - - [15/Jan/2017 18:17:56] "GET /start HTTP/1.1" 200 -
+(15.01.2017, 18:17:56) werkzeug       _internal         _log    INFO: 127.0.0.1 - - [15/Jan/2017 18:17:56] "GET /static/base.css HTTP/1.1" 404 -
+(15.01.2017, 18:17:58) werkzeug       _internal         _log    INFO: 127.0.0.1 - - [15/Jan/2017 18:17:58] "GET /start HTTP/1.1" 200 -
+(15.01.2017, 18:17:58) werkzeug       _internal         _log    INFO: 127.0.0.1 - - [15/Jan/2017 18:17:58] "GET /static/base.css HTTP/1.1" 404 -
+(15.01.2017, 18:18:01)     root hackernews_client get_top_stories    INFO: Received 10 Hacker News stories in 0.0 minute(s) 8.9 second(s) with ids:
+13404292, 13404840, 13399095, 13404912, 13404496, 13402472, 13404372, 13403660, 13402512, 13403562
+
+(15.01.2017, 18:21:13) __main__       runserver    start_app    INFO: Set up app & logger.
+(15.01.2017, 18:21:13) __main__       runserver init_clients    INFO: Initiated 3 clients: MongoDBClient, UnbabelClient, HackerNewsClient.
+(15.01.2017, 18:21:13) __main__       runserver start_daemon    INFO: Started daemon with time interval 600.
+(15.01.2017, 18:21:13) __main__       runserver    start_app    INFO: App is running!
+(15.01.2017, 18:21:13) werkzeug       _internal         _log    INFO:  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+(15.01.2017, 18:21:14) hackerbabel.src.error_handlers  error_handlers handle_any_exception   ERROR: INTERNAL SERVER ERROR
+Time: 2017-01-15T18:21:14.269656
+Error type: <class 'werkzeug.routing.BuildError'>
+Error message: 
+Traceback: 
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/dennisulmer/Documents/Projekte/unbabel_challenge/fullstack-coding-challenge/hackerbabel/views/index.py", line 24, in index
+    return render_template("index.html")
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/flask/templating.py", line 128, in render_template
+    context, ctx.app)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/flask/templating.py", line 110, in _render
+    rv = template.render(context)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/jinja2/environment.py", line 989, in render
+    return self.environment.handle_exception(exc_info, True)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/jinja2/environment.py", line 754, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/dennisulmer/Documents/Projekte/unbabel_challenge/fullstack-coding-challenge/hackerbabel/views/../templates/index.html", line 3, in top-level template code
+    {% extends "base.html" %}
+  File "/Users/dennisulmer/Documents/Projekte/unbabel_challenge/fullstack-coding-challenge/hackerbabel/views/../templates/base.html", line 1, in top-level template code
+    {% block additional_stylesheets %}
+  File "/Users/dennisulmer/Documents/Projekte/unbabel_challenge/fullstack-coding-challenge/hackerbabel/views/../templates/base.html", line 3, in block "additional_stylesheets"
+    href="{{ url_for('base.static', filename='base.css') }}"/>
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/flask/helpers.py", line 312, in url_for
+    return appctx.app.handle_url_build_error(error, endpoint, values)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/flask/app.py", line 1641, in handle_url_build_error
+    reraise(exc_type, exc_value, tb)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/flask/helpers.py", line 305, in url_for
+    force_external=external)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/werkzeug/routing.py", line 1758, in build
+    raise BuildError(endpoint, values, method, self)
+BuildError: Could not build url for endpoint 'base.static' with values ['filename']. Did you mean 'static' instead?
+
+(15.01.2017, 18:21:14) werkzeug       _internal         _log    INFO: 127.0.0.1 - - [15/Jan/2017 18:21:14] "GET /start HTTP/1.1" 500 -
+(15.01.2017, 18:21:14) werkzeug       _internal         _log    INFO: 127.0.0.1 - - [15/Jan/2017 18:21:14] "GET /start?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+(15.01.2017, 18:21:14) werkzeug       _internal         _log    INFO: 127.0.0.1 - - [15/Jan/2017 18:21:14] "GET /start?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+(15.01.2017, 18:21:14) werkzeug       _internal         _log    INFO: 127.0.0.1 - - [15/Jan/2017 18:21:14] "GET /start?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+(15.01.2017, 18:21:14) werkzeug       _internal         _log    INFO: 127.0.0.1 - - [15/Jan/2017 18:21:14] "GET /start?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+(15.01.2017, 18:21:14) werkzeug       _internal         _log    INFO: 127.0.0.1 - - [15/Jan/2017 18:21:14] "GET /start?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+(15.01.2017, 18:21:14) werkzeug       _internal         _log    INFO: 127.0.0.1 - - [15/Jan/2017 18:21:14] "GET /start?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1" 200 -
+(15.01.2017, 18:21:26)     root hackernews_client get_top_stories    INFO: Received 10 Hacker News stories in 0.0 minute(s) 12.7 second(s) with ids:
+13404292, 13399095, 13404840, 13404912, 13404496, 13402472, 13404978, 13404372, 13403660, 13402512
+
+(15.01.2017, 18:21:32) __main__       runserver    start_app    INFO: Set up app & logger.
+(15.01.2017, 18:21:32) __main__       runserver init_clients    INFO: Initiated 3 clients: MongoDBClient, UnbabelClient, HackerNewsClient.
+(15.01.2017, 18:21:32) __main__       runserver start_daemon    INFO: Started daemon with time interval 600.
+(15.01.2017, 18:21:32) __main__       runserver    start_app    INFO: App is running!
+(15.01.2017, 18:21:32) werkzeug       _internal         _log    INFO:  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+(15.01.2017, 18:21:38) werkzeug       _internal         _log    INFO: 127.0.0.1 - - [15/Jan/2017 18:21:38] "GET /start HTTP/1.1" 200 -
+(15.01.2017, 18:21:38) werkzeug       _internal         _log    INFO: 127.0.0.1 - - [15/Jan/2017 18:21:38] "GET /static/base.css HTTP/1.1" 404 -
+(15.01.2017, 18:21:42)     root hackernews_client get_top_stories    INFO: Received 10 Hacker News stories in 0.0 minute(s) 10.1 second(s) with ids:
+13404292, 13399095, 13404840, 13404912, 13404496, 13404978, 13402472, 13404372, 13403660, 13402512
+
+(15.01.2017, 18:22:30) werkzeug       _internal         _log    INFO: 127.0.0.1 - - [15/Jan/2017 18:22:30] "GET /start HTTP/1.1" 200 -
+(15.01.2017, 18:22:30) werkzeug       _internal         _log    INFO: 127.0.0.1 - - [15/Jan/2017 18:22:30] "GET /static/base.css HTTP/1.1" 404 -
+(15.01.2017, 18:22:31) werkzeug       _internal         _log    INFO: 127.0.0.1 - - [15/Jan/2017 18:22:31] "GET /start HTTP/1.1" 200 -
+(15.01.2017, 18:22:31) werkzeug       _internal         _log    INFO: 127.0.0.1 - - [15/Jan/2017 18:22:31] "GET /static/base.css HTTP/1.1" 404 -
+(15.01.2017, 18:27:13) __main__       runserver    start_app    INFO: Set up app & logger.
+(15.01.2017, 18:27:13) __main__       runserver init_clients    INFO: Initiated 3 clients: MongoDBClient, UnbabelClient, HackerNewsClient.
+(15.01.2017, 18:27:13) __main__       runserver start_daemon    INFO: Started daemon with time interval 600.
+(15.01.2017, 18:27:13) __main__       runserver    start_app    INFO: App is running!
+(15.01.2017, 18:27:13) werkzeug       _internal         _log    INFO:  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+(15.01.2017, 18:27:16) werkzeug       _internal         _log    INFO: 127.0.0.1 - - [15/Jan/2017 18:27:16] "GET /start HTTP/1.1" 200 -
+(15.01.2017, 18:27:16) werkzeug       _internal         _log    INFO: 127.0.0.1 - - [15/Jan/2017 18:27:16] "GET /static/base.css HTTP/1.1" 404 -
+(15.01.2017, 18:27:18) werkzeug       _internal         _log    INFO: 127.0.0.1 - - [15/Jan/2017 18:27:18] "GET /dashboard HTTP/1.1" 200 -
+(15.01.2017, 18:27:18) werkzeug       _internal         _log    INFO: 127.0.0.1 - - [15/Jan/2017 18:27:18] "GET /static/base.css HTTP/1.1" 404 -
+(15.01.2017, 18:27:19) werkzeug       _internal         _log    INFO: 127.0.0.1 - - [15/Jan/2017 18:27:19] "GET /dashboard HTTP/1.1" 200 -
+(15.01.2017, 18:27:19) werkzeug       _internal         _log    INFO: 127.0.0.1 - - [15/Jan/2017 18:27:19] "GET /static/base.css HTTP/1.1" 404 -
+(15.01.2017, 18:27:19) werkzeug       _internal         _log    INFO: 127.0.0.1 - - [15/Jan/2017 18:27:19] "GET /dashboard HTTP/1.1" 200 -
+(15.01.2017, 18:27:19) werkzeug       _internal         _log    INFO: 127.0.0.1 - - [15/Jan/2017 18:27:19] "GET /static/base.css HTTP/1.1" 404 -
+(15.01.2017, 18:27:20) werkzeug       _internal         _log    INFO: 127.0.0.1 - - [15/Jan/2017 18:27:20] "GET /dashboard HTTP/1.1" 200 -
+(15.01.2017, 18:27:20) werkzeug       _internal         _log    INFO: 127.0.0.1 - - [15/Jan/2017 18:27:20] "GET /static/base.css HTTP/1.1" 404 -
+(15.01.2017, 18:27:21)     root hackernews_client get_top_stories    INFO: Received 10 Hacker News stories in 0.0 minute(s) 8.1 second(s) with ids:
+13399095, 13404292, 13404840, 13404912, 13404496, 13404978, 13402472, 13404372, 13403660, 13405121
+
+(15.01.2017, 18:29:50) __main__       runserver    start_app    INFO: Set up app & logger.
+(15.01.2017, 18:29:50) __main__       runserver init_clients    INFO: Initiated 3 clients: MongoDBClient, UnbabelClient, HackerNewsClient.
+(15.01.2017, 18:29:50) __main__       runserver start_daemon    INFO: Started daemon with time interval 600.
+(15.01.2017, 18:29:50) __main__       runserver    start_app    INFO: App is running!
+(15.01.2017, 18:29:59)     root hackernews_client get_top_stories    INFO: Received 10 Hacker News stories in 0.0 minute(s) 9.2 second(s) with ids:
+13399095, 13404292, 13404840, 13404912, 13404496, 13402472, 13404372, 13405121, 13403660, 13403562
+
+(15.01.2017, 18:30:45) __main__       runserver    start_app    INFO: Set up app & logger.
+(15.01.2017, 18:30:45) __main__       runserver init_clients    INFO: Initiated 3 clients: UnbabelClient, MongoDBClient, HackerNewsClient.
+(15.01.2017, 18:30:45) __main__       runserver start_daemon    INFO: Started daemon with time interval 600.
+(15.01.2017, 18:30:45) __main__       runserver    start_app    INFO: App is running!
+(15.01.2017, 18:30:54)     root hackernews_client get_top_stories    INFO: Received 10 Hacker News stories in 0.0 minute(s) 9.7 second(s) with ids:
+13399095, 13404292, 13404840, 13404912, 13404496, 13402472, 13404372, 13405121, 13403660, 13403562
+
+(15.01.2017, 18:30:57) __main__       runserver    start_app    INFO: Set up app & logger.
+(15.01.2017, 18:30:57) __main__       runserver init_clients    INFO: Initiated 3 clients: UnbabelClient, MongoDBClient, HackerNewsClient.
+(15.01.2017, 18:30:57) __main__       runserver start_daemon    INFO: Started daemon with time interval 600.
+(15.01.2017, 18:30:57) __main__       runserver    start_app    INFO: App is running!
+(15.01.2017, 18:31:06)     root hackernews_client get_top_stories    INFO: Received 10 Hacker News stories in 0.0 minute(s) 9.1 second(s) with ids:
+13399095, 13404292, 13404840, 13404912, 13404496, 13402472, 13404372, 13405121, 13403660, 13403562
+
+(15.01.2017, 18:31:21) __main__       runserver    start_app    INFO: Set up app & logger.
+(15.01.2017, 18:31:21) __main__       runserver init_clients    INFO: Initiated 3 clients: UnbabelClient, MongoDBClient, HackerNewsClient.
+(15.01.2017, 18:31:21) __main__       runserver start_daemon    INFO: Started daemon with time interval 600.
+(15.01.2017, 18:31:21) __main__       runserver    start_app    INFO: App is running!
+(15.01.2017, 18:31:31)     root hackernews_client get_top_stories    INFO: Received 10 Hacker News stories in 0.0 minute(s) 9.5 second(s) with ids:
+13399095, 13404292, 13404840, 13404912, 13404496, 13402472, 13404372, 13403660, 13405121, 13403562
+
+(15.01.2017, 18:33:05) __main__       runserver    start_app    INFO: Set up app & logger.
+(15.01.2017, 18:33:05) __main__       runserver init_clients    INFO: Initiated 3 clients: UnbabelClient, MongoDBClient, HackerNewsClient.
+(15.01.2017, 18:33:05) __main__       runserver start_daemon    INFO: Started daemon with time interval 600.
+(15.01.2017, 18:33:05) __main__       runserver    start_app    INFO: App is running!
+(15.01.2017, 18:33:12) __main__       runserver    start_app    INFO: Set up app & logger.
+(15.01.2017, 18:33:12) __main__       runserver init_clients    INFO: Initiated 3 clients: UnbabelClient, MongoDBClient, HackerNewsClient.
+(15.01.2017, 18:33:12) __main__       runserver start_daemon    INFO: Started daemon with time interval 600.
+(15.01.2017, 18:33:12) __main__       runserver    start_app    INFO: App is running!
+(15.01.2017, 18:33:20)     root hackernews_client get_top_stories    INFO: Received 10 Hacker News stories in 0.0 minute(s) 7.8 second(s) with ids:
+13399095, 13404292, 13404840, 13404912, 13404496, 13402472, 13404372, 13403660, 13405121, 13403562
+
+(15.01.2017, 18:33:44) __main__       runserver    start_app    INFO: Set up app & logger.
+(15.01.2017, 18:33:44) __main__       runserver init_clients    INFO: Initiated 3 clients: UnbabelClient, MongoDBClient, HackerNewsClient.
+(15.01.2017, 18:33:44) __main__       runserver start_daemon    INFO: Started daemon with time interval 600.
+(15.01.2017, 18:33:44) __main__       runserver    start_app    INFO: App is running!
+(15.01.2017, 18:33:52)     root hackernews_client get_top_stories    INFO: Received 10 Hacker News stories in 0.0 minute(s) 7.8 second(s) with ids:
+13399095, 13404292, 13404840, 13404912, 13404496, 13402472, 13404372, 13403660, 13405121, 13403562
+
+(15.01.2017, 18:34:23) __main__       runserver    start_app    INFO: Set up app & logger.
+(15.01.2017, 18:34:23) __main__       runserver init_clients    INFO: Initiated 3 clients: UnbabelClient, MongoDBClient, HackerNewsClient.
+(15.01.2017, 18:34:23) __main__       runserver start_daemon    INFO: Started daemon with time interval 600.
+(15.01.2017, 18:34:23) __main__       runserver    start_app    INFO: App is running!
+(15.01.2017, 18:34:32)     root hackernews_client get_top_stories    INFO: Received 10 Hacker News stories in 0.0 minute(s) 8.9 second(s) with ids:
+13399095, 13404292, 13404840, 13404912, 13404496, 13402472, 13404372, 13403660, 13405121, 13403562
+
+(15.01.2017, 18:36:27) __main__       runserver    start_app    INFO: Set up app & logger.
+(15.01.2017, 18:36:27) __main__       runserver init_clients    INFO: Initiated 3 clients: UnbabelClient, MongoDBClient, HackerNewsClient.
+(15.01.2017, 18:36:27) __main__       runserver start_daemon    INFO: Started daemon with time interval 600.
+(15.01.2017, 18:36:27) __main__       runserver    start_app    INFO: App is running!
+(15.01.2017, 18:36:35)     root hackernews_client get_top_stories    INFO: Received 10 Hacker News stories in 0.0 minute(s) 8.0 second(s) with ids:
+13399095, 13404292, 13404840, 13404912, 13404496, 13402472, 13404372, 13405121, 13403660, 13403562
+
+(15.01.2017, 18:37:30) __main__       runserver    start_app    INFO: Set up app & logger.
+(15.01.2017, 18:37:30) __main__       runserver init_clients    INFO: Initiated 3 clients: UnbabelClient, MongoDBClient, HackerNewsClient.
+(15.01.2017, 18:37:30) __main__       runserver start_daemon    INFO: Started daemon with time interval 600.
+(15.01.2017, 18:37:30) __main__       runserver    start_app    INFO: App is running!
+(15.01.2017, 18:37:33) hackerbabel.src.error_handlers  error_handlers handle_any_exception   ERROR: INTERNAL SERVER ERROR
+Time: 2017-01-15T18:37:33.159273
+Error type: <class 'werkzeug.routing.BuildError'>
+Error message: 
+Traceback: 
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/dennisulmer/Documents/Projekte/unbabel_challenge/fullstack-coding-challenge/hackerbabel/views/comment_section.py", line 24, in comment_section
+    return render_template("comment_section.html", story_id=story_id)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/flask/templating.py", line 128, in render_template
+    context, ctx.app)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/flask/templating.py", line 110, in _render
+    rv = template.render(context)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/jinja2/environment.py", line 989, in render
+    return self.environment.handle_exception(exc_info, True)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/jinja2/environment.py", line 754, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/dennisulmer/Documents/Projekte/unbabel_challenge/fullstack-coding-challenge/hackerbabel/views/../templates/comment_section.html", line 3, in top-level template code
+    {% extends "base.html" %}
+  File "/Users/dennisulmer/Documents/Projekte/unbabel_challenge/fullstack-coding-challenge/hackerbabel/views/../templates/base.html", line 1, in top-level template code
+    {% block additional_stylesheets %}
+  File "/Users/dennisulmer/Documents/Projekte/unbabel_challenge/fullstack-coding-challenge/hackerbabel/views/../templates/base.html", line 3, in block "additional_stylesheets"
+    href="{{ url_for('hackerbabel/static', filename='base.css') }}"/>
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/flask/helpers.py", line 312, in url_for
+    return appctx.app.handle_url_build_error(error, endpoint, values)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/flask/app.py", line 1641, in handle_url_build_error
+    reraise(exc_type, exc_value, tb)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/flask/helpers.py", line 305, in url_for
+    force_external=external)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/werkzeug/routing.py", line 1758, in build
+    raise BuildError(endpoint, values, method, self)
+BuildError: Could not build url for endpoint 'hackerbabel/static' with values ['filename']. Did you mean 'dashboard.static' instead?
+
+(15.01.2017, 18:37:39)     root hackernews_client get_top_stories    INFO: Received 10 Hacker News stories in 0.0 minute(s) 9.2 second(s) with ids:
+13399095, 13404292, 13404840, 13404912, 13404496, 13402472, 13405121, 13404372, 13403660, 13403562
+
+(15.01.2017, 18:37:52) __main__       runserver    start_app    INFO: Set up app & logger.
+(15.01.2017, 18:37:52) __main__       runserver init_clients    INFO: Initiated 3 clients: UnbabelClient, MongoDBClient, HackerNewsClient.
+(15.01.2017, 18:37:52) __main__       runserver start_daemon    INFO: Started daemon with time interval 600.
+(15.01.2017, 18:37:52) __main__       runserver    start_app    INFO: App is running!
+(15.01.2017, 18:38:01)     root hackernews_client get_top_stories    INFO: Received 10 Hacker News stories in 0.0 minute(s) 8.8 second(s) with ids:
+13399095, 13404292, 13404840, 13404912, 13404496, 13402472, 13405121, 13404372, 13403660, 13403562
+
+(15.01.2017, 18:38:23) __main__       runserver    start_app    INFO: Set up app & logger.
+(15.01.2017, 18:38:23) __main__       runserver init_clients    INFO: Initiated 3 clients: UnbabelClient, MongoDBClient, HackerNewsClient.
+(15.01.2017, 18:38:23) __main__       runserver start_daemon    INFO: Started daemon with time interval 600.
+(15.01.2017, 18:38:23) __main__       runserver    start_app    INFO: App is running!
+(15.01.2017, 18:38:25) hackerbabel.src.error_handlers  error_handlers handle_any_exception   ERROR: INTERNAL SERVER ERROR
+Time: 2017-01-15T18:38:25.346444
+Error type: <class 'jinja2.exceptions.TemplateSyntaxError'>
+Error message: unexpected ')'
+Traceback: 
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/dennisulmer/Documents/Projekte/unbabel_challenge/fullstack-coding-challenge/hackerbabel/views/index.py", line 25, in index
+    return render_template("index.html")
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/flask/templating.py", line 128, in render_template
+    context, ctx.app)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/flask/templating.py", line 110, in _render
+    rv = template.render(context)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/jinja2/environment.py", line 989, in render
+    return self.environment.handle_exception(exc_info, True)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/jinja2/environment.py", line 754, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/dennisulmer/Documents/Projekte/unbabel_challenge/fullstack-coding-challenge/hackerbabel/views/../templates/base.html", line 3, in template
+    href="{{ 'hackerbabel/static/base.css') }}"/>
+TemplateSyntaxError: unexpected ')'
+
+(15.01.2017, 18:38:31)     root hackernews_client get_top_stories    INFO: Received 10 Hacker News stories in 0.0 minute(s) 8.7 second(s) with ids:
+13399095, 13404292, 13404840, 13404912, 13404496, 13405121, 13402472, 13404372, 13403660, 13403562
+
+(15.01.2017, 18:38:40) __main__       runserver    start_app    INFO: Set up app & logger.
+(15.01.2017, 18:38:40) __main__       runserver init_clients    INFO: Initiated 3 clients: UnbabelClient, MongoDBClient, HackerNewsClient.
+(15.01.2017, 18:38:40) __main__       runserver start_daemon    INFO: Started daemon with time interval 600.
+(15.01.2017, 18:38:40) __main__       runserver    start_app    INFO: App is running!
+(15.01.2017, 18:38:42) hackerbabel.src.error_handlers  error_handlers handle_any_exception   ERROR: INTERNAL SERVER ERROR
+Time: 2017-01-15T18:38:42.845775
+Error type: <type 'exceptions.TypeError'>
+Error message: send_static_file() got an unexpected keyword argument 'story_id'
+Traceback: 
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+TypeError: send_static_file() got an unexpected keyword argument 'story_id'
+
+(15.01.2017, 18:38:44) hackerbabel.src.error_handlers  error_handlers handle_any_exception   ERROR: INTERNAL SERVER ERROR
+Time: 2017-01-15T18:38:44.050021
+Error type: <type 'exceptions.TypeError'>
+Error message: send_static_file() got an unexpected keyword argument 'story_id'
+Traceback: 
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+TypeError: send_static_file() got an unexpected keyword argument 'story_id'
+
+(15.01.2017, 18:38:45) hackerbabel.src.error_handlers  error_handlers handle_any_exception   ERROR: INTERNAL SERVER ERROR
+Time: 2017-01-15T18:38:45.327372
+Error type: <type 'exceptions.TypeError'>
+Error message: send_static_file() got an unexpected keyword argument 'story_id'
+Traceback: 
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+TypeError: send_static_file() got an unexpected keyword argument 'story_id'
+
+(15.01.2017, 18:38:46) hackerbabel.src.error_handlers  error_handlers handle_any_exception   ERROR: INTERNAL SERVER ERROR
+Time: 2017-01-15T18:38:46.063475
+Error type: <type 'exceptions.TypeError'>
+Error message: send_static_file() got an unexpected keyword argument 'story_id'
+Traceback: 
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+TypeError: send_static_file() got an unexpected keyword argument 'story_id'
+
+(15.01.2017, 18:38:49)     root hackernews_client get_top_stories    INFO: Received 10 Hacker News stories in 0.0 minute(s) 9.2 second(s) with ids:
+13399095, 13404292, 13404840, 13404912, 13404496, 13405121, 13402472, 13404372, 13403660, 13403562
+
+(15.01.2017, 18:39:26) hackerbabel.src.error_handlers  error_handlers handle_any_exception   ERROR: INTERNAL SERVER ERROR
+Time: 2017-01-15T18:39:26.502110
+Error type: <type 'exceptions.TypeError'>
+Error message: send_static_file() got an unexpected keyword argument 'story_id'
+Traceback: 
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+TypeError: send_static_file() got an unexpected keyword argument 'story_id'
+
+(15.01.2017, 18:40:35) __main__       runserver    start_app    INFO: Set up app & logger.
+(15.01.2017, 18:40:35) __main__       runserver init_clients    INFO: Initiated 3 clients: MongoDBClient, UnbabelClient, HackerNewsClient.
+(15.01.2017, 18:40:35) __main__       runserver start_daemon    INFO: Started daemon with time interval 600.
+(15.01.2017, 18:40:35) __main__       runserver    start_app    INFO: App is running!
+(15.01.2017, 18:40:39) hackerbabel.src.error_handlers  error_handlers handle_any_exception   ERROR: INTERNAL SERVER ERROR
+Time: 2017-01-15T18:40:38.986181
+Error type: <type 'exceptions.TypeError'>
+Error message: send_static_file() got an unexpected keyword argument 'story_id'
+Traceback: 
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+TypeError: send_static_file() got an unexpected keyword argument 'story_id'
+
+(15.01.2017, 18:40:40) hackerbabel.src.error_handlers  error_handlers handle_any_exception   ERROR: INTERNAL SERVER ERROR
+Time: 2017-01-15T18:40:40.289294
+Error type: <type 'exceptions.TypeError'>
+Error message: send_static_file() got an unexpected keyword argument 'story_id'
+Traceback: 
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+TypeError: send_static_file() got an unexpected keyword argument 'story_id'
+
+(15.01.2017, 18:40:40) hackerbabel.src.error_handlers  error_handlers handle_any_exception   ERROR: INTERNAL SERVER ERROR
+Time: 2017-01-15T18:40:40.990434
+Error type: <type 'exceptions.TypeError'>
+Error message: send_static_file() got an unexpected keyword argument 'story_id'
+Traceback: 
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+TypeError: send_static_file() got an unexpected keyword argument 'story_id'
+
+(15.01.2017, 18:40:41) hackerbabel.src.error_handlers  error_handlers handle_any_exception   ERROR: INTERNAL SERVER ERROR
+Time: 2017-01-15T18:40:41.690395
+Error type: <type 'exceptions.TypeError'>
+Error message: send_static_file() got an unexpected keyword argument 'story_id'
+Traceback: 
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+TypeError: send_static_file() got an unexpected keyword argument 'story_id'
+
+(15.01.2017, 18:40:43)     root hackernews_client get_top_stories    INFO: Received 10 Hacker News stories in 0.0 minute(s) 7.9 second(s) with ids:
+13399095, 13404292, 13404840, 13404912, 13404496, 13405121, 13402472, 13404372, 13403660, 13403562
+
+(15.01.2017, 18:40:57) __main__       runserver    start_app    INFO: Set up app & logger.
+(15.01.2017, 18:40:57) __main__       runserver init_clients    INFO: Initiated 3 clients: UnbabelClient, MongoDBClient, HackerNewsClient.
+(15.01.2017, 18:40:58) __main__       runserver start_daemon    INFO: Started daemon with time interval 600.
+(15.01.2017, 18:40:58) __main__       runserver    start_app    INFO: App is running!
+(15.01.2017, 18:41:05)     root hackernews_client get_top_stories    INFO: Received 10 Hacker News stories in 0.0 minute(s) 7.8 second(s) with ids:
+13399095, 13404292, 13404840, 13404912, 13404496, 13405121, 13402472, 13404372, 13403660, 13403562
+
+(15.01.2017, 18:41:37) __main__       runserver    start_app    INFO: Set up app & logger.
+(15.01.2017, 18:41:37) __main__       runserver init_clients    INFO: Initiated 3 clients: UnbabelClient, MongoDBClient, HackerNewsClient.
+(15.01.2017, 18:41:37) __main__       runserver start_daemon    INFO: Started daemon with time interval 600.
+(15.01.2017, 18:41:37) __main__       runserver    start_app    INFO: App is running!
+(15.01.2017, 18:41:40) hackerbabel.src.error_handlers  error_handlers handle_any_exception   ERROR: INTERNAL SERVER ERROR
+Time: 2017-01-15T18:41:40.046295
+Error type: <type 'exceptions.TypeError'>
+Error message: send_static_file() got an unexpected keyword argument 'story_id'
+Traceback: 
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+TypeError: send_static_file() got an unexpected keyword argument 'story_id'
+
+(15.01.2017, 18:41:41) hackerbabel.src.error_handlers  error_handlers handle_any_exception   ERROR: INTERNAL SERVER ERROR
+Time: 2017-01-15T18:41:41.373985
+Error type: <type 'exceptions.TypeError'>
+Error message: send_static_file() got an unexpected keyword argument 'story_id'
+Traceback: 
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+TypeError: send_static_file() got an unexpected keyword argument 'story_id'
+
+(15.01.2017, 18:41:41) hackerbabel.src.error_handlers  error_handlers handle_any_exception   ERROR: INTERNAL SERVER ERROR
+Time: 2017-01-15T18:41:41.952134
+Error type: <type 'exceptions.TypeError'>
+Error message: send_static_file() got an unexpected keyword argument 'story_id'
+Traceback: 
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+TypeError: send_static_file() got an unexpected keyword argument 'story_id'
+
+(15.01.2017, 18:41:49)     root hackernews_client get_top_stories    INFO: Received 10 Hacker News stories in 0.0 minute(s) 11.7 second(s) with ids:
+13399095, 13404292, 13404840, 13404912, 13404496, 13405121, 13402472, 13404372, 13403660, 13403562
+
+(15.01.2017, 18:43:40) __main__       runserver    start_app    INFO: Set up app & logger.
+(15.01.2017, 18:43:40) __main__       runserver init_clients    INFO: Initiated 3 clients: MongoDBClient, UnbabelClient, HackerNewsClient.
+(15.01.2017, 18:43:40) __main__       runserver start_daemon    INFO: Started daemon with time interval 600.
+(15.01.2017, 18:43:40) __main__       runserver    start_app    INFO: App is running!
+(15.01.2017, 18:43:41) hackerbabel.src.error_handlers  error_handlers handle_any_exception   ERROR: INTERNAL SERVER ERROR
+Time: 2017-01-15T18:43:41.831841
+Error type: <class 'jinja2.exceptions.TemplateNotFound'>
+Error message: /dashboard
+Traceback: 
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/dennisulmer/Documents/Projekte/unbabel_challenge/fullstack-coding-challenge/hackerbabel/views/dashboard.py", line 24, in dashboard
+    return render_template(url_for("dashboard.dashboard"))
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/flask/templating.py", line 127, in render_template
+    return _render(ctx.app.jinja_env.get_or_select_template(template_name_or_list),
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/jinja2/environment.py", line 851, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/jinja2/environment.py", line 812, in get_template
+    return self._load_template(name, self.make_globals(globals))
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/jinja2/environment.py", line 774, in _load_template
+    cache_key = self.loader.get_source(self, name)[1]
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/flask/templating.py", line 64, in get_source
+    raise TemplateNotFound(template)
+TemplateNotFound: /dashboard
+
+(15.01.2017, 18:43:49)     root hackernews_client get_top_stories    INFO: Received 10 Hacker News stories in 0.0 minute(s) 9.0 second(s) with ids:
+13399095, 13404840, 13404292, 13404912, 13405121, 13404496, 13402472, 13404811, 13404372, 13403660
+
+(15.01.2017, 18:44:10) __main__       runserver    start_app    INFO: Set up app & logger.
+(15.01.2017, 18:44:10) __main__       runserver init_clients    INFO: Initiated 3 clients: MongoDBClient, UnbabelClient, HackerNewsClient.
+(15.01.2017, 18:44:10) __main__       runserver start_daemon    INFO: Started daemon with time interval 600.
+(15.01.2017, 18:44:10) __main__       runserver    start_app    INFO: App is running!
+(15.01.2017, 18:44:13) hackerbabel.src.error_handlers  error_handlers handle_any_exception   ERROR: INTERNAL SERVER ERROR
+Time: 2017-01-15T18:44:13.973472
+Error type: <class 'jinja2.exceptions.TemplateNotFound'>
+Error message: /dashboard
+Traceback: 
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/dennisulmer/Documents/Projekte/unbabel_challenge/fullstack-coding-challenge/hackerbabel/views/dashboard.py", line 24, in dashboard
+    return render_template(url_for("dashboard.dashboard"))
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/flask/templating.py", line 127, in render_template
+    return _render(ctx.app.jinja_env.get_or_select_template(template_name_or_list),
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/jinja2/environment.py", line 851, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/jinja2/environment.py", line 812, in get_template
+    return self._load_template(name, self.make_globals(globals))
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/jinja2/environment.py", line 774, in _load_template
+    cache_key = self.loader.get_source(self, name)[1]
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/flask/templating.py", line 64, in get_source
+    raise TemplateNotFound(template)
+TemplateNotFound: /dashboard
+
+(15.01.2017, 18:44:18)     root hackernews_client get_top_stories    INFO: Received 10 Hacker News stories in 0.0 minute(s) 7.8 second(s) with ids:
+13399095, 13404840, 13404292, 13404912, 13405121, 13404496, 13402472, 13404372, 13404811, 13403660
+
+(15.01.2017, 18:44:45) __main__       runserver    start_app    INFO: Set up app & logger.
+(15.01.2017, 18:44:45) __main__       runserver init_clients    INFO: Initiated 3 clients: UnbabelClient, MongoDBClient, HackerNewsClient.
+(15.01.2017, 18:44:45) __main__       runserver start_daemon    INFO: Started daemon with time interval 600.
+(15.01.2017, 18:44:45) __main__       runserver    start_app    INFO: App is running!
+(15.01.2017, 18:44:48) hackerbabel.src.error_handlers  error_handlers handle_any_exception   ERROR: INTERNAL SERVER ERROR
+Time: 2017-01-15T18:44:48.779245
+Error type: <class 'werkzeug.routing.BuildError'>
+Error message: 
+Traceback: 
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/dennisulmer/Documents/Projekte/unbabel_challenge/fullstack-coding-challenge/hackerbabel/views/dashboard.py", line 24, in dashboard
+    return render_template(url_for("dashboard"))
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/flask/helpers.py", line 312, in url_for
+    return appctx.app.handle_url_build_error(error, endpoint, values)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/flask/app.py", line 1641, in handle_url_build_error
+    reraise(exc_type, exc_value, tb)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/flask/helpers.py", line 305, in url_for
+    force_external=external)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/werkzeug/routing.py", line 1758, in build
+    raise BuildError(endpoint, values, method, self)
+BuildError: Could not build url for endpoint 'dashboard'. Did you mean 'dashboard.static' instead?
+
+(15.01.2017, 18:44:49) hackerbabel.src.error_handlers  error_handlers handle_any_exception   ERROR: INTERNAL SERVER ERROR
+Time: 2017-01-15T18:44:49.908607
+Error type: <class 'werkzeug.routing.BuildError'>
+Error message: 
+Traceback: 
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/dennisulmer/Documents/Projekte/unbabel_challenge/fullstack-coding-challenge/hackerbabel/views/dashboard.py", line 24, in dashboard
+    return render_template(url_for("dashboard"))
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/flask/helpers.py", line 312, in url_for
+    return appctx.app.handle_url_build_error(error, endpoint, values)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/flask/app.py", line 1641, in handle_url_build_error
+    reraise(exc_type, exc_value, tb)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/flask/helpers.py", line 305, in url_for
+    force_external=external)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/werkzeug/routing.py", line 1758, in build
+    raise BuildError(endpoint, values, method, self)
+BuildError: Could not build url for endpoint 'dashboard'. Did you mean 'dashboard.static' instead?
+
+(15.01.2017, 18:44:53)     root hackernews_client get_top_stories    INFO: Received 10 Hacker News stories in 0.0 minute(s) 7.8 second(s) with ids:
+13399095, 13404840, 13404292, 13404912, 13405121, 13404496, 13402472, 13404372, 13404811, 13403660
+
+(15.01.2017, 18:45:04) __main__       runserver    start_app    INFO: Set up app & logger.
+(15.01.2017, 18:45:04) __main__       runserver init_clients    INFO: Initiated 3 clients: UnbabelClient, MongoDBClient, HackerNewsClient.
+(15.01.2017, 18:45:04) __main__       runserver start_daemon    INFO: Started daemon with time interval 600.
+(15.01.2017, 18:45:04) __main__       runserver    start_app    INFO: App is running!
+(15.01.2017, 18:45:06) hackerbabel.src.error_handlers  error_handlers handle_any_exception   ERROR: INTERNAL SERVER ERROR
+Time: 2017-01-15T18:45:06.781414
+Error type: <class 'werkzeug.routing.BuildError'>
+Error message: 
+Traceback: 
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/dennisulmer/Documents/Projekte/unbabel_challenge/fullstack-coding-challenge/hackerbabel/views/dashboard.py", line 24, in dashboard
+    return render_template(url_for("dashboard.static"))
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/flask/helpers.py", line 312, in url_for
+    return appctx.app.handle_url_build_error(error, endpoint, values)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/flask/app.py", line 1641, in handle_url_build_error
+    reraise(exc_type, exc_value, tb)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/flask/helpers.py", line 305, in url_for
+    force_external=external)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/werkzeug/routing.py", line 1758, in build
+    raise BuildError(endpoint, values, method, self)
+BuildError: Could not build url for endpoint 'dashboard.static'. Did you forget to specify values ['filename']?
+
+(15.01.2017, 18:45:12)     root hackernews_client get_top_stories    INFO: Received 10 Hacker News stories in 0.0 minute(s) 7.8 second(s) with ids:
+13399095, 13404840, 13404292, 13404912, 13405121, 13404496, 13402472, 13404372, 13404811, 13403660
+
+(15.01.2017, 18:45:19) __main__       runserver    start_app    INFO: Set up app & logger.
+(15.01.2017, 18:45:19) __main__       runserver init_clients    INFO: Initiated 3 clients: UnbabelClient, MongoDBClient, HackerNewsClient.
+(15.01.2017, 18:45:19) __main__       runserver start_daemon    INFO: Started daemon with time interval 600.
+(15.01.2017, 18:45:19) __main__       runserver    start_app    INFO: App is running!
+(15.01.2017, 18:45:23) hackerbabel.src.error_handlers  error_handlers handle_any_exception   ERROR: INTERNAL SERVER ERROR
+Time: 2017-01-15T18:45:23.939402
+Error type: <class 'jinja2.exceptions.TemplateNotFound'>
+Error message: /dashboard
+Traceback: 
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/dennisulmer/Documents/Projekte/unbabel_challenge/fullstack-coding-challenge/hackerbabel/views/dashboard.py", line 24, in dashboard
+    return render_template(url_for("dashboard.dashboard"))
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/flask/templating.py", line 127, in render_template
+    return _render(ctx.app.jinja_env.get_or_select_template(template_name_or_list),
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/jinja2/environment.py", line 851, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/jinja2/environment.py", line 812, in get_template
+    return self._load_template(name, self.make_globals(globals))
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/jinja2/environment.py", line 774, in _load_template
+    cache_key = self.loader.get_source(self, name)[1]
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/flask/templating.py", line 64, in get_source
+    raise TemplateNotFound(template)
+TemplateNotFound: /dashboard
+
+(15.01.2017, 18:45:27)     root hackernews_client get_top_stories    INFO: Received 10 Hacker News stories in 0.0 minute(s) 7.8 second(s) with ids:
+13399095, 13404840, 13404292, 13404912, 13405121, 13404496, 13402472, 13404372, 13404811, 13403660
+
+(15.01.2017, 18:45:35) __main__       runserver    start_app    INFO: Set up app & logger.
+(15.01.2017, 18:45:35) __main__       runserver init_clients    INFO: Initiated 3 clients: UnbabelClient, MongoDBClient, HackerNewsClient.
+(15.01.2017, 18:45:35) __main__       runserver start_daemon    INFO: Started daemon with time interval 600.
+(15.01.2017, 18:45:35) __main__       runserver    start_app    INFO: App is running!
+(15.01.2017, 18:45:38) hackerbabel.src.error_handlers  error_handlers handle_any_exception   ERROR: INTERNAL SERVER ERROR
+Time: 2017-01-15T18:45:38.269104
+Error type: <class 'jinja2.exceptions.TemplateNotFound'>
+Error message: /dashboard
+Traceback: 
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/dennisulmer/Documents/Projekte/unbabel_challenge/fullstack-coding-challenge/hackerbabel/views/dashboard.py", line 22, in dashboard
+    return render_template(url_for("dashboard.dashboard"))
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/flask/templating.py", line 127, in render_template
+    return _render(ctx.app.jinja_env.get_or_select_template(template_name_or_list),
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/jinja2/environment.py", line 851, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/jinja2/environment.py", line 812, in get_template
+    return self._load_template(name, self.make_globals(globals))
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/jinja2/environment.py", line 774, in _load_template
+    cache_key = self.loader.get_source(self, name)[1]
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/flask/templating.py", line 64, in get_source
+    raise TemplateNotFound(template)
+TemplateNotFound: /dashboard
+
+(15.01.2017, 18:45:39) hackerbabel.src.error_handlers  error_handlers handle_any_exception   ERROR: INTERNAL SERVER ERROR
+Time: 2017-01-15T18:45:39.463941
+Error type: <class 'jinja2.exceptions.TemplateNotFound'>
+Error message: /dashboard
+Traceback: 
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/dennisulmer/Documents/Projekte/unbabel_challenge/fullstack-coding-challenge/hackerbabel/views/dashboard.py", line 22, in dashboard
+    return render_template(url_for("dashboard.dashboard"))
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/flask/templating.py", line 127, in render_template
+    return _render(ctx.app.jinja_env.get_or_select_template(template_name_or_list),
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/jinja2/environment.py", line 851, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/jinja2/environment.py", line 812, in get_template
+    return self._load_template(name, self.make_globals(globals))
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/jinja2/environment.py", line 774, in _load_template
+    cache_key = self.loader.get_source(self, name)[1]
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/flask/templating.py", line 64, in get_source
+    raise TemplateNotFound(template)
+TemplateNotFound: /dashboard
+
+(15.01.2017, 18:45:43)     root hackernews_client get_top_stories    INFO: Received 10 Hacker News stories in 0.0 minute(s) 7.9 second(s) with ids:
+13399095, 13404840, 13404292, 13404912, 13405121, 13404496, 13402472, 13404372, 13404811, 13403660
+
+(15.01.2017, 18:46:02) __main__       runserver    start_app    INFO: Set up app & logger.
+(15.01.2017, 18:46:02) __main__       runserver init_clients    INFO: Initiated 3 clients: UnbabelClient, MongoDBClient, HackerNewsClient.
+(15.01.2017, 18:46:02) __main__       runserver start_daemon    INFO: Started daemon with time interval 600.
+(15.01.2017, 18:46:02) __main__       runserver    start_app    INFO: App is running!
+(15.01.2017, 18:46:04) hackerbabel.src.error_handlers  error_handlers handle_any_exception   ERROR: INTERNAL SERVER ERROR
+Time: 2017-01-15T18:46:04.631965
+Error type: <class 'jinja2.exceptions.TemplateNotFound'>
+Error message: /dashboard
+Traceback: 
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/dennisulmer/Documents/Projekte/unbabel_challenge/fullstack-coding-challenge/hackerbabel/views/dashboard.py", line 22, in dashboard
+    return render_template(url_for("dashboard.dashboard"))
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/flask/templating.py", line 127, in render_template
+    return _render(ctx.app.jinja_env.get_or_select_template(template_name_or_list),
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/jinja2/environment.py", line 851, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/jinja2/environment.py", line 812, in get_template
+    return self._load_template(name, self.make_globals(globals))
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/jinja2/environment.py", line 774, in _load_template
+    cache_key = self.loader.get_source(self, name)[1]
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/flask/templating.py", line 64, in get_source
+    raise TemplateNotFound(template)
+TemplateNotFound: /dashboard
+
+(15.01.2017, 18:46:10)     root hackernews_client get_top_stories    INFO: Received 10 Hacker News stories in 0.0 minute(s) 7.9 second(s) with ids:
+13399095, 13404840, 13404292, 13404912, 13405121, 13404496, 13402472, 13404372, 13404811, 13403660
+
+(15.01.2017, 18:48:31) __main__       runserver    start_app    INFO: Set up app & logger.
+(15.01.2017, 18:48:32) __main__       runserver init_clients    INFO: Initiated 3 clients: MongoDBClient, UnbabelClient, HackerNewsClient.
+(15.01.2017, 18:48:32) __main__       runserver start_daemon    INFO: Started daemon with time interval 600.
+(15.01.2017, 18:48:32) __main__       runserver    start_app    INFO: App is running!
+(15.01.2017, 18:48:40)     root hackernews_client get_top_stories    INFO: Received 10 Hacker News stories in 0.0 minute(s) 8.0 second(s) with ids:
+13399095, 13404840, 13404292, 13404912, 13405491, 13405121, 13404496, 13402472, 13404372, 13404811
+
+(15.01.2017, 18:49:25) __main__       runserver    start_app    INFO: Set up app & logger.
+(15.01.2017, 18:49:25) __main__       runserver init_clients    INFO: Initiated 3 clients: MongoDBClient, UnbabelClient, HackerNewsClient.
+(15.01.2017, 18:49:25) __main__       runserver start_daemon    INFO: Started daemon with time interval 600.
+(15.01.2017, 18:49:25) __main__       runserver    start_app    INFO: App is running!
+(15.01.2017, 18:49:32)     root hackernews_client get_top_stories    INFO: Received 10 Hacker News stories in 0.0 minute(s) 7.8 second(s) with ids:
+13399095, 13404840, 13404292, 13405491, 13404912, 13405121, 13404496, 13404811, 13402472, 13404372
+
+(15.01.2017, 18:49:58) __main__       runserver    start_app    INFO: Set up app & logger.
+(15.01.2017, 18:49:58) __main__       runserver init_clients    INFO: Initiated 3 clients: MongoDBClient, UnbabelClient, HackerNewsClient.
+(15.01.2017, 18:49:58) __main__       runserver start_daemon    INFO: Started daemon with time interval 600.
+(15.01.2017, 18:49:58) __main__       runserver    start_app    INFO: App is running!
+(15.01.2017, 18:50:05) hackerbabel.src.error_handlers  error_handlers handle_any_exception   ERROR: INTERNAL SERVER ERROR
+Time: 2017-01-15T18:50:05.219891
+Error type: <type 'exceptions.TypeError'>
+Error message: send_static_file() got an unexpected keyword argument 'story_id'
+Traceback: 
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+TypeError: send_static_file() got an unexpected keyword argument 'story_id'
+
+(15.01.2017, 18:50:06)     root hackernews_client get_top_stories    INFO: Received 10 Hacker News stories in 0.0 minute(s) 7.9 second(s) with ids:
+13399095, 13404840, 13404292, 13405491, 13404912, 13405121, 13404496, 13404811, 13402472, 13404372
+
+(15.01.2017, 18:50:26) __main__       runserver    start_app    INFO: Set up app & logger.
+(15.01.2017, 18:50:27) __main__       runserver init_clients    INFO: Initiated 3 clients: MongoDBClient, UnbabelClient, HackerNewsClient.
+(15.01.2017, 18:50:27) __main__       runserver start_daemon    INFO: Started daemon with time interval 600.
+(15.01.2017, 18:50:27) __main__       runserver    start_app    INFO: App is running!
+(15.01.2017, 18:50:37)     root hackernews_client get_top_stories    INFO: Received 10 Hacker News stories in 0.0 minute(s) 10.3 second(s) with ids:
+13399095, 13404840, 13404292, 13405491, 13404912, 13405121, 13404496, 13404811, 13402472, 13404372
+
+(15.01.2017, 18:51:39) __main__       runserver    start_app    INFO: Set up app & logger.
+(15.01.2017, 18:51:39) __main__       runserver init_clients    INFO: Initiated 3 clients: MongoDBClient, UnbabelClient, HackerNewsClient.
+(15.01.2017, 18:51:39) __main__       runserver start_daemon    INFO: Started daemon with time interval 600.
+(15.01.2017, 18:51:39) __main__       runserver    start_app    INFO: App is running!
+(15.01.2017, 18:51:48)     root hackernews_client get_top_stories    INFO: Received 10 Hacker News stories in 0.0 minute(s) 9.1 second(s) with ids:
+13399095, 13404840, 13404292, 13405491, 13404912, 13405121, 13404496, 13404811, 13402472, 13404372
+

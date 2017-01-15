@@ -8,11 +8,7 @@ View for index / main page.
 from flask import render_template, Blueprint
 
 # CONST
-INDEX = Blueprint(
-    'index', __name__,
-    template_folder='../templates',
-    static_folder='../static'
-)
+INDEX = Blueprint('index', __name__)
 
 
 @INDEX.route('/')

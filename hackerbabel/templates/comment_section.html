@@ -1,10 +1,10 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<title>Comments for {{ story_id }}</title>
-</head>
-<body>
+{# Macro to recursively display comments #}
 
-</body>
-</html>
+{% block additional_stylesheets %}
+    <link rel="stylesheet"
+          href="{{ url_for('static', filename='css/comment_section.css') }}" />
+{%  endblock %}
+
+{% extends "base.html" %}
+
+{% block title %} Comments for Story {{ story_id }} {% endblock %}

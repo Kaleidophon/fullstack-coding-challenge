@@ -10,8 +10,6 @@ from flask import render_template, Blueprint
 # CONST
 COMMENT_SECTION = Blueprint(
     'comment_section', __name__,
-    template_folder='../templates',
-    static_folder='../static',
     url_prefix='/<story_id>'
 )
 

@@ -36,7 +36,11 @@ def start_app():
     @rtype: Flask
     """
     # 1 Create Flask application
-    app = Flask(import_name=__name__)
+    app = Flask(
+        import_name=__name__,
+        template_folder="hackerbabel/templates",
+        static_folder="hackerbabel/static"
+    )
 
     # 2 Update the apps configuration
     app = config_selector(app)

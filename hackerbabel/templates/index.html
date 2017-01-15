@@ -1,10 +1,14 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<title>Hackerbabel</title>
-</head>
-<body>
-	Blabla
-</body>
-</html>
+{# Macro to render a story #}
+
+{% extends "base.html" %}
+
+{% block additional_stylesheets %}
+    <link rel="stylesheet"
+          href="{{ url_for('static', filename='css/index.css') }}" />
+{%  endblock %}
+
+{% block title %} Current Stories {% endblock %}
+
+{% block content %}
+<p>This is the story page.</p>
+{% endblock %}
