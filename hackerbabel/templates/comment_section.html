@@ -1,4 +1,9 @@
 {# Macro to recursively display comments #}
+{% macro render_comment(story) %}
+    {% for comment in story["comments"] %}
+        <tr>{{ comment }}</tr>
+    {% endfor %}
+{% endmacro %}
 
 {% block additional_stylesheets %}
     <link rel="stylesheet"
@@ -6,5 +11,11 @@
 {%  endblock %}
 
 {% extends "base.html" %}
+
+{% block content %}
+    <table>
+    {{ render_comment(story) }}
+    </table>
+{% endblock %}
 
 {% block title %} Comments for Story {{ story_id }} {% endblock %}

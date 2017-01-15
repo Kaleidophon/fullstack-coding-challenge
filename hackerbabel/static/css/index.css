@@ -1,1 +1,21 @@
 @import "base.css";
+
+td {
+	font-family: Verdana, Geneva, sans-serif;
+	font-size:10pt;
+	color:#828282;
+}
+
+a:link    {
+	color:#000000;
+	text-decoration:none;
+}
+
+a:visited {
+	color:#828282;
+	text-decoration:none;
+}
+
+.itemtable {
+	margin-right: 5px;
+}

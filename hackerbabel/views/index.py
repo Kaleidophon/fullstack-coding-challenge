@@ -8,7 +8,7 @@ View for index / main page.
 from flask import render_template, Blueprint
 
 # PROJECT
-from hackerbabel.clients.mongodb_client import MongoDBClient
+from hackerbabel.src.helpers import get_stories
 
 # CONST
 INDEX = Blueprint('index', __name__)
@@ -21,6 +21,4 @@ def index():
     """
     Main view
     """
-    mdb_client = MongoDBClient()
-    stories = mdb_client.get_newest_documents("articles", 10)
-    return render_template("index.html", stories=stories)
+    return render_template("index.html", stories=get_stories())

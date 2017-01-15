@@ -2941,3 +2941,302 @@ TemplateSyntaxError: Encountered unknown tag 'endmakro'. Jinja was looking for t
 (15.01.2017, 21:05:57)     root hackernews_client get_top_stories    INFO: Received 10 Hacker News stories in 0.0 minute(s) 8.5 second(s) with ids:
 13406119, 13399095, 13404840, 13405772, 13404292, 13405380, 13405491, 13402866, 13404912, 13405121
 
+(15.01.2017, 21:08:56) __main__       runserver    start_app    INFO: Set up app & logger.
+(15.01.2017, 21:08:56) __main__       runserver init_clients    INFO: Initiated 3 clients: MongoDBClient, UnbabelClient, HackerNewsClient.
+(15.01.2017, 21:08:56) __main__       runserver start_daemon    INFO: Started daemon with time interval 600.
+(15.01.2017, 21:08:56) __main__       runserver    start_app    INFO: App is running!
+(15.01.2017, 21:09:04)     root hackernews_client get_top_stories    INFO: Received 10 Hacker News stories in 0.0 minute(s) 8.3 second(s) with ids:
+13406119, 13399095, 13404840, 13405772, 13404292, 13405380, 13405491, 13404912, 13402866, 13405121
+
+(15.01.2017, 21:19:15)     root hackernews_client get_top_stories    INFO: Received 10 Hacker News stories in 0.0 minute(s) 11.3 second(s) with ids:
+13406119, 13399095, 13404840, 13405772, 13404292, 13405380, 13405491, 13404912, 13402866, 13405121
+
+(15.01.2017, 21:21:59) __main__       runserver    start_app    INFO: Set up app & logger.
+(15.01.2017, 21:21:59) __main__       runserver init_clients    INFO: Initiated 3 clients: MongoDBClient, UnbabelClient, HackerNewsClient.
+(15.01.2017, 21:21:59) __main__       runserver start_daemon    INFO: Started daemon with time interval 600.
+(15.01.2017, 21:21:59) __main__       runserver    start_app    INFO: App is running!
+(15.01.2017, 21:22:08)     root hackernews_client get_top_stories    INFO: Received 10 Hacker News stories in 0.0 minute(s) 9.4 second(s) with ids:
+13406119, 13399095, 13404840, 13405772, 13404292, 13405380, 13405491, 13404912, 13402866, 13405121
+
+(15.01.2017, 21:22:37) __main__       runserver    start_app    INFO: Set up app & logger.
+(15.01.2017, 21:22:37) __main__       runserver init_clients    INFO: Initiated 3 clients: MongoDBClient, UnbabelClient, HackerNewsClient.
+(15.01.2017, 21:22:37) __main__       runserver start_daemon    INFO: Started daemon with time interval 600.
+(15.01.2017, 21:22:37) __main__       runserver    start_app    INFO: App is running!
+(15.01.2017, 21:22:47)     root hackernews_client get_top_stories    INFO: Received 10 Hacker News stories in 0.0 minute(s) 9.1 second(s) with ids:
+13406119, 13399095, 13404840, 13405772, 13404292, 13405380, 13405491, 13404912, 13402866, 13405121
+
+(15.01.2017, 21:23:01) __main__       runserver    start_app    INFO: Set up app & logger.
+(15.01.2017, 21:23:01) __main__       runserver init_clients    INFO: Initiated 3 clients: MongoDBClient, UnbabelClient, HackerNewsClient.
+(15.01.2017, 21:23:01) __main__       runserver start_daemon    INFO: Started daemon with time interval 600.
+(15.01.2017, 21:23:01) __main__       runserver    start_app    INFO: App is running!
+(15.01.2017, 21:23:10)     root hackernews_client get_top_stories    INFO: Received 10 Hacker News stories in 0.0 minute(s) 9.0 second(s) with ids:
+13406119, 13399095, 13404840, 13405772, 13404292, 13405380, 13405491, 13404912, 13402866, 13405121
+
+(15.01.2017, 21:24:51) __main__       runserver    start_app    INFO: Set up app & logger.
+(15.01.2017, 21:24:51) __main__       runserver init_clients    INFO: Initiated 3 clients: MongoDBClient, UnbabelClient, HackerNewsClient.
+(15.01.2017, 21:24:51) __main__       runserver start_daemon    INFO: Started daemon with time interval 600.
+(15.01.2017, 21:24:51) __main__       runserver    start_app    INFO: App is running!
+(15.01.2017, 21:24:59)     root hackernews_client get_top_stories    INFO: Received 10 Hacker News stories in 0.0 minute(s) 8.1 second(s) with ids:
+13406119, 13399095, 13404840, 13405772, 13404292, 13405380, 13405491, 13404912, 13402866, 13405121
+
+(15.01.2017, 21:26:02) __main__       runserver    start_app    INFO: Set up app & logger.
+(15.01.2017, 21:26:02) __main__       runserver init_clients    INFO: Initiated 3 clients: MongoDBClient, UnbabelClient, HackerNewsClient.
+(15.01.2017, 21:26:03) __main__       runserver start_daemon    INFO: Started daemon with time interval 600.
+(15.01.2017, 21:26:03) __main__       runserver    start_app    INFO: App is running!
+(15.01.2017, 21:26:11)     root hackernews_client get_top_stories    INFO: Received 10 Hacker News stories in 0.0 minute(s) 8.5 second(s) with ids:
+13406119, 13399095, 13404840, 13405772, 13404292, 13405380, 13405491, 13404912, 13402866, 13405121
+
+(15.01.2017, 21:31:52) __main__       runserver    start_app    INFO: Set up app & logger.
+(15.01.2017, 21:31:52) __main__       runserver init_clients    INFO: Initiated 3 clients: MongoDBClient, UnbabelClient, HackerNewsClient.
+(15.01.2017, 21:31:52) __main__       runserver start_daemon    INFO: Started daemon with time interval 600.
+(15.01.2017, 21:31:52) __main__       runserver    start_app    INFO: App is running!
+(15.01.2017, 21:31:56) hackerbabel.src.error_handlers  error_handlers handle_any_exception   ERROR: INTERNAL SERVER ERROR
+Time: 2017-01-15T21:31:56.603497
+Error type: <class 'jinja2.exceptions.UndefinedError'>
+Error message: 'len' is undefined
+Traceback: 
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/dennisulmer/Documents/Projekte/unbabel_challenge/fullstack-coding-challenge/hackerbabel/views/index.py", line 27, in index
+    return render_template("index.html", stories=stories)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/flask/templating.py", line 128, in render_template
+    context, ctx.app)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/flask/templating.py", line 110, in _render
+    rv = template.render(context)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/jinja2/environment.py", line 989, in render
+    return self.environment.handle_exception(exc_info, True)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/jinja2/environment.py", line 754, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/dennisulmer/Documents/Projekte/unbabel_challenge/fullstack-coding-challenge/hackerbabel/templates/index.html", line 31, in top-level template code
+    {% extends "base.html" %}
+  File "/Users/dennisulmer/Documents/Projekte/unbabel_challenge/fullstack-coding-challenge/hackerbabel/templates/base.html", line 34, in top-level template code
+    {% block content %}
+  File "/Users/dennisulmer/Documents/Projekte/unbabel_challenge/fullstack-coding-challenge/hackerbabel/templates/index.html", line 50, in block "content"
+    {% for rank in range(len(stories)) %}
+UndefinedError: 'len' is undefined
+
+(15.01.2017, 21:32:06)     root hackernews_client get_top_stories    INFO: Received 10 Hacker News stories in 0.0 minute(s) 14.6 second(s) with ids:
+13406119, 13399095, 13404840, 13405772, 13404292, 13405380, 13405491, 13402866, 13404912, 13405121
+
+(15.01.2017, 21:38:14) __main__       runserver    start_app    INFO: Set up app & logger.
+(15.01.2017, 21:38:14) __main__       runserver init_clients    INFO: Initiated 3 clients: MongoDBClient, UnbabelClient, HackerNewsClient.
+(15.01.2017, 21:38:15) __main__       runserver start_daemon    INFO: Started daemon with time interval 600.
+(15.01.2017, 21:38:15) __main__       runserver    start_app    INFO: App is running!
+(15.01.2017, 21:38:22)     root hackernews_client get_top_stories    INFO: Received 10 Hacker News stories in 0.0 minute(s) 7.8 second(s) with ids:
+13406119, 13399095, 13405772, 13404840, 13404292, 13405380, 13405491, 13402866, 13404912, 13405121
+
+(15.01.2017, 21:38:51) __main__       runserver    start_app    INFO: Set up app & logger.
+(15.01.2017, 21:38:51) __main__       runserver init_clients    INFO: Initiated 3 clients: MongoDBClient, UnbabelClient, HackerNewsClient.
+(15.01.2017, 21:38:51) __main__       runserver start_daemon    INFO: Started daemon with time interval 600.
+(15.01.2017, 21:38:51) __main__       runserver    start_app    INFO: App is running!
+(15.01.2017, 21:38:58)     root hackernews_client get_top_stories    INFO: Received 10 Hacker News stories in 0.0 minute(s) 7.7 second(s) with ids:
+13406119, 13399095, 13405772, 13404840, 13404292, 13405380, 13405491, 13402866, 13404912, 13405121
+
+(15.01.2017, 21:43:43) __main__       runserver    start_app    INFO: Set up app & logger.
+(15.01.2017, 21:43:43) __main__       runserver init_clients    INFO: Initiated 3 clients: MongoDBClient, UnbabelClient, HackerNewsClient.
+(15.01.2017, 21:43:43) __main__       runserver start_daemon    INFO: Started daemon with time interval 600.
+(15.01.2017, 21:43:43) __main__       runserver    start_app    INFO: App is running!
+(15.01.2017, 21:43:52)     root hackernews_client get_top_stories    INFO: Received 10 Hacker News stories in 0.0 minute(s) 9.3 second(s) with ids:
+13406119, 13399095, 13405772, 13404840, 13404292, 13405380, 13405491, 13402866, 13404912, 13406081
+
+(15.01.2017, 21:47:15) __main__       runserver    start_app    INFO: Set up app & logger.
+(15.01.2017, 21:47:15) __main__       runserver init_clients    INFO: Initiated 3 clients: MongoDBClient, UnbabelClient, HackerNewsClient.
+(15.01.2017, 21:47:15) __main__       runserver start_daemon    INFO: Started daemon with time interval 600.
+(15.01.2017, 21:47:15) __main__       runserver    start_app    INFO: App is running!
+(15.01.2017, 21:47:24)     root hackernews_client get_top_stories    INFO: Received 10 Hacker News stories in 0.0 minute(s) 9.0 second(s) with ids:
+13406119, 13399095, 13405772, 13404840, 13404292, 13405380, 13405491, 13404912, 13402866, 13405121
+
+(15.01.2017, 21:48:44) __main__       runserver    start_app    INFO: Set up app & logger.
+(15.01.2017, 21:48:44) __main__       runserver init_clients    INFO: Initiated 3 clients: MongoDBClient, UnbabelClient, HackerNewsClient.
+(15.01.2017, 21:48:44) __main__       runserver start_daemon    INFO: Started daemon with time interval 600.
+(15.01.2017, 21:48:44) __main__       runserver    start_app    INFO: App is running!
+(15.01.2017, 21:48:57)     root hackernews_client get_top_stories    INFO: Received 10 Hacker News stories in 0.0 minute(s) 12.3 second(s) with ids:
+13406119, 13399095, 13405772, 13404840, 13404292, 13405380, 13405491, 13404912, 13402866, 13405121
+
+(15.01.2017, 21:49:10) __main__       runserver    start_app    INFO: Set up app & logger.
+(15.01.2017, 21:49:10) __main__       runserver init_clients    INFO: Initiated 3 clients: MongoDBClient, UnbabelClient, HackerNewsClient.
+(15.01.2017, 21:49:10) __main__       runserver start_daemon    INFO: Started daemon with time interval 600.
+(15.01.2017, 21:49:10) __main__       runserver    start_app    INFO: App is running!
+(15.01.2017, 21:49:19)     root hackernews_client get_top_stories    INFO: Received 10 Hacker News stories in 0.0 minute(s) 8.9 second(s) with ids:
+13406119, 13399095, 13405772, 13404840, 13404292, 13405380, 13405491, 13404912, 13402866, 13405121
+
+(15.01.2017, 21:51:02) __main__       runserver    start_app    INFO: Set up app & logger.
+(15.01.2017, 21:51:02) __main__       runserver init_clients    INFO: Initiated 3 clients: MongoDBClient, UnbabelClient, HackerNewsClient.
+(15.01.2017, 21:51:02) __main__       runserver start_daemon    INFO: Started daemon with time interval 600.
+(15.01.2017, 21:51:02) __main__       runserver    start_app    INFO: App is running!
+(15.01.2017, 21:51:11)     root hackernews_client get_top_stories    INFO: Received 10 Hacker News stories in 0.0 minute(s) 8.6 second(s) with ids:
+13406119, 13399095, 13405772, 13404840, 13404292, 13405380, 13405491, 13402866, 13404912, 13405121
+
+(15.01.2017, 21:52:29) __main__       runserver    start_app    INFO: Set up app & logger.
+(15.01.2017, 21:52:29) __main__       runserver init_clients    INFO: Initiated 3 clients: MongoDBClient, UnbabelClient, HackerNewsClient.
+(15.01.2017, 21:52:29) __main__       runserver start_daemon    INFO: Started daemon with time interval 600.
+(15.01.2017, 21:52:29) __main__       runserver    start_app    INFO: App is running!
+(15.01.2017, 21:52:40)     root hackernews_client get_top_stories    INFO: Received 10 Hacker News stories in 0.0 minute(s) 11.0 second(s) with ids:
+13406119, 13399095, 13405772, 13404840, 13404292, 13405380, 13405491, 13402866, 13404912, 13405121
+
+(15.01.2017, 21:52:44) __main__       runserver    start_app    INFO: Set up app & logger.
+(15.01.2017, 21:52:44) __main__       runserver init_clients    INFO: Initiated 3 clients: MongoDBClient, UnbabelClient, HackerNewsClient.
+(15.01.2017, 21:52:44) __main__       runserver start_daemon    INFO: Started daemon with time interval 600.
+(15.01.2017, 21:52:44) __main__       runserver    start_app    INFO: App is running!
+(15.01.2017, 21:52:53)     root hackernews_client get_top_stories    INFO: Received 10 Hacker News stories in 0.0 minute(s) 9.1 second(s) with ids:
+13406119, 13399095, 13405772, 13404840, 13404292, 13405380, 13405491, 13402866, 13404912, 13405121
+
+(15.01.2017, 21:53:29) __main__       runserver    start_app    INFO: Set up app & logger.
+(15.01.2017, 21:53:29) __main__       runserver init_clients    INFO: Initiated 3 clients: MongoDBClient, UnbabelClient, HackerNewsClient.
+(15.01.2017, 21:53:29) __main__       runserver start_daemon    INFO: Started daemon with time interval 600.
+(15.01.2017, 21:53:29) __main__       runserver    start_app    INFO: App is running!
+(15.01.2017, 21:53:40)     root hackernews_client get_top_stories    INFO: Received 10 Hacker News stories in 0.0 minute(s) 11.1 second(s) with ids:
+13406119, 13399095, 13405772, 13404840, 13404292, 13405380, 13405491, 13402866, 13404912, 13405121
+
+(15.01.2017, 21:54:16) __main__       runserver    start_app    INFO: Set up app & logger.
+(15.01.2017, 21:54:16) __main__       runserver init_clients    INFO: Initiated 3 clients: MongoDBClient, UnbabelClient, HackerNewsClient.
+(15.01.2017, 21:54:16) __main__       runserver start_daemon    INFO: Started daemon with time interval 600.
+(15.01.2017, 21:54:16) __main__       runserver    start_app    INFO: App is running!
+(15.01.2017, 21:54:25)     root hackernews_client get_top_stories    INFO: Received 10 Hacker News stories in 0.0 minute(s) 8.4 second(s) with ids:
+13406119, 13399095, 13405772, 13404840, 13404292, 13405380, 13405491, 13402866, 13404912, 13405121
+
+(15.01.2017, 21:55:07) __main__       runserver    start_app    INFO: Set up app & logger.
+(15.01.2017, 21:55:07) __main__       runserver init_clients    INFO: Initiated 3 clients: MongoDBClient, UnbabelClient, HackerNewsClient.
+(15.01.2017, 21:55:07) __main__       runserver start_daemon    INFO: Started daemon with time interval 600.
+(15.01.2017, 21:55:07) __main__       runserver    start_app    INFO: App is running!
+(15.01.2017, 21:55:17)     root hackernews_client get_top_stories    INFO: Received 10 Hacker News stories in 0.0 minute(s) 9.6 second(s) with ids:
+13406119, 13399095, 13405772, 13404840, 13404292, 13405380, 13405491, 13402866, 13404912, 13405121
+
+(15.01.2017, 21:57:15) __main__       runserver    start_app    INFO: Set up app & logger.
+(15.01.2017, 21:57:15) __main__       runserver init_clients    INFO: Initiated 3 clients: MongoDBClient, UnbabelClient, HackerNewsClient.
+(15.01.2017, 21:57:15) __main__       runserver start_daemon    INFO: Started daemon with time interval 600.
+(15.01.2017, 21:57:15) __main__       runserver    start_app    INFO: App is running!
+(15.01.2017, 21:57:23)     root hackernews_client get_top_stories    INFO: Received 10 Hacker News stories in 0.0 minute(s) 8.1 second(s) with ids:
+13406119, 13399095, 13405772, 13404840, 13404292, 13405380, 13405491, 13402866, 13406081, 13404912
+
+(15.01.2017, 21:57:36) __main__       runserver    start_app    INFO: Set up app & logger.
+(15.01.2017, 21:57:36) __main__       runserver init_clients    INFO: Initiated 3 clients: MongoDBClient, UnbabelClient, HackerNewsClient.
+(15.01.2017, 21:57:36) __main__       runserver start_daemon    INFO: Started daemon with time interval 600.
+(15.01.2017, 21:57:36) __main__       runserver    start_app    INFO: App is running!
+(15.01.2017, 21:57:45)     root hackernews_client get_top_stories    INFO: Received 10 Hacker News stories in 0.0 minute(s) 9.0 second(s) with ids:
+13406119, 13399095, 13405772, 13404840, 13404292, 13405380, 13405491, 13402866, 13406081, 13404912
+
+(15.01.2017, 21:58:06) __main__       runserver    start_app    INFO: Set up app & logger.
+(15.01.2017, 21:58:06) __main__       runserver init_clients    INFO: Initiated 3 clients: MongoDBClient, UnbabelClient, HackerNewsClient.
+(15.01.2017, 21:58:06) __main__       runserver start_daemon    INFO: Started daemon with time interval 600.
+(15.01.2017, 21:58:06) __main__       runserver    start_app    INFO: App is running!
+(15.01.2017, 21:58:16)     root hackernews_client get_top_stories    INFO: Received 10 Hacker News stories in 0.0 minute(s) 10.3 second(s) with ids:
+13406119, 13399095, 13405772, 13404840, 13404292, 13405380, 13405491, 13402866, 13406081, 13404912
+
+(15.01.2017, 21:59:12) __main__       runserver    start_app    INFO: Set up app & logger.
+(15.01.2017, 21:59:12) __main__       runserver init_clients    INFO: Initiated 3 clients: MongoDBClient, UnbabelClient, HackerNewsClient.
+(15.01.2017, 21:59:12) __main__       runserver start_daemon    INFO: Started daemon with time interval 600.
+(15.01.2017, 21:59:12) __main__       runserver    start_app    INFO: App is running!
+(15.01.2017, 21:59:24)     root hackernews_client get_top_stories    INFO: Received 10 Hacker News stories in 0.0 minute(s) 12.5 second(s) with ids:
+13406119, 13399095, 13405772, 13404840, 13404292, 13405380, 13405491, 13406081, 13402866, 13404912
+
+(15.01.2017, 22:00:51) __main__       runserver    start_app    INFO: Set up app & logger.
+(15.01.2017, 22:00:51) __main__       runserver init_clients    INFO: Initiated 3 clients: MongoDBClient, UnbabelClient, HackerNewsClient.
+(15.01.2017, 22:00:51) __main__       runserver start_daemon    INFO: Started daemon with time interval 600.
+(15.01.2017, 22:00:51) __main__       runserver    start_app    INFO: App is running!
+(15.01.2017, 22:01:00)     root hackernews_client get_top_stories    INFO: Received 10 Hacker News stories in 0.0 minute(s) 9.3 second(s) with ids:
+13406119, 13399095, 13405772, 13404840, 13404292, 13405380, 13405491, 13406081, 13402866, 13404912
+
+(15.01.2017, 22:01:21) __main__       runserver    start_app    INFO: Set up app & logger.
+(15.01.2017, 22:01:21) __main__       runserver init_clients    INFO: Initiated 3 clients: MongoDBClient, UnbabelClient, HackerNewsClient.
+(15.01.2017, 22:01:21) __main__       runserver start_daemon    INFO: Started daemon with time interval 600.
+(15.01.2017, 22:01:21) __main__       runserver    start_app    INFO: App is running!
+(15.01.2017, 22:01:31)     root hackernews_client get_top_stories    INFO: Received 10 Hacker News stories in 0.0 minute(s) 10.1 second(s) with ids:
+13406119, 13399095, 13405772, 13404840, 13404292, 13405380, 13405491, 13406081, 13402866, 13404912
+
+(15.01.2017, 22:01:52) __main__       runserver    start_app    INFO: Set up app & logger.
+(15.01.2017, 22:01:52) __main__       runserver init_clients    INFO: Initiated 3 clients: MongoDBClient, UnbabelClient, HackerNewsClient.
+(15.01.2017, 22:01:52) __main__       runserver start_daemon    INFO: Started daemon with time interval 600.
+(15.01.2017, 22:01:52) __main__       runserver    start_app    INFO: App is running!
+(15.01.2017, 22:02:05)     root hackernews_client get_top_stories    INFO: Received 10 Hacker News stories in 0.0 minute(s) 12.9 second(s) with ids:
+13406119, 13399095, 13405772, 13404840, 13404292, 13405380, 13405491, 13406081, 13402866, 13404912
+
+(15.01.2017, 22:02:16) __main__       runserver    start_app    INFO: Set up app & logger.
+(15.01.2017, 22:02:16) __main__       runserver init_clients    INFO: Initiated 3 clients: MongoDBClient, UnbabelClient, HackerNewsClient.
+(15.01.2017, 22:02:16) __main__       runserver start_daemon    INFO: Started daemon with time interval 600.
+(15.01.2017, 22:02:16) __main__       runserver    start_app    INFO: App is running!
+(15.01.2017, 22:02:28)     root hackernews_client get_top_stories    INFO: Received 10 Hacker News stories in 0.0 minute(s) 12.7 second(s) with ids:
+13406119, 13399095, 13405772, 13404840, 13404292, 13405380, 13405491, 13406081, 13402866, 13404912
+
+(15.01.2017, 22:03:16) __main__       runserver    start_app    INFO: Set up app & logger.
+(15.01.2017, 22:03:16) __main__       runserver init_clients    INFO: Initiated 3 clients: MongoDBClient, UnbabelClient, HackerNewsClient.
+(15.01.2017, 22:03:16) __main__       runserver start_daemon    INFO: Started daemon with time interval 600.
+(15.01.2017, 22:03:16) __main__       runserver    start_app    INFO: App is running!
+(15.01.2017, 22:03:25)     root hackernews_client get_top_stories    INFO: Received 10 Hacker News stories in 0.0 minute(s) 8.5 second(s) with ids:
+13406119, 13399095, 13405772, 13404840, 13404292, 13405380, 13405491, 13406081, 13402866, 13404912
+
+(15.01.2017, 22:03:43) __main__       runserver    start_app    INFO: Set up app & logger.
+(15.01.2017, 22:03:43) __main__       runserver init_clients    INFO: Initiated 3 clients: MongoDBClient, UnbabelClient, HackerNewsClient.
+(15.01.2017, 22:03:43) __main__       runserver start_daemon    INFO: Started daemon with time interval 600.
+(15.01.2017, 22:03:43) __main__       runserver    start_app    INFO: App is running!
+(15.01.2017, 22:03:51)     root hackernews_client get_top_stories    INFO: Received 10 Hacker News stories in 0.0 minute(s) 8.3 second(s) with ids:
+13406119, 13399095, 13405772, 13404840, 13404292, 13405380, 13405491, 13406081, 13402866, 13404912
+
+(15.01.2017, 22:04:13) __main__       runserver    start_app    INFO: Set up app & logger.
+(15.01.2017, 22:04:13) __main__       runserver init_clients    INFO: Initiated 3 clients: MongoDBClient, UnbabelClient, HackerNewsClient.
+(15.01.2017, 22:04:13) __main__       runserver start_daemon    INFO: Started daemon with time interval 600.
+(15.01.2017, 22:04:13) __main__       runserver    start_app    INFO: App is running!
+(15.01.2017, 22:04:21)     root hackernews_client get_top_stories    INFO: Received 10 Hacker News stories in 0.0 minute(s) 8.1 second(s) with ids:
+13406119, 13399095, 13405772, 13404840, 13404292, 13405380, 13405491, 13406081, 13402866, 13404912
+
+(15.01.2017, 22:05:07) __main__       runserver    start_app    INFO: Set up app & logger.
+(15.01.2017, 22:05:07) __main__       runserver init_clients    INFO: Initiated 3 clients: MongoDBClient, UnbabelClient, HackerNewsClient.
+(15.01.2017, 22:05:07) __main__       runserver start_daemon    INFO: Started daemon with time interval 600.
+(15.01.2017, 22:05:07) __main__       runserver    start_app    INFO: App is running!
+(15.01.2017, 22:05:16)     root hackernews_client get_top_stories    INFO: Received 10 Hacker News stories in 0.0 minute(s) 9.0 second(s) with ids:
+13406119, 13399095, 13405772, 13404840, 13404292, 13405380, 13405491, 13406081, 13402866, 13404912
+
+(15.01.2017, 22:15:25)     root hackernews_client get_top_stories    INFO: Received 10 Hacker News stories in 0.0 minute(s) 8.8 second(s) with ids:
+13406119, 13399095, 13405772, 13404840, 13404292, 13405380, 13406081, 13405491, 13404912, 13402866
+
+(15.01.2017, 22:21:34) __main__       runserver    start_app    INFO: Set up app & logger.
+(15.01.2017, 22:21:34) __main__       runserver init_clients    INFO: Initiated 3 clients: UnbabelClient, MongoDBClient, HackerNewsClient.
+(15.01.2017, 22:21:34) __main__       runserver start_daemon    INFO: Started daemon with time interval 600.
+(15.01.2017, 22:21:34) __main__       runserver    start_app    INFO: App is running!
+(15.01.2017, 22:21:42) hackerbabel.src.error_handlers  error_handlers handle_any_exception   ERROR: INTERNAL SERVER ERROR
+Time: 2017-01-15T22:21:42.119286
+Error type: <type 'exceptions.IndexError'>
+Error message: list index out of range
+Traceback: 
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/dennisulmer/Documents/Projekte/unbabel_challenge/fullstack-coding-challenge/hackerbabel/views/comment_section.py", line 28, in comment_section
+    story=get_story(story_id)
+  File "/Users/dennisulmer/Documents/Projekte/unbabel_challenge/fullstack-coding-challenge/hackerbabel/src/helpers.py", line 20, in get_story
+    story = mdb_client.find_document("id", story_id, "articles")
+  File "/Users/dennisulmer/Documents/Projekte/unbabel_challenge/fullstack-coding-challenge/hackerbabel/src/helpers.py", line 40, in wrapping_func
+    return func(*args, **kwargs)
+  File "/Users/dennisulmer/Documents/Projekte/unbabel_challenge/fullstack-coding-challenge/hackerbabel/clients/mongodb_client.py", line 75, in find_document
+    return result[0]
+IndexError: list index out of range
+
+(15.01.2017, 22:21:43)     root hackernews_client get_top_stories    INFO: Received 10 Hacker News stories in 0.0 minute(s) 8.4 second(s) with ids:
+13406119, 13399095, 13405772, 13404840, 13404292, 13406451, 13405380, 13406081, 13405491, 13406505
+
+(15.01.2017, 22:22:37) __main__       runserver    start_app    INFO: Set up app & logger.
+(15.01.2017, 22:22:37) __main__       runserver init_clients    INFO: Initiated 3 clients: UnbabelClient, MongoDBClient, HackerNewsClient.
+(15.01.2017, 22:22:37) __main__       runserver start_daemon    INFO: Started daemon with time interval 600.
+(15.01.2017, 22:22:37) __main__       runserver    start_app    INFO: App is running!
+(15.01.2017, 22:22:45)     root hackernews_client get_top_stories    INFO: Received 10 Hacker News stories in 0.0 minute(s) 8.0 second(s) with ids:
+13406119, 13399095, 13405772, 13404840, 13404292, 13406451, 13405380, 13406081, 13405491, 13406505
+
+(15.01.2017, 22:24:00) __main__       runserver    start_app    INFO: Set up app & logger.
+(15.01.2017, 22:24:00) __main__       runserver init_clients    INFO: Initiated 3 clients: UnbabelClient, MongoDBClient, HackerNewsClient.
+(15.01.2017, 22:24:00) __main__       runserver start_daemon    INFO: Started daemon with time interval 600.
+(15.01.2017, 22:24:01) __main__       runserver    start_app    INFO: App is running!
+(15.01.2017, 22:24:13)     root hackernews_client get_top_stories    INFO: Received 10 Hacker News stories in 0.0 minute(s) 12.2 second(s) with ids:
+13406119, 13399095, 13405772, 13404840, 13404292, 13406451, 13405380, 13406081, 13406505, 13405491
+
+(15.01.2017, 22:25:30) __main__       runserver    start_app    INFO: Set up app & logger.
+(15.01.2017, 22:25:30) __main__       runserver init_clients    INFO: Initiated 3 clients: UnbabelClient, MongoDBClient, HackerNewsClient.
+(15.01.2017, 22:25:30) __main__       runserver start_daemon    INFO: Started daemon with time interval 600.
+(15.01.2017, 22:25:30) __main__       runserver    start_app    INFO: App is running!
+(15.01.2017, 22:25:38)     root hackernews_client get_top_stories    INFO: Received 10 Hacker News stories in 0.0 minute(s) 7.8 second(s) with ids:
+13406119, 13399095, 13405772, 13404840, 13406451, 13404292, 13405380, 13406081, 13406505, 13405491
+

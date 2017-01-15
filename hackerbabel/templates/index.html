@@ -3,8 +3,28 @@
 {% macro display_story_titles(story) %}
 	{% set titles = story["titles"] %}
 	{% for lang, title in titles.iteritems() %}
-		<h2>{{ lang }}: {{ title }}</h2>
+		{{ lang }}: {{ title }}
 	{% endfor %}
+{% endmacro %}
+
+{% macro render_story(story, rank) %}
+	<tr class='athing' id='{{ story["id"]}}}}'>
+        <td align="right" valign="top" class="title"><span class="rank">{{
+	        rank }}.
+        </span></td>
+        <td valign="top" class="votelinks"><center><a id='up_13406119' href='vote?id=13406119&amp;how=up&amp;goto=news'><div class='votearrow' title='upvote'></div></a></center></td>
+        <td class="title"><a href="{{ story['url'] }}" class="storylink">
+	        {{ display_story_titles(story) }}
+        </a></td>
+	</tr>
+	<tr>
+        <td colspan="2"></td>
+		<td class="subtext">
+            <span class="score">{{ story["score"] }} points</span> | by {{
+			story["author"]	}} | <a href="{{ story['id']}}/comments">Comments</a>
+        </td>
+	</tr>
+	<tr class="spacer" style="height:5px"></tr>
 {% endmacro %}
 
 
@@ -26,11 +46,14 @@
 		{% block title %} Current Stories {% endblock %}
 
 		{% block content %}
-			<p>This is the story page.</p>
-
-			{% for story in stories %}
-				{{ display_story_titles(story) }} <br>
-			{% endfor %}
+			<table id="itemlist" cellspacing="0" cellpadding="0" border="0">
+				<tbody>
+					<tr style="height:10px"></tr>
+					{% for rank in range(stories|length) %}
+						{{ render_story(stories[rank], rank+1) }}
+					{% endfor %}
+				</tbody>
+			</table>
 		{% endblock %}
 	</body>
 </html>

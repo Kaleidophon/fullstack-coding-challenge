@@ -16,6 +16,7 @@ from hackerbabel.src.schema import ArticleSchema
 class MongoDBClient(Client):
     db = None
     schema = None
+    number_of_stories = None
 
     @classmethod
     def initialize(cls, **init_kwargs):
@@ -65,13 +66,23 @@ class MongoDBClient(Client):
 
     @classmethod
     @require_init
-    def get_newest_documents(cls, collection_name, limit):
+    def find_document(cls, key, value, collection_name):
         collection = getattr(cls.db, collection_name)
-        newest_elements = [
+        result = [
             document for document in
-            collection.find().sort("_id", -1).limit(limit)
+            collection.find({key: value})
         ]
-        return newest_elements
+        return result[0]
+
+    @classmethod
+    @require_init
+    def get_newest_documents(cls, collection_name):
+        collection = getattr(cls.db, collection_name)
+        newest_documents = [
+            document for document in
+            collection.find().sort("_id", -1).limit(cls.number_of_stories)
+        ]
+        return newest_documents
 
 
 

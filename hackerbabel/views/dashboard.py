@@ -8,6 +8,9 @@ translation status of the news stories' headlines.
 # EXT
 from flask import render_template, Blueprint
 
+# PROJECT
+from hackerbabel.src.helpers import get_stories
+
 # CONST
 DASHBOARD = Blueprint('dashboard', __name__)
 
@@ -17,4 +20,4 @@ def dashboard():
     """
     Dashboard view.
     """
-    return render_template("dashboard.html")
+    return render_template("dashboard.html", stories=get_stories())

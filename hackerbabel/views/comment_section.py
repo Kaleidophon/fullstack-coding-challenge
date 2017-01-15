@@ -7,6 +7,9 @@ View for a commentary section concerning a news article.
 # EXT
 from flask import render_template, Blueprint
 
+# PROJECT
+from hackerbabel.src.helpers import get_story
+
 # CONST
 COMMENT_SECTION = Blueprint(
     'comment_section', __name__,
@@ -19,4 +22,8 @@ def comment_section(story_id):
     """
     View of a comment section under a news article.
     """
-    return render_template("comment_section.html", story_id=story_id)
+    return render_template(
+        "comment_section.html",
+        story_id=story_id,
+        story=get_story(int(story_id))
+    )
