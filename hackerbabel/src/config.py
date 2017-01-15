@@ -5,6 +5,7 @@ Configuration file for whole Flask Application.
 
 @note: All keys have to be UPPERCASED to get recognized as Flask configuration.
 """
+
 # STD
 import logging
 

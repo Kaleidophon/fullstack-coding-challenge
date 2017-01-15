@@ -9,7 +9,7 @@ import sys
 import logging
 
 # PROJECT
-from hackerbabel.misc.helpers import check_and_create_directory
+from hackerbabel.src.helpers import check_and_create_directory
 
 
 def setup_logger(config):
@@ -33,7 +33,7 @@ def setup_logger(config):
     logging.basicConfig(filename=filename, filemode=filemode, level=level,
                         format=_format, datefmt=_dateformat)
 
-    logging.getLogger('urllib3')
+    logging.getLogger("requests").setLevel(logging.WARNING)
 
     # Display log simultaneously on console
     if config["CONSOLE_LOGGING"]:

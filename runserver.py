@@ -11,9 +11,13 @@ import logging
 from flask import Flask
 
 # PROJECT
-from misc.config import config_selector
-from misc.error_handlers import register_error_handlers
-from misc.logger import setup_logger
+from hackerbabel.clients.mongodb_client import MongoDBClient
+from hackerbabel.clients.hackernews_client import HackerNewsClient
+from hackerbabel.clients.unbabel_client import UnbabelClient
+from hackerbabel.src.config import config_selector
+from hackerbabel.src.daemon import HackerNewsDaemon
+from hackerbabel.src.error_handlers import register_error_handlers
+from hackerbabel.src.logger import setup_logger
 
 # CONST
 LOGGER = logging.getLogger(__name__)
@@ -33,18 +37,43 @@ def start_app():
     app = config_selector(app)
     register_error_handlers(app)
 
-    # 3 Configure access to database
-    # DBAccess.prepare(**config.py)  # TODO: Implement this
-
-    # 4 Set up logger
+    # 3 Set up logger
     setup_logger(app.config)
     LOGGER.info("Set up app & logger.")
 
-    # 5 Run app
-    app.run(use_reloader=False)
-    LOGGER.info("App is running!")
+    # 4 Init clients
+    init_clients(app.config)
 
-    return app
+    # 5 Init Daemon
+    start_daemon(app.config)
+
+    # 6 Run app
+    LOGGER.info("App is running!")
+    app.run(use_reloader=False)
+
+
+def init_clients(config):
+    clients = {
+        MongoDBClient(), HackerNewsClient(), UnbabelClient()
+    }
+
+    for client in clients:
+        client.initialize(**config)
+
+    LOGGER.info(
+        "Initiated {} clients: {}.".format(
+            len(clients),
+            ", ".join([type(client).__name__ for client in clients])
+        )
+    )
+
+
+def start_daemon(config):
+    interval = config.get("REFRESH_INTERVAL", 600)
+    hn_daemon = HackerNewsDaemon(interval)
+    hn_daemon.run()
+    LOGGER.info("Started daemon with time interval {}.".format(interval))
+
 
 if __name__ == "__main__":
     start_app()
