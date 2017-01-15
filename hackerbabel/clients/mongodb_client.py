@@ -9,8 +9,8 @@ from pymongo import MongoClient
 
 # PROJECT
 from hackerbabel.clients.client import Client
-from hackerbabel.misc.helpers import require_init
-from hackerbabel.misc.schema import ArticleSchema
+from hackerbabel.src.helpers import require_init
+from hackerbabel.src.schema import ArticleSchema
 
 
 class MongoDBClient(Client):
@@ -19,12 +19,12 @@ class MongoDBClient(Client):
 
     @classmethod
     def initialize(cls, **init_kwargs):
-        username = init_kwargs.get("username", "")
-        password = init_kwargs.get("password", "")
-        host = init_kwargs.get("host", "localhost")
-        port = init_kwargs.get("port", 27017)
-        database = init_kwargs.get("database", "")
-        options = init_kwargs.get("options", "")
+        username = init_kwargs.get("MONGODB_USER", "")
+        password = init_kwargs.get("MONGODB_PASSWORD", "")
+        host = init_kwargs.get("MONGODB_HOST", "localhost")
+        port = init_kwargs.get("MONGODB_PORT", 27017)
+        database = init_kwargs.get("MONGODB_NAME", "")
+        options = init_kwargs.get("MONGODB_OPTIONS", "")
 
         credentials = ""
         if username and password:

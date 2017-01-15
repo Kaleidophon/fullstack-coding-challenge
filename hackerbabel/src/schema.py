@@ -68,6 +68,8 @@ class ArticleSchema(Schema):
             "date": {"type": "string"},
             "article_type": {"type": "string"},
             "author": {"type": "string"},
+            "url": {"type": "string"},
+            "score": {"type": "number"},
             "comments": {
                 "type": "array",
                 "items": {
@@ -78,7 +80,7 @@ class ArticleSchema(Schema):
         },
         "required": [
             "id", "titles", "comments", "article_type", "author",
-            "date", "translation_status"
+            "date", "translation_status", "url", "score"
         ],
         "additionalProperties": False
     }

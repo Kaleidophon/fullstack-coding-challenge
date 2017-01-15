@@ -7,13 +7,15 @@ Client used to access Hacker news
 # STD
 import datetime
 import json
+import logging
+import time
 
 # EXT
 from hackernews import HackerNews
 
 # PROJECT
 from hackerbabel.clients.client import Client
-from hackerbabel.misc.helpers import require_init
+from hackerbabel.src.helpers import require_init
 
 # CONST
 RENAMING = {
@@ -23,7 +25,8 @@ RENAMING = {
 	u"time": u"date",
 	u"title": u"titles"
 }
-DROPS = {u"descendants", u"url", u"score"}
+DROPS = {u"descendants"}
+LOGGER = logging.getLogger()
 
 
 class HackerNewsClient(Client):
@@ -31,6 +34,7 @@ class HackerNewsClient(Client):
 
 	@classmethod
 	def initialize(cls, **init_kwargs):
+		cls.limit = init_kwargs.get("NUMBER_OF_STORIES", 10)
 		cls.client = HackerNews()
 		cls.formatting_functions = {
 			u"comments": cls._resolve_comments,
@@ -41,10 +45,12 @@ class HackerNewsClient(Client):
 
 	@classmethod
 	@require_init
-	def get_top_stories(cls, limit=10):
+	def get_top_stories(cls):
+		start_time = time.time()
+
 		top_stories = [
 			json.loads(getattr(cls._resolve_id(story_id), "raw"))
-			for story_id in cls.client.top_stories(limit)
+			for story_id in cls.client.top_stories(cls.limit)
 		]
 
 		documents = [
@@ -54,11 +60,22 @@ class HackerNewsClient(Client):
 			for story in top_stories
 		]
 
+		end_time = time.time()
+		minutes, seconds = divmod(round((end_time - start_time), 1), 60)
+
+		LOGGER.info(
+			"Received {} Hacker News stories in {} minute(s) {} second(s) with "
+			"ids:\n{}".format(
+				len(top_stories), minutes, seconds,
+				", ".join([str(top_story["id"]) for top_story in top_stories])
+			)
+		)
+
 		return documents
 
 	@staticmethod
 	def _jsonify_story(story, formatting={}, rename={}, drop=set()):
-		document = story
+		document = story  # Semantic change from HN story to future MongoDB doc
 
 		# Remove unwanted field
 		for field in drop:
@@ -107,18 +124,3 @@ class HackerNewsClient(Client):
 	@classmethod
 	def _resolve_id(cls, item_id):
 		return cls.client.get_item(item_id)
-
-if __name__ == "__main__":
-	from hackerbabel.clients.mongodb_client import MongoDBClient
-
-	hn_client = HackerNewsClient()
-	hn_client.initialize()
-
-	mdb_client = MongoDBClient()
-	mdb_client.initialize(host="127.0.0.1", database="hackerbabel_db")
-
-	for document in hn_client.get_top_stories():
-		print document
-		mdb_client.add_document(document, "articles")
-
-
