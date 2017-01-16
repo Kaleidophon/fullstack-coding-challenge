@@ -1,8 +1,15 @@
 {# Macro to recursively display comments #}
-{% macro render_comment(story) %}
-    {% for comment in story["comments"] %}
-        <tr>{{ comment }}</tr>
-    {% endfor %}
+{% macro render_comments(story) %}
+    {% if not story %}
+        <tr><b>
+            This story doesn't exist or hasn't been added to the database yet.
+        </b></tr>
+    {% else %}
+        {% for comment in story["comments"] %}
+            <tr class="comment"><td>{{ comment }}</td></tr>
+            <tr class="spacer" style="height:5px"><td></td></tr>
+        {% endfor %}
+    {% endif %}
 {% endmacro %}
 
 {% block additional_stylesheets %}
@@ -10,11 +17,17 @@
           href="{{ url_for('static', filename='css/comment_section.css') }}" />
 {%  endblock %}
 
+{# -------------------------------- Site ------------------------------------ #}
+
 {% extends "base.html" %}
 
 {% block content %}
-    <table>
-    {{ render_comment(story) }}
+    <table id="itemlist" cellspacing="0" cellpadding="0" border="0",
+           width="65%">
+        <tbody>
+            <tr style="height:10px"></tr>
+            {{ render_comments(story) }}
+        </tbody>
     </table>
 {% endblock %}
 

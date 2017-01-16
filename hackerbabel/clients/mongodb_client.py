@@ -70,8 +70,10 @@ class MongoDBClient(Client):
         collection = getattr(cls.db, collection_name)
         result = [
             document for document in
-            collection.find({key: value})
+            collection.find({key: value}).sort("_id", -1)
         ]
+        if len(result) == 0:
+            return None
         return result[0]
 
     @classmethod

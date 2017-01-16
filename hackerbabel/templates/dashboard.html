@@ -1,3 +1,29 @@
+{# Macro to render story and its translation status #}
+{% macro render_translation_status(story, rank) %}
+    <tr>
+        <td align="right" valign="top" class="title"><span class="rank">
+            {{ rank }}.
+        </span></td>
+        <td> {{ story["id"] }} </td>
+        <td class="title"><a href="{{ story['url'] }}" class="storylink">
+            {{ story["titles"]["EN"]|truncate(75, True) }}
+        </a></td>
+        {{ set_translation_status(story["translation_status"]) }}
+    </tr>
+    <tr class="spacer" style="height:5px"></tr>
+{% endmacro %}
+
+{% macro set_translation_status(status) %}
+    {% if status|string == "not_requested" %}
+        <td class="not_requested"> {{ status }} </td>
+    {% elif status|string == "pending" %}
+        <td class="pending"> {{ status }} </td>
+    {% elif status|string == "done" %}
+        <td class="done"> {{ status }} </td>
+    {% endif %}
+{% endmacro %}
+
+{# -------------------------------- Site ------------------------------------ #}
 
 {% extends "base.html" %}
 
@@ -9,5 +35,20 @@
 {% block title %} Translation Dashboard {% endblock %}
 
 {% block content %}
-<p>This is the dashboard.</p>
+    <table id="itemlist" cellspacing="0" cellpadding="0" border="0">
+        <thead>
+            <tr>
+                <td> Rank </td>
+                <td> ID </td>
+                <td> Name </td>
+                <td> Status </td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr style="height:10px"></tr>
+            {% for rank in range(stories|length) %}
+                {{ render_translation_status(stories[rank], rank+1) }}
+            {% endfor %}
+        </tbody>
+    </table>
 {% endblock %}

@@ -77,10 +77,10 @@ class HackerNewsClient(Client):
 	def _jsonify_story(story, formatting={}, rename={}, drop=set()):
 		document = story  # Semantic change from HN story to future MongoDB doc
 
-		if not hasattr(document, "kids"):
+		if not document.get("kids"):
 			document["kids"] = []
 
-		# Remove unwanted field
+		# Remove unwanted fields
 		for field in drop:
 			document.pop(field, None)
 
@@ -119,9 +119,11 @@ class HackerNewsClient(Client):
 				return True
 			return False
 
+		comments = [cls._resolve_id(comment_id).text for comment_id in comment_ids]
+		a = 3
 		return filter(
 			is_not_none,
-			[cls._resolve_id(comment_id).text for comment_id in comment_ids]
+			comments
 		)
 
 	@classmethod
