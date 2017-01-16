@@ -11,7 +11,7 @@ import logging
 
 # CONST
 LOGGER = logging.getLogger(__name__)
-DEFAULT_CONFIG_PATH = 'hackerbabel/config.py'  # Default config path
+DEFAULT_CONFIG_PATH = 'config.py'  # Default config path
 
 
 def config_selector(app):

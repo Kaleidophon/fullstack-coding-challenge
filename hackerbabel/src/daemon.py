@@ -7,7 +7,7 @@ feeds them into MongoDB.
 
 # STD
 from time import sleep
-from threading import Thread, Timer
+from threading import Thread
 
 # PROJECT
 from hackerbabel.clients.hackernews_client import HackerNewsClient
