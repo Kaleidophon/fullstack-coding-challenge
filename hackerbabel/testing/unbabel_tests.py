@@ -1,9 +1,8 @@
 # -*- coding: utf-8 -*-
 
 """
-Tests for flask app configuration.
+Tests for the UnbabelClient.
 """
-
 
 # STD
 import json

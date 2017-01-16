@@ -18,7 +18,7 @@ from hackerbabel.clients.client import Client
 from hackerbabel.src.helpers import require_init
 
 # CONST
-RENAMING = {
+NEW_NAMES = {
     u"kids": u"comments",
     u"by": u"author",
     u"type": u"article_type",
@@ -57,7 +57,7 @@ class HackerNewsClient(Client):
 
         documents = [
             cls._jsonify_story(
-                story, cls.formatting_functions, RENAMING, DROPS
+                story, cls.formatting_functions, NEW_NAMES, DROPS
             )
             for story in top_stories
         ]
@@ -119,7 +119,7 @@ class HackerNewsClient(Client):
         for target_lang in cls.target_langs:
             titles.update({
                 target_lang: {
-                    "title": "###",
+                    "title": "###",  # Temporary title value
                     "translation_status": "not_requested"
                 }
             })

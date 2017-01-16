@@ -4,3 +4,4 @@ jsonschema
 haxor
 flask-bootstrap
 nose
+bs4
