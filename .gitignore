@@ -4,3 +4,4 @@
 hackerbabel/data/*
 *.ipynb
 hackerbabel/config.py
+*.log
