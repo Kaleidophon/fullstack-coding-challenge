@@ -14,12 +14,11 @@ LOGGER = logging.getLogger(__name__)
 DEFAULT_CONFIG_PATH = 'config.py'  # Default config path
 
 
-def config_selector(app):
+def config_selector(app, config_path=DEFAULT_CONFIG_PATH):
     """
     Select the right configuration class, so Flask can import the right settings
     with from_object() method.
     """
-    config_path = app.config.get("DEFAULT_CONFIG_PATH", DEFAULT_CONFIG_PATH)
 
     # Get config from file
     app.config.from_pyfile(config_path)

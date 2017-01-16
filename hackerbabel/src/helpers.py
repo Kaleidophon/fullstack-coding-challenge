@@ -7,6 +7,7 @@ Module of small helper functions used throughout the project.
 # STD
 from functools import wraps
 import os
+import types
 
 
 def check_and_create_directory(directory):
@@ -32,6 +33,20 @@ def get_stories():
     stories = mdb_client.get_newest_documents("articles")
     stories.reverse()  # Because of the way jinja renders the stories
     return stories
+
+
+def get_config_from_py_file(config_path):
+    config = types.ModuleType('config')
+    config.__file__ = config_path
+    try:
+        with open(config_path) as config_file:
+            exec(compile(config_file.read(), config_path, 'exec'),
+                 config.__dict__)
+    except IOError:
+        pass  # Test will fail anyway
+    keys = [key for key in dir(config) if key.isupper()]
+    values = [getattr(config, key) for key in keys]
+    return dict(zip(keys, values))
 
 
 def require_init(func):
