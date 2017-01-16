@@ -2,8 +2,13 @@
 
 {% macro display_story_titles(story) %}
 	{% set titles = story["titles"] %}
-	{% for lang, title in titles.iteritems() %}
-		{{ lang }}: {{ title|truncate(120, True) }}
+	{% for lang, info in titles.iteritems() %}
+		{% set translation_status = info["translation_status"] %}
+		{% if translation_status == "done" %}
+			<td class="title"><a href="{{ story['url'] }}" class="storylink">
+				{{ lang }}: {{ info["title"] }}
+			</a></td>
+		{% endif %}
 	{% endfor %}
 {% endmacro %}
 
@@ -13,9 +18,7 @@
 	        rank }}.
         </span></td>
         <td valign="top" class="votelinks"><center><a href='vote?id=13406119&amp;how=up&amp;goto=news'><div class='votearrow' title='upvote'></div></a></center></td>
-        <td class="title"><a href="{{ story['url'] }}" class="storylink">
-	        {{ display_story_titles(story) }}
-        </a></td>
+		{{ display_story_titles(story) }}
 	</tr>
 	<tr>
         <td colspan="2"></td>

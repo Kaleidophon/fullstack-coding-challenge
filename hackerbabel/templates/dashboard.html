@@ -1,16 +1,24 @@
 {# Macro to render story and its translation status #}
 {% macro render_translation_status(story, rank) %}
+    {% for lang, info in story["titles"].iteritems() %}
+    {% set title = info["title"] %}
+    {% set translation_status = info["translation_status"] %}
     <tr>
         <td align="right" valign="top" class="title"><span class="rank">
             {{ rank }}.
         </span></td>
         <td> {{ story["id"] }} </td>
-        <td class="title"><a href="{{ story['url'] }}" class="storylink">
-            {{ story["titles"]["EN"]|truncate(75, True) }}
-        </a></td>
-        {{ set_translation_status(story["translation_status"]) }}
+            <td class="title"><a href="{{ story['url'] }}" class="storylink">
+                {% if translation_status == "done" %}
+                    {{ lang }}: {{ title|truncate(75, True) }}
+                {% else %}
+                    {{ lang }}: -
+                {% endif %}
+            </a></td>
+        {{ set_translation_status(translation_status) }}
     </tr>
     <tr class="spacer" style="height:5px"></tr>
+    {% endfor %}
 {% endmacro %}
 
 {% macro set_translation_status(status) %}

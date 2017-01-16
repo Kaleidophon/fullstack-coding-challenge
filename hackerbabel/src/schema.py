@@ -61,8 +61,13 @@ class ArticleSchema(Schema):
             "id": {"type": "number"},
             "titles": {
                 "type": "object",
-                "additionalProperties": {
-                    "type": "string"
+                "properties": {
+                    "title": {
+                        "type": "string"
+                    },
+                    "translation_status": {
+                        "type": "string"
+                    }
                 }
             },
             "date": {"type": "string"},
@@ -77,11 +82,10 @@ class ArticleSchema(Schema):
                     "type": "string"
                 }
             },
-            "translation_status": {"type": "string"}
         },
         "required": [
             "id", "titles", "article_type", "author",
-            "date", "translation_status", "score"
+            "date", "score"
         ]
     }
 
