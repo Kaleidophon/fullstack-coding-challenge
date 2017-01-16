@@ -3,3 +3,4 @@ pymongo
 jsonschema
 haxor
 flask-bootstrap
+nose

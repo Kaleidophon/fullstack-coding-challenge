@@ -16,7 +16,7 @@ from hackerbabel.clients.mongodb_client import MongoDBClient
 from hackerbabel.clients.hackernews_client import HackerNewsClient
 from hackerbabel.clients.unbabel_client import UnbabelClient
 
-from hackerbabel.src.config import config_selector
+from hackerbabel.src.configuration import config_selector
 from hackerbabel.src.daemon import HackerNewsDaemon
 from hackerbabel.src.error_handlers import register_error_handlers
 from hackerbabel.src.logger import setup_logger
