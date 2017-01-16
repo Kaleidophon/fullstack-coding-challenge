@@ -89,6 +89,7 @@ def register_blueprints(app):
 
 def start_daemon(config):
     interval = config.get("REFRESH_INTERVAL", 600)
-    hn_daemon = HackerNewsDaemon(interval)
+    target_language = config.get("TARGET_LANGUAGES", ("PT", ))
+    hn_daemon = HackerNewsDaemon(interval, target_language)
     hn_daemon.run()
     LOGGER.info("Started daemon with time interval {}.".format(interval))

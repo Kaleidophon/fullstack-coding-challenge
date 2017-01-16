@@ -6,6 +6,7 @@ Client used to access MongoDB
 
 # EXT
 from pymongo import MongoClient
+from bson.objectid import ObjectId
 
 # PROJECT
 from hackerbabel.clients.client import Client
@@ -85,6 +86,16 @@ class MongoDBClient(Client):
             collection.find().sort("_id", -1).limit(cls.number_of_stories)
         ]
         return newest_documents
+
+    @classmethod
+    @require_init
+    def update_document(cls, collection_name, document_id, updates):
+        collection = getattr(cls.db, collection_name)
+        report = collection.update(
+            {"_id": ObjectId(document_id)},
+            {"$set": updates}
+        )
+        return report
 
 
 

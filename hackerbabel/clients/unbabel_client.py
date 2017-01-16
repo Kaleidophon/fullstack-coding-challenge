@@ -35,6 +35,7 @@ class UnbabelClient(Client):
                     )
                 )
             )
+        cls.initialized = True
 
     @classmethod
     @require_init
@@ -73,6 +74,6 @@ class UnbabelClient(Client):
         data = json.dumps(data)
 
         response = getattr(requests, request_type.lower())(
-            uri, data=data, **kwargs
+            uri, data=data, headers=headers, **kwargs
         )
         return response
