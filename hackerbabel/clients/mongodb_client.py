@@ -16,6 +16,7 @@ from hackerbabel.src.schema import ArticleSchema
 class MongoDBClient(Client):
     db = None
     schema = None
+    number_of_stories = None
 
     @classmethod
     def initialize(cls, **init_kwargs):
@@ -25,6 +26,7 @@ class MongoDBClient(Client):
         port = init_kwargs.get("MONGODB_PORT", 27017)
         database = init_kwargs.get("MONGODB_NAME", "")
         options = init_kwargs.get("MONGODB_OPTIONS", "")
+        cls.number_of_stories = init_kwargs.get("NUMBER_OF_STORIES", 10)
 
         credentials = ""
         if username and password:
@@ -61,6 +63,31 @@ class MongoDBClient(Client):
 
         result = collection.insert_many(documents)
         return result
+
+    @classmethod
+    @require_init
+    def find_document(cls, key, value, collection_name):
+        collection = getattr(cls.db, collection_name)
+        result = [
+            document for document in
+            collection.find({key: value}).sort("_id", -1)
+        ]
+        if len(result) == 0:
+            return None
+        return result[0]
+
+    @classmethod
+    @require_init
+    def get_newest_documents(cls, collection_name):
+        collection = getattr(cls.db, collection_name)
+        newest_documents = [
+            document for document in
+            collection.find().sort("_id", -1).limit(cls.number_of_stories)
+        ]
+        return newest_documents
+
+
+
 
 
 

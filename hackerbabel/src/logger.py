@@ -34,6 +34,7 @@ def setup_logger(config):
                         format=_format, datefmt=_dateformat)
 
     logging.getLogger("requests").setLevel(logging.WARNING)
+    logging.getLogger("werkzeug").setLevel(logging.WARNING)
 
     # Display log simultaneously on console
     if config["CONSOLE_LOGGING"]:

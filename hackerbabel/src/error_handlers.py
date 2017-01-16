@@ -21,6 +21,10 @@ def register_error_handlers(app):
     @type app: flask.app.Flask
     """
 
+    @app.errorhandler(404)
+    def page_not_found(exception):
+        return "Sorry! This page doesn't exist.", 404
+
     @app.errorhandler(Exception)
     def handle_any_exception(error):
         """
