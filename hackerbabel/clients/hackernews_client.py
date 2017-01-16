@@ -37,7 +37,7 @@ class HackerNewsClient(Client):
 		cls.limit = init_kwargs.get("NUMBER_OF_STORIES", 10)
 		cls.client = HackerNews()
 		cls.formatting_functions = {
-			u"comments": cls._resolve_comments,
+			u"comments": cls._collect_comments,
 			u"date": cls._seconds_to_datestring,
 			u"titles": cls._expand_title
 		}
@@ -113,19 +113,41 @@ class HackerNewsClient(Client):
 		return {"EN": title}
 
 	@classmethod
-	def _resolve_comments(cls, comment_ids):
-		def is_not_none(comment):
-			if comment is not None:
-				return True
-			return False
+	def _collect_comments(cls, comment_ids):
+		return [
+			str(comment_id)
+			for comment_id in comment_ids if comment_id is not None
+		]
 
-		comments = [cls._resolve_id(comment_id).text for comment_id in comment_ids]
-		a = 3
-		return filter(
-			is_not_none,
-			comments
-		)
+	@classmethod
+	def resolve_comment_ids(cls, story):
+
+		# No comments, nothing to resolve / change
+		if not story["comments"]:
+			return story
+
+		def _inner_resolve(comment_ids):
+			comments = {}  # Comments of comment
+			if not comment_ids:
+				return comments
+			for comment_id in comment_ids:
+				comment = cls._resolve_id(comment_id)
+				ccomment_ids = comment.kids
+				comments[comment.text] = _inner_resolve(ccomment_ids)
+				return comments
+
+		resolved_comments = []
+		for comment_id in story["comments"]:
+			comment = cls._resolve_id(comment_id)
+			ccomment_ids = comment.kids
+			resolved_comments.append({
+				comment.text: _inner_resolve(ccomment_ids)
+			})
+
+		story["comments"] = resolved_comments
+		return story
 
 	@classmethod
 	def _resolve_id(cls, item_id):
+		item_id = int(item_id)
 		return cls.client.get_item(item_id)

@@ -5,7 +5,7 @@ Client used to access MongoDB
 """
 
 # EXT
-from pymongo import MongoClient, DESCENDING
+from pymongo import MongoClient
 
 # PROJECT
 from hackerbabel.clients.client import Client

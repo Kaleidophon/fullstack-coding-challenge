@@ -16,13 +16,18 @@ def check_and_create_directory(directory):
 
 def get_story(story_id):
     from hackerbabel.clients.mongodb_client import MongoDBClient
+    from hackerbabel.clients.hackernews_client import HackerNewsClient
+
     mdb_client = MongoDBClient()
+    hn_client = HackerNewsClient()
     story = mdb_client.find_document("id", story_id, "articles")
+    story = hn_client.resolve_comment_ids(story)
     return story
 
 
 def get_stories():
     from hackerbabel.clients.mongodb_client import MongoDBClient
+
     mdb_client = MongoDBClient()
     stories = mdb_client.get_newest_documents("articles")
     stories.reverse()  # Because of the way jinja renders the stories

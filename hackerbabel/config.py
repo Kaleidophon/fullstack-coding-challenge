@@ -9,4 +9,3 @@ MONGODB_HOST = "127.0.0.1"
 MONGODB_PORT = 27017
 MONGODB_NAME = "hackerbabel_db"
 NUMBER_OF_STORIES = 10
-SECRET_KEY = 'so_secret'

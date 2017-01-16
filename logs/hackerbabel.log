@@ -3530,3 +3530,929 @@ Traceback (most recent call last):
     {{ render_comments(story) }}
 UndefinedError: 'render_comments' is undefined
 
+(16.01.2017, 10:33:09) hackerbabel        __init__    setup_app    INFO: Set up app & logger.
+(16.01.2017, 10:33:09) hackerbabel        __init__ init_clients    INFO: Initiated 3 clients: MongoDBClient, UnbabelClient, HackerNewsClient.
+(16.01.2017, 10:33:09) hackerbabel        __init__ start_daemon    INFO: Started daemon with time interval 60.
+(16.01.2017, 10:34:36) hackerbabel        __init__    setup_app    INFO: Set up app & logger.
+(16.01.2017, 10:34:36) hackerbabel        __init__ init_clients    INFO: Initiated 3 clients: UnbabelClient, MongoDBClient, HackerNewsClient.
+(16.01.2017, 10:34:36) hackerbabel        __init__ start_daemon    INFO: Started daemon with time interval 60.
+(16.01.2017, 10:37:07)     root hackernews_client get_top_stories    INFO: Received 10 Hacker News stories in 2.0 minute(s) 30.2 second(s) with ids:
+13408797, 13407717, 13406119, 13407990, 13408459, 13407233, 13406081, 13407629, 13409098, 13408196
+
+(16.01.2017, 10:45:45) hackerbabel        __init__    setup_app    INFO: Set up app & logger.
+(16.01.2017, 10:46:06) hackerbabel        __init__    setup_app    INFO: Set up app & logger.
+(16.01.2017, 10:46:06) hackerbabel        __init__ init_clients    INFO: Initiated 3 clients: MongoDBClient, UnbabelClient, HackerNewsClient.
+(16.01.2017, 10:46:06) hackerbabel        __init__ start_daemon    INFO: Started daemon with time interval 60.
+(16.01.2017, 10:48:51)     root hackernews_client get_top_stories    INFO: Received 10 Hacker News stories in 2.0 minute(s) 45.0 second(s) with ids:
+13408797, 13407717, 13406119, 13407990, 13408459, 13407233, 13406081, 13407629, 13409098, 13408196
+
+(16.01.2017, 10:49:58) hackerbabel        __init__    setup_app    INFO: Set up app & logger.
+(16.01.2017, 10:49:58) hackerbabel        __init__ init_clients    INFO: Initiated 3 clients: UnbabelClient, MongoDBClient, HackerNewsClient.
+(16.01.2017, 10:49:58) hackerbabel        __init__ start_daemon    INFO: Started daemon with time interval 60.
+(16.01.2017, 10:52:42)     root hackernews_client get_top_stories    INFO: Received 10 Hacker News stories in 2.0 minute(s) 44.7 second(s) with ids:
+13408797, 13407717, 13406119, 13407990, 13408459, 13407233, 13406081, 13407629, 13409098, 13408196
+
+(16.01.2017, 10:55:50) hackerbabel        __init__    setup_app    INFO: Set up app & logger.
+(16.01.2017, 10:55:50) hackerbabel        __init__ init_clients    INFO: Initiated 3 clients: UnbabelClient, MongoDBClient, HackerNewsClient.
+(16.01.2017, 10:55:50) hackerbabel        __init__ start_daemon    INFO: Started daemon with time interval 60.
+(16.01.2017, 10:56:50) hackerbabel        __init__    setup_app    INFO: Set up app & logger.
+(16.01.2017, 10:56:50) hackerbabel        __init__ init_clients    INFO: Initiated 3 clients: UnbabelClient, MongoDBClient, HackerNewsClient.
+(16.01.2017, 10:56:50) hackerbabel        __init__ start_daemon    INFO: Started daemon with time interval 60.
+(16.01.2017, 10:59:23)     root hackernews_client get_top_stories    INFO: Received 10 Hacker News stories in 2.0 minute(s) 32.9 second(s) with ids:
+13408797, 13409098, 13407717, 13406119, 13408459, 13407990, 13407233, 13406081, 13407629, 13408196
+
+(16.01.2017, 11:00:52) hackerbabel        __init__    setup_app    INFO: Set up app & logger.
+(16.01.2017, 11:00:52) hackerbabel        __init__ init_clients    INFO: Initiated 3 clients: UnbabelClient, MongoDBClient, HackerNewsClient.
+(16.01.2017, 11:00:52) hackerbabel        __init__ start_daemon    INFO: Started daemon with time interval 60.
+(16.01.2017, 11:04:12)     root hackernews_client get_top_stories    INFO: Received 10 Hacker News stories in 3.0 minute(s) 19.7 second(s) with ids:
+13409098, 13408797, 13407717, 13406119, 13407990, 13408459, 13407233, 13406081, 13407629, 13408196
+
+(16.01.2017, 11:06:21) hackerbabel        __init__    setup_app    INFO: Set up app & logger.
+(16.01.2017, 11:06:21) hackerbabel        __init__ init_clients    INFO: Initiated 3 clients: MongoDBClient, UnbabelClient, HackerNewsClient.
+(16.01.2017, 11:06:21) hackerbabel        __init__ start_daemon    INFO: Started daemon with time interval 60.
+(16.01.2017, 11:09:07)     root hackernews_client get_top_stories    INFO: Received 10 Hacker News stories in 2.0 minute(s) 45.9 second(s) with ids:
+13409098, 13408797, 13407717, 13406119, 13407990, 13408459, 13407233, 13406081, 13407629, 13408196
+
+(16.01.2017, 11:09:49) hackerbabel        __init__    setup_app    INFO: Set up app & logger.
+(16.01.2017, 11:09:49) hackerbabel        __init__ init_clients    INFO: Initiated 3 clients: MongoDBClient, UnbabelClient, HackerNewsClient.
+(16.01.2017, 11:09:49) hackerbabel        __init__ start_daemon    INFO: Started daemon with time interval 60.
+(16.01.2017, 11:12:40)     root hackernews_client get_top_stories    INFO: Received 10 Hacker News stories in 2.0 minute(s) 51.3 second(s) with ids:
+13409098, 13408797, 13407717, 13406119, 13407990, 13408459, 13407233, 13406081, 13407629, 13408196
+
+(16.01.2017, 11:16:25)     root hackernews_client get_top_stories    INFO: Received 10 Hacker News stories in 2.0 minute(s) 45.2 second(s) with ids:
+13409098, 13408797, 13407717, 13406119, 13407990, 13407233, 13408459, 13406081, 13407629, 13408196
+
+(16.01.2017, 11:20:13)     root hackernews_client get_top_stories    INFO: Received 10 Hacker News stories in 2.0 minute(s) 48.0 second(s) with ids:
+13409098, 13408797, 13407717, 13406119, 13407990, 13407233, 13408459, 13406081, 13407629, 13408196
+
+(16.01.2017, 11:21:01) hackerbabel        __init__    setup_app    INFO: Set up app & logger.
+(16.01.2017, 11:21:01) hackerbabel        __init__ init_clients    INFO: Initiated 3 clients: UnbabelClient, MongoDBClient, HackerNewsClient.
+(16.01.2017, 11:21:01) hackerbabel        __init__ start_daemon    INFO: Started daemon with time interval 60.
+(16.01.2017, 11:23:38)     root hackernews_client get_top_stories    INFO: Received 10 Hacker News stories in 2.0 minute(s) 36.9 second(s) with ids:
+13409098, 13408797, 13407717, 13407990, 13407233, 13408459, 13407629, 13406119, 13408196, 13406724
+
+(16.01.2017, 11:33:53) hackerbabel        __init__    setup_app    INFO: Set up app & logger.
+(16.01.2017, 11:33:53) hackerbabel        __init__ init_clients    INFO: Initiated 3 clients: MongoDBClient, UnbabelClient, HackerNewsClient.
+(16.01.2017, 11:33:53) hackerbabel        __init__ start_daemon    INFO: Started daemon with time interval 60.
+(16.01.2017, 11:34:01) hackerbabel.src.error_handlers  error_handlers handle_any_exception   ERROR: INTERNAL SERVER ERROR
+Time: 2017-01-16T11:34:01.906359
+Error type: <type 'exceptions.TypeError'>
+Error message: 'NoneType' object has no attribute '__getitem__'
+Traceback: 
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/dennisulmer/Documents/Projekte/unbabel_challenge/fullstack-coding-challenge/hackerbabel/views/comment_section.py", line 28, in comment_section
+    story=get_story(int(story_id))
+  File "/Users/dennisulmer/Documents/Projekte/unbabel_challenge/fullstack-coding-challenge/hackerbabel/src/helpers.py", line 24, in get_story
+    story = hn_client.resolve_comment_ids(story)
+  File "/Users/dennisulmer/Documents/Projekte/unbabel_challenge/fullstack-coding-challenge/hackerbabel/clients/hackernews_client.py", line 150, in resolve_comment_ids
+    for comment_id in story["comments"]:
+TypeError: 'NoneType' object has no attribute '__getitem__'
+
+(16.01.2017, 11:35:04) hackerbabel        __init__    setup_app    INFO: Set up app & logger.
+(16.01.2017, 11:35:04) hackerbabel        __init__ init_clients    INFO: Initiated 3 clients: MongoDBClient, UnbabelClient, HackerNewsClient.
+(16.01.2017, 11:35:04) hackerbabel        __init__ start_daemon    INFO: Started daemon with time interval 60.
+(16.01.2017, 11:35:22) hackerbabel.src.error_handlers  error_handlers handle_any_exception   ERROR: INTERNAL SERVER ERROR
+Time: 2017-01-16T11:35:22.082400
+Error type: <type 'exceptions.TypeError'>
+Error message: 'NoneType' object has no attribute '__getitem__'
+Traceback: 
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/dennisulmer/Documents/Projekte/unbabel_challenge/fullstack-coding-challenge/hackerbabel/views/comment_section.py", line 28, in comment_section
+    story=get_story(int(story_id))
+  File "/Users/dennisulmer/Documents/Projekte/unbabel_challenge/fullstack-coding-challenge/hackerbabel/src/helpers.py", line 24, in get_story
+    story = hn_client.resolve_comment_ids(story)
+  File "/Users/dennisulmer/Documents/Projekte/unbabel_challenge/fullstack-coding-challenge/hackerbabel/clients/hackernews_client.py", line 150, in resolve_comment_ids
+    for comment_id in story["comments"]:
+TypeError: 'NoneType' object has no attribute '__getitem__'
+
+(16.01.2017, 11:36:44) hackerbabel        __init__    setup_app    INFO: Set up app & logger.
+(16.01.2017, 11:36:44) hackerbabel        __init__ init_clients    INFO: Initiated 3 clients: UnbabelClient, MongoDBClient, HackerNewsClient.
+(16.01.2017, 11:36:44) hackerbabel        __init__ start_daemon    INFO: Started daemon with time interval 60.
+(16.01.2017, 11:37:50) hackerbabel.src.error_handlers  error_handlers handle_any_exception   ERROR: INTERNAL SERVER ERROR
+Time: 2017-01-16T11:37:50.794397
+Error type: <type 'exceptions.TypeError'>
+Error message: 'NoneType' object has no attribute '__getitem__'
+Traceback: 
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/dennisulmer/Documents/Projekte/unbabel_challenge/fullstack-coding-challenge/hackerbabel/views/comment_section.py", line 28, in comment_section
+    story=get_story(int(story_id))
+  File "/Users/dennisulmer/Documents/Projekte/unbabel_challenge/fullstack-coding-challenge/hackerbabel/src/helpers.py", line 24, in get_story
+    story = hn_client.resolve_comment_ids(story)
+  File "/Users/dennisulmer/Documents/Projekte/unbabel_challenge/fullstack-coding-challenge/hackerbabel/clients/hackernews_client.py", line 141, in resolve_comment_ids
+    if story["comments"]:
+TypeError: 'NoneType' object has no attribute '__getitem__'
+
+(16.01.2017, 11:38:00) hackerbabel        __init__    setup_app    INFO: Set up app & logger.
+(16.01.2017, 11:38:00) hackerbabel        __init__ init_clients    INFO: Initiated 3 clients: MongoDBClient, UnbabelClient, HackerNewsClient.
+(16.01.2017, 11:38:00) hackerbabel        __init__ start_daemon    INFO: Started daemon with time interval 60.
+(16.01.2017, 11:39:57) hackerbabel.src.error_handlers  error_handlers handle_any_exception   ERROR: INTERNAL SERVER ERROR
+Time: 2017-01-16T11:39:57.891245
+Error type: <type 'exceptions.TypeError'>
+Error message: 'NoneType' object has no attribute '__getitem__'
+Traceback: 
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/dennisulmer/Documents/Projekte/unbabel_challenge/fullstack-coding-challenge/hackerbabel/views/comment_section.py", line 28, in comment_section
+    story=get_story(int(story_id))
+  File "/Users/dennisulmer/Documents/Projekte/unbabel_challenge/fullstack-coding-challenge/hackerbabel/src/helpers.py", line 24, in get_story
+    story = hn_client.resolve_comment_ids(story)
+  File "/Users/dennisulmer/Documents/Projekte/unbabel_challenge/fullstack-coding-challenge/hackerbabel/clients/hackernews_client.py", line 141, in resolve_comment_ids
+    if story["comments"]:
+TypeError: 'NoneType' object has no attribute '__getitem__'
+
+(16.01.2017, 11:40:04) hackerbabel        __init__    setup_app    INFO: Set up app & logger.
+(16.01.2017, 11:40:04) hackerbabel        __init__ init_clients    INFO: Initiated 3 clients: UnbabelClient, MongoDBClient, HackerNewsClient.
+(16.01.2017, 11:40:04) hackerbabel        __init__ start_daemon    INFO: Started daemon with time interval 60.
+(16.01.2017, 11:40:14) hackerbabel.src.error_handlers  error_handlers handle_any_exception   ERROR: INTERNAL SERVER ERROR
+Time: 2017-01-16T11:40:13.992348
+Error type: <class 'jinja2.exceptions.TemplateSyntaxError'>
+Error message: expected token 'end of print statement', got 'comment_text'
+Traceback: 
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/dennisulmer/Documents/Projekte/unbabel_challenge/fullstack-coding-challenge/hackerbabel/views/comment_section.py", line 28, in comment_section
+    story=get_story(int(story_id))
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/flask/templating.py", line 127, in render_template
+    return _render(ctx.app.jinja_env.get_or_select_template(template_name_or_list),
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/jinja2/environment.py", line 851, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/jinja2/environment.py", line 812, in get_template
+    return self._load_template(name, self.make_globals(globals))
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/jinja2/environment.py", line 786, in _load_template
+    template = self.loader.load(self, name, globals)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/jinja2/loaders.py", line 125, in load
+    code = environment.compile(source, name, filename)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/jinja2/environment.py", line 565, in compile
+    self.handle_exception(exc_info, source_hint=source_hint)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/jinja2/environment.py", line 754, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/dennisulmer/Documents/Projekte/unbabel_challenge/fullstack-coding-challenge/hackerbabel/templates/comment_section.html", line 16, in template
+    {{ set comment_text = comment_dict.keys()[0] }}
+TemplateSyntaxError: expected token 'end of print statement', got 'comment_text'
+
+(16.01.2017, 11:40:14) hackerbabel.src.error_handlers  error_handlers handle_any_exception   ERROR: INTERNAL SERVER ERROR
+Time: 2017-01-16T11:40:14.908011
+Error type: <class 'jinja2.exceptions.TemplateSyntaxError'>
+Error message: expected token 'end of print statement', got 'comment_text'
+Traceback: 
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/dennisulmer/Documents/Projekte/unbabel_challenge/fullstack-coding-challenge/hackerbabel/views/comment_section.py", line 28, in comment_section
+    story=get_story(int(story_id))
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/flask/templating.py", line 127, in render_template
+    return _render(ctx.app.jinja_env.get_or_select_template(template_name_or_list),
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/jinja2/environment.py", line 851, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/jinja2/environment.py", line 812, in get_template
+    return self._load_template(name, self.make_globals(globals))
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/jinja2/environment.py", line 786, in _load_template
+    template = self.loader.load(self, name, globals)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/jinja2/loaders.py", line 125, in load
+    code = environment.compile(source, name, filename)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/jinja2/environment.py", line 565, in compile
+    self.handle_exception(exc_info, source_hint=source_hint)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/jinja2/environment.py", line 754, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/dennisulmer/Documents/Projekte/unbabel_challenge/fullstack-coding-challenge/hackerbabel/templates/comment_section.html", line 16, in template
+    {{ set comment_text = comment_dict.keys()[0] }}
+TemplateSyntaxError: expected token 'end of print statement', got 'comment_text'
+
+(16.01.2017, 11:40:45) hackerbabel        __init__    setup_app    INFO: Set up app & logger.
+(16.01.2017, 11:40:45) hackerbabel        __init__ init_clients    INFO: Initiated 3 clients: MongoDBClient, UnbabelClient, HackerNewsClient.
+(16.01.2017, 11:40:45) hackerbabel        __init__ start_daemon    INFO: Started daemon with time interval 60.
+(16.01.2017, 11:40:47) hackerbabel.src.error_handlers  error_handlers handle_any_exception   ERROR: INTERNAL SERVER ERROR
+Time: 2017-01-16T11:40:47.305467
+Error type: <class 'jinja2.exceptions.UndefinedError'>
+Error message: 'unicode object' has no attribute 'keys'
+Traceback: 
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/dennisulmer/Documents/Projekte/unbabel_challenge/fullstack-coding-challenge/hackerbabel/views/comment_section.py", line 28, in comment_section
+    story=get_story(int(story_id))
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/flask/templating.py", line 128, in render_template
+    context, ctx.app)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/flask/templating.py", line 110, in _render
+    rv = template.render(context)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/jinja2/environment.py", line 989, in render
+    return self.environment.handle_exception(exc_info, True)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/jinja2/environment.py", line 754, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/dennisulmer/Documents/Projekte/unbabel_challenge/fullstack-coding-challenge/hackerbabel/templates/comment_section.html", line 36, in top-level template code
+    {% extends "base.html" %}
+  File "/Users/dennisulmer/Documents/Projekte/unbabel_challenge/fullstack-coding-challenge/hackerbabel/templates/base.html", line 34, in top-level template code
+    {% block content %}
+  File "/Users/dennisulmer/Documents/Projekte/unbabel_challenge/fullstack-coding-challenge/hackerbabel/templates/comment_section.html", line 43, in block "content"
+    {{ render_comments(story) }}
+  File "/Users/dennisulmer/Documents/Projekte/unbabel_challenge/fullstack-coding-challenge/hackerbabel/templates/comment_section.html", line 9, in template
+    {{ render_subcomments(comment_dict) }}
+  File "/Users/dennisulmer/Documents/Projekte/unbabel_challenge/fullstack-coding-challenge/hackerbabel/templates/comment_section.html", line 23, in template
+    {{ render_subcomments(ccomment_dict, level+1) }}
+  File "/Users/dennisulmer/Documents/Projekte/unbabel_challenge/fullstack-coding-challenge/hackerbabel/templates/comment_section.html", line 16, in template
+    {% set comment_text = comment_dict.keys()[0] %}
+UndefinedError: 'unicode object' has no attribute 'keys'
+
+(16.01.2017, 11:41:26) hackerbabel        __init__    setup_app    INFO: Set up app & logger.
+(16.01.2017, 11:41:26) hackerbabel        __init__ init_clients    INFO: Initiated 3 clients: UnbabelClient, MongoDBClient, HackerNewsClient.
+(16.01.2017, 11:41:26) hackerbabel        __init__ start_daemon    INFO: Started daemon with time interval 60.
+(16.01.2017, 11:41:35) hackerbabel        __init__    setup_app    INFO: Set up app & logger.
+(16.01.2017, 11:41:35) hackerbabel        __init__ init_clients    INFO: Initiated 3 clients: UnbabelClient, MongoDBClient, HackerNewsClient.
+(16.01.2017, 11:41:35) hackerbabel        __init__ start_daemon    INFO: Started daemon with time interval 60.
+(16.01.2017, 11:43:51) hackerbabel.src.error_handlers  error_handlers handle_any_exception   ERROR: INTERNAL SERVER ERROR
+Time: 2017-01-16T11:43:51.939211
+Error type: <class 'jinja2.exceptions.UndefinedError'>
+Error message: 'unicode object' has no attribute 'keys'
+Traceback: 
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/dennisulmer/Documents/Projekte/unbabel_challenge/fullstack-coding-challenge/hackerbabel/views/comment_section.py", line 28, in comment_section
+    story=get_story(int(story_id))
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/flask/templating.py", line 128, in render_template
+    context, ctx.app)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/flask/templating.py", line 110, in _render
+    rv = template.render(context)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/jinja2/environment.py", line 989, in render
+    return self.environment.handle_exception(exc_info, True)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/jinja2/environment.py", line 754, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/dennisulmer/Documents/Projekte/unbabel_challenge/fullstack-coding-challenge/hackerbabel/templates/comment_section.html", line 36, in top-level template code
+    {% extends "base.html" %}
+  File "/Users/dennisulmer/Documents/Projekte/unbabel_challenge/fullstack-coding-challenge/hackerbabel/templates/base.html", line 34, in top-level template code
+    {% block content %}
+  File "/Users/dennisulmer/Documents/Projekte/unbabel_challenge/fullstack-coding-challenge/hackerbabel/templates/comment_section.html", line 43, in block "content"
+    {{ render_comments(story) }}
+  File "/Users/dennisulmer/Documents/Projekte/unbabel_challenge/fullstack-coding-challenge/hackerbabel/templates/comment_section.html", line 9, in template
+    {{ render_subcomments(comment_dict) }}
+  File "/Users/dennisulmer/Documents/Projekte/unbabel_challenge/fullstack-coding-challenge/hackerbabel/templates/comment_section.html", line 23, in template
+    {{ render_subcomments(ccomment_dict, level+1) }}
+  File "/Users/dennisulmer/Documents/Projekte/unbabel_challenge/fullstack-coding-challenge/hackerbabel/templates/comment_section.html", line 16, in template
+    {% set comment_text = comment_dict.keys()[0] %}
+UndefinedError: 'unicode object' has no attribute 'keys'
+
+(16.01.2017, 11:44:20)     root hackernews_client get_top_stories    INFO: Received 10 Hacker News stories in 2.0 minute(s) 44.5 second(s) with ids:
+13409098, 13408797, 13407717, 13407990, 13407233, 13408459, 13407629, 13406119, 13408196, 13406724
+
+(16.01.2017, 11:48:28)     root hackernews_client get_top_stories    INFO: Received 10 Hacker News stories in 3.0 minute(s) 7.8 second(s) with ids:
+13409098, 13408797, 13407717, 13407233, 13407990, 13407629, 13406119, 13408196, 13406724, 13406418
+
+(16.01.2017, 11:48:49) hackerbabel        __init__    setup_app    INFO: Set up app & logger.
+(16.01.2017, 11:48:49) hackerbabel        __init__ init_clients    INFO: Initiated 3 clients: UnbabelClient, MongoDBClient, HackerNewsClient.
+(16.01.2017, 11:48:49) hackerbabel        __init__ start_daemon    INFO: Started daemon with time interval 60.
+(16.01.2017, 11:49:59) hackerbabel        __init__    setup_app    INFO: Set up app & logger.
+(16.01.2017, 11:49:59) hackerbabel        __init__ init_clients    INFO: Initiated 3 clients: UnbabelClient, MongoDBClient, HackerNewsClient.
+(16.01.2017, 11:49:59) hackerbabel        __init__ start_daemon    INFO: Started daemon with time interval 60.
+(16.01.2017, 11:50:45) hackerbabel        __init__    setup_app    INFO: Set up app & logger.
+(16.01.2017, 11:50:45) hackerbabel        __init__ init_clients    INFO: Initiated 3 clients: UnbabelClient, MongoDBClient, HackerNewsClient.
+(16.01.2017, 11:50:45) hackerbabel        __init__ start_daemon    INFO: Started daemon with time interval 60.
+(16.01.2017, 11:50:48) hackerbabel.src.error_handlers  error_handlers handle_any_exception   ERROR: INTERNAL SERVER ERROR
+Time: 2017-01-16T11:50:48.549684
+Error type: <type 'exceptions.TypeError'>
+Error message: int() argument must be a string or a number, not 'dict'
+Traceback: 
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/dennisulmer/Documents/Projekte/unbabel_challenge/fullstack-coding-challenge/hackerbabel/views/comment_section.py", line 28, in comment_section
+    story=get_story(int(story_id))
+  File "/Users/dennisulmer/Documents/Projekte/unbabel_challenge/fullstack-coding-challenge/hackerbabel/src/helpers.py", line 24, in get_story
+    story = hn_client.resolve_comment_ids(story)
+  File "/Users/dennisulmer/Documents/Projekte/unbabel_challenge/fullstack-coding-challenge/hackerbabel/clients/hackernews_client.py", line 156, in resolve_comment_ids
+    comment = cls._resolve_id(comment_id)
+  File "/Users/dennisulmer/Documents/Projekte/unbabel_challenge/fullstack-coding-challenge/hackerbabel/clients/hackernews_client.py", line 164, in _resolve_id
+    item_id = int(item_id)
+TypeError: int() argument must be a string or a number, not 'dict'
+
+(16.01.2017, 11:53:46)     root hackernews_client get_top_stories    INFO: Received 10 Hacker News stories in 3.0 minute(s) 1.0 second(s) with ids:
+13409098, 13408797, 13407717, 13407233, 13407990, 13407629, 13406119, 13408196, 13406724, 13406418
+
+(16.01.2017, 11:57:46)     root hackernews_client get_top_stories    INFO: Received 10 Hacker News stories in 3.0 minute(s) 0.0 second(s) with ids:
+13409098, 13408797, 13407717, 13407233, 13407990, 13407629, 13406119, 13408196, 13406724, 13406418
+
+(16.01.2017, 11:59:52) hackerbabel        __init__    setup_app    INFO: Set up app & logger.
+(16.01.2017, 11:59:52) hackerbabel        __init__ init_clients    INFO: Initiated 3 clients: MongoDBClient, UnbabelClient, HackerNewsClient.
+(16.01.2017, 11:59:52) hackerbabel        __init__ start_daemon    INFO: Started daemon with time interval 60.
+(16.01.2017, 12:00:02) hackerbabel        __init__    setup_app    INFO: Set up app & logger.
+(16.01.2017, 12:00:02) hackerbabel        __init__ init_clients    INFO: Initiated 3 clients: MongoDBClient, UnbabelClient, HackerNewsClient.
+(16.01.2017, 12:00:02) hackerbabel        __init__ start_daemon    INFO: Started daemon with time interval 60.
+(16.01.2017, 12:00:34) hackerbabel.src.error_handlers  error_handlers handle_any_exception   ERROR: INTERNAL SERVER ERROR
+Time: 2017-01-16T12:00:34.086581
+Error type: <type 'exceptions.TypeError'>
+Error message: int() argument must be a string or a number, not 'dict'
+Traceback: 
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/dennisulmer/Documents/Projekte/unbabel_challenge/fullstack-coding-challenge/hackerbabel/views/comment_section.py", line 28, in comment_section
+    story=get_story(int(story_id))
+  File "/Users/dennisulmer/Documents/Projekte/unbabel_challenge/fullstack-coding-challenge/hackerbabel/src/helpers.py", line 24, in get_story
+    story = hn_client.resolve_comment_ids(story)
+  File "/Users/dennisulmer/Documents/Projekte/unbabel_challenge/fullstack-coding-challenge/hackerbabel/clients/hackernews_client.py", line 146, in resolve_comment_ids
+    comment = cls._resolve_id(comment_id)
+  File "/Users/dennisulmer/Documents/Projekte/unbabel_challenge/fullstack-coding-challenge/hackerbabel/clients/hackernews_client.py", line 157, in _resolve_id
+    item_id = int(item_id)
+TypeError: int() argument must be a string or a number, not 'dict'
+
+(16.01.2017, 12:01:04) hackerbabel        __init__    setup_app    INFO: Set up app & logger.
+(16.01.2017, 12:01:04) hackerbabel        __init__ init_clients    INFO: Initiated 3 clients: MongoDBClient, UnbabelClient, HackerNewsClient.
+(16.01.2017, 12:01:04) hackerbabel        __init__ start_daemon    INFO: Started daemon with time interval 60.
+(16.01.2017, 12:01:20) hackerbabel.src.error_handlers  error_handlers handle_any_exception   ERROR: INTERNAL SERVER ERROR
+Time: 2017-01-16T12:01:20.003079
+Error type: <type 'exceptions.TypeError'>
+Error message: int() argument must be a string or a number, not 'dict'
+Traceback: 
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/dennisulmer/Documents/Projekte/unbabel_challenge/fullstack-coding-challenge/hackerbabel/views/comment_section.py", line 28, in comment_section
+    story=get_story(int(story_id))
+  File "/Users/dennisulmer/Documents/Projekte/unbabel_challenge/fullstack-coding-challenge/hackerbabel/src/helpers.py", line 24, in get_story
+    story = hn_client.resolve_comment_ids(story)
+  File "/Users/dennisulmer/Documents/Projekte/unbabel_challenge/fullstack-coding-challenge/hackerbabel/clients/hackernews_client.py", line 146, in resolve_comment_ids
+    comment = cls._resolve_id(comment_id)
+  File "/Users/dennisulmer/Documents/Projekte/unbabel_challenge/fullstack-coding-challenge/hackerbabel/clients/hackernews_client.py", line 157, in _resolve_id
+    item_id = int(item_id)
+TypeError: int() argument must be a string or a number, not 'dict'
+
+(16.01.2017, 12:02:20) hackerbabel        __init__    setup_app    INFO: Set up app & logger.
+(16.01.2017, 12:02:20) hackerbabel        __init__ init_clients    INFO: Initiated 3 clients: MongoDBClient, UnbabelClient, HackerNewsClient.
+(16.01.2017, 12:02:20) hackerbabel        __init__ start_daemon    INFO: Started daemon with time interval 60.
+(16.01.2017, 12:02:29) hackerbabel.src.error_handlers  error_handlers handle_any_exception   ERROR: INTERNAL SERVER ERROR
+Time: 2017-01-16T12:02:29.448908
+Error type: <type 'exceptions.TypeError'>
+Error message: 'NoneType' object is not iterable
+Traceback: 
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/dennisulmer/Documents/Projekte/unbabel_challenge/fullstack-coding-challenge/hackerbabel/views/comment_section.py", line 28, in comment_section
+    story=get_story(int(story_id))
+  File "/Users/dennisulmer/Documents/Projekte/unbabel_challenge/fullstack-coding-challenge/hackerbabel/src/helpers.py", line 24, in get_story
+    story = hn_client.resolve_comment_ids(story)
+  File "/Users/dennisulmer/Documents/Projekte/unbabel_challenge/fullstack-coding-challenge/hackerbabel/clients/hackernews_client.py", line 150, in resolve_comment_ids
+    comment.text: _inner_resolve(ccomment_ids)
+  File "/Users/dennisulmer/Documents/Projekte/unbabel_challenge/fullstack-coding-challenge/hackerbabel/clients/hackernews_client.py", line 138, in _inner_resolve
+    for comment_id in comment_ids:
+TypeError: 'NoneType' object is not iterable
+
+(16.01.2017, 12:02:58) hackerbabel        __init__    setup_app    INFO: Set up app & logger.
+(16.01.2017, 12:02:58) hackerbabel        __init__ init_clients    INFO: Initiated 3 clients: UnbabelClient, MongoDBClient, HackerNewsClient.
+(16.01.2017, 12:02:58) hackerbabel        __init__ start_daemon    INFO: Started daemon with time interval 60.
+(16.01.2017, 12:04:03) hackerbabel.src.error_handlers  error_handlers handle_any_exception   ERROR: INTERNAL SERVER ERROR
+Time: 2017-01-16T12:04:03.641571
+Error type: <type 'exceptions.TypeError'>
+Error message: 'NoneType' object is not iterable
+Traceback: 
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/dennisulmer/Documents/Projekte/unbabel_challenge/fullstack-coding-challenge/hackerbabel/views/comment_section.py", line 28, in comment_section
+    story=get_story(int(story_id))
+  File "/Users/dennisulmer/Documents/Projekte/unbabel_challenge/fullstack-coding-challenge/hackerbabel/src/helpers.py", line 24, in get_story
+    story = hn_client.resolve_comment_ids(story)
+  File "/Users/dennisulmer/Documents/Projekte/unbabel_challenge/fullstack-coding-challenge/hackerbabel/clients/hackernews_client.py", line 150, in resolve_comment_ids
+    comment.text: _inner_resolve(ccomment_ids)
+  File "/Users/dennisulmer/Documents/Projekte/unbabel_challenge/fullstack-coding-challenge/hackerbabel/clients/hackernews_client.py", line 138, in _inner_resolve
+    for comment_id in comment_ids:
+TypeError: 'NoneType' object is not iterable
+
+(16.01.2017, 12:04:12) hackerbabel        __init__    setup_app    INFO: Set up app & logger.
+(16.01.2017, 12:04:12) hackerbabel        __init__ init_clients    INFO: Initiated 3 clients: UnbabelClient, MongoDBClient, HackerNewsClient.
+(16.01.2017, 12:04:12) hackerbabel        __init__ start_daemon    INFO: Started daemon with time interval 60.
+(16.01.2017, 12:04:26) hackerbabel        __init__    setup_app    INFO: Set up app & logger.
+(16.01.2017, 12:04:26) hackerbabel        __init__ init_clients    INFO: Initiated 3 clients: UnbabelClient, MongoDBClient, HackerNewsClient.
+(16.01.2017, 12:04:26) hackerbabel        __init__ start_daemon    INFO: Started daemon with time interval 60.
+(16.01.2017, 12:05:27) hackerbabel.src.error_handlers  error_handlers handle_any_exception   ERROR: INTERNAL SERVER ERROR
+Time: 2017-01-16T12:05:27.335784
+Error type: <type 'exceptions.AttributeError'>
+Error message: 'Item' object has no attribute 'ids'
+Traceback: 
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/dennisulmer/Documents/Projekte/unbabel_challenge/fullstack-coding-challenge/hackerbabel/views/comment_section.py", line 28, in comment_section
+    story=get_story(int(story_id))
+  File "/Users/dennisulmer/Documents/Projekte/unbabel_challenge/fullstack-coding-challenge/hackerbabel/src/helpers.py", line 24, in get_story
+    story = hn_client.resolve_comment_ids(story)
+  File "/Users/dennisulmer/Documents/Projekte/unbabel_challenge/fullstack-coding-challenge/hackerbabel/clients/hackernews_client.py", line 150, in resolve_comment_ids
+    comment.text: _inner_resolve(ccomment_ids)
+  File "/Users/dennisulmer/Documents/Projekte/unbabel_challenge/fullstack-coding-challenge/hackerbabel/clients/hackernews_client.py", line 140, in _inner_resolve
+    ccomment_ids = comment.ids
+AttributeError: 'Item' object has no attribute 'ids'
+
+(16.01.2017, 12:05:51) hackerbabel        __init__    setup_app    INFO: Set up app & logger.
+(16.01.2017, 12:05:51) hackerbabel        __init__ init_clients    INFO: Initiated 3 clients: UnbabelClient, MongoDBClient, HackerNewsClient.
+(16.01.2017, 12:05:51) hackerbabel        __init__ start_daemon    INFO: Started daemon with time interval 60.
+(16.01.2017, 12:05:54)     root hackernews_client get_top_stories    INFO: Received 10 Hacker News stories in 1.0 minute(s) 28.3 second(s) with ids:
+13409098, 13408797, 13407717, 13407233, 13407990, 13407629, 13406119, 13408196, 13409082, 13406724
+
+(16.01.2017, 12:05:54) hackerbabel.src.schema          schema     validate   ERROR: Encountered error during validation: u'This appears to be an (illegitimate?) republishing of a course that Dan Armendariz has taught at the Harvard Extension School since 2008. (The course number has since changed from CS E-7 to Digital Media E-10.) You can find the fall 2015 materials available online for free, better-organized and without advertising, at <a href="http:&#x2F;&#x2F;digitalphotography.exposed" rel="nofollow">http:&#x2F;&#x2F;digitalphotography.exposed</a>.<p>If you find these materials helpful, or want feedback on your work, consider enrolling in the course through the Extension School [0]! Part of your tuition inevitably supports the Harvard bureaucracy, but Dan and his teaching fellows&#x27;s stipends are directly tied to the number of students who enroll in the course, and they&#x27;ve kindly made the entire course available for free. You can also apply that course credit to an Extension School degree, which is worth more than whatever certificate of completion Alison is providing.<p>[0]: <a href="https:&#x2F;&#x2F;www.extension.harvard.edu&#x2F;academics&#x2F;courses&#x2F;exposing-digital-photography&#x2F;24825" rel="nofollow">https:&#x2F;&#x2F;www.extension.harvard.edu&#x2F;academics&#x2F;courses&#x2F;exposing...</a><p>Edit: I suppose I should note that the instructor for the current Extension School offering appears to have changed in the last year, so your mileage with the current version of the course will vary.' is not of type 'object'
+(16.01.2017, 12:06:02) hackerbabel        __init__    setup_app    INFO: Set up app & logger.
+(16.01.2017, 12:06:02) hackerbabel        __init__ init_clients    INFO: Initiated 3 clients: UnbabelClient, MongoDBClient, HackerNewsClient.
+(16.01.2017, 12:06:02) hackerbabel        __init__ start_daemon    INFO: Started daemon with time interval 60.
+(16.01.2017, 12:07:37)     root hackernews_client get_top_stories    INFO: Received 10 Hacker News stories in 1.0 minute(s) 34.6 second(s) with ids:
+13409098, 13408797, 13407717, 13407233, 13407990, 13407629, 13406119, 13408196, 13409082, 13406724
+
+(16.01.2017, 12:07:37) hackerbabel.src.schema          schema     validate   ERROR: Encountered error during validation: u'This appears to be an (illegitimate?) republishing of a course that Dan Armendariz has taught at the Harvard Extension School since 2008. (The course number has since changed from CS E-7 to Digital Media E-10.) You can find the fall 2015 materials available online for free, better-organized and without advertising, at <a href="http:&#x2F;&#x2F;digitalphotography.exposed" rel="nofollow">http:&#x2F;&#x2F;digitalphotography.exposed</a>.<p>If you find these materials helpful, or want feedback on your work, consider enrolling in the course through the Extension School [0]! Part of your tuition inevitably supports the Harvard bureaucracy, but Dan and his teaching fellows&#x27;s stipends are directly tied to the number of students who enroll in the course, and they&#x27;ve kindly made the entire course available for free. You can also apply that course credit to an Extension School degree, which is worth more than whatever certificate of completion Alison is providing.<p>[0]: <a href="https:&#x2F;&#x2F;www.extension.harvard.edu&#x2F;academics&#x2F;courses&#x2F;exposing-digital-photography&#x2F;24825" rel="nofollow">https:&#x2F;&#x2F;www.extension.harvard.edu&#x2F;academics&#x2F;courses&#x2F;exposing...</a><p>Edit: I suppose I should note that the instructor for the current Extension School offering appears to have changed in the last year, so your mileage with the current version of the course will vary.' is not of type 'object'
+(16.01.2017, 12:10:36) hackerbabel        __init__    setup_app    INFO: Set up app & logger.
+(16.01.2017, 12:10:36) hackerbabel        __init__ init_clients    INFO: Initiated 3 clients: UnbabelClient, MongoDBClient, HackerNewsClient.
+(16.01.2017, 12:10:36) hackerbabel        __init__ start_daemon    INFO: Started daemon with time interval 60.
+(16.01.2017, 12:11:03) hackerbabel        __init__    setup_app    INFO: Set up app & logger.
+(16.01.2017, 12:11:03) hackerbabel        __init__ init_clients    INFO: Initiated 3 clients: UnbabelClient, MongoDBClient, HackerNewsClient.
+(16.01.2017, 12:11:03) hackerbabel        __init__ start_daemon    INFO: Started daemon with time interval 60.
+(16.01.2017, 12:12:13) hackerbabel        __init__    setup_app    INFO: Set up app & logger.
+(16.01.2017, 12:12:13) hackerbabel        __init__ init_clients    INFO: Initiated 3 clients: UnbabelClient, MongoDBClient, HackerNewsClient.
+(16.01.2017, 12:12:13) hackerbabel        __init__ start_daemon    INFO: Started daemon with time interval 60.
+(16.01.2017, 12:13:32)     root hackernews_client get_top_stories    INFO: Received 10 Hacker News stories in 1.0 minute(s) 19.0 second(s) with ids:
+13409098, 13408797, 13407717, 13407233, 13407990, 13407629, 13406119, 13408196, 13409082, 13409459
+
+(16.01.2017, 12:14:34) hackerbabel.src.error_handlers  error_handlers handle_any_exception   ERROR: INTERNAL SERVER ERROR
+Time: 2017-01-16T12:14:34.481500
+Error type: <type 'exceptions.AttributeError'>
+Error message: 'unicode' object has no attribute 'keys'
+Traceback: 
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/dennisulmer/Documents/Projekte/unbabel_challenge/fullstack-coding-challenge/hackerbabel/views/comment_section.py", line 28, in comment_section
+    story=get_story(int(story_id))
+  File "/Users/dennisulmer/Documents/Projekte/unbabel_challenge/fullstack-coding-challenge/hackerbabel/src/helpers.py", line 24, in get_story
+    story = hn_client.resolve_comment_ids(story)
+  File "/Users/dennisulmer/Documents/Projekte/unbabel_challenge/fullstack-coding-challenge/hackerbabel/clients/hackernews_client.py", line 146, in resolve_comment_ids
+    comment_id = comment_dict.keys()[0]
+AttributeError: 'unicode' object has no attribute 'keys'
+
+(16.01.2017, 12:14:54) hackerbabel        __init__    setup_app    INFO: Set up app & logger.
+(16.01.2017, 12:14:54) hackerbabel        __init__ init_clients    INFO: Initiated 3 clients: UnbabelClient, MongoDBClient, HackerNewsClient.
+(16.01.2017, 12:14:54) hackerbabel        __init__ start_daemon    INFO: Started daemon with time interval 60.
+(16.01.2017, 12:14:56) hackerbabel.src.error_handlers  error_handlers handle_any_exception   ERROR: INTERNAL SERVER ERROR
+Time: 2017-01-16T12:14:56.703898
+Error type: <type 'exceptions.AttributeError'>
+Error message: 'unicode' object has no attribute 'keys'
+Traceback: 
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/dennisulmer/Documents/Projekte/unbabel_challenge/fullstack-coding-challenge/hackerbabel/views/comment_section.py", line 28, in comment_section
+    story=get_story(int(story_id))
+  File "/Users/dennisulmer/Documents/Projekte/unbabel_challenge/fullstack-coding-challenge/hackerbabel/src/helpers.py", line 24, in get_story
+    story = hn_client.resolve_comment_ids(story)
+  File "/Users/dennisulmer/Documents/Projekte/unbabel_challenge/fullstack-coding-challenge/hackerbabel/clients/hackernews_client.py", line 146, in resolve_comment_ids
+    comment_id = comment_dict.keys()[0]
+AttributeError: 'unicode' object has no attribute 'keys'
+
+(16.01.2017, 12:17:09) hackerbabel        __init__    setup_app    INFO: Set up app & logger.
+(16.01.2017, 12:17:09) hackerbabel        __init__ init_clients    INFO: Initiated 3 clients: MongoDBClient, UnbabelClient, HackerNewsClient.
+(16.01.2017, 12:17:09) hackerbabel        __init__ start_daemon    INFO: Started daemon with time interval 60.
+(16.01.2017, 12:18:39)     root hackernews_client get_top_stories    INFO: Received 10 Hacker News stories in 1.0 minute(s) 30.0 second(s) with ids:
+13409098, 13408797, 13407717, 13407233, 13407990, 13409459, 13407629, 13406119, 13409082, 13408196
+
+(16.01.2017, 12:19:25) hackerbabel.src.error_handlers  error_handlers handle_any_exception   ERROR: INTERNAL SERVER ERROR
+Time: 2017-01-16T12:19:25.720305
+Error type: <type 'exceptions.AttributeError'>
+Error message: 'unicode' object has no attribute 'keys'
+Traceback: 
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/dennisulmer/Documents/Projekte/unbabel_challenge/fullstack-coding-challenge/hackerbabel/views/comment_section.py", line 28, in comment_section
+    story=get_story(int(story_id))
+  File "/Users/dennisulmer/Documents/Projekte/unbabel_challenge/fullstack-coding-challenge/hackerbabel/src/helpers.py", line 24, in get_story
+    story = hn_client.resolve_comment_ids(story)
+  File "/Users/dennisulmer/Documents/Projekte/unbabel_challenge/fullstack-coding-challenge/hackerbabel/clients/hackernews_client.py", line 146, in resolve_comment_ids
+    return story
+AttributeError: 'unicode' object has no attribute 'keys'
+
+(16.01.2017, 12:19:31) hackerbabel        __init__    setup_app    INFO: Set up app & logger.
+(16.01.2017, 12:19:31) hackerbabel        __init__ init_clients    INFO: Initiated 3 clients: MongoDBClient, UnbabelClient, HackerNewsClient.
+(16.01.2017, 12:19:31) hackerbabel        __init__ start_daemon    INFO: Started daemon with time interval 60.
+(16.01.2017, 12:19:35) hackerbabel.src.error_handlers  error_handlers handle_any_exception   ERROR: INTERNAL SERVER ERROR
+Time: 2017-01-16T12:19:35.944602
+Error type: <type 'exceptions.AttributeError'>
+Error message: 'unicode' object has no attribute 'keys'
+Traceback: 
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/dennisulmer/Documents/Projekte/unbabel_challenge/fullstack-coding-challenge/hackerbabel/views/comment_section.py", line 28, in comment_section
+    story=get_story(int(story_id))
+  File "/Users/dennisulmer/Documents/Projekte/unbabel_challenge/fullstack-coding-challenge/hackerbabel/src/helpers.py", line 24, in get_story
+    story = hn_client.resolve_comment_ids(story)
+  File "/Users/dennisulmer/Documents/Projekte/unbabel_challenge/fullstack-coding-challenge/hackerbabel/clients/hackernews_client.py", line 138, in resolve_comment_ids
+    comment_id = comment_dict.keys()[0]
+AttributeError: 'unicode' object has no attribute 'keys'
+
+(16.01.2017, 12:19:39)     root hackernews_client get_top_stories    INFO: Received 10 Hacker News stories in 0.0 minute(s) 8.0 second(s) with ids:
+13409098, 13408797, 13407717, 13407233, 13407990, 13409459, 13407629, 13406119, 13409082, 13408196
+
+(16.01.2017, 12:20:01) hackerbabel        __init__    setup_app    INFO: Set up app & logger.
+(16.01.2017, 12:20:01) hackerbabel        __init__ init_clients    INFO: Initiated 3 clients: MongoDBClient, UnbabelClient, HackerNewsClient.
+(16.01.2017, 12:20:01) hackerbabel        __init__ start_daemon    INFO: Started daemon with time interval 60.
+(16.01.2017, 12:20:10)     root hackernews_client get_top_stories    INFO: Received 10 Hacker News stories in 0.0 minute(s) 9.0 second(s) with ids:
+13409098, 13408797, 13407717, 13407233, 13407990, 13409459, 13407629, 13406119, 13409082, 13408196
+
+(16.01.2017, 12:21:18)     root hackernews_client get_top_stories    INFO: Received 10 Hacker News stories in 0.0 minute(s) 7.7 second(s) with ids:
+13409098, 13408797, 13407717, 13407233, 13407990, 13409459, 13407629, 13406119, 13409082, 13408196
+
+(16.01.2017, 12:22:26)     root hackernews_client get_top_stories    INFO: Received 10 Hacker News stories in 0.0 minute(s) 7.5 second(s) with ids:
+13409098, 13408797, 13407717, 13407233, 13407990, 13409459, 13407629, 13406119, 13409082, 13408196
+
+(16.01.2017, 12:23:33)     root hackernews_client get_top_stories    INFO: Received 10 Hacker News stories in 0.0 minute(s) 7.5 second(s) with ids:
+13409098, 13408797, 13407717, 13407233, 13407990, 13409459, 13407629, 13406119, 13409082, 13408196
+
+(16.01.2017, 12:24:41)     root hackernews_client get_top_stories    INFO: Received 10 Hacker News stories in 0.0 minute(s) 7.5 second(s) with ids:
+13409098, 13408797, 13407717, 13407233, 13407990, 13409459, 13407629, 13406119, 13409082, 13408196
+
+(16.01.2017, 12:25:51)     root hackernews_client get_top_stories    INFO: Received 10 Hacker News stories in 0.0 minute(s) 9.9 second(s) with ids:
+13409098, 13408797, 13407717, 13407233, 13407990, 13409459, 13409082, 13407629, 13406119, 13408196
+
+(16.01.2017, 12:26:58)     root hackernews_client get_top_stories    INFO: Received 10 Hacker News stories in 0.0 minute(s) 7.6 second(s) with ids:
+13409098, 13408797, 13407717, 13407233, 13407990, 13409459, 13409082, 13407629, 13406119, 13408196
+
+(16.01.2017, 12:28:08)     root hackernews_client get_top_stories    INFO: Received 10 Hacker News stories in 0.0 minute(s) 9.4 second(s) with ids:
+13409098, 13408797, 13407717, 13407233, 13407990, 13409459, 13409082, 13407629, 13406119, 13408196
+
+(16.01.2017, 12:29:15)     root hackernews_client get_top_stories    INFO: Received 10 Hacker News stories in 0.0 minute(s) 7.7 second(s) with ids:
+13409098, 13408797, 13407717, 13407233, 13407990, 13409459, 13409082, 13407629, 13406119, 13408196
+
+(16.01.2017, 12:30:26)     root hackernews_client get_top_stories    INFO: Received 10 Hacker News stories in 0.0 minute(s) 10.3 second(s) with ids:
+13409098, 13408797, 13407717, 13407233, 13409459, 13407990, 13409082, 13407629, 13406119, 13408196
+
+(16.01.2017, 12:31:34)     root hackernews_client get_top_stories    INFO: Received 10 Hacker News stories in 0.0 minute(s) 8.4 second(s) with ids:
+13409098, 13408797, 13407717, 13407233, 13409459, 13407990, 13409082, 13407629, 13406119, 13408196
+
+(16.01.2017, 12:32:42)     root hackernews_client get_top_stories    INFO: Received 10 Hacker News stories in 0.0 minute(s) 7.7 second(s) with ids:
+13409098, 13408797, 13407717, 13407233, 13409459, 13407990, 13409082, 13407629, 13406119, 13408196
+
+(16.01.2017, 12:33:51)     root hackernews_client get_top_stories    INFO: Received 10 Hacker News stories in 0.0 minute(s) 8.6 second(s) with ids:
+13409098, 13408797, 13407717, 13407233, 13409459, 13407990, 13409082, 13407629, 13406119, 13408196
+
+(16.01.2017, 12:35:00)     root hackernews_client get_top_stories    INFO: Received 10 Hacker News stories in 0.0 minute(s) 9.5 second(s) with ids:
+13409098, 13408797, 13407717, 13407233, 13407990, 13409459, 13409082, 13407629, 13406119, 13408196
+
+(16.01.2017, 12:36:09)     root hackernews_client get_top_stories    INFO: Received 10 Hacker News stories in 0.0 minute(s) 9.4 second(s) with ids:
+13409098, 13408797, 13407717, 13407233, 13407990, 13409459, 13409082, 13407629, 13406119, 13408196
+
+(16.01.2017, 12:37:17)     root hackernews_client get_top_stories    INFO: Received 10 Hacker News stories in 0.0 minute(s) 7.6 second(s) with ids:
+13409098, 13408797, 13407717, 13407233, 13407990, 13409459, 13409082, 13407629, 13406119, 13408196
+
+(16.01.2017, 12:38:25)     root hackernews_client get_top_stories    INFO: Received 10 Hacker News stories in 0.0 minute(s) 7.5 second(s) with ids:
+13409098, 13408797, 13407717, 13407233, 13407990, 13409459, 13409082, 13406119, 13407629, 13408196
+
+(16.01.2017, 12:39:32)     root hackernews_client get_top_stories    INFO: Received 10 Hacker News stories in 0.0 minute(s) 7.7 second(s) with ids:
+13409098, 13408797, 13407717, 13407233, 13407990, 13409459, 13409082, 13406119, 13407629, 13408196
+
+(16.01.2017, 12:40:40)     root hackernews_client get_top_stories    INFO: Received 10 Hacker News stories in 0.0 minute(s) 8.0 second(s) with ids:
+13409098, 13408797, 13407717, 13407233, 13407990, 13409459, 13409082, 13406119, 13407629, 13408196
+
+(16.01.2017, 12:41:48)     root hackernews_client get_top_stories    INFO: Received 10 Hacker News stories in 0.0 minute(s) 7.6 second(s) with ids:
+13409098, 13408797, 13407717, 13407233, 13407990, 13409459, 13409082, 13406119, 13407629, 13409381
+
+(16.01.2017, 12:42:56)     root hackernews_client get_top_stories    INFO: Received 10 Hacker News stories in 0.0 minute(s) 7.7 second(s) with ids:
+13409098, 13408797, 13407717, 13407233, 13407990, 13409459, 13409082, 13406119, 13407629, 13409381
+
+(16.01.2017, 12:44:05)     root hackernews_client get_top_stories    INFO: Received 10 Hacker News stories in 0.0 minute(s) 9.1 second(s) with ids:
+13409098, 13408797, 13407717, 13407233, 13407990, 13409459, 13409082, 13406119, 13407629, 13409381
+
+(16.01.2017, 12:45:13)     root hackernews_client get_top_stories    INFO: Received 10 Hacker News stories in 0.0 minute(s) 7.9 second(s) with ids:
+13409098, 13408797, 13407717, 13407233, 13407990, 13409459, 13409082, 13406119, 13407629, 13409381
+
+(16.01.2017, 12:46:22)     root hackernews_client get_top_stories    INFO: Received 10 Hacker News stories in 0.0 minute(s) 9.4 second(s) with ids:
+13409098, 13408797, 13407717, 13407233, 13407990, 13409459, 13409082, 13406119, 13407629, 13409381
+
+(16.01.2017, 12:47:31)     root hackernews_client get_top_stories    INFO: Received 10 Hacker News stories in 0.0 minute(s) 8.7 second(s) with ids:
+13409098, 13408797, 13407717, 13407233, 13407990, 13409459, 13409082, 13406119, 13407629, 13409381
+
+(16.01.2017, 12:48:40)     root hackernews_client get_top_stories    INFO: Received 10 Hacker News stories in 0.0 minute(s) 9.2 second(s) with ids:
+13409098, 13408797, 13407717, 13407233, 13407990, 13409459, 13409082, 13406119, 13407629, 13409381
+
+(16.01.2017, 12:49:48)     root hackernews_client get_top_stories    INFO: Received 10 Hacker News stories in 0.0 minute(s) 7.7 second(s) with ids:
+13409098, 13408797, 13407717, 13407233, 13407990, 13409459, 13409082, 13406119, 13407629, 13409381
+
+(16.01.2017, 12:50:58)     root hackernews_client get_top_stories    INFO: Received 10 Hacker News stories in 0.0 minute(s) 10.3 second(s) with ids:
+13409098, 13408797, 13407717, 13407233, 13407990, 13409459, 13409082, 13406119, 13407629, 13409381
+
+(16.01.2017, 12:52:11)     root hackernews_client get_top_stories    INFO: Received 10 Hacker News stories in 0.0 minute(s) 12.6 second(s) with ids:
+13409098, 13408797, 13407717, 13407233, 13407990, 13409459, 13409082, 13406119, 13407629, 13409381
+
+(16.01.2017, 12:53:18)     root hackernews_client get_top_stories    INFO: Received 10 Hacker News stories in 0.0 minute(s) 7.5 second(s) with ids:
+13409098, 13408797, 13407717, 13407233, 13409082, 13407990, 13409459, 13406119, 13407629, 13409381
+
+(16.01.2017, 12:54:27)     root hackernews_client get_top_stories    INFO: Received 10 Hacker News stories in 0.0 minute(s) 8.5 second(s) with ids:
+13409098, 13408797, 13407717, 13407233, 13409082, 13407990, 13409459, 13406119, 13407629, 13409381
+
+(16.01.2017, 12:55:35)     root hackernews_client get_top_stories    INFO: Received 10 Hacker News stories in 0.0 minute(s) 8.6 second(s) with ids:
+13409098, 13408797, 13407717, 13407233, 13409082, 13407990, 13409459, 13409381, 13406119, 13407629
+
+(16.01.2017, 12:56:43)     root hackernews_client get_top_stories    INFO: Received 10 Hacker News stories in 0.0 minute(s) 7.8 second(s) with ids:
+13409098, 13408797, 13407717, 13407233, 13409082, 13407990, 13406119, 13409381, 13407629, 13409459
+
+(16.01.2017, 12:57:01) hackerbabel.src.error_handlers  error_handlers handle_any_exception   ERROR: INTERNAL SERVER ERROR
+Time: 2017-01-16T12:57:01.421755
+Error type: <class 'jinja2.exceptions.TemplateSyntaxError'>
+Error message: Encountered unknown tag 'endif'. Jinja was looking for the following tags: 'endmacro'. The innermost block that needs to be closed is 'macro'.
+Traceback: 
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/dennisulmer/Documents/Projekte/unbabel_challenge/fullstack-coding-challenge/hackerbabel/views/comment_section.py", line 28, in comment_section
+    story=get_story(int(story_id))
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/flask/templating.py", line 127, in render_template
+    return _render(ctx.app.jinja_env.get_or_select_template(template_name_or_list),
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/jinja2/environment.py", line 851, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/jinja2/environment.py", line 812, in get_template
+    return self._load_template(name, self.make_globals(globals))
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/jinja2/environment.py", line 786, in _load_template
+    template = self.loader.load(self, name, globals)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/jinja2/loaders.py", line 125, in load
+    code = environment.compile(source, name, filename)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/jinja2/environment.py", line 565, in compile
+    self.handle_exception(exc_info, source_hint=source_hint)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/jinja2/environment.py", line 754, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/dennisulmer/Documents/Projekte/unbabel_challenge/fullstack-coding-challenge/hackerbabel/templates/comment_section.html", line 23, in template
+    {% endif %}
+TemplateSyntaxError: Encountered unknown tag 'endif'. Jinja was looking for the following tags: 'endmacro'. The innermost block that needs to be closed is 'macro'.
+
+(16.01.2017, 12:57:37) hackerbabel        __init__    setup_app    INFO: Set up app & logger.
+(16.01.2017, 12:57:37) hackerbabel        __init__ init_clients    INFO: Initiated 3 clients: MongoDBClient, UnbabelClient, HackerNewsClient.
+(16.01.2017, 12:57:37) hackerbabel        __init__ start_daemon    INFO: Started daemon with time interval 60.
+(16.01.2017, 12:57:45)     root hackernews_client get_top_stories    INFO: Received 10 Hacker News stories in 0.0 minute(s) 8.8 second(s) with ids:
+13409098, 13408797, 13407717, 13407233, 13409082, 13407990, 13406119, 13409381, 13407629, 13409459
+
+(16.01.2017, 12:58:05) hackerbabel.src.error_handlers  error_handlers handle_any_exception   ERROR: INTERNAL SERVER ERROR
+Time: 2017-01-16T12:58:05.697558
+Error type: <class 'jinja2.exceptions.TemplateSyntaxError'>
+Error message: Encountered unknown tag 'endif'. Jinja was looking for the following tags: 'endmacro'. The innermost block that needs to be closed is 'macro'.
+Traceback: 
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/dennisulmer/Documents/Projekte/unbabel_challenge/fullstack-coding-challenge/hackerbabel/views/comment_section.py", line 28, in comment_section
+    story=get_story(int(story_id))
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/flask/templating.py", line 127, in render_template
+    return _render(ctx.app.jinja_env.get_or_select_template(template_name_or_list),
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/jinja2/environment.py", line 851, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/jinja2/environment.py", line 812, in get_template
+    return self._load_template(name, self.make_globals(globals))
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/jinja2/environment.py", line 786, in _load_template
+    template = self.loader.load(self, name, globals)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/jinja2/loaders.py", line 125, in load
+    code = environment.compile(source, name, filename)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/jinja2/environment.py", line 565, in compile
+    self.handle_exception(exc_info, source_hint=source_hint)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/jinja2/environment.py", line 754, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/dennisulmer/Documents/Projekte/unbabel_challenge/fullstack-coding-challenge/hackerbabel/templates/comment_section.html", line 23, in template
+    {% endif %}
+TemplateSyntaxError: Encountered unknown tag 'endif'. Jinja was looking for the following tags: 'endmacro'. The innermost block that needs to be closed is 'macro'.
+
+(16.01.2017, 12:58:50) hackerbabel        __init__    setup_app    INFO: Set up app & logger.
+(16.01.2017, 12:58:50) hackerbabel        __init__ init_clients    INFO: Initiated 3 clients: MongoDBClient, UnbabelClient, HackerNewsClient.
+(16.01.2017, 12:58:50) hackerbabel        __init__ start_daemon    INFO: Started daemon with time interval 60.
+(16.01.2017, 12:58:57)     root hackernews_client get_top_stories    INFO: Received 10 Hacker News stories in 0.0 minute(s) 7.9 second(s) with ids:
+13409098, 13408797, 13407717, 13407233, 13407990, 13409082, 13406119, 13409381, 13407629, 13409459
+
+(16.01.2017, 12:59:14) hackerbabel.src.error_handlers  error_handlers handle_any_exception   ERROR: INTERNAL SERVER ERROR
+Time: 2017-01-16T12:59:14.928577
+Error type: <class 'jinja2.exceptions.TemplateSyntaxError'>
+Error message: Encountered unknown tag 'endif'. Jinja was looking for the following tags: 'endmacro'. The innermost block that needs to be closed is 'macro'.
+Traceback: 
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/dennisulmer/Documents/Projekte/unbabel_challenge/fullstack-coding-challenge/hackerbabel/views/comment_section.py", line 28, in comment_section
+    story=get_story(int(story_id))
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/flask/templating.py", line 127, in render_template
+    return _render(ctx.app.jinja_env.get_or_select_template(template_name_or_list),
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/jinja2/environment.py", line 851, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/jinja2/environment.py", line 812, in get_template
+    return self._load_template(name, self.make_globals(globals))
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/jinja2/environment.py", line 786, in _load_template
+    template = self.loader.load(self, name, globals)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/jinja2/loaders.py", line 125, in load
+    code = environment.compile(source, name, filename)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/jinja2/environment.py", line 565, in compile
+    self.handle_exception(exc_info, source_hint=source_hint)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/jinja2/environment.py", line 754, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/dennisulmer/Documents/Projekte/unbabel_challenge/fullstack-coding-challenge/hackerbabel/templates/comment_section.html", line 24, in template
+    {% endif %}
+TemplateSyntaxError: Encountered unknown tag 'endif'. Jinja was looking for the following tags: 'endmacro'. The innermost block that needs to be closed is 'macro'.
+
+(16.01.2017, 13:00:06)     root hackernews_client get_top_stories    INFO: Received 10 Hacker News stories in 0.0 minute(s) 8.2 second(s) with ids:
+13409098, 13408797, 13407717, 13407233, 13409082, 13407990, 13407629, 13406119, 13409381, 13409459
+
+(16.01.2017, 13:00:11) hackerbabel        __init__    setup_app    INFO: Set up app & logger.
+(16.01.2017, 13:00:11) hackerbabel        __init__ init_clients    INFO: Initiated 3 clients: MongoDBClient, UnbabelClient, HackerNewsClient.
+(16.01.2017, 13:00:11) hackerbabel        __init__ start_daemon    INFO: Started daemon with time interval 60.
+(16.01.2017, 13:00:21)     root hackernews_client get_top_stories    INFO: Received 10 Hacker News stories in 0.0 minute(s) 10.2 second(s) with ids:
+13409098, 13408797, 13407717, 13407233, 13409082, 13407990, 13407629, 13406119, 13409381, 13409459
+
+(16.01.2017, 13:00:39) hackerbabel.src.error_handlers  error_handlers handle_any_exception   ERROR: INTERNAL SERVER ERROR
+Time: 2017-01-16T13:00:39.019513
+Error type: <class 'jinja2.exceptions.TemplateSyntaxError'>
+Error message: Encountered unknown tag 'endif'. Jinja was looking for the following tags: 'endmacro'. The innermost block that needs to be closed is 'macro'.
+Traceback: 
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/dennisulmer/Documents/Projekte/unbabel_challenge/fullstack-coding-challenge/hackerbabel/views/comment_section.py", line 28, in comment_section
+    story=get_story(int(story_id))
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/flask/templating.py", line 127, in render_template
+    return _render(ctx.app.jinja_env.get_or_select_template(template_name_or_list),
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/jinja2/environment.py", line 851, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/jinja2/environment.py", line 812, in get_template
+    return self._load_template(name, self.make_globals(globals))
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/jinja2/environment.py", line 786, in _load_template
+    template = self.loader.load(self, name, globals)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/jinja2/loaders.py", line 125, in load
+    code = environment.compile(source, name, filename)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/jinja2/environment.py", line 565, in compile
+    self.handle_exception(exc_info, source_hint=source_hint)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/jinja2/environment.py", line 754, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/dennisulmer/Documents/Projekte/unbabel_challenge/fullstack-coding-challenge/hackerbabel/templates/comment_section.html", line 24, in template
+    {% endif %}
+TemplateSyntaxError: Encountered unknown tag 'endif'. Jinja was looking for the following tags: 'endmacro'. The innermost block that needs to be closed is 'macro'.
+
+(16.01.2017, 13:01:09) hackerbabel        __init__    setup_app    INFO: Set up app & logger.
+(16.01.2017, 13:01:09) hackerbabel        __init__ init_clients    INFO: Initiated 3 clients: MongoDBClient, UnbabelClient, HackerNewsClient.
+(16.01.2017, 13:01:09) hackerbabel        __init__ start_daemon    INFO: Started daemon with time interval 60.
+(16.01.2017, 13:01:17)     root hackernews_client get_top_stories    INFO: Received 10 Hacker News stories in 0.0 minute(s) 8.2 second(s) with ids:
+13409098, 13408797, 13407717, 13407233, 13409082, 13407990, 13406119, 13407629, 13409381, 13409459
+
+(16.01.2017, 13:02:37)     root hackernews_client get_top_stories    INFO: Received 10 Hacker News stories in 0.0 minute(s) 19.2 second(s) with ids:
+13409098, 13408797, 13407717, 13407233, 13409082, 13407990, 13406119, 13407629, 13409381, 13409459
+
+(16.01.2017, 13:02:46) hackerbabel        __init__    setup_app    INFO: Set up app & logger.
+(16.01.2017, 13:02:46) hackerbabel        __init__ init_clients    INFO: Initiated 3 clients: UnbabelClient, MongoDBClient, HackerNewsClient.
+(16.01.2017, 13:02:46) hackerbabel        __init__ start_daemon    INFO: Started daemon with time interval 60.
+(16.01.2017, 13:03:00)     root hackernews_client get_top_stories    INFO: Received 10 Hacker News stories in 0.0 minute(s) 13.2 second(s) with ids:
+13409098, 13408797, 13407717, 13407233, 13409082, 13407990, 13406119, 13407629, 13409381, 13409459
+
+(16.01.2017, 13:04:08)     root hackernews_client get_top_stories    INFO: Received 10 Hacker News stories in 0.0 minute(s) 8.1 second(s) with ids:
+13409098, 13408797, 13407717, 13407233, 13409082, 13407990, 13406119, 13407629, 13409381, 13406724
+
+(16.01.2017, 13:05:16)     root hackernews_client get_top_stories    INFO: Received 10 Hacker News stories in 0.0 minute(s) 7.9 second(s) with ids:
+13409098, 13408797, 13407717, 13407233, 13409082, 13407990, 13406119, 13407629, 13409381, 13406724
+
+(16.01.2017, 13:06:23)     root hackernews_client get_top_stories    INFO: Received 10 Hacker News stories in 0.0 minute(s) 7.5 second(s) with ids:
+13409098, 13408797, 13407717, 13407233, 13409082, 13407990, 13406119, 13409381, 13407629, 13409459
+
+(16.01.2017, 13:10:45) hackerbabel        __init__    setup_app    INFO: Set up app & logger.
+(16.01.2017, 13:10:45) hackerbabel        __init__ init_clients    INFO: Initiated 3 clients: UnbabelClient, MongoDBClient, HackerNewsClient.
+(16.01.2017, 13:10:45) hackerbabel        __init__ start_daemon    INFO: Started daemon with time interval 60.
+(16.01.2017, 13:10:54)     root hackernews_client get_top_stories    INFO: Received 10 Hacker News stories in 0.0 minute(s) 8.7 second(s) with ids:
+13409098, 13408797, 13407717, 13407233, 13409082, 13407990, 13409381, 13406119, 13407629, 13409459
+
+(16.01.2017, 13:12:04)     root hackernews_client get_top_stories    INFO: Received 10 Hacker News stories in 0.0 minute(s) 10.0 second(s) with ids:
+13409098, 13408797, 13407717, 13407233, 13409082, 13407990, 13409381, 13406119, 13407629, 13409459
+
+(16.01.2017, 13:13:12)     root hackernews_client get_top_stories    INFO: Received 10 Hacker News stories in 0.0 minute(s) 8.0 second(s) with ids:
+13409098, 13408797, 13407717, 13407233, 13409082, 13407990, 13409381, 13406119, 13407629, 13409459
+
+(16.01.2017, 13:14:20)     root hackernews_client get_top_stories    INFO: Received 10 Hacker News stories in 0.0 minute(s) 8.5 second(s) with ids:
+13409098, 13408797, 13407717, 13407233, 13409082, 13407990, 13409381, 13406119, 13407629, 13409459
+
+(16.01.2017, 13:15:28)     root hackernews_client get_top_stories    INFO: Received 10 Hacker News stories in 0.0 minute(s) 8.0 second(s) with ids:
+13409098, 13408797, 13407717, 13409082, 13407233, 13407990, 13409381, 13407629, 13406119, 13409459
+
+(16.01.2017, 13:16:38)     root hackernews_client get_top_stories    INFO: Received 10 Hacker News stories in 0.0 minute(s) 9.8 second(s) with ids:
+13409098, 13408797, 13407717, 13407233, 13409082, 13409556, 13407990, 13409381, 13407629, 13406119
+
+(16.01.2017, 13:17:49)     root hackernews_client get_top_stories    INFO: Received 10 Hacker News stories in 0.0 minute(s) 10.9 second(s) with ids:
+13409098, 13408797, 13407717, 13407233, 13409082, 13407990, 13409556, 13409381, 13407629, 13406119
+
+(16.01.2017, 13:18:59)     root hackernews_client get_top_stories    INFO: Received 10 Hacker News stories in 0.0 minute(s) 10.0 second(s) with ids:
+13408797, 13409098, 13407717, 13407233, 13409082, 13407990, 13409556, 13409381, 13407629, 13406119
+
+(16.01.2017, 13:20:08)     root hackernews_client get_top_stories    INFO: Received 10 Hacker News stories in 0.0 minute(s) 8.6 second(s) with ids:
+13408797, 13409098, 13409556, 13407717, 13409082, 13407233, 13407990, 13409381, 13407629, 13406119
+
+(16.01.2017, 13:21:17)     root hackernews_client get_top_stories    INFO: Received 10 Hacker News stories in 0.0 minute(s) 9.6 second(s) with ids:
+13408797, 13409098, 13409556, 13407717, 13409082, 13407233, 13407990, 13409381, 13407629, 13406119
+
+(16.01.2017, 13:22:35)     root hackernews_client get_top_stories    INFO: Received 10 Hacker News stories in 0.0 minute(s) 18.0 second(s) with ids:
+13408797, 13409098, 13409556, 13407717, 13409082, 13407233, 13409381, 13407990, 13407629, 13406119
+
+(16.01.2017, 13:23:43)     root hackernews_client get_top_stories    INFO: Received 10 Hacker News stories in 0.0 minute(s) 8.2 second(s) with ids:
+13408797, 13409556, 13409098, 13407717, 13409082, 13407233, 13409381, 13407990, 13407629, 13406119
+
+(16.01.2017, 13:24:51)     root hackernews_client get_top_stories    INFO: Received 10 Hacker News stories in 0.0 minute(s) 7.7 second(s) with ids:
+13409556, 13408797, 13409098, 13407717, 13409082, 13407233, 13409381, 13407990, 13407629, 13406119
+
+(16.01.2017, 13:26:01)     root hackernews_client get_top_stories    INFO: Received 10 Hacker News stories in 0.0 minute(s) 9.2 second(s) with ids:
+13409556, 13408797, 13409098, 13407717, 13409082, 13407233, 13409381, 13407990, 13407629, 13406119
+
+(16.01.2017, 13:27:08)     root hackernews_client get_top_stories    INFO: Received 10 Hacker News stories in 0.0 minute(s) 7.6 second(s) with ids:
+13409556, 13408797, 13409098, 13407717, 13409082, 13407233, 13409381, 13407990, 13407629, 13406119
+
+(16.01.2017, 13:28:16)     root hackernews_client get_top_stories    INFO: Received 10 Hacker News stories in 0.0 minute(s) 7.8 second(s) with ids:
+13409556, 13408797, 13409098, 13407717, 13409082, 13409381, 13407233, 13407990, 13407629, 13406119
+
+(16.01.2017, 13:29:24)     root hackernews_client get_top_stories    INFO: Received 10 Hacker News stories in 0.0 minute(s) 8.3 second(s) with ids:
+13409556, 13408797, 13409098, 13407717, 13409082, 13409381, 13407233, 13407990, 13407629, 13406119
+
+(16.01.2017, 13:30:36)     root hackernews_client get_top_stories    INFO: Received 10 Hacker News stories in 0.0 minute(s) 11.8 second(s) with ids:
+13409556, 13408797, 13409098, 13407717, 13409082, 13409381, 13407233, 13407990, 13407629, 13406119
+
+(16.01.2017, 13:31:50)     root hackernews_client get_top_stories    INFO: Received 10 Hacker News stories in 0.0 minute(s) 13.5 second(s) with ids:
+13409556, 13408797, 13409098, 13407717, 13409082, 13409381, 13407233, 13407990, 13407629, 13406119
+
+(16.01.2017, 13:32:59)     root hackernews_client get_top_stories    INFO: Received 10 Hacker News stories in 0.0 minute(s) 9.5 second(s) with ids:
+13408797, 13409098, 13407717, 13409082, 13409381, 13407233, 13407990, 13409459, 13407629, 13406119
+
+(16.01.2017, 13:34:12)     root hackernews_client get_top_stories    INFO: Received 10 Hacker News stories in 0.0 minute(s) 12.7 second(s) with ids:
+13408797, 13409098, 13407717, 13409082, 13409381, 13407233, 13407990, 13407629, 13409459, 13406119
+
+(16.01.2017, 13:35:22)     root hackernews_client get_top_stories    INFO: Received 10 Hacker News stories in 0.0 minute(s) 10.3 second(s) with ids:
+13408797, 13409098, 13407717, 13409082, 13409381, 13407233, 13407990, 13407629, 13406119, 13409459
+
+(16.01.2017, 13:36:30)     root hackernews_client get_top_stories    INFO: Received 10 Hacker News stories in 0.0 minute(s) 7.7 second(s) with ids:
+13408797, 13409098, 13407717, 13409082, 13409381, 13407233, 13407990, 13407629, 13406119, 13409459
+
+(16.01.2017, 13:37:39)     root hackernews_client get_top_stories    INFO: Received 10 Hacker News stories in 0.0 minute(s) 8.9 second(s) with ids:
+13408797, 13409098, 13407717, 13409082, 13409381, 13407233, 13407990, 13407629, 13406119, 13409459
+
+(16.01.2017, 13:38:48)     root hackernews_client get_top_stories    INFO: Received 10 Hacker News stories in 0.0 minute(s) 8.6 second(s) with ids:
+13408797, 13409098, 13407717, 13409082, 13409381, 13407233, 13407990, 13407629, 13406119, 13409459
+
+(16.01.2017, 13:39:56)     root hackernews_client get_top_stories    INFO: Received 10 Hacker News stories in 0.0 minute(s) 8.1 second(s) with ids:
+13408797, 13409098, 13407717, 13409082, 13409381, 13407233, 13407990, 13407629, 13406119, 13409459
+
+(16.01.2017, 13:41:04)     root hackernews_client get_top_stories    INFO: Received 10 Hacker News stories in 0.0 minute(s) 7.8 second(s) with ids:
+13408797, 13409098, 13407717, 13409082, 13409381, 13407233, 13407990, 13409459, 13407629, 13406119
+
+(16.01.2017, 13:42:11)     root hackernews_client get_top_stories    INFO: Received 10 Hacker News stories in 0.0 minute(s) 7.5 second(s) with ids:
+13408797, 13409098, 13407717, 13409082, 13409381, 13407233, 13407990, 13409459, 13406119, 13407629
+
+(16.01.2017, 13:43:20)     root hackernews_client get_top_stories    INFO: Received 10 Hacker News stories in 0.0 minute(s) 8.6 second(s) with ids:
+13408797, 13409098, 13407717, 13409082, 13409381, 13407233, 13407990, 13409459, 13406119, 13407629
+
+(16.01.2017, 13:44:29)     root hackernews_client get_top_stories    INFO: Received 10 Hacker News stories in 0.0 minute(s) 9.1 second(s) with ids:
+13408797, 13409098, 13407717, 13409082, 13409381, 13407233, 13407990, 13406119, 13407629, 13409459
+
+(16.01.2017, 13:45:38)     root hackernews_client get_top_stories    INFO: Received 10 Hacker News stories in 0.0 minute(s) 8.6 second(s) with ids:
+13408797, 13409098, 13407717, 13409082, 13409381, 13407233, 13407990, 13406119, 13407629, 13409459
+
+(16.01.2017, 13:46:46)     root hackernews_client get_top_stories    INFO: Received 10 Hacker News stories in 0.0 minute(s) 8.2 second(s) with ids:
+13408797, 13409098, 13407717, 13409082, 13409381, 13407233, 13407990, 13406119, 13407629, 13409459
+
