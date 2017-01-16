@@ -3,6 +3,8 @@
           href="hackerbabel/static/base.css"/>
 {% endblock %}
 
+{# extends "bootstrap/base.html" #}
+
 <center>
 
 	{% block navbar %}
@@ -26,11 +28,12 @@
 	        </td>
         </tr>
 	</table>
-
-
-
 	{% endblock %}
 
 	{% block content %}
+	{% endblock %}
+
+	{% block footer %}
+		{{ super() }}
 	{% endblock %}
 </center>
