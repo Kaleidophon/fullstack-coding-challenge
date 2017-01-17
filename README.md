@@ -50,3 +50,8 @@
 	Nosetest was used in development. If you want to test the project, use e.g.
 	
 		$ nosetests -vsxd --nologcapture hackerbabel/testing/*
+		
+	Because the unit test require a stable internet connection, some unit tests
+	can sometimes fail due to your internet connection. If so, try to restart them
+	and / or adjust EXPECTED_SPEED in hackerbabel/testing/hackernews_test.py
+	specifically.
