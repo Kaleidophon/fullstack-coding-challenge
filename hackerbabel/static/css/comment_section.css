@@ -1,2 +1,7 @@
 @import "base.css";
 
+.comment {
+	text-align: left;
+    width: 80px;
+    word-wrap: break-word;
+}
