@@ -5,7 +5,6 @@ Tests for the HackerNewsClient.
 """
 
 # STD
-import re
 from unittest import TestCase
 import urllib2
 import time
@@ -26,7 +25,9 @@ EXPECTED_SPEED = 1.75
 
 
 class HackerNewsClientTestCase(TestCase):
-
+    """
+    Test the HackerNews client.
+    """
     def __init__(self, *args, **kwargs):
         super(HackerNewsClientTestCase, self).__init__()
 
@@ -35,6 +36,10 @@ class HackerNewsClientTestCase(TestCase):
         self.check_speed_and_consistency()
 
     def check_speed_and_consistency(self):
+        """
+        Check the speed of the client and if the story's format suits the
+        schema.
+        """
         start = time.time()
         stories = self.hn_client.get_top_stories()
         finish = time.time()
@@ -53,6 +58,9 @@ class HackerNewsClientTestCase(TestCase):
             self.schema.validate(story)
 
     def check_immediacy(self):
+        """
+        Checks how recent the client's results are.
+        """
         client_titles = [
             story["titles"]["EN"]["title"]
             for story in self.hn_client.get_top_stories()

@@ -104,6 +104,15 @@ class MongoDBClient(Client):
     @classmethod
     @require_init
     def get_newest_documents(cls, collection_name):
+        """
+        Get the newest documents acquired during the last run of the daemon.
+
+        @param collection_name: Name of the collection the document should be
+        added to.
+        @type collection_name: str or unicode
+        @return: Newest documents
+        @rtype: List
+        """
         collection = getattr(cls.db, collection_name)
         newest_documents = [
             document for document in
@@ -114,6 +123,19 @@ class MongoDBClient(Client):
     @classmethod
     @require_init
     def update_document(cls, collection_name, document_id, updates):
+        """
+        Update an existing document.
+
+        @param collection_name: Name of the collection the document should be
+        added to.
+        @type collection_name: str or unicode
+        @param document_id: MongoDB ID of document (_id)
+        @type document_id: int
+        @param updates: Dictionary of updates as field -> new value
+        @type updates: dict
+        @return: MongoDB Update report
+        @rtype: object
+        """
         collection = getattr(cls.db, collection_name)
         report = collection.update(
             {"_id": ObjectId(document_id)},

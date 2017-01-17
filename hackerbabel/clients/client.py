@@ -7,9 +7,12 @@ Superclass for different clients.
 # STD
 from abc import abstractmethod
 
+
 class Client(object):
     """
-    Small superclass for clients.
+    Small superclass for clients. Clients are created so they only have to be
+    initialized once but can be instantiated later again without the need of
+    giving its initialization data (e.g. the config) again.
     """
     client = None
     initialized = None

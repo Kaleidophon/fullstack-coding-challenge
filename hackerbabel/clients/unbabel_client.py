@@ -46,6 +46,12 @@ class UnbabelClient(Client):
     @classmethod
     @require_init
     def build_authorization_header(cls):
+        """
+        Build the authorization header for an API request.
+
+        @return: Header with Api key and secret
+        @rtype: dict
+        """
         return {
             "Authorization": "ApiKey {user}:{secret}".format(
                 user=cls.user, secret=cls.api_secret
@@ -55,6 +61,18 @@ class UnbabelClient(Client):
     @classmethod
     @require_init
     def make_translation_request(cls, text, target_lang, **additional_data):
+        """
+        Request the API to translate a text.
+
+        @param text: Text to be translated.
+        @type text: str or unicode
+        @param target_lang: Language the text should be translated into.
+        @type target_lang: str or unicode
+        @param additional_data: Additional data added to the request.
+        @type additional_data: dict
+        @return: Response to request
+        @type: Response
+        """
         authorization_header = cls.build_authorization_header()
         data = {
             "text": text, "target_language": target_lang.lower()
@@ -67,6 +85,14 @@ class UnbabelClient(Client):
     @classmethod
     @require_init
     def check_translation_status(cls, uid):
+        """
+        Check translation status of a text given Unbabel API's job uid.
+
+        @param uid: Unique Unbabel API job idea.
+        @type uid: str or unicode
+        @return: Response to request
+        @type: Response
+        """
         authorization_header = cls.build_authorization_header()
         return cls.make_api_request(
             "GET", headers=authorization_header, uri="{uri}{uid}/".format(
@@ -76,6 +102,22 @@ class UnbabelClient(Client):
 
     @classmethod
     def make_api_request(cls, request_type, uri, data={}, headers={}, **kwargs):
+        """
+        Make an request to an API.
+
+        @param request_type: Type of request, e.g. GET / PUT / POST / DELETE...
+        @type request_type: str or unicode
+        @param uri: URI of the API.
+        @type uri: str or unicode
+        @param data: Data sent with the API.
+        @type data: dict
+        @param headers: Request headers.
+        @type headers: dict
+        @param kwargs: Additional options for request.
+        @type kwargs: dict
+        @return: Response to request.
+        @type: Response
+        """
         headers.update({'Content-Type': 'application/json; charset=utf-8'})
         data = json.dumps(data)
 

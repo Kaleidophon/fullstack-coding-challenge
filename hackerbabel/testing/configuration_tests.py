@@ -24,11 +24,13 @@ OBLIGATORY_SETTINGS = {
     "UNBABEL_API_SECRET"
 }
 
-CONFIG_PATH = "hackerbabel/config.py"
+CONFIG_PATH = "../config.py"
 
 
 class ConfigurationTestCase(TestCase):
-
+    """
+    Testing the app configuration.
+    """
     def __init__(self, *args, **kwargs):
         super(ConfigurationTestCase, self).__init__()
 
@@ -37,6 +39,10 @@ class ConfigurationTestCase(TestCase):
 
     @staticmethod
     def check_settings():
+        """
+        Check if config is loaded into Flask app correctly and contains specific
+        obligatory parameters.
+        """
         config = get_config_from_py_file(CONFIG_PATH)
 
         # Check if most important settings are present

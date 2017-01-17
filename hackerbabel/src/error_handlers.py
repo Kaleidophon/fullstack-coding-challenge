@@ -45,5 +45,3 @@ def register_error_handlers(app):
         LOGGER.error(
             "\n".join(log_entry)
         )
-
-        # TODO: Add info for user

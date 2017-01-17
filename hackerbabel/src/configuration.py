@@ -11,13 +11,20 @@ import logging
 
 # CONST
 LOGGER = logging.getLogger(__name__)
-DEFAULT_CONFIG_PATH = 'config.py'  # Default config path
+DEFAULT_CONFIG_PATH = 'config.py'
 
 
 def config_selector(app, config_path=DEFAULT_CONFIG_PATH):
     """
     Select the right configuration class, so Flask can import the right settings
     with from_object() method.
+
+    @param app: Flask app the configuration should be added to.
+    @type app: flask.Flask
+    @param config_path: Path to configuration file.
+    @type config_path: str or unicode.
+    @return: App with config.
+    @rtype: flask.Flask
     """
 
     # Get config from file

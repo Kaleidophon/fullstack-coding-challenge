@@ -19,7 +19,9 @@ from hackerbabel.testing.configuration_tests import CONFIG_PATH
 
 
 class MongoDBClientTestCase(TestCase):
-
+    """
+    Test the function of the MongoDB client.
+    """
     def __init__(self, *args, **kwargs):
         super(MongoDBClientTestCase, self).__init__()
 
@@ -30,6 +32,9 @@ class MongoDBClientTestCase(TestCase):
         self.test_update_documents(_ids)
 
     def test_add_document(self):
+        """
+        Test whether an document gets added to MongoDB correctly.
+        """
         documents = self.hn_client.get_top_stories()
         _ids = []
 
@@ -41,6 +46,13 @@ class MongoDBClientTestCase(TestCase):
         return _ids
 
     def test_find_document(self, document_ids):
+        """
+        Test if an existing document can be found in the database.
+
+        @param document_ids: List of document IDs that are going to be looked
+        for.
+        @type document_ids: list
+        """
         shuffle(document_ids)
         for document_id in document_ids:
             result = self.mdb_client.find_document(
@@ -52,6 +64,10 @@ class MongoDBClientTestCase(TestCase):
             )
 
     def test_newest_documents(self):
+        """
+        Test if the the newest documents given by the client are the actual
+        newest ones from the Hacker News client.
+        """
         # Add another round of documents, check if they're also listed as the
         # most recent ones
         documents = self.hn_client.get_top_stories()
@@ -73,6 +89,12 @@ class MongoDBClientTestCase(TestCase):
         )
 
     def test_update_documents(self, document_ids):
+        """
+        Test if documents get updated correctly.
+
+        @param document_ids: Document IDs that one ID will be sampled from.
+        @type document_ids: list
+        """
         document_id = choice(document_ids)
         old_document = self.mdb_client.find_document(
             "_id", document_id, "articles"

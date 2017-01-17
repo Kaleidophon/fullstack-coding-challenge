@@ -13,7 +13,6 @@ from hackerbabel.src.helpers import get_stories
 # CONST
 INDEX = Blueprint('index', __name__)
 
-
 @INDEX.route('/')
 @INDEX.route('/index.html')
 @INDEX.route('/start')

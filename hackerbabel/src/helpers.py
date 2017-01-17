@@ -11,11 +11,25 @@ import types
 
 
 def check_and_create_directory(directory):
+    """
+    Check if an directory exists and if no, create it.
+
+    @param directory: Directory in question.
+    @type directory: str or unicode
+    """
     if not os.path.isdir(directory):
         os.makedirs(directory)
 
 
 def get_story(story_id):
+    """
+    Retrieve a specific story form the database via its Hacker News story id.
+
+    @param story_id: Hacker News story id.
+    @type story_id: int
+    @return: Story
+    @rtype: dict
+    """
     from hackerbabel.clients.mongodb_client import MongoDBClient
     from hackerbabel.clients.hackernews_client import HackerNewsClient
 
@@ -27,15 +41,29 @@ def get_story(story_id):
 
 
 def get_stories():
+    """
+    Get the stories that should be rendered on the starting page.
+
+    @return: Most recent stories.
+    @rtype: list
+    """
     from hackerbabel.clients.mongodb_client import MongoDBClient
 
     mdb_client = MongoDBClient()
     stories = mdb_client.get_newest_documents("articles")
-    stories.reverse()  # Because of the way jinja renders the stories
+    stories.reverse()  # Because of the way jinja2 renders the stories
     return stories
 
 
 def get_config_from_py_file(config_path):
+    """
+    Load a configuration from a .py file.
+
+    @param config_path: Path to configuration file.
+    @type config_path: str or unicode
+    @return: Config as dict.
+    @rtype: dict
+    """
     config = types.ModuleType('config')
     config.__file__ = config_path
     try:
@@ -44,12 +72,23 @@ def get_config_from_py_file(config_path):
                  config.__dict__)
     except IOError:
         pass  # Test will fail anyway
-    keys = [key for key in dir(config) if key.isupper()]
-    values = [getattr(config, key) for key in keys]
-    return dict(zip(keys, values))
+    return {
+        key: getattr(config, key) for key in dir(config) if key.isupper()
+    }
 
 
 def require_init(func):
+    """
+    Require the user to initialize a class once through the initialize()
+    function before being able to use the function decorated with require_init
+    (Makes sure no Exception is thrown because data the class operates on is
+    missing).
+
+    @param func: Decorated function
+    @type func: func
+    @return: Wrapping function
+    @rtype: func
+    """
     @wraps(func)
     def wrapping_func(*args, **kwargs):
         initialized = getattr(args[0], "initialized")
