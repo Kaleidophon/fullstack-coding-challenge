@@ -9,7 +9,7 @@ translation status of the news stories' headlines.
 from flask import render_template, Blueprint
 
 # PROJECT
-from cache import cache
+from hackerbabel.cache import cache
 from hackerbabel.src.helpers import get_stories
 from hackerbabel.config import REFRESH_INTERVAL
 

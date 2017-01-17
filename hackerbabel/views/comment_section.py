@@ -8,7 +8,7 @@ View for a commentary section concerning a news article.
 from flask import render_template, Blueprint
 
 # PROJECT
-from cache import cache
+from hackerbabel.cache import cache
 from hackerbabel.src.helpers import get_story
 from hackerbabel.config import REFRESH_INTERVAL
 
