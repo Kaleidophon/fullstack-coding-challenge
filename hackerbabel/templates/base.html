@@ -3,32 +3,37 @@
           href="hackerbabel/static/base.css"/>
 {% endblock %}
 
-{# TODO: Enable this and use a fancy template #}
-{# extends "bootstrap/base.html" #}
+{% extends "bootstrap/base.html" %}
 
 <center>
 
 	{% block navbar %}
+	<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="{{ url_for('index.index') }}"><b>Hackerbabel</b></a>
+    </div>
 
-	<table id="hnmain" border="0" cellpadding="0" cellspacing="0" width="65%"
-	       bgcolor="#f6f6ef">
-        <tr>
-	        <td bgcolor="#ff6600"><table border="0" cellpadding="0" cellspacing="0" width="100%" style="padding:2px">
-		        <tr><td style="width:18px;padding-right:4px">&#128526;</td>
-		        <td style="line-height:12pt; height:10px;"><span
-				        class="pagetop"><b class="hnname">Hackerbabel</b>
-
-			        </a> </span></td><td style="text-align:right;padding-right:4px;"><span class="pagetop">
-						<a href="{{ url_for('index.index') }}"
-						   title="To the landing page">Stories</a> |
-				        <a href="{{ url_for('dashboard.dashboard') }}"
-				           title="To the dashboard">Dashboard</a>
-                          </span></td>
-		        </tr>
-	        </table>
-	        </td>
-        </tr>
-	</table>
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav navbar-right ">
+        <li><a href="{{ url_for('index.index') }}"
+						   title="To the landing page">Stories</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="{{ url_for('dashboard.dashboard') }}"
+				           title="To the dashboard">Dashboard</a></li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
 	{% endblock %}
 
 	{% block content %}
