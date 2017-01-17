@@ -24,7 +24,7 @@ OBLIGATORY_SETTINGS = {
     "UNBABEL_API_SECRET"
 }
 
-CONFIG_PATH = "../config.py"
+CONFIG_PATH = "hackerbabel/config.py"
 
 
 class ConfigurationTestCase(TestCase):
