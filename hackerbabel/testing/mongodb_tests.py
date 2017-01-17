@@ -38,6 +38,7 @@ class MongoDBClientTestCase(TestCase):
         documents = self.hn_client.get_top_stories()
         _ids = []
 
+        # TODO: Create story fixtures to save time
         for document in documents:
             report = self.mdb_client.add_document(document, "articles")
             ok_(report._WriteResult__acknowledged)

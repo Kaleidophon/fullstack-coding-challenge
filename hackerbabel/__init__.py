@@ -13,6 +13,8 @@ from flask_bootstrap import Bootstrap
 from flask_cache import Cache
 
 # PROJECT
+from cache import cache
+
 from hackerbabel.clients.mongodb_client import MongoDBClient
 from hackerbabel.clients.hackernews_client import HackerNewsClient
 from hackerbabel.clients.unbabel_client import UnbabelClient
@@ -28,7 +30,6 @@ from hackerbabel.views.comment_section import COMMENT_SECTION
 
 # CONST
 LOGGER = logging.getLogger(__name__)
-CACHE = None
 
 
 def setup_app():
@@ -38,7 +39,6 @@ def setup_app():
     @return: app which could be launched immediately
     @rtype: Flask
     """
-    global CACHE
 
     # 1 Create Flask application
     app = Flask(
@@ -50,6 +50,8 @@ def setup_app():
     # 2 Update the apps configuration
     app = config_selector(app)
     register_error_handlers(app)
+
+    cache.init_app(app)
 
     # 3 Set up logger
     setup_logger(app.config)
@@ -100,7 +102,3 @@ def start_daemon(config):
     hn_daemon = HackerNewsDaemon(interval, target_language)
     hn_daemon.run()
     LOGGER.info("Started daemon with time interval {}.".format(interval))
-
-def get_cache():
-    global CACHE
-    return CACHE

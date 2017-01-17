@@ -16,3 +16,11 @@ UNBABEL_API_EMAIL = "Dennis.Ulmer@gmx.de"
 # Putting sensible data in here isn't obviously best practice but will
 # ( hopefully) do for this coding challenge
 UNBABEL_API_SECRET = "e0b862dc3beb372b01712651e39aab3aa43578c8"
+
+# TODO: Make this variable throughout the project
+SOURCE_LANGUAGE = "EN"
+STORY_COLLECTION = "articles"
+
+# TODO: Add those
+COMMENT_COLLECTION = "comments"
+TITLE_COLLECTION = "titles"

@@ -23,6 +23,7 @@ def register_error_handlers(app):
 
     @app.errorhandler(404)
     def page_not_found(exception):
+        # TODO: Make this prettier
         return "Sorry! This page doesn't exist.", 404
 
     @app.errorhandler(Exception)

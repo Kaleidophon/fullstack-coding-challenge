@@ -197,6 +197,9 @@ class HackerNewsClient(Client):
         @return: Story with text comments
         @rtype: dict
         """
+        # TODO: Make lookup into database if all these comments have already
+        # been resolved for an older story / if number of comments for those
+        # is the same
         # No comments, nothing to resolve / change
         if not story["comments"]:
             return story

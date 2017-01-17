@@ -80,6 +80,10 @@ class HackerNewsDaemon(SimpleDaemon):
                 report = self.mdb_client.add_document(document, "articles")
                 _ids.add((str(report.inserted_id), title))
 
+            # TODO: Write this into a queue instead and define fixed number
+            # of threads in config
+            # TODO: Make a lookup into database if title already has been
+            # translated
             # Start translation processes
             for _id, title in _ids:
                 for target_lang in self.target_langs:
