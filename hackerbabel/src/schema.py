@@ -107,11 +107,12 @@ class ArticleSchema(Schema):
             "author": {"type": "string"},
             "url": {"type": "string"},
             "text": {"type": "string"},
-            "score": {"type": "number"}
+            "score": {"type": "number"},
+            "descendants": {"type": "number"}
         },
         "required": [
             "id", "article_type", "author",
-            "date", "score"
+            "date", "score", "descendants"
         ]
     }
 

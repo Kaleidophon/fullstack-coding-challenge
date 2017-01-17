@@ -36,9 +36,7 @@ def get_story(story_id, story_collection):
     from hackerbabel.clients.hackernews_client import HackerNewsClient
 
     mdb_client = MongoDBClient()
-    hn_client = HackerNewsClient()
     story = mdb_client.find_document("id", story_id, story_collection)
-    story = hn_client.resolve_comment_ids(story)
     return story
 
 

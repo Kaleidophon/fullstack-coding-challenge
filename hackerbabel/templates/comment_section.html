@@ -22,9 +22,8 @@
     {% set ccomment_dicts = comment_dict[comment_text] %}
     <div class="container-fluid">
         <div class="row">
-            <div
-                    class="comment-content well col-md-3 col-md-offset-{{ level+1 }}">
-                {{ comment_text }}
+            <div class="comment-content well col-md-3 col-md-offset-{{ level+1 }}">
+                {{ comment_text | replace("%&/", ".") | replace("/&%", "$") }}
             </div>
         </div>
     </div>

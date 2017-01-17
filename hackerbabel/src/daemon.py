@@ -6,30 +6,18 @@ translate them.
 """
 
 # STD
-from collections import namedtuple
 import logging
 import json
 from time import sleep
-from multiprocessing import Queue, Pool
 from threading import Thread
 
 # PROJECT
 from hackerbabel.clients.hackernews_client import HackerNewsClient
 from hackerbabel.clients.unbabel_client import UnbabelClient
 from hackerbabel.clients.mongodb_client import MongoDBClient
-from hackerbabel.config import NUMBER_OF_CORES
-from hackerbabel.src.schema import ArticleSchema, CommentSchema, TitleSchema
 
 # CONST
 LOGGER = logging.getLogger(__name__)
-JOB_QUEUE = Queue()
-
-
-HackerBabelJob = namedtuple(
-    "HackerBabelJob", [
-        "job_type", "story_id", "target_collection", "info"
-    ]
-)
 
 
 class SimpleDaemon(object):
@@ -70,35 +58,14 @@ class HackerNewsDaemon(SimpleDaemon):
     Daemon that retrieves the most recent Hacker News and creates threads to
     translate the titles.
     """
-    def __init__(self, interval, source_lang, target_langs, story_collection,
-                 title_collection, comment_collection):
+    def __init__(self, interval, source_lang, target_langs, story_collection):
         self.hn_client = HackerNewsClient()
         self.source_lang = source_lang
         self.target_langs = target_langs
         self.story_collection = story_collection
-        self.title_collection = title_collection
-        self.comment_collection = comment_collection
-        self.queue = Queue()
 
         super(HackerNewsDaemon, self).__init__(
             self.refresh_top_stories, tuple(), interval
-        )
-
-    def add_story(self, document):
-        titles = document["titles"]
-        # Wrap in dict for MongoDB
-        comments = {"comments": document["comments"]}
-        del document["titles"]
-        del document["comments"]
-
-        self.mdb_client.add_document(
-            document, self.story_collection, schema=ArticleSchema()
-        )
-        self.mdb_client.add_document(
-            titles, self.title_collection, schema=TitleSchema()
-        )
-        self.mdb_client.add_document(
-            comments, self.comment_collection, schema=CommentSchema()
         )
 
     def refresh_top_stories(self, *args):
@@ -108,206 +75,167 @@ class HackerNewsDaemon(SimpleDaemon):
         @param args: Argument of functions - in this case, none.
         @type args: tuple
         """
-        global JOB_QUEUE
+        while True:
+            _ids = set()
+            for document in self.hn_client.get_top_stories():
+                title = document["titles"][self.source_lang]["title"]
+                story_id = document["id"]
 
-        ids = set()
-        for document in self.hn_client.get_top_stories():
-            title = document["titles"][self.source_lang]["title"]
-            self.add_story(document)
-            ids.add((str(document["id"]), title))
-
-        # Prioritize job to resolve comments
-        for story_id, title in ids:
-            # Check if job has been done in the past
-            if not self.mdb_client.find_document(
-                    "id", story_id, self.comment_collection
-            ):
-                # TODO: Check if number of comments is the same
-                job = HackerBabelJob(
-                    job_type="resolve_comments",
-                    story_id=story_id,
-                    target_collection="comments",
-                    info={}
+                # Check if story already exists -> maybe no need for
+                # translation / comment resolving
+                result = self.mdb_client.find_document(
+                    "id", story_id, self.story_collection, 1
                 )
-                JOB_QUEUE.put(job)
+                if result:
+                    document["titles"] = result["titles"]
+                    if document["descendants"] == result["descendants"]:
+                        document["comments"] = result["comments"]
 
-        # Add translation_jobs
-        for story_id, title in ids:
-            for target_lang in self.target_langs:
-                if not self.mdb_client.find_document(
-                    "id", story_id, self.title_collection
-                ):
-                    job = HackerBabelJob(
-                        job_type="translate_titles",
-                        story_id=story_id,
-                        target_collection="titles",
-                        info={
-                            "title": title,
-                            "target_language": target_lang
-                        }
+                report = self.mdb_client.add_document(
+                    document, self.story_collection
+                )
+
+                if not result:
+                    _ids.add((str(report.inserted_id), title))
+
+            # Start translation processes
+            for _id, title in _ids:
+                for target_lang in self.target_langs:
+                    ub_daemon = UnbabelDaemon(
+                        self.interval, _id, target_lang, title,
+                        self.story_collection
                     )
-                    JOB_QUEUE.put(job)
+                    ub_daemon.run()
+            sleep(self.interval)
 
 
-
-
-class MasterDaemon(SimpleDaemon):
-
-    def __init__(self):
-        super(MasterDaemon, self).__init__(
-            self.distribute_work, tuple(), interval=10
-        )
-
-    @staticmethod
-    def distribute_work(*args):
-        global JOB_QUEUE
-        jobs = []
-        while not (JOB_QUEUE.empty() and len(jobs) > NUMBER_OF_CORES):
-            jobs.append(JOB_QUEUE.get())
-
-        LOGGER.info(u"Starting {} new jobs.".format(len(jobs)))
-        pool = Pool(NUMBER_OF_CORES)
-        pool.map_async(handle_job, jobs)
-
-
-def translate_title(job):
+class UnbabelDaemon(SimpleDaemon):
     """
-    Translate a story title.
+    Unbabel daemon that is called by HackerNewsDaemon and translates one
+    Hacker News story title into one target language.
 
-    @param job: Job with job details
-    @type job: namedtuple
+    @note: This is not technically a Daemon, just a regular thread. But it was
+    helpful letting this inherit from SimpleDaemon.
     """
-    info = job.info
-    title = info["title"]
-    target_language = info["target_language"]
-    story_id = job.story_id
-    ub_client = UnbabelClient()
+    def __init__(self, interval, document_id, target_language, title,
+                 story_collection):
+        """
+        Initializer.
 
-    logging.info(
-        u"New process trying to translate '{title}' into {lang}".format(
-            title=title, lang=target_language
+        @param interval: Time interval between function executions.
+        @type interval: int
+        @param document_id: MongoDB ID of document (_id)
+        @type document_id: int
+        @param target_language: Language the text should be translated into.
+        @type target_language: str or unicode
+        @param title: News title to be translated.
+        @type title: str or unicode.
+        """
+        self.ub_client = UnbabelClient()
+        self.title = title
+        self.story_collection = story_collection
+
+        logging.info(
+            u"New thread trying to translate '{title}' into {lang}".format(
+                title=self.title, lang=target_language
+            )
         )
-    )
 
-    # Do initial request
-    response = None
-    status_code = 404
-    while status_code != 201 and status_code != 200:
-        response = ub_client.make_translation_request(
-            title, target_language
-        )
-        status_code = response.status_code
+        # Do initial request
+        response = None
+        status_code = 404
+        while status_code != 201 and status_code != 200:
+            response = self.ub_client.make_translation_request(
+                self.title, target_language
+            )
+            status_code = response.status_code
 
-    response_data = json.loads(response.content)
-    uid = response_data["uid"]
-
-    response_data = None
-    status = "new"
-
-    _change_story_translation_status(
-        story_id, target_language, "pending", job.target_collection
-    )
-
-    # Check translation status
-    while status != "completed":
-        sleep(5)
-        response = ub_client.check_translation_status(uid)
         response_data = json.loads(response.content)
-        status = response_data["status"]
+        uid = response_data["uid"]
 
-    translated_text = response_data["translatedText"]
-
-    logging.info(
-        u"Translation complete!\n'{title}' --({lang})--> '{transtitle}'".format(
-            title=title, lang=target_language,
-            transtitle=translated_text
+        super(UnbabelDaemon, self).__init__(
+            self.translate_title, (uid, document_id, target_language),
+            interval,
+            daemonize=False
         )
-    )
 
-    _change_story_translation_status(
-        story_id, target_language, "done", job.target_collection
-    )
-    _add_translated_story_title(
-        story_id, target_language, translated_text, job.target_collection
-    )
+    def translate_title(self, uid, document_id, target_language):
+        """
+        Translate a story title.
 
+        @param uid: Unique Unbabel API job idea.
+        @type uid: str or unicode
+        @param document_id: MongoDB ID of document (_id)
+        @type document_id: int
+        @param target_language: Language the text should be translated into.
+        @type target_language: str or unicode
+        """
+        response_data = None
+        status = "new"
 
-def _change_story_translation_status(story_id, language, new_status,
-                                     story_collection):
-    """
-    Change the translation status of a story title.
+        self._change_story_translation_status(
+            document_id, target_language, "pending"
+        )
 
-    @param story_id: Hacker News Story ID
-    @type story_id: str or unicode
-    @param language: Language the text should be translated into.
-    @type language: str or unicode
-    @param new_status: New translation status.
-    @type new_status: str or unicode
-    """
-    mdb_client = MongoDBClient()
-    mdb_client.update_document(
-        story_collection,
-        story_id,
-        updates={
-            "titles.{}.translation_status".format(language): new_status
-        }
-    )
+        # Check translation status
+        while status != "completed":
+            sleep(self.interval/10.0)
+            response = self.ub_client.check_translation_status(uid)
+            response_data = json.loads(response.content)
+            status = response_data["status"]
 
+        translated_text = response_data["translatedText"]
 
-def _add_translated_story_title(story_id, language, translated_title,
-                                story_collection):
-    """
-    Add a new translation of a story title.
+        logging.info(
+            u"Translation complete!\n'{title}' --({lang})--> '{transtitle}'".format(
+                title=self.title, lang=target_language,
+                transtitle=translated_text
+            )
+        )
 
-    @param story_id: Hacker News Story ID
-    @type story_id: str or unicode
-    @param language: Language the text should be translated into.
-    @type language: str or unicode
-    @param translated_title: Title... in another language??
-    @type translated_title: str or unicode
-    """
-    mdb_client = MongoDBClient()
-    mdb_client.update_document(
-        story_collection,
-        story_id,
-        updates={
-            "titles.{}.title".format(language): translated_title
-        }
-    )
+        self._change_story_translation_status(
+            document_id, target_language, "done"
+        )
+        self._add_translated_story_title(
+            document_id, target_language, translated_text
+        )
 
+    def _change_story_translation_status(self, document_id, language,
+                                         new_status):
+        """
+        Change the translation status of a story title.
 
-def resolve_story_comments(job):
-    """
-    Resolve comment in a story.
+        @param document_id: MongoDB ID of document (_id)
+        @type document_id: int
+        @param language: Language the text should be translated into.
+        @type language: str or unicode
+        @param new_status: New translation status.
+        @type new_status: str or unicode
+        """
+        self.mdb_client.update_document(
+            self.story_collection,
+            document_id,
+            updates={
+                "titles.{}.translation_status".format(language): new_status
+            }
+        )
 
-    @param job: Job with job details
-    @type job: namedtuple
-    """
-    story_id = job.story_id
-    target_collection = job.target_collection
-    mdb_client = MongoDBClient()
-    hn_client = HackerNewsClient()
+    def _add_translated_story_title(self, document_id, language,
+                                    translated_title):
+        """
+        Add a new translation of a story title.
 
-    logging.info(
-        u"New process trying to resolve comments for story #{}".format(story_id)
-    )
-
-    comments = mdb_client.find_document("_id", story_id, target_collection)
-    resolved_comments = hn_client.resolve_comment_ids(comments)
-
-    mdb_client.update_document(
-        target_collection, story_id, {"comments": resolved_comments}
-    )
-
-    logging.info(
-        u"Finished resolving comments for story #{}".format(story_id)
-    )
-
-
-def handle_job(job):
-    return JOB_ACTIONS[job.job_type](job)
-
-JOB_ACTIONS = {
-    "resolve_comments": resolve_story_comments,
-    "translate_title": translate_title
-}
+        @param document_id: MongoDB ID of document (_id)
+        @type document_id: int
+        @param language: Language the text should be translated into.
+        @type language: str or unicode
+        @param translated_title: Title... in another language??
+        @type translated_title: str or unicode
+        """
+        self.mdb_client.update_document(
+            self.story_collection,
+            document_id,
+            updates={
+                "titles.{}.title".format(language): translated_title
+            }
+        )

@@ -16,6 +16,7 @@ from hackerbabel.clients.mongodb_client import MongoDBClient
 from hackerbabel.clients.hackernews_client import HackerNewsClient
 from hackerbabel.src.helpers import get_config_from_py_file
 from hackerbabel.testing.configuration_tests import CONFIG_PATH
+from hackerbabel.testing.fixtures import get_processed_stories, STORIES
 
 
 class MongoDBClientTestCase(TestCase):
@@ -35,11 +36,9 @@ class MongoDBClientTestCase(TestCase):
         """
         Test whether an document gets added to MongoDB correctly.
         """
-        documents = self.hn_client.get_top_stories()
         _ids = []
 
-        # TODO: Create story fixtures to save time
-        for document in documents:
+        for document in get_processed_stories():
             report = self.mdb_client.add_document(
                 document, self.story_collection
             )
@@ -68,23 +67,16 @@ class MongoDBClientTestCase(TestCase):
 
     def test_newest_documents(self):
         """
-        Test if the the newest documents given by the client are the actual
-        newest ones from the Hacker News client.
+        Test if the the newest documents given by the client are the ones
+        most recently added to the datavse..
         """
-        # Add another round of documents, check if they're also listed as the
-        # most recent ones
-        documents = self.hn_client.get_top_stories()
-
-        for document in documents:
-            self.mdb_client.add_document(document, self.story_collection)
-
         newest_documents = self.mdb_client.get_newest_documents(
             self.story_collection
         )
 
         titles = [
             document["titles"][self.source_lang]["title"]
-            for document in documents
+            for document in get_processed_stories()
         ]
         newest_titles = [
             document["titles"][self.source_lang]["title"]

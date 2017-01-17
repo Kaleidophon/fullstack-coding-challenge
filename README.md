@@ -1,7 +1,9 @@
 # Hackebabel
 
 ## Requirements
-* Recommended on local machines: sudo apt-get install python-virtualenv
+* Recommended on local machines:
+
+		$ sudo apt-get install python-virtualenv
 
 ## Setting up and starting preisvergleich_api on local machine
 0. Getting the project
@@ -45,6 +47,9 @@
 	Everything else will run automatically following the parameters stated in
 	config.py.
 
+	Note: The first run to fetch some documents can take a bit longer, because
+	fetching all the documents' comments is cumbersome.
+
 5. Testing
 
 	Nosetest was used in development. If you want to test the project, use e.g.
@@ -54,6 +59,5 @@
 	Note: Because the unit test require a stable internet connection, some unit tests
 	can sometimes fail due to your internet connection. If so, try to restart them
 	and / or adjust EXPECTED_SPEED in hackerbabel/testing/hackernews_test.py
-	specifically. Within this test failures can also occur because there are new Hacker 
-	News on the webpage which the API hasn't updated yet. In this case, just try a minute
-	or so later to re-run the tests.
+	specifically.
+	Note2: Tests may still take a few minutes.

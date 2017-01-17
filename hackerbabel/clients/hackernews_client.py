@@ -25,7 +25,7 @@ NEW_NAMES = {
     u"time": u"date",
     u"title": u"titles"
 }
-DROPS = {u"descendants"}
+DROPS = {}
 LOGGER = logging.getLogger()
 
 
@@ -118,8 +118,6 @@ class HackerNewsClient(Client):
         for field in drop:
             document.pop(field, None)
 
-        # TODO: Is this the most efficient way to solve this problem?
-        # Iterate through document / map?
         # Rename for readability
         for old_name in rename:
             if old_name in document:
@@ -145,7 +143,7 @@ class HackerNewsClient(Client):
         @return: Date as string
         @rtype: str
         """
-        date = datetime.datetime.utcfromtimestamp(seconds)
+        date = datetime.datetime.utcfromtimestamp(float(seconds))
         return date.strftime("%d-%m-%Y, %H:%M")
 
     @classmethod
@@ -185,13 +183,10 @@ class HackerNewsClient(Client):
         @return: List of converted comment IDs.
         @rtype: list
         """
-        return [
-            str(comment_id)
-            for comment_id in comment_ids if comment_id is not None
-        ]
+        return cls.resolve_comment_ids(comment_ids)
 
     @classmethod
-    def resolve_comment_ids(cls, story_comments):
+    def resolve_comment_ids(cls, comments):
         """
         Recursively convert comment IDs to actual text.
 
@@ -200,30 +195,43 @@ class HackerNewsClient(Client):
         @return: Story with text comments
         @rtype: dict
         """
-        # Unwrap from dict used to save in MongoDB
-        story_comments = story_comments["comments"]
         # No comments, nothing to resolve / change
-        if not story_comments:
-            return story_comments
+        if not comments:
+            return comments
 
-        def _inner_resolve(comment_ids):
-            comments = {}  # Comments of comment
+        def _replace_mongo_chars(text):
+            if not text:
+                return text
+
+            # Super stupid workaround because MongoDB doesn't allow . or $,
+            # But this way is less costly than generating comments every time
+            # from their IDs
+            text = text.replace(".", "%&/")
+            text = text.replace("$", "/&%")
+            return text
+
+        def _inner_resolve(comment_ids, level=0):
+            comments = {} if level > 0 else []
+
+            # No comments, return
             if not comment_ids:
                 return comments
             for comment_id in comment_ids:
                 comment = cls._resolve_id(comment_id)
                 ccomment_ids = comment.kids
-                comments[comment.text] = _inner_resolve(ccomment_ids)
+                comment_text = _replace_mongo_chars(comment.text)
+
+                if comment_text:
+                    if level > 0:
+                        comments[comment_text] = \
+                            _inner_resolve(ccomment_ids, level+1)
+                    else:
+                        comments.append({
+                            comment_text: _inner_resolve(ccomment_ids, level+1)
+                        })
                 return comments
 
-        resolved_comments = []
-        for comment_id in story_comments:
-            comment = cls._resolve_id(comment_id)
-            ccomment_ids = comment.kids
-            resolved_comments.append({
-                comment.text: _inner_resolve(ccomment_ids)
-            })
-
+        resolved_comments = _inner_resolve(comments)
         return resolved_comments
 
     @classmethod
