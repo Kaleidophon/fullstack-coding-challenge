@@ -51,7 +51,9 @@
 	
 		$ nosetests -vsxd --nologcapture hackerbabel/testing/*
 		
-	Because the unit test require a stable internet connection, some unit tests
+	Note: Because the unit test require a stable internet connection, some unit tests
 	can sometimes fail due to your internet connection. If so, try to restart them
 	and / or adjust EXPECTED_SPEED in hackerbabel/testing/hackernews_test.py
-	specifically.
+	specifically. Within this test failures can also occur because there are new Hacker 
+	News on the webpage which the API hasn't updated yet. In this case, just try a minute
+	or so later to re-run the tests.
