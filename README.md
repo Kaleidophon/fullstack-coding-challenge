@@ -5,10 +5,12 @@
 
 ## Setting up and starting preisvergleich_api on local machine
 0. Getting the project
+
 	Download it from github.com as a .zip or use
-	$ git clone https://github.com/Kaleidophon/fullstack-coding-challenge.git 
-	$ cd fullstack-coding-challenge
-	$ git checkout dev
+	
+		$ git clone https://github.com/Kaleidophon/fullstack-coding-challenge.git 
+		$ cd fullstack-coding-challenge
+		$ git checkout dev
 
 1. Working with virtualenv and installing requirements
 
