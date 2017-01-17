@@ -21,12 +21,14 @@ def check_and_create_directory(directory):
         os.makedirs(directory)
 
 
-def get_story(story_id):
+def get_story(story_id, story_collection):
     """
     Retrieve a specific story form the database via its Hacker News story id.
 
     @param story_id: Hacker News story id.
     @type story_id: int
+    @param story_collection: Name of the collections the stories are stored in.
+    @type story_collection: str or unicode
     @return: Story
     @rtype: dict
     """
@@ -35,22 +37,24 @@ def get_story(story_id):
 
     mdb_client = MongoDBClient()
     hn_client = HackerNewsClient()
-    story = mdb_client.find_document("id", story_id, "articles")
+    story = mdb_client.find_document("id", story_id, story_collection)
     story = hn_client.resolve_comment_ids(story)
     return story
 
 
-def get_stories():
+def get_stories(story_collection):
     """
     Get the stories that should be rendered on the starting page.
 
+    @param story_collection: Name of the collections the stories are stored in.
+    @type story_collection: str or unicode
     @return: Most recent stories.
     @rtype: list
     """
     from hackerbabel.clients.mongodb_client import MongoDBClient
 
     mdb_client = MongoDBClient()
-    stories = mdb_client.get_newest_documents("articles")
+    stories = mdb_client.get_newest_documents(story_collection)
     stories.reverse()  # Because of the way jinja2 renders the stories
     return stories
 

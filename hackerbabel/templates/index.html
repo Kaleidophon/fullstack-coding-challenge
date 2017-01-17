@@ -23,7 +23,7 @@
         </span></td>
         <td valign="top" class="votelinks"></td>
 		<td class="title"><a href="{{ story['url'] }}" class="storylink">
-			<b>EN: {{ story["titles"]["EN"]["title"] }}</b>
+			<b>{{ source }}: {{ story["titles"][source]["title"] }}</b>
 		</a></td>
 	</tr>
 	{{ display_story_titles(story) }}
@@ -57,21 +57,23 @@
 		{% block title %} Current Stories {% endblock %}
 
 		{% block content %}
-			<table id="itemlist" cellspacing="0" cellpadding="0" border="0">
-				<tbody>
-					<tr style="height:10px"></tr>
-					{% if stories|length == 0 %}
-						<tr><b>
-							No stories available (yet). Please wait shortly,
-							then refresh the page.
-						</b></tr>
-					{% else %}
-						{% for rank in range(stories|length) %}
-							{{ render_story(stories[rank], rank+1) }}
-						{% endfor %}
-					{% endif %}
-				</tbody>
-			</table>
+			{% cache interval %}
+				<table id="itemlist" cellspacing="0" cellpadding="0" border="0">
+					<tbody>
+						<tr style="height:10px"></tr>
+						{% if stories|length == 0 %}
+							<tr><b>
+								No stories available (yet). Please wait shortly,
+								then refresh the page.
+							</b></tr>
+						{% else %}
+							{% for rank in range(stories|length) %}
+								{{ render_story(stories[rank], rank+1) }}
+							{% endfor %}
+						{% endif %}
+					</tbody>
+				</table>
+			{% endcache %}
 		{% endblock %}
 	</body>
 </html>

@@ -32,6 +32,8 @@ LOGGER = logging.getLogger()
 class HackerNewsClient(Client):
     formatting_functions = None
     target_langs = None
+    source_lang = None
+    limit = None
 
     @classmethod
     def initialize(cls, **init_kwargs):
@@ -43,6 +45,7 @@ class HackerNewsClient(Client):
         """
         cls.limit = init_kwargs.get("NUMBER_OF_STORIES", 10)
         cls.target_langs = init_kwargs.get("TARGET_LANGUAGES", ("PT",))
+        cls.source_lang = init_kwargs.get("SOURCE_LANGUAGE", "EN")
         cls.client = HackerNews()
         cls.formatting_functions = {
             u"comments": cls._collect_comments,
@@ -156,7 +159,7 @@ class HackerNewsClient(Client):
         @return: Expanded title
         @rtype: dict
         """
-        titles = {"EN": {
+        titles = {cls.source_lang: {
             "title": title,
             "translation_status": "done"
             }

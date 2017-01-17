@@ -10,7 +10,11 @@ from flask import render_template, Blueprint
 # PROJECT
 from hackerbabel.cache import cache
 from hackerbabel.src.helpers import get_story
-from hackerbabel.config import REFRESH_INTERVAL
+from hackerbabel.config import (
+    REFRESH_INTERVAL,
+    SOURCE_LANGUAGE,
+    STORY_COLLECTION
+)
 
 # CONST
 COMMENT_SECTION = Blueprint(
@@ -28,5 +32,7 @@ def comment_section(story_id):
     return render_template(
         "comment_section.html",
         story_id=story_id,
-        story=get_story(int(story_id))
+        story=get_story(int(story_id), STORY_COLLECTION),
+        interval=REFRESH_INTERVAL,
+        source=SOURCE_LANGUAGE
     )

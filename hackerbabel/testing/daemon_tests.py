@@ -39,9 +39,9 @@ class DaemonTestCase(MongoDBClientTestCase):
         interval = self.config["REFRESH_INTERVAL"]
         document_id = choice(self._ids)
         document = self.mdb_client.find_document(
-            "_id", document_id, "articles"
+            "_id", document_id, self.story_collection
         )
-        title = document["titles"]["EN"]["title"]
+        title = document["titles"][self.source_lang]["title"]
         target_language = choice(self.config["TARGET_LANGUAGES"])
 
         # Start daemon
@@ -51,7 +51,7 @@ class DaemonTestCase(MongoDBClientTestCase):
         ub_daemon.thread.exit()
 
         translated_document = self.mdb_client.find_document(
-            "_id", document_id, "articles"
+            "_id", document_id, self.story_collection
         )
         translation_status = translated_document["titles"][target_language][
             "translation_status"
@@ -79,6 +79,8 @@ class DaemonTestCase(MongoDBClientTestCase):
 
         self.ub_client = UnbabelClient()
         self.ub_client.initialize(**self.config)
+        self.story_collection = self.config["STORY_COLLECTION"]
+        self.source_lang = self.config["SOURCE_LANGUAGE"]
 
     def tearDown(self):
         super(DaemonTestCase, self).tearDown()

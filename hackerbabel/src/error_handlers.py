@@ -9,6 +9,9 @@ import datetime
 import logging
 import traceback
 
+# EXT
+from flask import render_template
+
 # CONST
 LOGGER = logging.getLogger(__name__)
 
@@ -23,8 +26,7 @@ def register_error_handlers(app):
 
     @app.errorhandler(404)
     def page_not_found(exception):
-        # TODO: Make this prettier
-        return "Sorry! This page doesn't exist.", 404
+        return render_template("404.html")
 
     @app.errorhandler(Exception)
     def handle_any_exception(error):

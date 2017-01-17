@@ -58,9 +58,11 @@ class HackerNewsDaemon(SimpleDaemon):
     Daemon that retrieves the most recent Hacker News and creates threads to
     translate the titles.
     """
-    def __init__(self, interval, target_langs):
+    def __init__(self, interval, source_lang, target_langs, story_collection):
         self.hn_client = HackerNewsClient()
+        self.source_lang = source_lang
         self.target_langs = target_langs
+        self.story_collection = story_collection
 
         super(HackerNewsDaemon, self).__init__(
             self.refresh_top_stories, tuple(), interval
@@ -76,8 +78,10 @@ class HackerNewsDaemon(SimpleDaemon):
         while True:
             _ids = set()
             for document in self.hn_client.get_top_stories():
-                title = document["titles"]["EN"]["title"]
-                report = self.mdb_client.add_document(document, "articles")
+                title = document["titles"][self.source_lang]["title"]
+                report = self.mdb_client.add_document(
+                    document, self.story_collection
+                )
                 _ids.add((str(report.inserted_id), title))
 
             # TODO: Write this into a queue instead and define fixed number
@@ -88,7 +92,8 @@ class HackerNewsDaemon(SimpleDaemon):
             for _id, title in _ids:
                 for target_lang in self.target_langs:
                     ub_daemon = UnbabelDaemon(
-                        self.interval, _id, target_lang, title
+                        self.interval, _id, target_lang, title,
+                        self.story_collection
                     )
                     ub_daemon.run()
             sleep(self.interval)
@@ -102,7 +107,8 @@ class UnbabelDaemon(SimpleDaemon):
     @note: This is not technically a Daemon, just a regular thread. But it was
     helpful letting this inherit from SimpleDaemon.
     """
-    def __init__(self, interval, document_id, target_language, title):
+    def __init__(self, interval, document_id, target_language, title,
+                 story_collection):
         """
         Initializer.
 
@@ -117,6 +123,7 @@ class UnbabelDaemon(SimpleDaemon):
         """
         self.ub_client = UnbabelClient()
         self.title = title
+        self.story_collection = story_collection
 
         logging.info(
             u"New thread trying to translate '{title}' into {lang}".format(
@@ -196,7 +203,7 @@ class UnbabelDaemon(SimpleDaemon):
         @type new_status: str or unicode
         """
         self.mdb_client.update_document(
-            "articles",
+            self.story_collection,
             document_id,
             updates={
                 "titles.{}.translation_status".format(language): new_status
@@ -216,7 +223,7 @@ class UnbabelDaemon(SimpleDaemon):
         @type translated_title: str or unicode
         """
         self.mdb_client.update_document(
-            "articles",
+            self.story_collection,
             document_id,
             updates={
                 "titles.{}.title".format(language): translated_title

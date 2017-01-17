@@ -52,11 +52,13 @@
                 <td> Status </td>
             </tr>
         </thead>
-        <tbody>
-            <tr style="height:10px"></tr>
-            {% for rank in range(stories|length) %}
-                {{ render_translation_status(stories[rank], rank+1) }}
-            {% endfor %}
-        </tbody>
+        {% cache interval %}
+            <tbody>
+                <tr style="height:10px"></tr>
+                {% for rank in range(stories|length) %}
+                    {{ render_translation_status(stories[rank], rank+1) }}
+                {% endfor %}
+            </tbody>
+        {% endcache %}
     </table>
 {% endblock %}

@@ -48,8 +48,10 @@
     <table id="itemlist" cellspacing="0" cellpadding="0" border="0",
            width="65%">
         <tbody>
-            <tr style="height:10px"></tr>
-            {{ render_comments(story) }}
+            {% cache interval %}
+                <tr style="height:10px"></tr>
+                {{ render_comments(story) }}
+            {% endcache %}
         </tbody>
     </table>
 {% endblock %}
