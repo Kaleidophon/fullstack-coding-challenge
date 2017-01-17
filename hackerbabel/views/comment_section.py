@@ -12,8 +12,7 @@ from hackerbabel.cache import cache
 from hackerbabel.src.helpers import get_story
 from hackerbabel.config import (
     REFRESH_INTERVAL,
-    SOURCE_LANGUAGE,
-    STORY_COLLECTION
+    SOURCE_LANGUAGE
 )
 
 # CONST
@@ -32,7 +31,7 @@ def comment_section(story_id):
     return render_template(
         "comment_section.html",
         story_id=story_id,
-        story=get_story(int(story_id), STORY_COLLECTION),
+        story=get_story(int(story_id)),
         interval=REFRESH_INTERVAL,
         source=SOURCE_LANGUAGE
     )

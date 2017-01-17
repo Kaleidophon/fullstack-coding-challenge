@@ -10,6 +10,15 @@
                 </div>
             </div>
         </div>
+    {% elif story["comments"] is mapping %}
+        <div class="row">
+            <div class="panel panel-info col-md-6 col-sm-offset-2">
+                <div class="panel-heading">Note</div>
+                <div class="panel-body">
+                    The comments of this story are being processed. Please wait.
+                </div>
+            </div>
+        </div>
     {% else %}
         {% for comment_dict in story["comments"] %}
             {{ render_subcomments(comment_dict) }}

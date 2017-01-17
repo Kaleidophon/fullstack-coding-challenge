@@ -43,22 +43,34 @@
 {% block title %} Translation Dashboard {% endblock %}
 
 {% block content %}
-    <table class="table" id="itemlist" cellspacing="0" cellpadding="0" border="0">
-        <thead>
-            <tr>
-                <td> Rank </td>
-                <td> ID </td>
-                <td> Name </td>
-                <td> Status </td>
-            </tr>
-        </thead>
-        {% cache interval %}
-            <tbody>
-                <tr style="height:10px"></tr>
-                {% for rank in range(stories|length) %}
-                    {{ render_translation_status(stories[rank], rank+1) }}
-                {% endfor %}
-            </tbody>
-        {% endcache %}
-    </table>
+    {% if stories|length == 0 or stories is not defined %}
+        <div class="row">
+            <div class="panel panel-info col-md-6 col-sm-offset-2">
+                <div class="panel-heading">Note</div>
+                <div class="panel-body">
+                    No stories available (yet). Please wait a while,
+                    then refresh the page.
+                </div>
+            </div>
+        </div>
+    {% else %}
+        <table class="table" id="itemlist" cellspacing="0" cellpadding="0" border="0">
+            <thead>
+                <tr>
+                    <td> Rank </td>
+                    <td> ID </td>
+                    <td> Name </td>
+                    <td> Status </td>
+                </tr>
+            </thead>
+            {% cache interval %}
+                <tbody>
+                    <tr style="height:10px"></tr>
+                    {% for rank in range(stories|length) %}
+                        {{ render_translation_status(stories[rank], rank+1) }}
+                    {% endfor %}
+                </tbody>
+            {% endcache %}
+        </table>
+    {% endif %}
 {% endblock %}

@@ -64,7 +64,7 @@ def setup_app():
     init_clients(app.config)
 
     # 5 Init Daemon
-    start_daemon(app.config)
+    start_daemons(app.config)
 
     # 6 Register blueprints
     register_blueprints(app)
@@ -96,7 +96,7 @@ def register_blueprints(app):
         app.register_blueprint(blueprint)
 
 
-def start_daemon(config):
+def start_daemons(config):
     interval = config.get("REFRESH_INTERVAL", 600)
     target_language = config.get("TARGET_LANGUAGES", ("PT", ))
     source_language = config.get("SOURCE_LANGUAGE", "EN")

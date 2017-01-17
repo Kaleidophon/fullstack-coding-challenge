@@ -85,9 +85,16 @@ class HackerNewsDaemon(SimpleDaemon):
         )
 
     def add_story(self, document):
+        story_id = document["id"]
         titles = document["titles"]
+
+        # Sneak in IDs so they can be found later
+        titles["id"] = story_id
         # Wrap in dict for MongoDB
-        comments = {"comments": document["comments"]}
+        comments = {
+            "id": story_id,
+            "comments": document["comments"]
+        }
         del document["titles"]
         del document["comments"]
 
@@ -110,64 +117,72 @@ class HackerNewsDaemon(SimpleDaemon):
         """
         global JOB_QUEUE
 
-        ids = set()
-        for document in self.hn_client.get_top_stories():
-            title = document["titles"][self.source_lang]["title"]
-            self.add_story(document)
-            ids.add((str(document["id"]), title))
+        while True:
+            documents = self.hn_client.get_top_stories()
+            ids = [
+                (document["id"], document["titles"][self.source_lang]["title"])
+                for document in documents
+            ]
 
-        # Prioritize job to resolve comments
-        for story_id, title in ids:
-            # Check if job has been done in the past
-            if not self.mdb_client.find_document(
-                    "id", story_id, self.comment_collection
-            ):
-                # TODO: Check if number of comments is the same
-                job = HackerBabelJob(
-                    job_type="resolve_comments",
-                    story_id=story_id,
-                    target_collection="comments",
-                    info={}
-                )
-                JOB_QUEUE.put(job)
-
-        # Add translation_jobs
-        for story_id, title in ids:
-            for target_lang in self.target_langs:
+            # Prioritize job to resolve comments
+            for story_id, title in ids:
+                # Check if job has been done in the past
                 if not self.mdb_client.find_document(
-                    "id", story_id, self.title_collection
+                        "id", story_id, self.comment_collection
                 ):
+                    # TODO: Check if number of comments is the same
                     job = HackerBabelJob(
-                        job_type="translate_titles",
+                        job_type="resolve_comments",
                         story_id=story_id,
-                        target_collection="titles",
-                        info={
-                            "title": title,
-                            "target_language": target_lang
-                        }
+                        target_collection="comments",
+                        info={}
                     )
                     JOB_QUEUE.put(job)
 
+            # Add translation_jobs
+            for story_id, title in ids:
+                for target_lang in self.target_langs:
+                    if not self.mdb_client.find_document(
+                        "id", story_id, self.title_collection
+                    ):
+                        job = HackerBabelJob(
+                            job_type="translate_titles",
+                            story_id=story_id,
+                            target_collection="titles",
+                            info={
+                                "title": title,
+                                "target_language": target_lang
+                            }
+                        )
+                        JOB_QUEUE.put(job)
 
+            # Finally add stories
+            for document in self.hn_client.get_top_stories():
+                self.add_story(document)
+
+            sleep(self.interval)
 
 
 class MasterDaemon(SimpleDaemon):
 
     def __init__(self):
         super(MasterDaemon, self).__init__(
-            self.distribute_work, tuple(), interval=10
+            self.distribute_work, tuple(), interval=40
         )
 
-    @staticmethod
-    def distribute_work(*args):
+    def distribute_work(self, *args):
         global JOB_QUEUE
-        jobs = []
-        while not (JOB_QUEUE.empty() and len(jobs) > NUMBER_OF_CORES):
-            jobs.append(JOB_QUEUE.get())
 
-        LOGGER.info(u"Starting {} new jobs.".format(len(jobs)))
-        pool = Pool(NUMBER_OF_CORES)
-        pool.map_async(handle_job, jobs)
+        while True:
+            jobs = []
+            while not JOB_QUEUE.empty() and len(jobs) > NUMBER_OF_CORES:
+                jobs.append(JOB_QUEUE.get())
+
+            LOGGER.info(u"Starting {} new jobs.".format(len(jobs)))
+            pool = Pool(NUMBER_OF_CORES)
+            pool.map_async(handle_job, jobs)
+
+            sleep(self.interval)
 
 
 def translate_title(job):

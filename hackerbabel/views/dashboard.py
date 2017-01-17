@@ -13,8 +13,7 @@ from hackerbabel.cache import cache
 from hackerbabel.src.helpers import get_stories
 from hackerbabel.config import (
     REFRESH_INTERVAL,
-    SOURCE_LANGUAGE,
-    STORY_COLLECTION
+    SOURCE_LANGUAGE
 )
 
 # CONST
@@ -29,7 +28,7 @@ def dashboard():
     """
     return render_template(
         "dashboard.html",
-        stories=get_stories(STORY_COLLECTION),
+        stories=get_stories(),
         interval=REFRESH_INTERVAL/10.0,
         source=SOURCE_LANGUAGE
     )
