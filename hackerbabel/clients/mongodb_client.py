@@ -57,7 +57,7 @@ class MongoDBClient(Client):
 
     @classmethod
     @require_init
-    def add_document(cls, document, collection_name):
+    def add_document(cls, document, collection_name, schema=None):
         """
         Add new document to a collection.
 
@@ -66,17 +66,22 @@ class MongoDBClient(Client):
         @param collection_name: Name of the collection the document should be
         added to.
         @type collection_name: str or unicode
+        @param schema: Schema - if given - the document will be validated
+        against
+        @type schema: Hackerbabel.src.schema.Schema
         @return: Result report of insertion
         @rtype: object
         """
         collection = getattr(cls.db, collection_name)
-        cls.schema.validate(document)
-        result = collection.insert_one(document)
+
+        if schema:
+            schema.validate(document)
+        result = collection.insert_one(document, True)
         return result
 
     @classmethod
     @require_init
-    def find_document(cls, key, value, collection_name):
+    def find_document(cls, key, value, collection_name, sort_direction=-1):
         """
         Find a document inside a collection.
 
@@ -87,6 +92,9 @@ class MongoDBClient(Client):
         @param collection_name: Name of the collection the document should be
         added to.
         @type collection_name: str or unicode
+        @param sort_direction: Sort direction if multiple documents with
+        criterion exist.
+        @type sort_direction: int
         @return: The first document matching the criteria or None
         @rtype: dict or None
         """
@@ -95,7 +103,7 @@ class MongoDBClient(Client):
             value = ObjectId(value)
         result = [
             document for document in
-            collection.find({key: value}).sort("_id", -1)
+            collection.find({key: value}).sort("_id", sort_direction)
         ]
         if len(result) == 0:
             return None
@@ -139,6 +147,6 @@ class MongoDBClient(Client):
         collection = getattr(cls.db, collection_name)
         report = collection.update(
             {"_id": ObjectId(document_id)},
-            {"$set": updates}
+            {"$set": updates},
         )
         return report

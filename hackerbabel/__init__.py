@@ -10,7 +10,6 @@ import logging
 # EXT
 from flask import Flask
 from flask_bootstrap import Bootstrap
-from flask_cache import Cache
 
 # PROJECT
 from cache import cache
@@ -57,9 +56,6 @@ def setup_app():
     setup_logger(app.config)
     LOGGER.info("Set up app & logger.")
 
-    CACHE = Cache(config={'CACHE_TYPE': 'simple'})
-    CACHE.init_app(app)
-
     # 4 Init clients
     init_clients(app.config)
 
@@ -74,6 +70,12 @@ def setup_app():
 
 
 def init_clients(config):
+    """
+    Initiate the different client used in this project.
+
+    @param config: Flask app config
+    @type config: dict
+    """
     clients = {
         MongoDBClient(), HackerNewsClient(), UnbabelClient()
     }
@@ -90,6 +92,12 @@ def init_clients(config):
 
 
 def register_blueprints(app):
+    """
+    Register the view blueprints for the app.
+
+    @param app: Flask app
+    @type app: flask.Flask
+    """
     blueprints = {INDEX, DASHBOARD, COMMENT_SECTION}
 
     for blueprint in blueprints:
@@ -97,8 +105,22 @@ def register_blueprints(app):
 
 
 def start_daemon(config):
+    """
+    Start the daemon which looks for new stories on Hacker News in a regular
+    interval.
+
+    :@param config: Flask app config
+    @type config: dict
+    """
     interval = config.get("REFRESH_INTERVAL", 600)
     target_language = config.get("TARGET_LANGUAGES", ("PT", ))
-    hn_daemon = HackerNewsDaemon(interval, target_language)
+    source_language = config.get("SOURCE_LANGUAGE", "EN")
+    story_collection = config.get("STORY_COLLECTION", "articles")
+    hn_daemon = HackerNewsDaemon(
+        interval,
+        source_language,
+        target_language,
+        story_collection
+    )
     hn_daemon.run()
     LOGGER.info("Started daemon with time interval {}.".format(interval))

@@ -25,13 +25,15 @@ NEW_NAMES = {
     u"time": u"date",
     u"title": u"titles"
 }
-DROPS = {u"descendants"}
+DROPS = {}
 LOGGER = logging.getLogger()
 
 
 class HackerNewsClient(Client):
     formatting_functions = None
     target_langs = None
+    source_lang = None
+    limit = None
 
     @classmethod
     def initialize(cls, **init_kwargs):
@@ -43,6 +45,7 @@ class HackerNewsClient(Client):
         """
         cls.limit = init_kwargs.get("NUMBER_OF_STORIES", 10)
         cls.target_langs = init_kwargs.get("TARGET_LANGUAGES", ("PT",))
+        cls.source_lang = init_kwargs.get("SOURCE_LANGUAGE", "EN")
         cls.client = HackerNews()
         cls.formatting_functions = {
             u"comments": cls._collect_comments,
@@ -115,8 +118,6 @@ class HackerNewsClient(Client):
         for field in drop:
             document.pop(field, None)
 
-        # TODO: Is this the most efficient way to solve this problem?
-        # Iterate through document / map?
         # Rename for readability
         for old_name in rename:
             if old_name in document:
@@ -142,7 +143,7 @@ class HackerNewsClient(Client):
         @return: Date as string
         @rtype: str
         """
-        date = datetime.datetime.utcfromtimestamp(seconds)
+        date = datetime.datetime.utcfromtimestamp(float(seconds))
         return date.strftime("%d-%m-%Y, %H:%M")
 
     @classmethod
@@ -156,7 +157,7 @@ class HackerNewsClient(Client):
         @return: Expanded title
         @rtype: dict
         """
-        titles = {"EN": {
+        titles = {cls.source_lang: {
             "title": title,
             "translation_status": "done"
             }
@@ -182,48 +183,56 @@ class HackerNewsClient(Client):
         @return: List of converted comment IDs.
         @rtype: list
         """
-        return [
-            str(comment_id)
-            for comment_id in comment_ids if comment_id is not None
-        ]
+        return cls.resolve_comment_ids(comment_ids)
 
     @classmethod
-    def resolve_comment_ids(cls, story):
+    def resolve_comment_ids(cls, comments):
         """
         Recursively convert comment IDs to actual text.
 
-        @param story: Story as json
-        @type story: dict
+        @param comments: List of story comments
+        @type comments: list
         @return: Story with text comments
         @rtype: dict
         """
-        # TODO: Make lookup into database if all these comments have already
-        # been resolved for an older story / if number of comments for those
-        # is the same
         # No comments, nothing to resolve / change
-        if not story["comments"]:
-            return story
+        if not comments:
+            return comments
 
-        def _inner_resolve(comment_ids):
-            comments = {}  # Comments of comment
+        def _replace_mongo_chars(text):
+            if not text:
+                return text
+
+            # Super stupid workaround because MongoDB doesn't allow . or $,
+            # But this way is less costly than generating comments every time
+            # from their IDs
+            text = text.replace(".", "%&/")
+            text = text.replace("$", "/&%")
+            return text
+
+        def _inner_resolve(comment_ids, level=0):
+            comments = {} if level > 0 else []
+
+            # No comments, return
             if not comment_ids:
                 return comments
             for comment_id in comment_ids:
                 comment = cls._resolve_id(comment_id)
                 ccomment_ids = comment.kids
-                comments[comment.text] = _inner_resolve(ccomment_ids)
+                comment_text = _replace_mongo_chars(comment.text)
+
+                if comment_text:
+                    if level > 0:
+                        comments[comment_text] = \
+                            _inner_resolve(ccomment_ids, level+1)
+                    else:
+                        comments.append({
+                            comment_text: _inner_resolve(ccomment_ids, level+1)
+                        })
                 return comments
 
-        resolved_comments = []
-        for comment_id in story["comments"]:
-            comment = cls._resolve_id(comment_id)
-            ccomment_ids = comment.kids
-            resolved_comments.append({
-                comment.text: _inner_resolve(ccomment_ids)
-            })
-
-        story["comments"] = resolved_comments
-        return story
+        resolved_comments = _inner_resolve(comments)
+        return resolved_comments
 
     @classmethod
     def _resolve_id(cls, item_id):

@@ -58,9 +58,11 @@ class HackerNewsDaemon(SimpleDaemon):
     Daemon that retrieves the most recent Hacker News and creates threads to
     translate the titles.
     """
-    def __init__(self, interval, target_langs):
+    def __init__(self, interval, source_lang, target_langs, story_collection):
         self.hn_client = HackerNewsClient()
+        self.source_lang = source_lang
         self.target_langs = target_langs
+        self.story_collection = story_collection
 
         super(HackerNewsDaemon, self).__init__(
             self.refresh_top_stories, tuple(), interval
@@ -76,19 +78,32 @@ class HackerNewsDaemon(SimpleDaemon):
         while True:
             _ids = set()
             for document in self.hn_client.get_top_stories():
-                title = document["titles"]["EN"]["title"]
-                report = self.mdb_client.add_document(document, "articles")
-                _ids.add((str(report.inserted_id), title))
+                title = document["titles"][self.source_lang]["title"]
+                story_id = document["id"]
 
-            # TODO: Write this into a queue instead and define fixed number
-            # of threads in config
-            # TODO: Make a lookup into database if title already has been
-            # translated
+                # Check if story already exists -> maybe no need for
+                # translation / comment resolving
+                result = self.mdb_client.find_document(
+                    "id", story_id, self.story_collection, 1
+                )
+                if result:
+                    document["titles"] = result["titles"]
+                    if document["descendants"] == result["descendants"]:
+                        document["comments"] = result["comments"]
+
+                report = self.mdb_client.add_document(
+                    document, self.story_collection
+                )
+
+                if not result:
+                    _ids.add((str(report.inserted_id), title))
+
             # Start translation processes
             for _id, title in _ids:
                 for target_lang in self.target_langs:
                     ub_daemon = UnbabelDaemon(
-                        self.interval, _id, target_lang, title
+                        self.interval, _id, target_lang, title,
+                        self.story_collection
                     )
                     ub_daemon.run()
             sleep(self.interval)
@@ -102,7 +117,8 @@ class UnbabelDaemon(SimpleDaemon):
     @note: This is not technically a Daemon, just a regular thread. But it was
     helpful letting this inherit from SimpleDaemon.
     """
-    def __init__(self, interval, document_id, target_language, title):
+    def __init__(self, interval, document_id, target_language, title,
+                 story_collection):
         """
         Initializer.
 
@@ -117,6 +133,7 @@ class UnbabelDaemon(SimpleDaemon):
         """
         self.ub_client = UnbabelClient()
         self.title = title
+        self.story_collection = story_collection
 
         logging.info(
             u"New thread trying to translate '{title}' into {lang}".format(
@@ -196,7 +213,7 @@ class UnbabelDaemon(SimpleDaemon):
         @type new_status: str or unicode
         """
         self.mdb_client.update_document(
-            "articles",
+            self.story_collection,
             document_id,
             updates={
                 "titles.{}.translation_status".format(language): new_status
@@ -216,7 +233,7 @@ class UnbabelDaemon(SimpleDaemon):
         @type translated_title: str or unicode
         """
         self.mdb_client.update_document(
-            "articles",
+            self.story_collection,
             document_id,
             updates={
                 "titles.{}.title".format(language): translated_title

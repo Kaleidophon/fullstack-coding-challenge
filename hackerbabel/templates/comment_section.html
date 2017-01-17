@@ -1,13 +1,18 @@
 {# Macro to recursively display comments #}
 {% macro render_comments(story) %}
     {% if not story %}
-        <tr><b>
-            This story doesn't exist or hasn't been added to the database yet.
-        </b></tr>
+        <div class="row">
+            <div class="panel panel-info col-md-6 col-sm-offset-2">
+                <div class="panel-heading">Note</div>
+                <div class="panel-body">
+                    This story doesn't exist or hasn't been added to the database
+                    yet.
+                </div>
+            </div>
+        </div>
     {% else %}
         {% for comment_dict in story["comments"] %}
             {{ render_subcomments(comment_dict) }}
-            <tr class="spacer" style="height:5px"><td></td></tr>
         {% endfor %}
     {% endif %}
 {% endmacro %}
@@ -15,17 +20,20 @@
 {% macro render_subcomments(comment_dict, level=0) %}
     {% set comment_text = comment_dict.keys()[0] %}
     {% set ccomment_dicts = comment_dict[comment_text] %}
-    <tr class="comment">
-        <td class="comment-content"
-                style="position:relative;padding-left:{{ level * 15 }}px;width:{{80 - level * 15}}px;">
-        {{ comment_text }}
-    </td></tr>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="comment-content well col-md-3 col-md-offset-{{ level+1 }}">
+                {{ comment_text | replace("%&/", ".") | replace("/&%", "$") }}
+            </div>
+        </div>
+    </div>
     {% if comment_dict.values()|length != 0 %}
         {% for ccomment_text, ccomment_dict in ccomment_dicts.iteritems() %}
             {{ render_subcomments({ccomment_text: ccomment_dict}, level+1) }}
         {% endfor %}
     {% endif %}
-    <tr class="spacer" style="height:5px"><td></td></tr>
+    <div class="row"></div>
+    <div class="row"></div>
 {% endmacro %}
 
 {# -------------------------------- Site ------------------------------------ #}
@@ -45,13 +53,11 @@
 {% extends "base.html" %}
 
 {% block content %}
-    <table id="itemlist" cellspacing="0" cellpadding="0" border="0",
-           width="65%">
-        <tbody>
-            <tr style="height:10px"></tr>
-            {{ render_comments(story) }}
-        </tbody>
-    </table>
+<div class="row">
+    {# cache interval #}
+        {{ render_comments(story) }}
+    {# endcache #}
+</div>
 {% endblock %}
 
 {% block title %} Comments for Story {{ story_id }} {% endblock %}

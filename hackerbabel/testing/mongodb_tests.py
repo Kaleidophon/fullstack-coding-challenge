@@ -16,6 +16,7 @@ from hackerbabel.clients.mongodb_client import MongoDBClient
 from hackerbabel.clients.hackernews_client import HackerNewsClient
 from hackerbabel.src.helpers import get_config_from_py_file
 from hackerbabel.testing.configuration_tests import CONFIG_PATH
+from hackerbabel.testing.fixtures import get_processed_stories, STORIES
 
 
 class MongoDBClientTestCase(TestCase):
@@ -35,12 +36,12 @@ class MongoDBClientTestCase(TestCase):
         """
         Test whether an document gets added to MongoDB correctly.
         """
-        documents = self.hn_client.get_top_stories()
         _ids = []
 
-        # TODO: Create story fixtures to save time
-        for document in documents:
-            report = self.mdb_client.add_document(document, "articles")
+        for document in get_processed_stories():
+            report = self.mdb_client.add_document(
+                document, self.story_collection
+            )
             ok_(report._WriteResult__acknowledged)
             _ids.append(str(report.inserted_id))
 
@@ -57,7 +58,7 @@ class MongoDBClientTestCase(TestCase):
         shuffle(document_ids)
         for document_id in document_ids:
             result = self.mdb_client.find_document(
-                "_id", document_id, "articles"
+                "_id", document_id, self.story_collection
             )
             ok_(
                 result is not None,
@@ -66,21 +67,19 @@ class MongoDBClientTestCase(TestCase):
 
     def test_newest_documents(self):
         """
-        Test if the the newest documents given by the client are the actual
-        newest ones from the Hacker News client.
+        Test if the the newest documents given by the client are the ones
+        most recently added to the datavse..
         """
-        # Add another round of documents, check if they're also listed as the
-        # most recent ones
-        documents = self.hn_client.get_top_stories()
+        newest_documents = self.mdb_client.get_newest_documents(
+            self.story_collection
+        )
 
-        for document in documents:
-            self.mdb_client.add_document(document, "articles")
-
-        newest_documents = self.mdb_client.get_newest_documents("articles")
-
-        titles = [document["titles"]["EN"]["title"] for document in documents]
+        titles = [
+            document["titles"][self.source_lang]["title"]
+            for document in get_processed_stories()
+        ]
         newest_titles = [
-            document["titles"]["EN"]["title"]
+            document["titles"][self.source_lang]["title"]
             for document in newest_documents
         ]
         newest_titles.reverse()
@@ -98,17 +97,17 @@ class MongoDBClientTestCase(TestCase):
         """
         document_id = choice(document_ids)
         old_document = self.mdb_client.find_document(
-            "_id", document_id, "articles"
+            "_id", document_id, self.story_collection
         )
         update = "Quite silly article"
         old_document["article_type"] = update
 
         report = self.mdb_client.update_document(
-            "articles", document_id, {"article_type": update}
+            self.story_collection, document_id, {"article_type": update}
         )
         ok_(report["updatedExisting"] and report["ok"])
         new_document = self.mdb_client.find_document(
-            "_id", document_id, "articles"
+            "_id", document_id, self.story_collection
         )
 
         ok_(old_document == new_document)
@@ -120,8 +119,10 @@ class MongoDBClientTestCase(TestCase):
         self.hn_client = HackerNewsClient()
         self.mdb_client.initialize(**self.config)
         self.hn_client.initialize(**self.config)
+        self.story_collection = self.config["STORY_COLLECTION"]
+        self.source_lang = self.config["SOURCE_LANGUAGE"]
 
     def tearDown(self):
-        collection = getattr(self.mdb_client.db, "articles")
+        collection = getattr(self.mdb_client.db, self.story_collection)
         collection.remove({})
 

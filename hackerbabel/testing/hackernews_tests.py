@@ -21,7 +21,7 @@ from hackerbabel.src.schema import ArticleSchema
 
 # CONST
 HACKER_NEWS_URI = "https://news.ycombinator.com/"
-EXPECTED_SPEED = 1.75
+EXPECTED_SPEED = 8
 
 
 class HackerNewsClientTestCase(TestCase):
@@ -48,7 +48,7 @@ class HackerNewsClientTestCase(TestCase):
 
         error_message = "Client took {} longer than expected ({} s / " \
             "story)".format(
-	        speed - EXPECTED_SPEED,
+            speed - EXPECTED_SPEED,
                 EXPECTED_SPEED
         )
         ok_(speed < EXPECTED_SPEED, error_message)
@@ -84,7 +84,10 @@ class HackerNewsClientTestCase(TestCase):
                     if pair[0] != pair[1]]
                 )
             )
-        ok_(direct_titles == client_titles, error_msg)
+        # Allow error of one because headline can jump into / out of the TOP
+        # n stories very quickly
+        ok_(len(set(direct_titles) - set.intersection(set(client_titles))) < 2,
+                error_msg)
 
     def setUp(self):
         config = get_config_from_py_file(CONFIG_PATH)

@@ -54,6 +54,46 @@ class Schema(object):
             raise validation_error
 
 
+class TitleSchema(Schema):
+    """
+    Schema to validate story title(s).
+    """
+    schema = {
+        "type": "object",
+        "properties": {
+            "title": {
+                "type": "string"
+            },
+            "translation_status": {
+                "type": "string"
+            }
+        }
+    }
+
+    def __init__(self):
+        super(TitleSchema, self).__init__(self.schema)
+
+
+class CommentSchema(Schema):
+    """
+    Schema to validate story comments.
+    """
+    schema = {
+        "type": "object",
+        "properties": {
+            "comments": {
+                "type": "array",
+                "items": {
+                    "type": "string"
+                }
+            }
+        }
+    }
+
+    def __init__(self):
+        super(CommentSchema, self).__init__(self.schema)
+
+
 class ArticleSchema(Schema):
     """
     Special schema used to validate Hacker News stories.
@@ -62,33 +102,17 @@ class ArticleSchema(Schema):
         "type": "object",
         "properties": {
             "id": {"type": "number"},
-            "titles": {
-                "type": "object",
-                "properties": {
-                    "title": {
-                        "type": "string"
-                    },
-                    "translation_status": {
-                        "type": "string"
-                    }
-                }
-            },
             "date": {"type": "string"},
             "article_type": {"type": "string"},
             "author": {"type": "string"},
             "url": {"type": "string"},
             "text": {"type": "string"},
             "score": {"type": "number"},
-            "comments": {
-                "type": "array",
-                "items": {
-                    "type": "string"
-                }
-            },
+            "descendants": {"type": "number"}
         },
         "required": [
-            "id", "titles", "article_type", "author",
-            "date", "score"
+            "id", "article_type", "author",
+            "date", "score", "descendants"
         ]
     }
 
