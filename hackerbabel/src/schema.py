@@ -55,6 +55,9 @@ class Schema(object):
 
 
 class ArticleSchema(Schema):
+    """
+    Special schema used to validate Hacker News stories.
+    """
     schema = {
         "type": "object",
         "properties": {

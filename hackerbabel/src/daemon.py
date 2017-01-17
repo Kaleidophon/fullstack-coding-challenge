@@ -1,8 +1,8 @@
 # -*- coding: utf-8 -*-
 
 """
-Simple daemon that gets regularly gets Hacker News' top news articles and
-feeds them into MongoDB.
+Module defining simple daemons to get Hacker News on a regular basis and
+translate them.
 """
 
 # STD
@@ -21,22 +21,43 @@ LOGGER = logging.getLogger(__name__)
 
 
 class SimpleDaemon(object):
-
+    """
+    Daemon superclass.
+    """
     def __init__(self, daemon_func, daemon_args, interval, daemonize=True):
+        """
+        Initializer.
+
+        @param daemon_func: Function the daemon should execute.
+        @type daemon_func: func
+        @param daemon_args: Args for daemon func.
+        @type daemon_args: tuple
+        @param interval: Time interval between function executions.
+        @type interval: int
+        @param daemonize: Daemonize thread. See UnbabelDaemon.
+        @type daemonize: bool
+        """
         self.daemon_func = daemon_func
         self.daemon_args = daemon_args
         self.interval = interval
         self.mdb_client = MongoDBClient()
         self.daemonize = daemonize
+        self.thread = None
 
     def run(self):
-        first = Thread(target=self.daemon_func, args=self.daemon_args)
-        first.daemon = self.daemonize
-        first.start()
+        """
+        Run daemon function.
+        """
+        self.thread = Thread(target=self.daemon_func, args=self.daemon_args)
+        self.thread.daemon = self.daemonize
+        self.thread.start()
 
 
 class HackerNewsDaemon(SimpleDaemon):
-
+    """
+    Daemon that retrieves the most recent Hacker News and creates threads to
+    translate the titles.
+    """
     def __init__(self, interval, target_langs):
         self.hn_client = HackerNewsClient()
         self.target_langs = target_langs
@@ -46,6 +67,12 @@ class HackerNewsDaemon(SimpleDaemon):
         )
 
     def refresh_top_stories(self, *args):
+        """
+        Refresh the current Hacker news stories.
+
+        @param args: Argument of functions - in this case, none.
+        @type args: tuple
+        """
         while True:
             _ids = set()
             for document in self.hn_client.get_top_stories():
@@ -53,6 +80,10 @@ class HackerNewsDaemon(SimpleDaemon):
                 report = self.mdb_client.add_document(document, "articles")
                 _ids.add((str(report.inserted_id), title))
 
+            # TODO: Write this into a queue instead and define fixed number
+            # of threads in config
+            # TODO: Make a lookup into database if title already has been
+            # translated
             # Start translation processes
             for _id, title in _ids:
                 for target_lang in self.target_langs:
@@ -64,8 +95,26 @@ class HackerNewsDaemon(SimpleDaemon):
 
 
 class UnbabelDaemon(SimpleDaemon):
+    """
+    Unbabel daemon that is called by HackerNewsDaemon and translates one
+    Hacker News story title into one target language.
 
+    @note: This is not technically a Daemon, just a regular thread. But it was
+    helpful letting this inherit from SimpleDaemon.
+    """
     def __init__(self, interval, document_id, target_language, title):
+        """
+        Initializer.
+
+        @param interval: Time interval between function executions.
+        @type interval: int
+        @param document_id: MongoDB ID of document (_id)
+        @type document_id: int
+        @param target_language: Language the text should be translated into.
+        @type target_language: str or unicode
+        @param title: News title to be translated.
+        @type title: str or unicode.
+        """
         self.ub_client = UnbabelClient()
         self.title = title
 
@@ -94,7 +143,16 @@ class UnbabelDaemon(SimpleDaemon):
         )
 
     def translate_title(self, uid, document_id, target_language):
-        response = None
+        """
+        Translate a story title.
+
+        @param uid: Unique Unbabel API job idea.
+        @type uid: str or unicode
+        @param document_id: MongoDB ID of document (_id)
+        @type document_id: int
+        @param target_language: Language the text should be translated into.
+        @type target_language: str or unicode
+        """
         response_data = None
         status = "new"
 
@@ -109,7 +167,6 @@ class UnbabelDaemon(SimpleDaemon):
             response_data = json.loads(response.content)
             status = response_data["status"]
 
-        target_lang = response_data["target_language"]
         translated_text = response_data["translatedText"]
 
         logging.info(
@@ -128,6 +185,16 @@ class UnbabelDaemon(SimpleDaemon):
 
     def _change_story_translation_status(self, document_id, language,
                                          new_status):
+        """
+        Change the translation status of a story title.
+
+        @param document_id: MongoDB ID of document (_id)
+        @type document_id: int
+        @param language: Language the text should be translated into.
+        @type language: str or unicode
+        @param new_status: New translation status.
+        @type new_status: str or unicode
+        """
         self.mdb_client.update_document(
             "articles",
             document_id,
@@ -138,6 +205,16 @@ class UnbabelDaemon(SimpleDaemon):
 
     def _add_translated_story_title(self, document_id, language,
                                     translated_title):
+        """
+        Add a new translation of a story title.
+
+        @param document_id: MongoDB ID of document (_id)
+        @type document_id: int
+        @param language: Language the text should be translated into.
+        @type language: str or unicode
+        @param translated_title: Title... in another language??
+        @type translated_title: str or unicode
+        """
         self.mdb_client.update_document(
             "articles",
             document_id,
@@ -145,4 +222,3 @@ class UnbabelDaemon(SimpleDaemon):
                 "titles.{}.title".format(language): translated_title
             }
         )
-

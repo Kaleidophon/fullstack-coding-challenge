@@ -14,7 +14,7 @@ from hackerbabel.src.helpers import check_and_create_directory
 
 def setup_logger(config):
     """
-    Setup logger with information from configuration file
+    Setup logger with information from configuration file.
 
     @param config: app configuration
     @type config: dict or class
@@ -42,6 +42,14 @@ def setup_logger(config):
 
 
 def add_terminal_logging(log_format, level=logging.DEBUG):
+    """
+    Add logger output to terminal. Useful for local development.
+
+    @param log_format: Self-explaining?
+    @type log_format: str or unicode.
+    @param level: Logging level.
+    @type level: logging.level
+    """
     logger = logging.getLogger()
     terminal_logger = logging.StreamHandler(sys.stdout)
     terminal_logger.setLevel(level)

@@ -10,13 +10,16 @@ import logging
 # EXT
 from flask import Flask
 from flask_bootstrap import Bootstrap
+from flask_cache import Cache
 
 # PROJECT
+from cache import cache
+
 from hackerbabel.clients.mongodb_client import MongoDBClient
 from hackerbabel.clients.hackernews_client import HackerNewsClient
 from hackerbabel.clients.unbabel_client import UnbabelClient
 
-from hackerbabel.src.config import config_selector
+from hackerbabel.src.configuration import config_selector
 from hackerbabel.src.daemon import HackerNewsDaemon
 from hackerbabel.src.error_handlers import register_error_handlers
 from hackerbabel.src.logger import setup_logger
@@ -36,6 +39,7 @@ def setup_app():
     @return: app which could be launched immediately
     @rtype: Flask
     """
+
     # 1 Create Flask application
     app = Flask(
         import_name=__name__,
@@ -47,9 +51,14 @@ def setup_app():
     app = config_selector(app)
     register_error_handlers(app)
 
+    cache.init_app(app)
+
     # 3 Set up logger
     setup_logger(app.config)
     LOGGER.info("Set up app & logger.")
+
+    CACHE = Cache(config={'CACHE_TYPE': 'simple'})
+    CACHE.init_app(app)
 
     # 4 Init clients
     init_clients(app.config)
