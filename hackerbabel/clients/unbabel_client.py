@@ -21,6 +21,12 @@ class UnbabelClient(Client):
 
     @classmethod
     def initialize(cls, **init_kwargs):
+        """
+        Initialize the client.
+
+        @param init_kwargs: Dictionary of init parameters, e.g. a config.
+        @type init_kwargs: dict
+        """
         cls.api_uri = init_kwargs.get("UNBABEL_API_URI")
         cls.user = init_kwargs.get("UNBABEL_API_USER")
         cls.mail = init_kwargs.get("UNBABEL_API_EMAIL")

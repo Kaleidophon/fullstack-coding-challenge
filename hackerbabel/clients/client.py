@@ -4,11 +4,23 @@
 Superclass for different clients.
 """
 
+# STD
+from abc import abstractmethod
 
 class Client(object):
-	client = None
-	initialized = None
+    """
+    Small superclass for clients.
+    """
+    client = None
+    initialized = None
 
-	@classmethod
-	def initialize(cls, **init_kwargs):
-		cls.initialized = True
+    @classmethod
+    @abstractmethod
+    def initialize(cls, **init_kwargs):
+        """
+        Initialize the client.
+
+        @param init_kwargs: Dictionary of init parameters, e.g. a config.
+        @type init_kwargs: dict
+        """
+        cls.initialized = True  # Should end with this statement

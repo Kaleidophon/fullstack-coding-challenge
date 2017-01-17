@@ -28,11 +28,12 @@ class SimpleDaemon(object):
         self.interval = interval
         self.mdb_client = MongoDBClient()
         self.daemonize = daemonize
+        self.thread = None
 
     def run(self):
-        first = Thread(target=self.daemon_func, args=self.daemon_args)
-        first.daemon = self.daemonize
-        first.start()
+        self.thread = Thread(target=self.daemon_func, args=self.daemon_args)
+        self.thread.daemon = self.daemonize
+        self.thread.start()
 
 
 class HackerNewsDaemon(SimpleDaemon):

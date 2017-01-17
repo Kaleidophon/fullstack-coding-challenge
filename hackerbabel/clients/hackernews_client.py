@@ -35,6 +35,12 @@ class HackerNewsClient(Client):
 
     @classmethod
     def initialize(cls, **init_kwargs):
+        """
+        Initialize the client.
+
+        @param init_kwargs: Dictionary of init parameters, e.g. a config.
+        @type init_kwargs: dict
+        """
         cls.limit = init_kwargs.get("NUMBER_OF_STORIES", 10)
         cls.target_langs = init_kwargs.get("TARGET_LANGUAGES", ("PT",))
         cls.client = HackerNews()
@@ -48,6 +54,13 @@ class HackerNewsClient(Client):
     @classmethod
     @require_init
     def get_top_stories(cls):
+        """
+        Return the stop stories of Hacker News as json (or future MongoDB
+        document).
+
+        @return: List of most recent top stories.
+        @rtype: list
+        """
         start_time = time.time()
 
         top_stories = [
@@ -77,6 +90,22 @@ class HackerNewsClient(Client):
 
     @staticmethod
     def _jsonify_story(story, formatting={}, rename={}, drop=set()):
+        """
+        Convert a story to a (MongoDB-ready) json.
+
+        @param story: Top story from Hacker News
+        @type story: dict
+        @param formatting: Formatting function applied to the values of
+        certain fields.
+        @type formatting: dict
+        @param rename: Dictionary of fields that should be renamed of form
+        old name -> new name.
+        @type rename: dict
+        @param drop: Set of fields that will just be dropped.
+        @type drop: set
+        @return: MongoDB document
+        @rtype: dict
+        """
         document = story  # Semantic change from HN story to future MongoDB doc
 
         if not document.get("kids"):
@@ -105,11 +134,28 @@ class HackerNewsClient(Client):
 
     @staticmethod
     def _seconds_to_datestring(seconds):
+        """
+        Convert seconds after 01.01.1980 to a date.
+
+        @param seconds: Number of seconds.
+        @type seconds: int
+        @return: Date as string
+        @rtype: str
+        """
         date = datetime.datetime.utcfromtimestamp(seconds)
         return date.strftime("%d-%m-%Y, %H:%M")
 
     @classmethod
     def _expand_title(cls, title):
+        """
+        Convert title to dictionary, leaving room for data about the
+        translation status and translated titles.
+
+        @param title: Original title.
+        @type title: str or unicode
+        @return: Expanded title
+        @rtype: dict
+        """
         titles = {"EN": {
             "title": title,
             "translation_status": "done"
@@ -128,6 +174,14 @@ class HackerNewsClient(Client):
 
     @classmethod
     def _collect_comments(cls, comment_ids):
+        """
+        Collect comments from story and convert them to strings for MongoDB.
+
+        @param comment_ids: List of comment IDs.
+        @type comment_ids: list
+        @return: List of converted comment IDs.
+        @rtype: list
+        """
         return [
             str(comment_id)
             for comment_id in comment_ids if comment_id is not None
@@ -135,7 +189,14 @@ class HackerNewsClient(Client):
 
     @classmethod
     def resolve_comment_ids(cls, story):
+        """
+        Recursively convert comment IDs to actual text.
 
+        @param story: Story as json
+        @type story: dict
+        @return: Story with text comments
+        @rtype: dict
+        """
         # No comments, nothing to resolve / change
         if not story["comments"]:
             return story
@@ -163,5 +224,12 @@ class HackerNewsClient(Client):
 
     @classmethod
     def _resolve_id(cls, item_id):
+        """
+        Look up Hacker News object related to an ID.
+
+        @param item_id: ID of item to be looked up.
+        @return: Hacker News item
+        @rtype: object
+        """
         item_id = int(item_id)
         return cls.client.get_item(item_id)

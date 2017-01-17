@@ -15,12 +15,21 @@ from hackerbabel.src.schema import ArticleSchema
 
 
 class MongoDBClient(Client):
+    """
+    Client to communicate to MongoDB via pymongo.
+    """
     db = None
     schema = None
     number_of_stories = None
 
     @classmethod
     def initialize(cls, **init_kwargs):
+        """
+        Initialize the client.
+
+        @param init_kwargs: Dictionary of init parameters, e.g. a config.
+        @type init_kwargs: dict
+        """
         username = init_kwargs.get("MONGODB_USER", "")
         password = init_kwargs.get("MONGODB_PASSWORD", "")
         host = init_kwargs.get("MONGODB_HOST", "localhost")
@@ -49,6 +58,17 @@ class MongoDBClient(Client):
     @classmethod
     @require_init
     def add_document(cls, document, collection_name):
+        """
+        Add new document to a collection.
+
+        @param document: Mongo DB document to be added.
+        @type document: dict
+        @param collection_name: Name of the collection the document should be
+        added to.
+        @type collection_name: str or unicode
+        @return: Result report of insertion
+        @rtype: object
+        """
         collection = getattr(cls.db, collection_name)
         cls.schema.validate(document)
         result = collection.insert_one(document)
@@ -57,6 +77,19 @@ class MongoDBClient(Client):
     @classmethod
     @require_init
     def find_document(cls, key, value, collection_name):
+        """
+        Find a document inside a collection.
+
+        @param key: Attribute the document should possess
+        @type key: str or unicode
+        @param value: Value that should correspond to the key.
+        @type value: type
+        @param collection_name: Name of the collection the document should be
+        added to.
+        @type collection_name: str or unicode
+        @return: The first document matching the criteria or None
+        @rtype: dict or None
+        """
         collection = getattr(cls.db, collection_name)
         if key == "_id":
             value = ObjectId(value)

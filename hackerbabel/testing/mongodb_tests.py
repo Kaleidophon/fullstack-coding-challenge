@@ -91,12 +91,12 @@ class MongoDBClientTestCase(TestCase):
         ok_(old_document == new_document)
 
     def setUp(self):
-        config = get_config_from_py_file(CONFIG_PATH)
-        config["MONGODB_NAME"] += "_test"  # Create special test database
+        self.config = get_config_from_py_file(CONFIG_PATH)
+        self.config["MONGODB_NAME"] += "_test"  # Create special test database
         self.mdb_client = MongoDBClient()
         self.hn_client = HackerNewsClient()
-        self.mdb_client.initialize(**config)
-        self.hn_client.initialize(**config)
+        self.mdb_client.initialize(**self.config)
+        self.hn_client.initialize(**self.config)
 
     def tearDown(self):
         collection = getattr(self.mdb_client.db, "articles")
