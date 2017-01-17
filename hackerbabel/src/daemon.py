@@ -94,7 +94,6 @@ class UnbabelDaemon(SimpleDaemon):
         )
 
     def translate_title(self, uid, document_id, target_language):
-        response = None
         response_data = None
         status = "new"
 
@@ -109,7 +108,6 @@ class UnbabelDaemon(SimpleDaemon):
             response_data = json.loads(response.content)
             status = response_data["status"]
 
-        target_lang = response_data["target_language"]
         translated_text = response_data["translatedText"]
 
         logging.info(
@@ -145,4 +143,3 @@ class UnbabelDaemon(SimpleDaemon):
                 "titles.{}.title".format(language): translated_title
             }
         )
-

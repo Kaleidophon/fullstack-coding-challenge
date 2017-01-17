@@ -56,19 +56,10 @@ class MongoDBClient(Client):
 
     @classmethod
     @require_init
-    def add_documents(cls, documents, collection_name):
-        collection = getattr(cls.db, collection_name)
-
-        for document in documents:
-            cls.schema.validate(document)
-
-        result = collection.insert_many(documents)
-        return result
-
-    @classmethod
-    @require_init
     def find_document(cls, key, value, collection_name):
         collection = getattr(cls.db, collection_name)
+        if key == "_id":
+            value = ObjectId(value)
         result = [
             document for document in
             collection.find({key: value}).sort("_id", -1)
@@ -96,11 +87,3 @@ class MongoDBClient(Client):
             {"$set": updates}
         )
         return report
-
-
-
-
-
-
-
-

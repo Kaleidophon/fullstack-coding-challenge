@@ -22,7 +22,7 @@ from hackerbabel.src.schema import ArticleSchema
 
 # CONST
 HACKER_NEWS_URI = "https://news.ycombinator.com/"
-EXPECTED_TIME_PER_STORY = 1.5
+EXPECTED_SPEED = 1.75
 
 
 class HackerNewsClientTestCase(TestCase):
@@ -43,16 +43,21 @@ class HackerNewsClientTestCase(TestCase):
 
         error_message = "Client took {} longer than expected ({} s / " \
             "story)".format(
-                speed - EXPECTED_TIME_PER_STORY,
-                EXPECTED_TIME_PER_STORY
+	        speed - EXPECTED_SPEED,
+                EXPECTED_SPEED
         )
-        ok_(speed < EXPECTED_TIME_PER_STORY, error_message)
+        ok_(speed < EXPECTED_SPEED, error_message)
 
         # Check if stories have the right format
         for story in stories:
             self.schema.validate(story)
 
     def check_immediacy(self):
+        client_titles = [
+            story["titles"]["EN"]["title"]
+            for story in self.hn_client.get_top_stories()
+        ]
+
         response = urllib2.urlopen(HACKER_NEWS_URI)
         hacker_news_html = response.read()
         hacker_news_soup = BeautifulSoup(hacker_news_html, 'html.parser')
@@ -60,11 +65,6 @@ class HackerNewsClientTestCase(TestCase):
             tag.text for tag in
             list(hacker_news_soup.find_all('a', {"class": "storylink"}))
         ][:self.number_of_stories]
-
-        client_titles = [
-            story["titles"]["EN"]["title"]
-            for story in self.hn_client.get_top_stories()
-        ]
 
         # Check if both sources yield the same results
         # Telling error message in case of test failure
