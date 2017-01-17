@@ -191,21 +191,20 @@ class HackerNewsClient(Client):
         ]
 
     @classmethod
-    def resolve_comment_ids(cls, story):
+    def resolve_comment_ids(cls, story_comments):
         """
         Recursively convert comment IDs to actual text.
 
-        @param story: Story as json
-        @type story: dict
+        @param comments: List of story comments
+        @type comments: list
         @return: Story with text comments
         @rtype: dict
         """
-        # TODO: Make lookup into database if all these comments have already
-        # been resolved for an older story / if number of comments for those
-        # is the same
+        # Unwrap from dict used to save in MongoDB
+        story_comments = story_comments["comments"]
         # No comments, nothing to resolve / change
-        if not story["comments"]:
-            return story
+        if not story_comments:
+            return story_comments
 
         def _inner_resolve(comment_ids):
             comments = {}  # Comments of comment
@@ -218,15 +217,14 @@ class HackerNewsClient(Client):
                 return comments
 
         resolved_comments = []
-        for comment_id in story["comments"]:
+        for comment_id in story_comments:
             comment = cls._resolve_id(comment_id)
             ccomment_ids = comment.kids
             resolved_comments.append({
                 comment.text: _inner_resolve(ccomment_ids)
             })
 
-        story["comments"] = resolved_comments
-        return story
+        return resolved_comments
 
     @classmethod
     def _resolve_id(cls, item_id):

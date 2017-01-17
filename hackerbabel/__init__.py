@@ -20,7 +20,7 @@ from hackerbabel.clients.hackernews_client import HackerNewsClient
 from hackerbabel.clients.unbabel_client import UnbabelClient
 
 from hackerbabel.src.configuration import config_selector
-from hackerbabel.src.daemon import HackerNewsDaemon
+from hackerbabel.src.daemon import HackerNewsDaemon, MasterDaemon
 from hackerbabel.src.error_handlers import register_error_handlers
 from hackerbabel.src.logger import setup_logger
 
@@ -101,11 +101,21 @@ def start_daemon(config):
     target_language = config.get("TARGET_LANGUAGES", ("PT", ))
     source_language = config.get("SOURCE_LANGUAGE", "EN")
     story_collection = config.get("STORY_COLLECTION", "articles")
+    title_collection = config.get("TITLE_COLLECTION", "titles")
+    comment_collection = config.get("COMMENT_COLLECTION", "comments")
+
     hn_daemon = HackerNewsDaemon(
         interval,
         source_language,
         target_language,
-        story_collection
+        story_collection,
+        title_collection,
+        comment_collection
     )
     hn_daemon.run()
-    LOGGER.info("Started daemon with time interval {}.".format(interval))
+    LOGGER.info("Started Hacker News daemon with time interval {}.".format(
+        interval))
+
+    m_daemon = MasterDaemon()
+    m_daemon.run()
+    LOGGER.info("Started master daemon.")

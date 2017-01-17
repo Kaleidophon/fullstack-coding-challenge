@@ -1,13 +1,15 @@
 {# Macro to recursively display comments #}
 {% macro render_comments(story) %}
     {% if not story %}
-        <tr><div class="panel panel-info">
-            <div class="panel-heading">Note</div>
-            <div class="panel-body">
-                This story doesn't exist or hasn't been added to the database
-                yet.
+        <div class="row">
+            <div class="panel panel-info col-md-6 col-sm-offset-2">
+                <div class="panel-heading">Note</div>
+                <div class="panel-body">
+                    This story doesn't exist or hasn't been added to the database
+                    yet.
+                </div>
             </div>
-        </div></tr>
+        </div>
     {% else %}
         {% for comment_dict in story["comments"] %}
             {{ render_subcomments(comment_dict) }}

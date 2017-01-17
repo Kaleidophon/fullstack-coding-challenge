@@ -57,7 +57,7 @@ class MongoDBClient(Client):
 
     @classmethod
     @require_init
-    def add_document(cls, document, collection_name):
+    def add_document(cls, document, collection_name, schema=None):
         """
         Add new document to a collection.
 
@@ -66,11 +66,16 @@ class MongoDBClient(Client):
         @param collection_name: Name of the collection the document should be
         added to.
         @type collection_name: str or unicode
+        @param schema: Schema - if given - the document will be validated
+        against
+        @type schema: Hackerbabel.src.schema.Schema
         @return: Result report of insertion
         @rtype: object
         """
         collection = getattr(cls.db, collection_name)
-        cls.schema.validate(document)
+
+        if schema:
+            schema.validate(document)
         result = collection.insert_one(document)
         return result
 

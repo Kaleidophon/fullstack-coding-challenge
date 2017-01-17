@@ -51,10 +51,15 @@
 		{% block content %}
 			{# cache interval #}
 				{% if stories|length == 0 %}
-					<tr><b>
-						No stories available (yet). Please wait shortly,
-						then refresh the page.
-					</b></tr>
+					<div class="row">
+					    <div class="panel panel-info col-md-6 col-sm-offset-2">
+					        <div class="panel-heading">Note</div>
+					        <div class="panel-body">
+					            No stories available (yet). Please wait a while,
+					            then refresh the page.
+					        </div>
+					    </div>
+					</div>
 				{% else %}
 					{% for rank in range(stories|length) %}
 						{{ render_story(stories[rank], rank+1) }}
