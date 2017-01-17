@@ -14,8 +14,10 @@
 	under https://www.mongodb.com/
 	Then, use the following commands:
 
-		$ cd Hackerbabel/data/db
-		$ cd mongod --dpath ./
+		$ mkdir data
+		$ cd data
+		$ mkdir db
+		$ cd mongod --dpath db/
 
 2. Adjust configuration using python file:
 
@@ -38,4 +40,4 @@
 5. Testing
 
 	Nosetest was used in development. If you want to test the project, use e.g.
-	$ nosetests -vsxd --nologcapture hackerbabel/testing/
+	$ nosetests -vsxd --nologcapture hackerbabel/testing/*
