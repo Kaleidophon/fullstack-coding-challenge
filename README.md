@@ -48,4 +48,5 @@
 5. Testing
 
 	Nosetest was used in development. If you want to test the project, use e.g.
-	$ nosetests -vsxd --nologcapture hackerbabel/testing/*
+	
+		$ nosetests -vsxd --nologcapture hackerbabel/testing/*
