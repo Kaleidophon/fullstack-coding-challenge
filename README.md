@@ -1,44 +1,63 @@
-# Unbabel Fullstack Challenge
+# Hackebabel
 
-Hey :smile:
+## Requirements
+* Recommended on local machines:
 
-Welcome to our Fullstack Challenge repository. This README will guide you on how to participate in this challenge.
+		$ sudo apt-get install python-virtualenv
 
-In case you are doing this to apply for our open positions for a Fullstack Developer make sure you first check the available jobs at [https://unbabel.com/jobs](https://unbabel.com/jobs)
+## Setting up and starting preisvergleich_api on local machine
+0. Getting the project
 
-Please fork this repo before you start working on the challenge. We will evaluate the code on the fork.
+	Download it from github.com as a .zip or use
+	
+		$ git clone https://github.com/Kaleidophon/fullstack-coding-challenge.git 
+		$ cd fullstack-coding-challenge
+		$ git checkout dev
 
-**FYI:** Please understand that this challenge is not decisive if you are applying to work at [Unbabel](https://unbabel.com/jobs). There are no right and wrong answers. This is just an opportunity for us both to work together and get to know each other in a more technical way.
+1. Working with virtualenv and installing requirements
 
-## Challenge
+        $ virtualenv virtual-env
+        $ source virtual-env/bin/activate
+        $ pip install -r requirements.txt
 
+	Make also use you have MongoDB installed. If not, follow the instructions
+	under https://www.mongodb.com/
+	Then, use the following commands:
 
-#### Build a multilingual Hackernews.
+		$ mkdir data
+		$ cd data
+		$ mkdir db
+		$ cd mongod --dpath db/
 
-Create a multilingual clone of the Hackernews website, showing just the top 10 most voted news and their comments. 
-This website must be kept updated with the original hackernews website (every 10 minutes).
+2. Adjust configuration using python file:
 
-Translations must be done using the Unbabel API in sandbox mode.
+		The API expects a "config.py" in the root directory and / or that all
+		necessary parameters are
+		provided through environment variables.
 
-Build a dashboard to check the status of all translations.
+3. Starting HackerBabel
 
+        # starting preisvergleich by using provided runserver script
+        $ cd preisvergleich_api/
+        $ python runserver.py
 
-#### Requirements
-* Use Flask web framework
-* Use Bootstrap
-* For MongoDB
-* Create a scalable application. 
-* Only use Unbabel's Translation API on sandbox mode
-* Have the news titles translated to 2 languages
-* Have unit tests
+4. See if it works
 
+	Go to browser: http://127.0.0.1:5000/start
+	Everything else will run automatically following the parameters stated in
+	config.py.
 
-#### Notes
-* We dont really care much about css but please dont make our eyes suffer. 
-* Page load time shouldnt exceed 2 secs 
+	Note: The first run to fetch some documents can take a bit longer, because
+	fetching all the documents' comments is cumbersome.
 
+5. Testing
 
-#### Resources
-* Unbabel's API: http://developers.unbabel.com/
-* Hackernews API: https://github.com/HackerNews/API
-
+	Nosetest was used in development. If you want to test the project, use e.g.
+	
+		$ nosetests -vsxd --nologcapture hackerbabel/testing/*
+		
+	Note: Because the unit test require a stable internet connection, some unit tests
+	can sometimes fail due to your internet connection. If so, try to restart them
+	and / or adjust EXPECTED_SPEED in hackerbabel/testing/hackernews_test.py
+	specifically.
+	Note2: Tests may still take a few minutes.

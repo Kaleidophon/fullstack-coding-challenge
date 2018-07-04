@@ -1,0 +1,6 @@
+.idea/
+.idea/*
+*.pyc
+hackerbabel/data/*
+*.ipynb
+*.log
